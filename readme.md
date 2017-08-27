@@ -32,9 +32,9 @@ theme.actionBarDefaultIcon = {
 };
 theme.actionBarDefault.red = 244;
 ```
-### Get theme content for saving
+### Get the theme's content for saving
 ```js
-const themeContent = theme.asTextForSaving();
+const themeContent = theme.asText();
 /*
 windowBackgroundWhite=#012226
 actionBarDefault=#d17e59
