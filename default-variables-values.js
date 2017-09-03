@@ -505,7 +505,11 @@ const defaultVariablesValues = {
   "chats_menuTopShadow": "40000000",
   "chat_serviceBackground": "66000000",
   "chat_serviceBackgroundSelected": "88000000",
-  "chat_wallpaper": "ff000000"
+  "chat_wallpaper": "ff000000",
+  "chat_emojiPanelStickerSetName": "ff838c96",
+  "chat_emojiPanelStickerSetIcon": "ffb1b6bc",
+  "contacts_inviteText": "ffffffff",
+  "contacts_inviteText": "ff55be61"
 };
 
 for (let i in defaultVariablesValues) {
