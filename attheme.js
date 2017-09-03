@@ -6,7 +6,7 @@ class Attheme {
 
     if (fillWithDefault && defaultVariablesValues) {
       for (let variable in defaultValues) {
-        this[variable] = defaultValues[variable];
+        this[variable] = defaultVariablesValues[variable];
       }
     }
 
