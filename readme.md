@@ -48,11 +48,11 @@ const themeWallpaper = theme[Attheme.IMAGE_KEY];
 ## Documentation
 ### new Attheme(themeContent, fillWithDefaults)
 Returns an object with variables and wallpaper (if added).
-- `themeContent` (String)
-   Previously read theme's content. If not specified, creates an empty theme.
-- `fillWithDefaults` (Boolean)
-...Whether unadded variables should be added to the object. `False` by default.
-   This argument requires `defaultVariablesValues` defined outside, otherwise settings this to `true` won't affect.
+- `themeContent` (String)  
+  Previously read theme's content. If not specified, creates an empty theme.
+- `fillWithDefaults` (Boolean)  
+  Whether unadded variables should be added to the object. `False` by default.  
+  This argument requires `defaultVariablesValues` defined outside, otherwise settings this to `true` won't affect.
 ```js
 const theme = new Attheme(themeContent, false); // Attheme {...}
 ```
