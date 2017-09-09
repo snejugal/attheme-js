@@ -1,6 +1,6 @@
 "use strict";
 
-window.defaultVariablesValues = {
+const defaultVariablesValues = {
   "avatar_backgroundViolet": "ff8e85ee",
   "dialogRadioBackground": "ffb3b3b3",
   "chat_replyPanelClose": "ffa8a8a8",
@@ -522,3 +522,5 @@ for (let i in defaultVariablesValues) {
     alpha: b(a.slice(0, 2))
   };
 }
+
+module.exports = defaultVariablesValues;
