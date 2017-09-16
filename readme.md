@@ -58,7 +58,7 @@ actionBarDefault=#d17e59
 const themeWallpaper = theme[Attheme.IMAGE_KEY];
 ```
 ## Documentatiom
-See the [doumentation](wiki/Documentation) here.
+See the [doumentation](/SnejUgal/attheme-js/wiki/Documentation) here.
 ## Helpful stuff
-- [Reading a theme file correctly in a browser](wiki/Reading-a-theme-file-correctly-in-a-browser)
-- [Default variables values](wiki/Default-variables-values)
+- [Reading a theme file correctly in browsers](/SnejUgal/attheme-js/wiki/Reading-a-theme-file-properly-in-browsers)
+- [Default variables values](/SnejUgal/attheme-js/wiki/Default-values-of-variables)
