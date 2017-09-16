@@ -79,7 +79,7 @@ class Attheme {
       return;
     }
 
-    const b16 = n => n.toString(16)[z](2, "0"),
+    const b16 = n => n.toString(16).padStart(2, "0"),
       b10 = n => parseInt(n, 16),
       lines = themeContent.split("\n");
 
