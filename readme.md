@@ -30,7 +30,7 @@ const emptyTheme = new Attheme();
 ### Creating a theme with an uploaded file's content
 ```js
 const themeContent =
-        `windowbackgroundWhite=#012226\
+        `windowbackgroundWhite=#012226
          actionBarDefault=-3047847`;
 const theme = new Attheme(themeContent);
 ```
