@@ -18,7 +18,7 @@ class Attheme {
       }
 
       for (let variable in defaults) {
-        theme[variable] = defaults[variable];
+        this[variable] = defaults[variable];
       }
     }
     for (let variable in theme) {
