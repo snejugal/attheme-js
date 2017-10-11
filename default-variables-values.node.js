@@ -509,7 +509,13 @@ const defaultVariablesValues = {
   "chat_emojiPanelStickerSetName": "ff838c96",
   "chat_emojiPanelStickerSetIcon": "ffb1b6bc",
   "contacts_inviteText": "ffffffff",
-  "contacts_inviteText": "ff55be61"
+  "contacts_inviteText": "ff55be61",
+  "dialogTopBackground": "ff6fb2e5",
+  "location_liveLocationProgress": "ff359fe5",
+  "location_placeLocationBackground": "ff4ca8ea",
+  "player_placeholderBackground": "fff0f0f0",
+  "player_background": "ffffffff",
+  "location_sendLiveLocationBackground": "ffff6464"
 };
 
 for (let i in defaultVariablesValues) {
