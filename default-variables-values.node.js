@@ -515,7 +515,9 @@ const defaultVariablesValues = {
   "location_placeLocationBackground": "ff4ca8ea",
   "player_placeholderBackground": "fff0f0f0",
   "player_background": "ffffffff",
-  "location_sendLiveLocationBackground": "ffff6464"
+  "location_sendLiveLocationBackground": "ffff6464",
+  "chat_adminText": "ffc0c6cb",
+  "chat_adminSelectedText": "ff89b4c1"
 };
 
 for (let i in defaultVariablesValues) {
