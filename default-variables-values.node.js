@@ -517,7 +517,8 @@ window.defaultVariablesValues = {
   location_sendLiveLocationBackground: `6464`,
   chat_adminText: `c0c6cb`,
   chat_adminSelectedText: `89b4c1`,
-  avatar_backgroundSaved: `66bffa`
+  avatar_backgroundSaved: `66bffa`,
+  chats_menuItemCheck: `598fba`,
 };
 
 for (let i in defaultVariablesValues) {
