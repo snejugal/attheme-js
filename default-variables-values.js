@@ -522,6 +522,7 @@ window.defaultVariablesValues = {
   chat_outAudioCacheSeekbar: `3fbbe3ac`,
   key_player_progressCachedBackground: `19000000`,
   chat_inAudioCacheSeekbar: `3fe4eaf0`,
+  chat_emojiSearchBackground: `e7ebed`,
 };
 
 for (let i in defaultVariablesValues) {
