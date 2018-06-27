@@ -526,7 +526,7 @@ window.defaultVariablesValues = {
   passport_authorizeText: ``,
   dialog_liveLocationProgress: `359fe5`,
   passport_authorizeBackgroundSelected: `409ddb`,
-  passport_authorizeBackground: `45abef`.
+  passport_authorizeBackground: `45abef`,
 };
 
 for (let i in defaultVariablesValues) {
