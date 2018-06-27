@@ -523,6 +523,10 @@ window.defaultVariablesValues = {
   key_player_progressCachedBackground: `19000000`,
   chat_inAudioCacheSeekbar: `3fe4eaf0`,
   chat_emojiSearchBackground: `e7ebed`,
+  passport_authorizeText: ``,
+  dialog_liveLocationProgress: `359fe5`,
+  passport_authorizeBackgroundSelected: `409ddb`,
+  passport_authorizeBackground: `45abef`.
 };
 
 for (let i in defaultVariablesValues) {
