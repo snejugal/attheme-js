@@ -1,7 +1,7 @@
 `use strict`;
 
 // all f's at the start of values are removed to optimize file size
-defaultVariablesValues = {
+const defaultVariablesValues = {
   avatar_backgroundViolet: `8e85ee`,
   dialogRadioBackground: `b3b3b3`,
   chat_replyPanelClose: `a8a8a8`,
