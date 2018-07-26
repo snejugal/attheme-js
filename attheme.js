@@ -93,7 +93,13 @@ class Attheme {
       line = line.trim();
 
       if (line == "WPS") {
-        theme[Attheme.IMAGE_KEY] = lines.slice(i + 1, -2).join("\n");
+        let wpeIndex = lines.indexOf(`WPE`);
+
+        if (wpeIndex == -1) {
+          wpeIndex = lines.length;
+        }
+
+        theme[Attheme.IMAGE_KEY] = lines.slice(i + 1, wpeIndex).join("\n");
         break;
       }
 

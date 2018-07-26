@@ -1,26 +1,26 @@
 "use strict";
 
 class Attheme {
-  constructor(theme = "", defaultValues) {
+  constructor(theme, fillWithDefaults) {
     if (!theme) {
       theme = "";
     }
     theme = Attheme._parseText(theme);
 
-    if (defaultValues) {
+    if (fillWithDefaults) {
       let defaults;
-
-      if (typeof defaultValues == "object") {
-        defaults = defaultValues;
+      if (typeof fillWithDefaults == "object") {
+        defaults = fillWithDefaults;
+      } else if (window.defaultVariablesValues) {
+        defaults = window.defaultVariablesValues;
       } else {
-        throw new Error("`defaultValues` is not an object");
+        throw new Error("`fillWithefaults` option is set to true, but `defaultVariablesValues` is not defined outside.\nIf defaults values are defined another way, pass them instead of `fillWithDefaults`");
       }
 
       for (let variable in defaults) {
         this[variable] = defaults[variable];
       }
     }
-
     for (let variable in theme) {
       this[variable] = theme[variable];
     }
@@ -35,22 +35,23 @@ class Attheme {
   }
 
   static asText(theme, shorthand) {
-    const b16 = (n) => n.toString(16).padStart(2, "0");
-    const b10 = (n) => parseInt(n, 16);
-    let text = "";
+    const b16 = (number) => number.toString(16).padStart(2, "0"),
+      b10 = (number) => parseInt(number, 16);
+
+    let themeContent = "";
 
     for (let variable in theme) {
-      const red = b16(theme[variable].red);
-      const green = b16(theme[variable].green);
-      const blue = b16(theme[variable].blue);
-      const alpha = b16(theme[variable].alpha);
-      const hex = `#${(alpha == "ff") ? "" : alpha}${red}${green}${blue}`;
-      const int = (b10(`${alpha}${red}${green}${blue}`) << 0).toString();
+      const red = b16(theme[variable].red),
+        green = b16(theme[variable].green),
+        blue = b16(theme[variable].blue),
+        alpha = b16(theme[variable].alpha),
+        hex = `#${alpha == "ff" ? "" : alpha}${red}${green}${blue}`,
+        int = (b10(`${alpha}${red}${green}${blue}`) << 0) + "";
 
       let value;
 
       if (!shorthand || shorthand == "auto") {
-        if (hex.length >= int.length) {
+        if (hex.length > int.length) {
           value = int;
         } else {
           value = hex;
@@ -62,28 +63,27 @@ class Attheme {
       } else {
         throw new Error("The `shorthand` option value is invalid");
       }
-
-      text += `${variable}=${value}\n`;
+      themeContent += `${variable}=${value}\n`;
     }
 
     if (theme[Attheme.IMAGE_KEY]) {
-      text += `WPS\n${theme[Attheme.IMAGE_KEY]}\nWPE\n`;
+      themeContent += `WPS\n${theme[Attheme.IMAGE_KEY]}\nWPE\n`;
     }
 
-    return text;
+    return themeContent;
   }
 
-  static _parseText(theme = "") {
-    if (typeof theme != "string") {
+  static _parseText(themeContent = "") {
+    if (typeof themeContent != "string") {
       throw new Error("Attheme.parseText requires a string");
       return;
     }
 
-    const b16 = (n) => n.toString(16).padStart(2, "0"),
-      b10 = (n) => parseInt(n, 16);
+    const b16 = n => n.toString(16).padStart(2, "0"),
+      b10 = n => parseInt(n, 16),
+      lines = themeContent.split("\n");
 
-    const lines = theme.split("\n");
-    let themeObject = {};
+    let theme = {};
 
     for (let i = 0; i < lines.length; i++) {
       let line = lines[i];
@@ -93,7 +93,13 @@ class Attheme {
       line = line.trim();
 
       if (line == "WPS") {
-        themeObject[Attheme.IMAGE_KEY] = lines.slice(i + 1, -2).join("\n");
+        let wpeIndex = lines.indexOf(`WPE`);
+
+        if (wpeIndex == -1) {
+          wpeIndex = lines.length;
+        }
+
+        theme[Attheme.IMAGE_KEY] = lines.slice(i + 1, wpeIndex).join("\n");
         break;
       }
 
@@ -116,15 +122,15 @@ class Attheme {
         blue: b10(color.slice(6, 8)),
         alpha: b10(color.slice(0, 2))
       };
-      themeObject[variable] = color;
+      theme[variable] = color;
     }
-
-    return themeObject;
+    return theme;
   }
 
   static get IMAGE_KEY() {
     return Symbol.for("image");
   }
-};
+}
+
 
 module.exports = Attheme;
