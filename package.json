@@ -1,0 +1,26 @@
+{
+  "name": "attheme-js",
+  "version": "2.0.0-alpha.1",
+  "description": "A small packagr for working with .attheme files in JavaScript.",
+  "author": "SnejUgal <contact@snejugal.ru> (snejugal.ru)",
+  "license": "MIT",
+  "keywords": [
+    "telegram",
+    "attheme"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SnejUgal/attheme-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SnejUgal/attheme-js/issues"
+  },
+  "homepage": "https://github.com/SnejUgal/attheme-js#readme",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx tsc -p ."
+  },
+  "devDependencies": {
+    "typescript": "^2.9.2"
+  }
+}
