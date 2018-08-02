@@ -9,6 +9,13 @@ interface CheckColorParameters {
 
 const CHANNELS = [`red`, `green`, `blue`, `alpha`];
 
+/**
+ * Checks whether the color is valid.
+ * @param param0.color The color to be checked.
+ * @param param0.functionName The function name for the error message.
+ * @param param0.argumentName The argument name for the error message.
+ * @throws The color is invalid.
+ */
 const checkColor = ({
   color,
   functionName,

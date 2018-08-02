@@ -1,6 +1,13 @@
 import Attheme from ".";
 import { Color, ColorSignature } from "./types";
 
+/**
+ * Serialized the color.
+ * @param color The color to serialize.
+ * @param colorSignature The way the color should be encoded, "hex" for
+ * #aarrggbb and "int" for Java int color.
+ * @returns The serialized color.
+ */
 const serializeColor = (
   color: Color,
   colorSignature: ColorSignature,
@@ -18,6 +25,13 @@ const serializeColor = (
   return String(Number.parseInt(hex, 16) << 0);
 };
 
+/**
+ * Serializes the theme.
+ * @param theme The theme to serialize.
+ * @param colorSignature The way the colors should be encoded, "hex" for
+ * #aarrggbb and "int" for Java int color.
+ * @returns The serialized theme.
+ */
 const serializeTheme = (
   theme: Attheme,
   colorSignature: ColorSignature = `hex`,
