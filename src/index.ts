@@ -63,6 +63,22 @@ class Attheme {
       this._wallpaper = wallpaper;
     }
   }
+
+  getWallpaper() {
+    return this._wallpaper;
+  }
+
+  setWallpaper(newWallpaper: string) {
+    checkType({
+      variable: newWallpaper,
+      types: [`string`],
+      functionName: `attheme.setWallpaper`,
+      argumentName: `newWallpaper`,
+      nullOrUndefined: false,
+    });
+
+    this._wallpaper = newWallpaper;
+  }
 }
 
 export default Attheme;
