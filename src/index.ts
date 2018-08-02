@@ -15,7 +15,7 @@ class Attheme {
    * @param options Additional options for constructing the theme.
    * @param options.defaultValues Values that the constructor fill fallback to
    * if not present in the parsed theme.
-   * @throws The contents is syntactically invalid.
+   * @throws {TypeError} If any of the provided arguments is of a wrong type.
    */
   constructor(contents?: string | null, options: Options = {}) {
     checkType({
@@ -55,7 +55,3 @@ class Attheme {
 }
 
 export default Attheme;
-
-export {
-  Theme,
-};
