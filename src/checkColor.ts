@@ -29,13 +29,27 @@ const checkColor = ({
   }
 
   for (const channel of CHANNELS) {
+    const value = color[channel as keyof Color];
+
     checkType({
-      variable: color[channel as keyof Color],
+      variable: value,
       types: [`number`],
       functionName,
       argumentName,
       nullOrUndefined: false,
     });
+
+    if (value < 0) {
+      throw new Error(`The ${argumentName} argument to ${functionName} must be a valid color, but its ${channel} channel is less than 0.`);
+    }
+
+    if (value > 255) {
+      throw new Error(`The ${argumentName} argument to ${functionName} must be a valid color, but its ${channel} channel is greater than 255.`);
+    }
+
+    if (value % 1 !== 0) {
+      throw new Error(`The ${argumentName} argument to ${functionName} must be a valid color, but its ${channel} channel is a fraction (${value}).`);
+    }
   }
 };
 
