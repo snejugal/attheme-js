@@ -146,6 +146,10 @@ class Attheme {
   getVariablesAmount() {
     return this._variables.size;
   }
+
+  [Symbol.iterator]() {
+    return this._variables.entries();
+  }
 }
 
 export default Attheme;
