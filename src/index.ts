@@ -8,7 +8,7 @@ interface Options {
 }
 
 class Attheme {
-  private _variables: Theme;
+  private _variables: Theme = new Map();
   private _wallpaper: string;
 
   /**
@@ -34,8 +34,6 @@ class Attheme {
       argumentName: `options`,
     });
 
-    this._variables = new Map();
-
     if (options !== null) {
       checkType({
         variable: options.defaultValues,
@@ -49,7 +47,7 @@ class Attheme {
         && options.defaultValues !== undefined
       ) {
         for (const [variable, value] of options.defaultValues) {
-          this._variables.set(variable, value);
+          this.setVariable(variable, value);
         }
       }
     }
@@ -57,6 +55,9 @@ class Attheme {
     const { variables, wallpaper } = parseContents(contents as string);
 
     for (const [variable, value] of variables) {
+      // this.setVariable dynamically checks types, but here they are
+      // guarantred to be valid, and all that type checking will only slow
+      // down this loop.
       this._variables.set(variable, value);
     }
 
