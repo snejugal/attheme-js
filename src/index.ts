@@ -1,6 +1,7 @@
 import checkType from "./checkType";
-import { Theme } from "./types";
+import { Theme, Color } from "./types";
 import parseContents from "./parseContents";
+import checkColor from "./checkColor";
 
 interface Options {
   defaultValues?: Theme;
@@ -78,6 +79,60 @@ class Attheme {
     });
 
     this._wallpaper = newWallpaper;
+  }
+
+  hasVariable(variable: string) {
+    checkType({
+      variable: variable,
+      types: [`string`],
+      functionName: `attheme.hasVariable`,
+      argumentName: `variable`,
+      nullOrUndefined: false,
+    });
+
+    return this._variables.has(variable);
+  }
+
+  deleteVariable(variable: string) {
+    checkType({
+      variable: variable,
+      types: [`string`],
+      functionName: `attheme.deleteVariable`,
+      argumentName: `variable`,
+      nullOrUndefined: false,
+    });
+
+    return this._variables.delete(variable);
+  }
+
+  getVariable(variable: string) {
+    checkType({
+      variable: variable,
+      types: [`string`],
+      functionName: `attheme.getVariable`,
+      argumentName: `variable`,
+      nullOrUndefined: false,
+    });
+
+    return this._variables.get(variable);
+  }
+
+  setVariable(variable: string, value: Color) {
+    checkType({
+      variable: variable,
+      types: [`string`],
+      functionName: `attheme.setVariable`,
+      argumentName: `variable`,
+      nullOrUndefined: false,
+    });
+
+    checkColor({
+      color: value,
+      functionName: `attheme.setVariable`,
+      argumentName: `value`,
+    });
+
+    this._variables.set(variable, value);
   }
 }
 
