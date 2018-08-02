@@ -1,33 +1,9 @@
 import checkType from "./checkType";
-
-interface Color {
-  red: number;
-  green: number;
-  blue: number;
-  alpha: number;
-}
-
-type Theme = Map<string, Color>;
+import { Theme } from "./types";
 
 interface Options {
   defaultValues?: Theme;
 }
-
-interface ParseThemeResult {
-  variables: Theme;
-  wallpaper?: string;
-}
-
-/**
- * Parses the .attheme contents.
- * @param content The .attheme contents to parse.
- */
-const parseContents = (content: string): ParseThemeResult => {
-  /** @todo: Write the parser */
-  return {
-    variables: new Map(),
-  };
-};
 
 class Attheme {
   private _variables: Theme;
