@@ -6,3 +6,5 @@ export interface Color {
 }
 
 export type Theme = Map<string, Color>;
+
+export type ColorSignature = "hex" | "int";

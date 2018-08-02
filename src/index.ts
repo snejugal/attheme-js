@@ -1,7 +1,8 @@
 import checkType from "./checkType";
-import { Theme, Color } from "./types";
+import { Theme, Color, ColorSignature } from "./types";
 import parseContents from "./parseContents";
 import checkColor from "./checkColor";
+import serializeTheme from "./serializeTheme";
 
 interface Options {
   defaultValues?: Theme;
@@ -150,6 +151,10 @@ class Attheme {
 
   [Symbol.iterator]() {
     return this._variables.entries();
+  }
+
+  toString(colorSignature?: ColorSignature) {
+    return serializeTheme(this, colorSignature);
   }
 }
 
