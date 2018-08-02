@@ -1,4 +1,4 @@
-const IMAGE_KEY = Symbol.for(`image`);
+import checkType from "./checkType";
 
 interface Color {
   red: number;
@@ -7,54 +7,79 @@ interface Color {
   alpha: number;
 }
 
-interface Theme {
-  [key: string]: Color;
-  [IMAGE_KEY]?: string;
-}
+type Theme = Map<string, Color>;
 
 interface Options {
   defaultValues?: Theme;
 }
 
-const parseTheme = (content: string): Theme => {
+interface ParseThemeResult {
+  variables: Theme;
+  wallpaper?: string;
+}
+
+/**
+ * Parses the .attheme contents.
+ * @param content The .attheme contents to parse.
+ */
+const parseContents = (content: string): ParseThemeResult => {
   /** @todo: Write the parser */
-  return {};
+  return {
+    variables: new Map(),
+  };
 };
 
-class Attheme implements Theme {
-  [key: string]: Color;
+class Attheme {
+  private _variables: Theme;
+  private _wallpaper: string;
 
-  static IMAGE_KEY = IMAGE_KEY;
+  /**
+   * Constructs a new theme.
+   * @param contents The .attheme contents to parse.
+   * @param options Additional options for constructing the theme.
+   * @param options.defaultValues Values that the constructor fill fallback to
+   * if not present in the parsed theme.
+   * @throws The contents is syntactically invalid.
+   */
+  constructor(contents?: string | null, options: Options = {}) {
+    checkType({
+      variable: contents,
+      types: [`string`],
+      functionName: `new Attheme()`,
+      argumentName: `content`,
+    });
 
-  constructor(content?: string | null, options: Options = {}) {
-    if (
-      typeof content !== `string`
-      && content !== undefined
-      && content !== null
-    ) {
-      throw new TypeError(`new Attheme()'s content argument is of ${typeof content} type, though it may only be a string, null, or undefined.`);
-    }
+    checkType({
+      variable: options,
+      types: [`object`],
+      functionName: `new Attheme()`,
+      argumentName: `options`,
+    });
 
-    if (typeof options !== `object`) {
-      throw new TypeError(`new Attheme()'s options argument is of ${typeof options} type, though it may only be an object, null, or undefined.`);
-    }
+    this._variables = new Map();
 
     if (options !== null) {
-      if (`defaultValues` in options) {
-        if (typeof options.defaultValues === `object`) {
-          if (options.defaultValues !== null) {
-            Object.assign(this, options.defaultValues);
-          }
-        } else if (options.defaultValues !== undefined) {
-          throw new TypeError(`new Attheme()'s options.defaultValues argument is of ${typeof options.defaultValues}, though it may only be an object, null, or undefined.`);
+      checkType({
+        variable: options.defaultValues,
+        types: [Map],
+        functionName: `new Attheme()`,
+        argumentName: `options.defaultValues`,
+      });
+
+      if (
+        options.defaultValues !== null
+        && options.defaultValues !== undefined
+      ) {
+        for (const [variable, value] of options.defaultValues) {
+          this._variables.set(variable, value);
         }
       }
-    }
-
-    if (typeof content === `string`) {
-      Object.assign(this, parseTheme(content));
     }
   }
 }
 
 export default Attheme;
+
+export {
+  Theme,
+};
