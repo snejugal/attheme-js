@@ -21,7 +21,7 @@ const parseValue = (value: string): Color => {
   if (value.startsWith(`#`)) {
     hex = value.slice(1).padStart(8, `f`);
   } else {
-    hex = (Number.parseInt(value, 10) >>> 0).toString(16).padStart(8, `f`);
+    hex = (Number.parseInt(value, 10) >>> 0).toString(16).padStart(8, `0`);
   }
 
   return {
