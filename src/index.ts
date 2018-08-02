@@ -142,6 +142,10 @@ class Attheme {
 
     this._variables.set(variable, value);
   }
+
+  getVariablesAmount() {
+    return this._variables.size;
+  }
 }
 
 export default Attheme;
