@@ -2,7 +2,7 @@ import Attheme from ".";
 import { Color, ColorSignature } from "./types";
 
 /**
- * Serialized the color.
+ * Serializes the color.
  * @param color The color to serialize.
  * @param colorSignature The way the color should be encoded, "hex" for
  * #aarrggbb and "int" for Java int color.
