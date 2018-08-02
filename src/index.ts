@@ -187,6 +187,14 @@ class Attheme {
     return this._variables.size;
   }
 
+  /**
+   * Gets an array of all variables in the theme.
+   * @returns An array of varialbes.
+   */
+  getVariablesList() {
+    return [...this._variables.keys()];
+  }
+
   [Symbol.iterator]() {
     return this._variables.entries();
   }
