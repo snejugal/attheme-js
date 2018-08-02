@@ -81,6 +81,14 @@ class Attheme {
     this._wallpaper = newWallpaper;
   }
 
+  hasWallpaper() {
+    return this._wallpaper !== undefined;
+  }
+
+  deleteWallpaper() {
+    delete this._wallpaper;
+  }
+
   hasVariable(variable: string) {
     checkType({
       variable: variable,
