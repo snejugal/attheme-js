@@ -1,5 +1,6 @@
 import checkType from "./checkType";
 import { Theme } from "./types";
+import parseContents from "./parseContents";
 
 interface Options {
   defaultValues?: Theme;
@@ -17,7 +18,7 @@ class Attheme {
    * if not present in the parsed theme.
    * @throws {TypeError} If any of the provided arguments is of a wrong type.
    */
-  constructor(contents?: string | null, options: Options = {}) {
+  constructor(contents?: string | null, options: Options | null = {}) {
     checkType({
       variable: contents,
       types: [`string`],
@@ -50,6 +51,16 @@ class Attheme {
           this._variables.set(variable, value);
         }
       }
+    }
+
+    const { variables, wallpaper } = parseContents(contents as string);
+
+    for (const [variable, value] of variables) {
+      this._variables.set(variable, value);
+    }
+
+    if (typeof wallpaper === `string`) {
+      this._wallpaper = wallpaper;
     }
   }
 }
