@@ -18,7 +18,8 @@
   "homepage": "https://github.com/SnejUgal/attheme-js#readme",
   "main": "dist/index.js",
   "scripts": {
-    "build": "npx tsc -p ."
+    "build": "npx tsc -p .",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "typescript": "^3.0.1"
