@@ -67,10 +67,18 @@ class Attheme {
     }
   }
 
+  /**
+   * Gets the theme's wallpaper.
+   * @returns The theme's wallpaper.
+   */
   getWallpaper() {
     return this._wallpaper;
   }
 
+  /**
+   * Sets the new wallpaper.
+   * @param newWallpaper The new wallpaper.
+   */
   setWallpaper(newWallpaper: string) {
     checkType({
       variable: newWallpaper,
@@ -83,14 +91,26 @@ class Attheme {
     this._wallpaper = newWallpaper;
   }
 
+  /**
+   * Checks whether the theme has a wallpaper.
+   * @returns Whether the theme has a wallpaper.
+   */
   hasWallpaper() {
     return this._wallpaper !== undefined;
   }
 
+  /**
+   * Deletes the wallpaper.
+   */
   deleteWallpaper() {
     delete this._wallpaper;
   }
 
+  /**
+   * Checks whether the theme has the specified variables.
+   * @param variable The varialbe to check existence of.
+   * @returns Whehter the theme has the variable.
+   */
   hasVariable(variable: string) {
     checkType({
       variable: variable,
@@ -103,6 +123,10 @@ class Attheme {
     return this._variables.has(variable);
   }
 
+  /**
+   * Deletes the variable.
+   * @param variable The variable to delete.
+   */
   deleteVariable(variable: string) {
     checkType({
       variable: variable,
@@ -112,9 +136,14 @@ class Attheme {
       nullOrUndefined: false,
     });
 
-    return this._variables.delete(variable);
+    this._variables.delete(variable);
   }
 
+  /**
+   * Gets the value of the specified variable.
+   * @param variable The variable to get value of.
+   * @returns The value of the variable.
+   */
   getVariable(variable: string) {
     checkType({
       variable: variable,
@@ -127,6 +156,11 @@ class Attheme {
     return this._variables.get(variable);
   }
 
+  /**
+   * Sets the variable to the specified value.
+   * @param variable The variable to set.
+   * @param value The value of the variable.
+   */
   setVariable(variable: string, value: Color) {
     checkType({
       variable: variable,
@@ -145,6 +179,10 @@ class Attheme {
     this._variables.set(variable, value);
   }
 
+  /**
+   * Gets the amount of variables in the theme.
+   * @returns The amount of variable in the theme.
+   */
   getVariablesAmount() {
     return this._variables.size;
   }
@@ -153,6 +191,12 @@ class Attheme {
     return this._variables.entries();
   }
 
+  /**
+   * Serialized the theme.
+   * @param colorSignature The way the colors should be serialized. hex" for
+   * #aarrggbb and "int" for Java int color.
+   * @returns The serialized theme.
+   */
   toString(colorSignature?: ColorSignature) {
     return serializeTheme(this, colorSignature);
   }

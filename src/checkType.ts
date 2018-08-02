@@ -13,7 +13,7 @@ interface CheckTypeArguments {
  * @param param0.functionName The function name for the error message.
  * @param param0.argumentName The argument name for the error message.
  * @param param0.nullOrUndefined Whether the variable can be null or undefined.
- * @throws If the variable is of a wrong type.
+ * @throws The variable is of a wrong type.
  */
 const checkType = ({
   variable,
