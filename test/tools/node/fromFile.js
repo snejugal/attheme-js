@@ -1,10 +1,11 @@
 import test from "ava";
-import fromFile from "../../lib/tools/node/fromFile";
+import fromFile from "../../../lib/tools/node/fromFile";
 import jimp from "jimp";
 import path from "path";
 
-test(`Reads the file properly`, async (t) => {
-  const theme = await fromFile(path.join(__dirname, `../exampleTheme.attheme`));
+test(`Reads the file in Node.js properly`, async (t) => {
+  const themePath = path.join(__dirname, `../../exampleTheme.attheme`);
+  const theme = await fromFile(themePath);
 
   const wallpaperBuffer = Buffer.from(theme.getWallpaper(), `binary`);
 
