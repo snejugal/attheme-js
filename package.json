@@ -19,10 +19,12 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "npx tsc --build",
-    "prepublish": "npm run build"
+    "test": "npm run build && npx ava test/**/*",
+    "prepublishOnly": "npm run test"
   },
   "devDependencies": {
     "@types/node": "^10.5.5",
+    "ava": "^0.25.0",
     "typescript": "^3.0.1"
   }
 }
