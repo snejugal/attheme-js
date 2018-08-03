@@ -1,12 +1,8 @@
 import checkType from "./checkType";
-import { Theme, Color, ColorSignature } from "./types";
+import { Theme, Color, ColorSignature, AtthemeOptions } from "./types";
 import parseContents from "./parseContents";
 import checkColor from "./checkColor";
 import serializeTheme from "./serializeTheme";
-
-interface Options {
-  defaultValues?: Theme;
-}
 
 class Attheme {
   private _variables: Theme = new Map();
@@ -20,7 +16,7 @@ class Attheme {
    * if not present in the parsed theme.
    * @throws {TypeError} If any of the provided arguments is of a wrong type.
    */
-  constructor(contents?: string | null, options: Options | null = {}) {
+  constructor(contents?: string | null, options: AtthemeOptions | null = {}) {
     checkType({
       variable: contents,
       types: [`string`],
