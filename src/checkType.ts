@@ -22,7 +22,12 @@ const checkType = ({
   argumentName,
   nullOrUndefined = true,
 }: CheckTypeArguments): void => {
-  const throwError = () => {
+  /**
+   * Throws an error that the type is wrong.
+   * @param variableType The variable type.
+   * @throws Always.
+   */
+  const throwError = (variableType: string) => {
     throw new TypeError(`The ${argumentName} argument to ${functionName} is of ${variableType} type, but it must be one of these types: ${types.join(`, `)}${nullOrUndefined ? `, null or undefined` : ``}.`);
   };
 
@@ -30,7 +35,7 @@ const checkType = ({
     if (nullOrUndefined) {
       return;
     } else {
-      throwError();
+      throwError(variable === null ? `null` : `undefined`);
     }
   }
 
@@ -46,7 +51,7 @@ const checkType = ({
     }
   }
 
-  throwError();
+  throwError(variableType);
 };
 
 export default checkType;
