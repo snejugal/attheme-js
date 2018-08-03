@@ -7,21 +7,25 @@ interface ParseThemeResult {
 
 /**
  * Parses the color from a string.
- * @param value The value with the color.
+ * @param trimmedValue The value with the color.
  * @throws {SyntaxError} The color is invalid.
  * @returns The parsed color.
  */
 const parseValue = (value: string): Color => {
-  if (/^(#[\da-f]{6}|#[\da-f]{8}|[-\d])$/i.test(value)) {
-    throw new SyntaxError(`The color is invalid: ${value}`);
+  const trimmedValue = value.trim();
+
+  if (!/#[\da-f]{6}|#[\da-f]{8}|-{0,1}[\d]+/i.test(trimmedValue)) {
+    throw new SyntaxError(`The color is invalid: ${trimmedValue}`);
   }
 
   let hex: string;
 
-  if (value.startsWith(`#`)) {
-    hex = value.slice(1).padStart(8, `f`);
+  if (trimmedValue.startsWith(`#`)) {
+    hex = trimmedValue.slice(1).padStart(8, `f`);
   } else {
-    hex = (Number.parseInt(value, 10) >>> 0).toString(16).padStart(8, `0`);
+    const unfoledValue = Number.parseInt(trimmedValue, 10) >>> 0;
+
+    hex = unfoledValue.toString(16).padStart(8, `0`);
   }
 
   return {
@@ -47,6 +51,8 @@ const parseContents = (contents: string): ParseThemeResult => {
   for (const rawLine of lines) {
     if (`wallpaper` in result) {
       if (rawLine.startsWith(`WPE`)) {
+        // Cutting off the last \n
+        result.wallpaper = (result.wallpaper as string).slice(0, -1);
         break;
       } else {
         result.wallpaper += `${rawLine}\n`;
