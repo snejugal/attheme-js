@@ -14,7 +14,7 @@ interface ObjectTheme {
  * @param theme The new Attheme instance.
  * @returns An object compatible with the old versions of attheme-js.
  */
-const themeToObject = (theme: Attheme): object => {
+const themeToObject = (theme: Attheme): ObjectTheme => {
   let object: ObjectTheme = {};
 
   for (const [variable, value] of theme) {
