@@ -44,7 +44,7 @@ class Attheme {
         && options.defaultValues !== undefined
       ) {
         for (const [variable, value] of options.defaultValues) {
-          this.setVariable(variable, value);
+          this.setVariable(variable, { ...value });
         }
       }
     }
@@ -151,7 +151,9 @@ class Attheme {
       nullOrUndefined: false,
     });
 
-    return this._variables.get(variable);
+    const value = this._variables.get(variable);
+
+    return value === undefined ? null : { ...value };
   }
 
   /**
@@ -174,7 +176,7 @@ class Attheme {
       argumentName: `value`,
     });
 
-    this._variables.set(variable, value);
+    this._variables.set(variable, { ...value });
   }
 
   /**
@@ -193,8 +195,11 @@ class Attheme {
     return [...this._variables.keys()];
   }
 
-  [Symbol.iterator]() {
-    return this._variables.entries();
+  *[Symbol.iterator]() {
+    for (const [variable, value] of this._variables) {
+      const entry: [string, Color] = [variable, { ...value }];
+      yield entry;
+    }
   }
 
   /**
