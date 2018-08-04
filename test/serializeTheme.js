@@ -14,7 +14,7 @@ test(`Serializes the theme correctly`, async (t) => {
 
   const wallpaper = `it's my life
 it's now or never
-i don't wanna live for ever
+i ain't gonna live for ever
 i just wanna live while i'm alive`
 
   theme.setWallpaper(wallpaper);
