@@ -16,7 +16,7 @@ class Attheme {
    * if not present in the parsed theme.
    * @throws {TypeError} If any of the provided arguments is of a wrong type.
    */
-  constructor(contents?: string | null, options: AtthemeOptions | null = {}) {
+  constructor(contents: string | null = ``, options: AtthemeOptions | null = {}) {
     checkType({
       variable: contents,
       types: [`string`],
@@ -49,17 +49,19 @@ class Attheme {
       }
     }
 
-    const { variables, wallpaper } = parseContents(contents as string);
+    if (typeof contents === `string`) {
+      const { variables, wallpaper } = parseContents(contents);
 
-    for (const [variable, value] of variables) {
-      // this.setVariable dynamically checks types, but here they are
-      // guarantred to be valid, and all that type checking will only slow
-      // down this loop.
-      this._variables.set(variable, value);
-    }
+      for (const [variable, value] of variables) {
+        // this.setVariable dynamically checks types, but here they are
+        // guarantred to be valid, and all that type checking will only slow
+        // down this loop.
+        this._variables.set(variable, value);
+      }
 
-    if (typeof wallpaper === `string`) {
-      this._wallpaper = wallpaper;
+      if (typeof wallpaper === `string`) {
+        this._wallpaper = wallpaper;
+      }
     }
   }
 
