@@ -203,7 +203,7 @@ class Attheme {
   }
 
   /**
-   * Serialized the theme.
+   * Serializes the theme.
    * @param colorSignature The way the colors should be serialized. hex" for
    * #aarrggbb and "int" for Java int color.
    * @returns The serialized theme.
