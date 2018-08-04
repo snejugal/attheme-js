@@ -10,7 +10,7 @@ A package for working with .attheme files in JavaScript. It fully supports the
 ## Installing
 
 ```bash
-npm install --save attheme-js
+npm i attheme-js
 ```
 
 ## Usage
@@ -49,7 +49,7 @@ WPE
 */
 ```
 
-For API documentation and tools `attheme-js` provides out of the box, please see [the documentation section on our Wiki][documentation].
+For the API documentation and tools `attheme-js` provides out of the box, please see [the documentation section on our Wiki][documentation].
 
 [documentation]: https://github.com/SnejUgal/attheme-js/wiki/Documentation
 [migration]: https://github.com/SnejUgal/attheme-js/wiki/Migration
