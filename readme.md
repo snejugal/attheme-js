@@ -1,64 +1,55 @@
-# attheme-js
-A small framework for working with .attheme files in JS.
-# Supports
-- `Signed int` as a variable value;
-- Hex (`#rrggbb` and `#aarrggbb`) as a variable value;
-- Image wallpapers.
+# `attheme-js`
+
+A package for working with .attheme files in JavaScript. It fully supports the
+.attheme format.
+
+> **Important note:** attheme-js@2.0.0 is completely rewritten and is
+> incompatible with old versions. Please see
+> [the Wiki for migration][migration].
 
 ## Installing
-You can either install `attheme-js` package from npm:
-```
+
+```bash
 npm install --save attheme-js
 ```
-or download the framework from the “Releases” section.
-## Node.js
-Require the `attheme-js` module:
-```js
-const Attheme = require("attheme-js");
-```
-## Browsers
-Add a new `<script>` tag to your HTML:
-```html
-<script src="path/to/attheme.min.js"></script>
-```
-If you install the framework from npm, the path is `node_modules/attheme-js/dist/attheme.min.js`.
+
 ## Usage
-### Creating an empty theme
+
 ```js
-const emptyTheme = new Attheme();
-```
-### Creating a theme with an uploaded file's content
-```js
-const themeContent =
-        `windowbackgroundWhite=#012226
-         actionBarDefault=-3047847`;
-const theme = new Attheme(themeContent);
-```
-### Changing theme's data
-```js
-theme.actionBarDefaultIcon = {
-  red: 76,
-  blue: 175,
-  green: 80,
-  alpha: 128
-};
-theme.actionBarDefault.red = 244;
-```
-### Get the theme's content for saving
-```js
-const themeContent = theme.asText();
-/*
-windowBackgroundWhite=#012226
-actionBarDefault=#d17e59
+import Attheme from "attheme-js";
+
+const theme = new Attheme(`
+divider=#000000
+checkbox=-1
+
+WPS
+Pretend there is a cats wallpaper here
+WPE
+`);
+
+console.log(theme.getVariable(`divider`)); // { red: 0, green: 0, blue: 0, alpha: 255 }
+theme.setVariable(`checkbox`, {
+  red: 255,
+  green: 146,
+  blue: 13,
+  alpha: 7,
+});
+console.log(theme.getVariable(`checkbox`)); // { red: 255, green: 146, blue: 13, alpha: 7 }
+
+console.log(theme.getWallpaper()); // Pretend there is a cats wallpaper here
+
+console.log(String(theme)); /*
+divider=#ff000000
+checkbox=#ffffffff
+
+WPS
+Pretend there is a cats wallpaper here
+WPE
 
 */
 ```
-### Getting theme's wallapeper
-```js
-const themeWallpaper = theme[Attheme.IMAGE_KEY];
-```
-## Documentatiom
-See the [documentation](https://github.com/SnejUgal/attheme-js/wiki/Documentation) here.
-## Helpful stuff
-- [Reading a theme file correctly in browsers](https://github.com/SnejUgal/attheme-js/wiki/Reading-a-theme-file-properly-in-browsers)
-- [Default variables values](https://github.com/SnejUgal/attheme-js/wiki/Default-values-of-variables)
+
+For API documentation and tools `attheme-js` provides out of the box, please see [the documentation section on our Wiki][documentation].
+
+[documentation]: https://github.com/SnejUgal/attheme-js/wiki/Documentation
+[migration]: https://github.com/SnejUgal/attheme-js/wiki/Migration
