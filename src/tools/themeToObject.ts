@@ -26,7 +26,7 @@ const themeToObject = (theme: Attheme): object => {
   }
 
   if (theme.hasWallpaper()) {
-    object[IMAGE_KEY] = theme.getWallpaper();
+    object[IMAGE_KEY] = theme.getWallpaper() as string;
   }
 
   return object;

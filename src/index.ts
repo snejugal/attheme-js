@@ -70,7 +70,7 @@ class Attheme {
    * @returns The theme's wallpaper.
    */
   getWallpaper() {
-    return this._wallpaper;
+    return this._wallpaper ? this._wallpaper : null;
   }
 
   /**
