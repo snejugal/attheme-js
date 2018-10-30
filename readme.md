@@ -38,7 +38,7 @@ console.log(theme.get(`checkbox`)); // { red: 255, green: 146, blue: 13, alpha: 
 
 console.log(theme.getWallpaper()); // Pretend there is a cats wallpaper here
 
-console.log(String(theme)); /*
+console.log(theme.toString(`hex`)); /*
 divider=#ff000000
 checkbox=#ffffffff
 
