@@ -34,7 +34,7 @@ const serializeColor = (
  */
 const serializeTheme = (
   theme: Attheme,
-  colorSignature: ColorSignature = `hex`,
+  colorSignature: ColorSignature = `int`,
 ): string => {
   let result = ``;
 
