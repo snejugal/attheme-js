@@ -4,7 +4,7 @@ import * as fs from "fs";
 import Attheme from "../..";
 import { AtthemeOptions } from "../../types";
 
-export default (
+const fromFile = (
   path: string,
   options?: AtthemeOptions,
 ): Promise<Attheme> => new Promise((resolve, reject) => {
@@ -16,3 +16,5 @@ export default (
     }
   });
 });
+
+export default fromFile;

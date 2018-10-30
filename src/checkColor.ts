@@ -16,7 +16,7 @@ const CHANNELS = [`red`, `green`, `blue`, `alpha`];
  * @param param0.argumentName The argument name for the error message.
  * @throws The color is invalid.
  */
-export default ({
+const checkColor = ({
   color,
   functionName,
   argumentName,
@@ -59,3 +59,5 @@ export default ({
     }
   }
 };
+
+export default checkColor;
