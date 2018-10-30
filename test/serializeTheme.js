@@ -5,7 +5,7 @@ import Attheme from "../lib";
 test(`Serializes the theme correctly`, async (t) => {
   const theme = new Attheme();
 
-  theme.setVariable(`divider`, {
+  theme.set(`divider`, {
     red: 0xff,
     green: 0xff,
     blue: 0xff,
@@ -15,7 +15,7 @@ test(`Serializes the theme correctly`, async (t) => {
   const wallpaper = `it's my life
 it's now or never
 i ain't gonna live for ever
-i just wanna live while i'm alive`
+i just wanna live while i'm alive`;
 
   theme.setWallpaper(wallpaper);
 

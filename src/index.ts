@@ -4,7 +4,7 @@ import parseContents from "./parseContents";
 import checkColor from "./checkColor";
 import serializeTheme from "./serializeTheme";
 
-class Attheme {
+export default class Attheme {
   private _variables: Theme = new Map();
   private _wallpaper: string;
 
@@ -44,7 +44,7 @@ class Attheme {
         && options.defaultValues !== undefined
       ) {
         for (const [variable, value] of options.defaultValues) {
-          this.setVariable(variable, { ...value });
+          this.set(variable, { ...value });
         }
       }
     }
@@ -109,7 +109,7 @@ class Attheme {
    * @param variable The varialbe to check existence of.
    * @returns Whehter the theme has the variable.
    */
-  hasVariable(variable: string) {
+  has(variable: string) {
     checkType({
       variable: variable,
       types: [`string`],
@@ -125,7 +125,7 @@ class Attheme {
    * Deletes the variable.
    * @param variable The variable to delete.
    */
-  deleteVariable(variable: string) {
+  delete(variable: string) {
     checkType({
       variable: variable,
       types: [`string`],
@@ -142,7 +142,7 @@ class Attheme {
    * @param variable The variable to get value of.
    * @returns The value of the variable.
    */
-  getVariable(variable: string) {
+  get(variable: string) {
     checkType({
       variable: variable,
       types: [`string`],
@@ -161,7 +161,7 @@ class Attheme {
    * @param variable The variable to set.
    * @param value The value of the variable.
    */
-  setVariable(variable: string, value: Color) {
+  set(variable: string, value: Color) {
     checkType({
       variable: variable,
       types: [`string`],
@@ -212,5 +212,3 @@ class Attheme {
     return serializeTheme(this, colorSignature);
   }
 }
-
-export default Attheme;
