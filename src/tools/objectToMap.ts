@@ -4,10 +4,8 @@
  * @param object The old theme object to convert.
  * @return The map compatible with the new API.
  */
-const objectToMap = (object: object): Map<string, any> => (
+export default (object: object): Map<string, any> => (
   new Map([
     ...Object.entries(object),
   ])
 );
-
-export default objectToMap;

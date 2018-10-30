@@ -41,7 +41,7 @@ const parseValue = (value: string): Color => {
  * @param contents The .attheme contents to parse.
  * @returns The parsed contents.
  */
-const parseContents = (contents: string): ParseThemeResult => {
+export default (contents: string): ParseThemeResult => {
   const result: ParseThemeResult = {
     variables: new Map(),
   };
@@ -84,5 +84,3 @@ const parseContents = (contents: string): ParseThemeResult => {
 
   return result;
 };
-
-export default parseContents;

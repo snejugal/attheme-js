@@ -15,7 +15,7 @@ interface CheckTypeArguments {
  * @param param0.nullOrUndefined Whether the variable can be null or undefined.
  * @throws The variable is of a wrong type.
  */
-const checkType = ({
+export default ({
   variable,
   types,
   functionName,
@@ -53,5 +53,3 @@ const checkType = ({
 
   throwError(variableType);
 };
-
-export default checkType;
