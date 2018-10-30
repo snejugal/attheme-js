@@ -183,16 +183,16 @@ test(`Variables-related methods work correctly`, (t) => {
     alpha: 0x40,
   };
 
-  t.false(theme.hasVariable(variable));
-  t.is(theme.getVariable(variable), null);
+  t.false(theme.has(variable));
+  t.is(theme.get(variable), null);
 
-  theme.setVariable(variable, color);
-  t.true(theme.hasVariable(variable));
-  t.deepEqual(theme.getVariable(variable), color);
+  theme.set(variable, color);
+  t.true(theme.has(variable));
+  t.deepEqual(theme.get(variable), color);
 
-  theme.deleteVariable(variable);
-  t.false(theme.hasVariable(variable));
-  t.is(theme.getVariable(variable), null);
+  theme.delete(variable);
+  t.false(theme.has(variable));
+  t.is(theme.get(variable), null);
 });
 
 test(`getVariablesAmount works correctly`, (t) => {
@@ -200,7 +200,7 @@ test(`getVariablesAmount works correctly`, (t) => {
 
   t.is(theme.getVariablesAmount(), 1);
 
-  theme.setVariable(`bar`, {
+  theme.set(`bar`, {
     red: 0,
     green: 0,
     blue: 0,
@@ -209,7 +209,7 @@ test(`getVariablesAmount works correctly`, (t) => {
 
   t.is(theme.getVariablesAmount(), 2);
 
-  theme.deleteVariable(`foo`);
+  theme.delete(`foo`);
   t.is(theme.getVariablesAmount(), 1);
 });
 
@@ -218,7 +218,7 @@ test(`getVariablesList works correctly`, (t) => {
 
   t.deepEqual(theme.getVariablesList(), [`foo`]);
 
-  theme.setVariable(`bar`, {
+  theme.set(`bar`, {
     red: 0,
     green: 0,
     blue: 0,
@@ -227,7 +227,7 @@ test(`getVariablesList works correctly`, (t) => {
 
   t.deepEqual(theme.getVariablesList(), [`foo`, `bar`]);
 
-  theme.deleteVariable(`foo`);
+  theme.delete(`foo`);
   t.deepEqual(theme.getVariablesList(), [`bar`]);
 });
 
@@ -260,56 +260,56 @@ test(`Methods check argument types`, (t) => {
   t.throws(() => theme.setWallpaper(Object(``)));
   t.throws(() => theme.setWallpaper());
 
-  t.notThrows(() => theme.setVariable(`foo`, {
+  t.notThrows(() => theme.set(`foo`, {
     red: 0,
     green: 0,
     blue: 0,
     alpha: 0,
   }));
-  t.throws(() => theme.setVariable());
-  t.throws(() => theme.setVariable(`foo`));
-  t.throws(() => theme.setVariable(Object(`foo`), {
+  t.throws(() => theme.set());
+  t.throws(() => theme.set(`foo`));
+  t.throws(() => theme.set(Object(`foo`), {
     red: 0,
     geeen: 0,
     blue: 0,
     alpha: 0,
   }));
-  t.throws(() => theme.setVariable(1, {
+  t.throws(() => theme.set(1, {
     red: 0,
     geeen: 0,
     blue: 0,
     alpha: 0,
   }));
-  t.throws(() => theme.setVariable(`foo`, {
+  t.throws(() => theme.set(`foo`, {
     red: -10,
     green: 0,
     blue: 10,
     alpha: 0,
   }));
-  t.throws(() => theme.setVariable(`foo`, {
+  t.throws(() => theme.set(`foo`, {
     red: 300,
     green: 0,
     blue: 10,
     alpha: 0,
   }));
-  t.throws(() => theme.setVariable(`foo`, {
+  t.throws(() => theme.set(`foo`, {
     red: 1.5,
     green: 0,
     blue: 10,
     alpha: 0,
   }));
-  t.throws(() => theme.setVariable(`foo`, {
+  t.throws(() => theme.set(`foo`, {
     red: 1.5,
     green: 0,
     blue: 10,
     alpha: 0,
   }));
-  t.throws(() => theme.setVariable(`foo`, {
+  t.throws(() => theme.set(`foo`, {
     green: 0,
     blue: 10,
     alpha: 0,
   }));
-  t.throws(() => theme.setVariable(`foo`, {
+  t.throws(() => theme.set(`foo`, {
     red: 100,
     green: 0,
     blue: 10,
@@ -317,20 +317,20 @@ test(`Methods check argument types`, (t) => {
     wtf: `??`,
   }));
 
-  t.notThrows(() => theme.getVariable(`foo`));
-  t.throws(() => theme.getVariable());
-  t.throws(() => theme.getVariable(Object(`foo`)));
-  t.throws(() => theme.getVariable(0));
+  t.notThrows(() => theme.get(`foo`));
+  t.throws(() => theme.get());
+  t.throws(() => theme.get(Object(`foo`)));
+  t.throws(() => theme.get(0));
 
-  t.notThrows(() => theme.deleteVariable(`foo`));
-  t.throws(() => theme.deleteVariable());
-  t.throws(() => theme.deleteVariable(Object(`foo`)));
-  t.throws(() => theme.deleteVariable(0));
+  t.notThrows(() => theme.delete(`foo`));
+  t.throws(() => theme.delete());
+  t.throws(() => theme.delete(Object(`foo`)));
+  t.throws(() => theme.delete(0));
 
-  t.notThrows(() => theme.hasVariable(`foo`));
-  t.throws(() => theme.hasVariable());
-  t.throws(() => theme.hasVariable(Object(`foo`)));
-  t.throws(() => theme.hasVariable(0));
+  t.notThrows(() => theme.has(`foo`));
+  t.throws(() => theme.has());
+  t.throws(() => theme.has(Object(`foo`)));
+  t.throws(() => theme.has(0));
 });
 
 test(`Copies color values`, (t) => {
@@ -347,10 +347,10 @@ test(`Copies color values`, (t) => {
   });
 
   t.not(theme._variables.get(`foo`), defaultValues.get(`foo`));
-  t.not(theme.getVariable(`foo`), theme._variables.get(`foo`));
+  t.not(theme.get(`foo`), theme._variables.get(`foo`));
 
   const anotherColor = { ...theme._variables.get(`foo`) };
 
-  theme.setVariable(`foo`, anotherColor);
+  theme.set(`foo`, anotherColor);
   t.not(theme._variables.get(`foo`), anotherColor);
 });

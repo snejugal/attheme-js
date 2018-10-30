@@ -27,14 +27,14 @@ Pretend there is a cats wallpaper here
 WPE
 `);
 
-console.log(theme.getVariable(`divider`)); // { red: 0, green: 0, blue: 0, alpha: 255 }
-theme.setVariable(`checkbox`, {
+console.log(theme.get(`divider`)); // { red: 0, green: 0, blue: 0, alpha: 255 }
+theme.set(`checkbox`, {
   red: 255,
   green: 146,
   blue: 13,
   alpha: 7,
 });
-console.log(theme.getVariable(`checkbox`)); // { red: 255, green: 146, blue: 13, alpha: 7 }
+console.log(theme.get(`checkbox`)); // { red: 255, green: 146, blue: 13, alpha: 7 }
 
 console.log(theme.getWallpaper()); // Pretend there is a cats wallpaper here
 
