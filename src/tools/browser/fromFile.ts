@@ -3,7 +3,7 @@
 import Attheme from "../..";
 import { AtthemeOptions } from "../../types";
 
-export default (
+const fromFile = (
   file: File,
   options?: AtthemeOptions,
 ): Promise<Attheme> => new Promise((resolve, reject) => {
@@ -25,3 +25,5 @@ export default (
 
   reader.readAsArrayBuffer(file);
 });
+
+export default fromFile;

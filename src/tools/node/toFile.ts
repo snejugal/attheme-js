@@ -11,7 +11,7 @@ import { ColorSignature } from "../../types";
  * @param colorSignature Either `hex` or `int`.
  * @returns Promised resolved when the file is written
  */
-export default (
+const toFile = (
   theme: Attheme,
   path: string,
   colorSignature?: ColorSignature,
@@ -24,3 +24,5 @@ export default (
     }
   });
 });
+
+export default toFile;

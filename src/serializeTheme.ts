@@ -32,7 +32,7 @@ const serializeColor = (
  * #aarrggbb and "int" for Java int color.
  * @returns The serialized theme.
  */
-export default (
+const serializeTheme = (
   theme: Attheme,
   colorSignature: ColorSignature = `hex`,
 ): string => {
@@ -50,3 +50,5 @@ export default (
 
   return result;
 };
+
+export default serializeTheme;

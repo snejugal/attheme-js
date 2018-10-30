@@ -10,7 +10,7 @@ import { ColorSignature } from "../../types";
  * @param colorSignature Either `hex` or `int`.
  * @returns The created blob the theme can be downloaded through.
  */
-export default (
+const toBlob = (
   theme: Attheme,
   name: string,
   colorSignature?: ColorSignature,
@@ -27,3 +27,5 @@ export default (
 
   return blob;
 };
+
+export default toBlob;
