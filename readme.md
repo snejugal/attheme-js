@@ -15,7 +15,7 @@ npm i attheme-js
 
 ## Usage
 
-```js
+```ts
 import Attheme from "attheme-js";
 
 const theme = new Attheme(`
