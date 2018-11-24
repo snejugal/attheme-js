@@ -1,5 +1,6 @@
 .vscode/
 src/
+scripts/
 test/
 .gitignore
 readme.md
