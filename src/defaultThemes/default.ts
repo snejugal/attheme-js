@@ -31,10 +31,10 @@ export default new Map<string, Color>([
     blue: 255,
     alpha: 255,
   }],
-  [`avatar_subtitleInProfilePink`, {
-    red: 215,
-    green: 234,
-    blue: 250,
+  [`passport_authorizeText`, {
+    red: 255,
+    green: 255,
+    blue: 255,
     alpha: 255,
   }],
   [`chat_emojiPanelTrendingDescription`, {
@@ -75,8 +75,8 @@ export default new Map<string, Color>([
   }],
   [`dialogTextBlue2`, {
     red: 58,
-    green: 140,
-    blue: 207,
+    green: 149,
+    blue: 213,
     alpha: 255,
   }],
   [`chat_inFileNameText`, {
@@ -111,8 +111,8 @@ export default new Map<string, Color>([
   }],
   [`windowBackgroundWhiteGreenText2`, {
     red: 55,
-    green: 169,
-    blue: 25,
+    green: 168,
+    blue: 24,
     alpha: 255,
   }],
   [`dialogCheckboxSquareDisabled`, {
@@ -157,6 +157,12 @@ export default new Map<string, Color>([
     blue: 232,
     alpha: 255,
   }],
+  [`contacts_inviteText`, {
+    red: 255,
+    green: 255,
+    blue: 255,
+    alpha: 255,
+  }],
   [`chat_mediaSentCheck`, {
     red: 255,
     green: 255,
@@ -191,6 +197,12 @@ export default new Map<string, Color>([
     red: 47,
     green: 52,
     blue: 56,
+    alpha: 255,
+  }],
+  [`chat_adminText`, {
+    red: 192,
+    green: 198,
+    blue: 203,
     alpha: 255,
   }],
   [`chats_sentError`, {
@@ -265,6 +277,12 @@ export default new Map<string, Color>([
     blue: 0,
     alpha: 25,
   }],
+  [`dialogTopBackground`, {
+    red: 111,
+    green: 178,
+    blue: 229,
+    alpha: 255,
+  }],
   [`chat_inVoiceSeekbar`, {
     red: 222,
     green: 229,
@@ -301,12 +319,6 @@ export default new Map<string, Color>([
     blue: 173,
     alpha: 255,
   }],
-  [`avatar_actionBarIconViolet`, {
-    red: 255,
-    green: 255,
-    blue: 255,
-    alpha: 255,
-  }],
   [`chat_topPanelLine`, {
     red: 108,
     green: 159,
@@ -329,6 +341,12 @@ export default new Map<string, Color>([
     red: 205,
     green: 90,
     blue: 90,
+    alpha: 255,
+  }],
+  [`chat_attachHideIcon`, {
+    red: 255,
+    green: 255,
+    blue: 255,
     alpha: 255,
   }],
   [`chat_outLoaderPhotoIcon`, {
@@ -385,6 +403,12 @@ export default new Map<string, Color>([
     blue: 199,
     alpha: 255,
   }],
+  [`chats_menuItemCheck`, {
+    red: 89,
+    green: 143,
+    blue: 186,
+    alpha: 255,
+  }],
   [`featuredStickers_delButton`, {
     red: 217,
     green: 87,
@@ -397,10 +421,10 @@ export default new Map<string, Color>([
     blue: 0,
     alpha: 153,
   }],
-  [`avatar_subtitleInProfileCyan`, {
-    red: 184,
-    green: 226,
-    blue: 240,
+  [`chat_inContactPhoneSelectedText`, {
+    red: 47,
+    green: 52,
+    blue: 56,
     alpha: 255,
   }],
   [`avatar_nameInMessageGreen`, {
@@ -421,10 +445,22 @@ export default new Map<string, Color>([
     blue: 114,
     alpha: 255,
   }],
+  [`chat_outAudioCacheSeekbar`, {
+    red: 187,
+    green: 227,
+    blue: 172,
+    alpha: 63,
+  }],
   [`chat_inReplyNameText`, {
     red: 58,
     green: 140,
     blue: 207,
+    alpha: 255,
+  }],
+  [`chat_attachFileBackground`, {
+    red: 52,
+    green: 160,
+    blue: 244,
     alpha: 255,
   }],
   [`chats_nameIcon`, {
@@ -443,6 +479,12 @@ export default new Map<string, Color>([
     red: 242,
     green: 242,
     blue: 242,
+    alpha: 255,
+  }],
+  [`chat_inMediaIcon`, {
+    red: 255,
+    green: 255,
+    blue: 255,
     alpha: 255,
   }],
   [`chat_inLocationBackground`, {
@@ -491,6 +533,12 @@ export default new Map<string, Color>([
     red: 137,
     green: 180,
     blue: 193,
+    alpha: 255,
+  }],
+  [`chat_attachCameraIcon4`, {
+    red: 180,
+    green: 85,
+    blue: 224,
     alpha: 255,
   }],
   [`chats_unreadCounter`, {
@@ -553,12 +601,6 @@ export default new Map<string, Color>([
     blue: 235,
     alpha: 255,
   }],
-  [`avatar_actionBarIconOrange`, {
-    red: 255,
-    green: 255,
-    blue: 255,
-    alpha: 255,
-  }],
   [`dialogScrollGlow`, {
     red: 245,
     green: 246,
@@ -578,9 +620,21 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`windowBackgroundWhiteBlueHeader`, {
-    red: 62,
-    green: 144,
-    blue: 207,
+    red: 58,
+    green: 149,
+    blue: 213,
+    alpha: 255,
+  }],
+  [`chats_mentionIcon`, {
+    red: 255,
+    green: 255,
+    blue: 255,
+    alpha: 255,
+  }],
+  [`dialogTextRed2`, {
+    red: 234,
+    green: 29,
+    blue: 29,
     alpha: 255,
   }],
   [`chat_mediaLoaderPhotoSelected`, {
@@ -588,6 +642,12 @@ export default new Map<string, Color>([
     green: 0,
     blue: 0,
     alpha: 127,
+  }],
+  [`chat_attachCameraIcon3`, {
+    red: 67,
+    green: 169,
+    blue: 242,
+    alpha: 255,
   }],
   [`returnToCallBackground`, {
     red: 68,
@@ -605,12 +665,6 @@ export default new Map<string, Color>([
     red: 255,
     green: 255,
     blue: 255,
-    alpha: 255,
-  }],
-  [`avatar_backgroundInProfileOrange`, {
-    red: 246,
-    green: 157,
-    blue: 97,
     alpha: 255,
   }],
   [`actionBarDefaultSubtitle`, {
@@ -643,13 +697,13 @@ export default new Map<string, Color>([
     blue: 240,
     alpha: 255,
   }],
-  [`switchThumbChecked`, {
-    red: 69,
-    green: 171,
-    blue: 239,
+  [`dialog_liveLocationProgress`, {
+    red: 53,
+    green: 159,
+    blue: 229,
     alpha: 255,
   }],
-  [`avatar_actionBarIconPink`, {
+  [`dialogCameraIcon`, {
     red: 255,
     green: 255,
     blue: 255,
@@ -660,6 +714,12 @@ export default new Map<string, Color>([
     green: 169,
     blue: 227,
     alpha: 51,
+  }],
+  [`chat_attachCameraIcon1`, {
+    red: 255,
+    green: 125,
+    blue: 48,
+    alpha: 255,
   }],
   [`dialogRoundCheckBoxCheck`, {
     red: 255,
@@ -703,16 +763,34 @@ export default new Map<string, Color>([
     blue: 91,
     alpha: 255,
   }],
+  [`chat_emojiPanelBadgeText`, {
+    red: 255,
+    green: 255,
+    blue: 255,
+    alpha: 255,
+  }],
   [`chats_actionBackground`, {
     red: 106,
     green: 161,
     blue: 206,
     alpha: 255,
   }],
+  [`chat_shareBackgroundSelected`, {
+    red: 114,
+    green: 143,
+    blue: 166,
+    alpha: 153,
+  }],
   [`chats_date`, {
     red: 153,
     green: 153,
     blue: 153,
+    alpha: 255,
+  }],
+  [`chat_attachCameraIcon5`, {
+    red: 97,
+    green: 208,
+    blue: 97,
     alpha: 255,
   }],
   [`stickers_menu`, {
@@ -745,6 +823,18 @@ export default new Map<string, Color>([
     blue: 255,
     alpha: 255,
   }],
+  [`chats_actionUnreadPressedBackground`, {
+    red: 242,
+    green: 242,
+    blue: 242,
+    alpha: 255,
+  }],
+  [`chat_attachContactBackground`, {
+    red: 62,
+    green: 191,
+    blue: 250,
+    alpha: 255,
+  }],
   [`chat_inFileProgressSelected`, {
     red: 203,
     green: 234,
@@ -755,6 +845,18 @@ export default new Map<string, Color>([
     red: 153,
     green: 153,
     blue: 153,
+    alpha: 255,
+  }],
+  [`chats_actionUnreadBackground`, {
+    red: 255,
+    green: 255,
+    blue: 255,
+    alpha: 255,
+  }],
+  [`chat_emojiPanelStickerSetNameIcon`, {
+    red: 177,
+    green: 182,
+    blue: 188,
     alpha: 255,
   }],
   [`chat_outVenueInfoSelectedText`, {
@@ -829,6 +931,12 @@ export default new Map<string, Color>([
     blue: 238,
     alpha: 255,
   }],
+  [`chat_inAudioPerfomerSelectedText`, {
+    red: 47,
+    green: 52,
+    blue: 56,
+    alpha: 255,
+  }],
   [`windowBackgroundWhiteRedText3`, {
     red: 210,
     green: 73,
@@ -839,6 +947,12 @@ export default new Map<string, Color>([
     red: 245,
     green: 246,
     blue: 247,
+    alpha: 255,
+  }],
+  [`chat_outContactPhoneSelectedText`, {
+    red: 53,
+    green: 66,
+    blue: 52,
     alpha: 255,
   }],
   [`actionBarDefaultTitle`, {
@@ -871,16 +985,22 @@ export default new Map<string, Color>([
     blue: 201,
     alpha: 255,
   }],
+  [`contacts_inviteBackground`, {
+    red: 85,
+    green: 190,
+    blue: 97,
+    alpha: 255,
+  }],
   [`chat_recordedVoiceProgress`, {
     red: 162,
     green: 206,
     blue: 248,
     alpha: 255,
   }],
-  [`avatar_actionBarSelectorCyan`, {
-    red: 57,
-    green: 132,
-    blue: 157,
+  [`chat_attachCameraIcon6`, {
+    red: 254,
+    green: 193,
+    blue: 37,
     alpha: 255,
   }],
   [`windowBackgroundWhiteGrayText4`, {
@@ -905,6 +1025,12 @@ export default new Map<string, Color>([
     red: 58,
     green: 140,
     blue: 207,
+    alpha: 255,
+  }],
+  [`avatar_backgroundSaved`, {
+    red: 102,
+    green: 191,
+    blue: 250,
     alpha: 255,
   }],
   [`dialogTextLink`, {
@@ -991,16 +1117,16 @@ export default new Map<string, Color>([
     blue: 178,
     alpha: 255,
   }],
+  [`chat_shareBackground`, {
+    red: 114,
+    green: 143,
+    blue: 166,
+    alpha: 102,
+  }],
   [`contextProgressOuter1`, {
     red: 43,
     green: 150,
     blue: 226,
-    alpha: 255,
-  }],
-  [`avatar_subtitleInProfileViolet`, {
-    red: 205,
-    green: 196,
-    blue: 237,
     alpha: 255,
   }],
   [`chat_outAudioSelectedProgress`, {
@@ -1034,15 +1160,21 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`windowBackgroundWhiteGrayIcon`, {
-    red: 115,
-    green: 115,
-    blue: 115,
+    red: 129,
+    green: 134,
+    blue: 139,
     alpha: 255,
   }],
   [`chat_sentError`, {
     red: 219,
     green: 53,
     blue: 53,
+    alpha: 255,
+  }],
+  [`passport_authorizeBackgroundSelected`, {
+    red: 64,
+    green: 157,
+    blue: 219,
     alpha: 255,
   }],
   [`avatar_backgroundInProfileBlue`, {
@@ -1075,12 +1207,6 @@ export default new Map<string, Color>([
     blue: 17,
     alpha: 204,
   }],
-  [`avatar_actionBarIconCyan`, {
-    red: 255,
-    green: 255,
-    blue: 255,
-    alpha: 255,
-  }],
   [`chat_outBroadcast`, {
     red: 70,
     green: 170,
@@ -1095,7 +1221,7 @@ export default new Map<string, Color>([
   }],
   [`windowBackgroundWhiteRedText5`, {
     red: 237,
-    green: 61,
+    green: 57,
     blue: 57,
     alpha: 255,
   }],
@@ -1226,9 +1352,15 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`windowBackgroundWhiteHintText`, {
-    red: 151,
-    green: 151,
-    blue: 151,
+    red: 168,
+    green: 168,
+    blue: 168,
+    alpha: 255,
+  }],
+  [`key_changephoneinfo_changeText`, {
+    red: 77,
+    green: 131,
+    blue: 179,
     alpha: 255,
   }],
   [`chat_outInstant`, {
@@ -1273,6 +1405,12 @@ export default new Map<string, Color>([
     blue: 179,
     alpha: 255,
   }],
+  [`chat_emojiPanelStickerSetName`, {
+    red: 131,
+    green: 140,
+    blue: 150,
+    alpha: 255,
+  }],
   [`actionBarDefaultIcon`, {
     red: 255,
     green: 255,
@@ -1291,22 +1429,16 @@ export default new Map<string, Color>([
     blue: 79,
     alpha: 255,
   }],
-  [`avatar_actionBarSelectorPink`, {
-    red: 73,
-    green: 129,
-    blue: 173,
-    alpha: 255,
-  }],
-  [`avatar_backgroundInProfilePink`, {
-    red: 243,
-    green: 127,
-    blue: 166,
-    alpha: 255,
-  }],
   [`chats_menuPhoneCats`, {
     red: 194,
     green: 229,
     blue: 255,
+    alpha: 255,
+  }],
+  [`chat_attachVideoBackground`, {
+    red: 227,
+    green: 113,
+    blue: 121,
     alpha: 255,
   }],
   [`featuredStickers_addedIcon`, {
@@ -1321,6 +1453,12 @@ export default new Map<string, Color>([
     blue: 255,
     alpha: 255,
   }],
+  [`chat_outMediaIcon`, {
+    red: 239,
+    green: 255,
+    blue: 222,
+    alpha: 255,
+  }],
   [`chat_botKeyboardButtonBackgroundPressed`, {
     red: 204,
     green: 209,
@@ -1328,15 +1466,15 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`profile_creatorIcon`, {
-    red: 74,
-    green: 151,
-    blue: 214,
+    red: 58,
+    green: 149,
+    blue: 213,
     alpha: 255,
   }],
-  [`avatar_subtitleInProfileGreen`, {
-    red: 192,
-    green: 237,
-    blue: 186,
+  [`chat_attachSendBackground`, {
+    red: 62,
+    green: 191,
+    blue: 250,
     alpha: 255,
   }],
   [`calls_ratingStarSelected`, {
@@ -1345,34 +1483,16 @@ export default new Map<string, Color>([
     blue: 214,
     alpha: 255,
   }],
-  [`avatar_backgroundActionBarRed`, {
-    red: 202,
-    green: 96,
-    blue: 86,
-    alpha: 255,
-  }],
   [`windowBackgroundWhiteValueText`, {
-    red: 47,
-    green: 140,
-    blue: 201,
+    red: 58,
+    green: 149,
+    blue: 213,
     alpha: 255,
   }],
   [`chat_previewGameText`, {
     red: 255,
     green: 255,
     blue: 255,
-    alpha: 255,
-  }],
-  [`avatar_backgroundActionBarOrange`, {
-    red: 241,
-    green: 137,
-    blue: 68,
-    alpha: 255,
-  }],
-  [`avatar_actionBarSelectorOrange`, {
-    red: 230,
-    green: 116,
-    blue: 41,
     alpha: 255,
   }],
   [`actionBarActionModeDefaultIcon`, {
@@ -1393,10 +1513,28 @@ export default new Map<string, Color>([
     blue: 245,
     alpha: 255,
   }],
-  [`avatar_actionBarIconGreen`, {
+  [`chat_attachContactIcon`, {
     red: 255,
     green: 255,
     blue: 255,
+    alpha: 255,
+  }],
+  [`passport_authorizeBackground`, {
+    red: 69,
+    green: 171,
+    blue: 239,
+    alpha: 255,
+  }],
+  [`location_sendLiveLocationBackground`, {
+    red: 255,
+    green: 100,
+    blue: 100,
+    alpha: 255,
+  }],
+  [`chat_attachHideBackground`, {
+    red: 174,
+    green: 170,
+    blue: 184,
     alpha: 255,
   }],
   [`chats_muteIcon`, {
@@ -1417,10 +1555,10 @@ export default new Map<string, Color>([
     blue: 33,
     alpha: 255,
   }],
-  [`avatar_backgroundActionBarCyan`, {
-    red: 68,
-    green: 146,
-    blue: 172,
+  [`chat_attachAudioBackground`, {
+    red: 246,
+    green: 135,
+    blue: 81,
     alpha: 255,
   }],
   [`chat_topPanelClose`, {
@@ -1508,15 +1646,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`switchTrack`, {
-    red: 199,
-    green: 199,
-    blue: 199,
-    alpha: 255,
-  }],
-  [`avatar_subtitleInProfileOrange`, {
-    red: 253,
-    green: 221,
-    blue: 200,
+    red: 176,
+    green: 181,
+    blue: 186,
     alpha: 255,
   }],
   [`profile_adminIcon`, {
@@ -1543,6 +1675,12 @@ export default new Map<string, Color>([
     blue: 193,
     alpha: 255,
   }],
+  [`key_player_progressCachedBackground`, {
+    red: 0,
+    green: 0,
+    blue: 0,
+    alpha: 25,
+  }],
   [`chat_previewDurationText`, {
     red: 255,
     green: 255,
@@ -1562,9 +1700,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`windowBackgroundWhiteBlueText2`, {
-    red: 52,
-    green: 139,
-    blue: 193,
+    red: 58,
+    green: 149,
+    blue: 213,
     alpha: 255,
   }],
   [`chat_emojiPanelIconSelected`, {
@@ -1580,15 +1718,21 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`chats_menuItemIcon`, {
-    red: 115,
-    green: 115,
-    blue: 115,
+    red: 136,
+    green: 145,
+    blue: 152,
     alpha: 255,
   }],
   [`featuredStickers_addButton`, {
     red: 80,
     green: 168,
     blue: 235,
+    alpha: 255,
+  }],
+  [`chat_attachSendIcon`, {
+    red: 255,
+    green: 255,
+    blue: 255,
     alpha: 255,
   }],
   [`chat_inTimeText`, {
@@ -1609,6 +1753,12 @@ export default new Map<string, Color>([
     blue: 176,
     alpha: 255,
   }],
+  [`chat_emojiSearchBackground`, {
+    red: 231,
+    green: 235,
+    blue: 237,
+    alpha: 255,
+  }],
   [`chat_emojiPanelBackspace`, {
     red: 168,
     green: 168,
@@ -1621,10 +1771,28 @@ export default new Map<string, Color>([
     blue: 67,
     alpha: 255,
   }],
+  [`chat_emojiPanelBadgeBackground`, {
+    red: 77,
+    green: 166,
+    blue: 234,
+    alpha: 255,
+  }],
+  [`player_background`, {
+    red: 255,
+    green: 255,
+    blue: 255,
+    alpha: 255,
+  }],
   [`chat_outFileInfoSelectedText`, {
     red: 101,
     green: 176,
     blue: 91,
+    alpha: 255,
+  }],
+  [`key_graySectionText`, {
+    red: 138,
+    green: 138,
+    blue: 138,
     alpha: 255,
   }],
   [`chats_pinnedIcon`, {
@@ -1735,12 +1903,6 @@ export default new Map<string, Color>([
     blue: 51,
     alpha: 255,
   }],
-  [`avatar_actionBarSelectorRed`, {
-    red: 188,
-    green: 75,
-    blue: 65,
-    alpha: 255,
-  }],
   [`chat_mediaLoaderPhoto`, {
     red: 0,
     green: 0,
@@ -1763,12 +1925,6 @@ export default new Map<string, Color>([
     red: 255,
     green: 255,
     blue: 255,
-    alpha: 255,
-  }],
-  [`switchThumb`, {
-    red: 237,
-    green: 237,
-    blue: 237,
     alpha: 255,
   }],
   [`chats_tabletSelectedOverlay`, {
@@ -1843,6 +1999,12 @@ export default new Map<string, Color>([
     blue: 219,
     alpha: 255,
   }],
+  [`chat_attachVideoIcon`, {
+    red: 255,
+    green: 255,
+    blue: 255,
+    alpha: 255,
+  }],
   [`inappPlayerBackground`, {
     red: 255,
     green: 255,
@@ -1856,6 +2018,12 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`player_actionBar`, {
+    red: 255,
+    green: 255,
+    blue: 255,
+    alpha: 255,
+  }],
+  [`chat_attachGalleryIcon`, {
     red: 255,
     green: 255,
     blue: 255,
@@ -1963,17 +2131,17 @@ export default new Map<string, Color>([
     blue: 247,
     alpha: 255,
   }],
+  [`location_sendLiveLocationIcon`, {
+    red: 255,
+    green: 255,
+    blue: 255,
+    alpha: 255,
+  }],
   [`chat_messagePanelVoiceShadow`, {
     red: 0,
     green: 0,
     blue: 0,
     alpha: 13,
-  }],
-  [`avatar_backgroundInProfileCyan`, {
-    red: 86,
-    green: 162,
-    blue: 187,
-    alpha: 255,
   }],
   [`chat_messagePanelIcons`, {
     red: 168,
@@ -1991,12 +2159,6 @@ export default new Map<string, Color>([
     red: 191,
     green: 223,
     blue: 246,
-    alpha: 255,
-  }],
-  [`avatar_backgroundActionBarViolet`, {
-    red: 125,
-    green: 106,
-    blue: 196,
     alpha: 255,
   }],
   [`chat_emojiPanelIconSelector`, {
@@ -2021,12 +2183,6 @@ export default new Map<string, Color>([
     red: 255,
     green: 255,
     blue: 255,
-    alpha: 255,
-  }],
-  [`avatar_subtitleInProfileRed`, {
-    red: 249,
-    green: 203,
-    blue: 197,
     alpha: 255,
   }],
   [`chat_outLocationIcon`, {
@@ -2065,6 +2221,12 @@ export default new Map<string, Color>([
     blue: 207,
     alpha: 255,
   }],
+  [`location_placeLocationBackground`, {
+    red: 76,
+    green: 168,
+    blue: 234,
+    alpha: 255,
+  }],
   [`sessions_devicesImage`, {
     red: 150,
     green: 150,
@@ -2075,6 +2237,12 @@ export default new Map<string, Color>([
     red: 25,
     green: 177,
     blue: 38,
+    alpha: 255,
+  }],
+  [`chat_attachFileIcon`, {
+    red: 255,
+    green: 255,
+    blue: 255,
     alpha: 255,
   }],
   [`chat_outContactIcon`, {
@@ -2114,9 +2282,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`chat_emojiPanelEmptyText`, {
-    red: 136,
-    green: 136,
-    blue: 136,
+    red: 168,
+    green: 168,
+    blue: 168,
     alpha: 255,
   }],
   [`chat_inViews`, {
@@ -2177,12 +2345,6 @@ export default new Map<string, Color>([
     red: 0,
     green: 0,
     blue: 0,
-    alpha: 255,
-  }],
-  [`avatar_actionBarSelectorGreen`, {
-    red: 72,
-    green: 149,
-    blue: 61,
     alpha: 255,
   }],
   [`windowBackgroundWhiteGrayLine`, {
@@ -2251,6 +2413,12 @@ export default new Map<string, Color>([
     blue: 255,
     alpha: 255,
   }],
+  [`chat_attachLocationBackground`, {
+    red: 63,
+    green: 200,
+    blue: 122,
+    alpha: 255,
+  }],
   [`windowBackgroundWhiteLinkText`, {
     red: 38,
     green: 120,
@@ -2275,10 +2443,22 @@ export default new Map<string, Color>([
     blue: 79,
     alpha: 255,
   }],
+  [`chat_attachAudioIcon`, {
+    red: 255,
+    green: 255,
+    blue: 255,
+    alpha: 255,
+  }],
   [`chat_inBubbleSelected`, {
     red: 226,
     green: 248,
     blue: 255,
+    alpha: 255,
+  }],
+  [`switch2TrackChecked`, {
+    red: 82,
+    green: 173,
+    blue: 233,
     alpha: 255,
   }],
   [`chat_recordedVoicePlayPause`, {
@@ -2377,16 +2557,16 @@ export default new Map<string, Color>([
     blue: 0,
     alpha: 255,
   }],
-  [`avatar_backgroundActionBarGreen`, {
-    red: 86,
-    green: 161,
-    blue: 76,
+  [`player_placeholderBackground`, {
+    red: 240,
+    green: 240,
+    blue: 240,
     alpha: 255,
   }],
   [`switchTrackChecked`, {
-    red: 160,
-    green: 214,
-    blue: 250,
+    red: 82,
+    green: 173,
+    blue: 233,
     alpha: 255,
   }],
   [`windowBackgroundWhiteGrayText2`, {
@@ -2533,12 +2713,6 @@ export default new Map<string, Color>([
     blue: 91,
     alpha: 255,
   }],
-  [`avatar_backgroundActionBarPink`, {
-    red: 89,
-    green: 143,
-    blue: 186,
-    alpha: 255,
-  }],
   [`chat_outLoader`, {
     red: 120,
     green: 194,
@@ -2611,22 +2785,10 @@ export default new Map<string, Color>([
     blue: 172,
     alpha: 255,
   }],
-  [`avatar_backgroundInProfileRed`, {
-    red: 216,
-    green: 111,
-    blue: 101,
-    alpha: 255,
-  }],
-  [`avatar_backgroundInProfileViolet`, {
-    red: 140,
-    green: 121,
-    blue: 210,
-    alpha: 255,
-  }],
-  [`avatar_actionBarSelectorViolet`, {
-    red: 115,
-    green: 95,
-    blue: 190,
+  [`chat_adminSelectedText`, {
+    red: 137,
+    green: 180,
+    blue: 193,
     alpha: 255,
   }],
   [`chat_gifSaveHintText`, {
@@ -2670,6 +2832,12 @@ export default new Map<string, Color>([
     green: 33,
     blue: 33,
     alpha: 255,
+  }],
+  [`chat_inAudioCacheSeekbar`, {
+    red: 228,
+    green: 234,
+    blue: 240,
+    alpha: 63,
   }],
   [`chat_replyPanelIcons`, {
     red: 87,
@@ -2725,6 +2893,12 @@ export default new Map<string, Color>([
     blue: 219,
     alpha: 255,
   }],
+  [`dialogRedIcon`, {
+    red: 217,
+    green: 62,
+    blue: 62,
+    alpha: 255,
+  }],
   [`chat_mediaTimeBackground`, {
     red: 0,
     green: 0,
@@ -2735,6 +2909,12 @@ export default new Map<string, Color>([
     red: 197,
     green: 236,
     blue: 167,
+    alpha: 255,
+  }],
+  [`chats_actionUnreadIcon`, {
+    red: 115,
+    green: 115,
+    blue: 115,
     alpha: 255,
   }],
   [`groupcreate_hintText`, {
@@ -2779,16 +2959,16 @@ export default new Map<string, Color>([
     blue: 251,
     alpha: 255,
   }],
+  [`chat_attachCameraIcon2`, {
+    red: 235,
+    green: 88,
+    blue: 80,
+    alpha: 255,
+  }],
   [`groupcreate_checkbox`, {
     red: 94,
     green: 194,
     blue: 69,
-    alpha: 255,
-  }],
-  [`avatar_backgroundInProfileGreen`, {
-    red: 103,
-    green: 179,
-    blue: 93,
     alpha: 255,
   }],
   [`chat_topPanelTitle`, {
@@ -2827,6 +3007,12 @@ export default new Map<string, Color>([
     blue: 255,
     alpha: 255,
   }],
+  [`chat_inMediaIconSelected`, {
+    red: 226,
+    green: 248,
+    blue: 255,
+    alpha: 255,
+  }],
   [`picker_enabledButton`, {
     red: 25,
     green: 167,
@@ -2851,10 +3037,10 @@ export default new Map<string, Color>([
     blue: 87,
     alpha: 255,
   }],
-  [`avatar_actionBarIconRed`, {
-    red: 255,
-    green: 255,
-    blue: 255,
+  [`chat_attachGalleryBackground`, {
+    red: 164,
+    green: 122,
+    blue: 217,
     alpha: 255,
   }],
   [`avatar_backgroundPink`, {
@@ -2879,6 +3065,18 @@ export default new Map<string, Color>([
     red: 77,
     green: 166,
     blue: 234,
+    alpha: 255,
+  }],
+  [`chat_outAudioPerfomerSelectedText`, {
+    red: 53,
+    green: 66,
+    blue: 52,
+    alpha: 255,
+  }],
+  [`location_liveLocationProgress`, {
+    red: 53,
+    green: 159,
+    blue: 229,
     alpha: 255,
   }],
   [`player_actionBarTop`, {
@@ -2941,6 +3139,18 @@ export default new Map<string, Color>([
     blue: 192,
     alpha: 255,
   }],
+  [`chat_attachLocationIcon`, {
+    red: 255,
+    green: 255,
+    blue: 255,
+    alpha: 255,
+  }],
+  [`switch2Track`, {
+    red: 245,
+    green: 126,
+    blue: 126,
+    alpha: 255,
+  }],
   [`chat_outReplyMediaMessageSelectedText`, {
     red: 101,
     green: 176,
@@ -2977,430 +3187,16 @@ export default new Map<string, Color>([
     blue: 193,
     alpha: 255,
   }],
-  [`chat_botSwitchToInlineText`, {
-    red: 67,
-    green: 145,
-    blue: 204,
-    alpha: 255,
-  }],
-  [`chats_menuTopShadow`, {
-    red: 0,
-    green: 0,
-    blue: 0,
-    alpha: 64,
-  }],
-  [`chat_serviceBackground`, {
-    red: 0,
-    green: 0,
-    blue: 0,
-    alpha: 102,
-  }],
-  [`chat_serviceBackgroundSelected`, {
-    red: 0,
-    green: 0,
-    blue: 0,
-    alpha: 136,
-  }],
-  [`chat_wallpaper`, {
-    red: 0,
-    green: 0,
-    blue: 0,
-    alpha: 255,
-  }],
-  [`chat_emojiPanelStickerSetName`, {
-    red: 131,
-    green: 140,
-    blue: 150,
-    alpha: 255,
-  }],
-  [`chat_emojiPanelStickerSetNameIcon`, {
-    red: 177,
-    green: 182,
-    blue: 188,
-    alpha: 255,
-  }],
-  [`contacts_inviteText`, {
-    red: 255,
-    green: 255,
-    blue: 255,
-    alpha: 255,
-  }],
-  [`contacts_inviteBackground`, {
-    red: 85,
-    green: 190,
-    blue: 97,
-    alpha: 255,
-  }],
-  [`dialogTopBackground`, {
-    red: 111,
-    green: 178,
-    blue: 229,
-    alpha: 255,
-  }],
-  [`location_liveLocationProgress`, {
-    red: 53,
-    green: 159,
-    blue: 229,
-    alpha: 255,
-  }],
-  [`location_placeLocationBackground`, {
-    red: 76,
-    green: 168,
-    blue: 234,
-    alpha: 255,
-  }],
-  [`player_placeholderBackground`, {
-    red: 240,
-    green: 240,
-    blue: 240,
-    alpha: 255,
-  }],
-  [`player_background`, {
-    red: 255,
-    green: 255,
-    blue: 255,
-    alpha: 255,
-  }],
-  [`location_sendLiveLocationBackground`, {
-    red: 255,
-    green: 100,
-    blue: 100,
-    alpha: 255,
-  }],
-  [`chat_adminText`, {
-    red: 192,
-    green: 198,
-    blue: 203,
-    alpha: 255,
-  }],
-  [`chat_adminSelectedText`, {
-    red: 137,
-    green: 180,
-    blue: 193,
-    alpha: 255,
-  }],
-  [`avatar_backgroundSaved`, {
-    red: 102,
-    green: 191,
-    blue: 250,
-    alpha: 255,
-  }],
-  [`chats_menuItemCheck`, {
-    red: 89,
-    green: 143,
-    blue: 186,
-    alpha: 255,
-  }],
-  [`chat_outAudioCacheSeekbar`, {
-    red: 187,
-    green: 227,
-    blue: 172,
-    alpha: 63,
-  }],
-  [`key_player_progressCachedBackground`, {
-    red: 0,
-    green: 0,
-    blue: 0,
-    alpha: 25,
-  }],
-  [`chat_inAudioCacheSeekbar`, {
-    red: 228,
-    green: 234,
-    blue: 240,
-    alpha: 63,
-  }],
-  [`chat_emojiSearchBackground`, {
-    red: 231,
-    green: 235,
-    blue: 237,
-    alpha: 255,
-  }],
-  [`passport_authorizeText`, {
-    red: 255,
-    green: 255,
-    blue: 255,
-    alpha: 255,
-  }],
-  [`dialog_liveLocationProgress`, {
-    red: 53,
-    green: 159,
-    blue: 229,
-    alpha: 255,
-  }],
-  [`passport_authorizeBackgroundSelected`, {
-    red: 64,
-    green: 157,
-    blue: 219,
-    alpha: 255,
-  }],
-  [`passport_authorizeBackground`, {
-    red: 69,
-    green: 171,
-    blue: 239,
-    alpha: 255,
-  }],
-  [`switch2Thumb`, {
-    red: 219,
-    green: 88,
-    blue: 92,
-    alpha: 255,
-  }],
-  [`chat_attachHideIcon`, {
-    red: 255,
-    green: 255,
-    blue: 255,
-    alpha: 255,
-  }],
-  [`chat_attachFileBackground`, {
-    red: 52,
-    green: 160,
-    blue: 244,
-    alpha: 255,
-  }],
-  [`chat_inMediaIcon`, {
-    red: 255,
-    green: 255,
-    blue: 255,
-    alpha: 255,
-  }],
-  [`chat_attachCameraIcon4`, {
-    red: 180,
-    green: 85,
-    blue: 224,
-    alpha: 255,
-  }],
-  [`chats_mentionIcon`, {
-    red: 255,
-    green: 255,
-    blue: 255,
-    alpha: 255,
-  }],
-  [`chat_attachCameraIcon3`, {
-    red: 67,
-    green: 169,
-    blue: 242,
-    alpha: 255,
-  }],
-  [`switch2ThumbChecked`, {
-    red: 68,
-    green: 168,
-    blue: 234,
-    alpha: 255,
-  }],
-  [`chat_attachCameraIcon1`, {
-    red: 255,
-    green: 125,
-    blue: 48,
-    alpha: 255,
-  }],
-  [`chat_emojiPanelBadgeText`, {
-    red: 255,
-    green: 255,
-    blue: 255,
-    alpha: 255,
-  }],
-  [`chat_attachCameraIcon5`, {
-    red: 97,
-    green: 208,
-    blue: 97,
-    alpha: 255,
-  }],
-  [`chat_attachContactBackground`, {
-    red: 62,
-    green: 191,
-    blue: 250,
-    alpha: 255,
-  }],
-  [`chat_attachCameraIcon6`, {
-    red: 254,
-    green: 193,
-    blue: 37,
-    alpha: 255,
-  }],
-  [`switch2Check`, {
-    red: 255,
-    green: 255,
-    blue: 255,
-    alpha: 255,
-  }],
-  [`key_changephoneinfo_changeText`, {
-    red: 77,
-    green: 131,
-    blue: 179,
-    alpha: 255,
-  }],
-  [`chat_attachVideoBackground`, {
-    red: 227,
-    green: 113,
-    blue: 121,
-    alpha: 255,
-  }],
-  [`chat_outMediaIcon`, {
-    red: 239,
-    green: 255,
-    blue: 222,
-    alpha: 255,
-  }],
-  [`chat_attachSendBackground`, {
-    red: 62,
-    green: 191,
-    blue: 250,
-    alpha: 255,
-  }],
-  [`chat_attachContactIcon`, {
-    red: 255,
-    green: 255,
-    blue: 255,
-    alpha: 255,
-  }],
-  [`chat_attachHideBackground`, {
-    red: 174,
-    green: 170,
-    blue: 184,
-    alpha: 255,
-  }],
-  [`chat_attachAudioBackground`, {
-    red: 246,
-    green: 135,
-    blue: 81,
-    alpha: 255,
-  }],
-  [`chat_attachSendIcon`, {
-    red: 255,
-    green: 255,
-    blue: 255,
-    alpha: 255,
-  }],
-  [`chat_emojiPanelBadgeBackground`, {
-    red: 77,
-    green: 166,
-    blue: 234,
-    alpha: 255,
-  }],
-  [`key_graySectionText`, {
-    red: 138,
-    green: 138,
-    blue: 138,
-    alpha: 255,
-  }],
-  [`chat_attachVideoIcon`, {
-    red: 255,
-    green: 255,
-    blue: 255,
-    alpha: 255,
-  }],
-  [`chat_attachGalleryIcon`, {
-    red: 255,
-    green: 255,
-    blue: 255,
-    alpha: 255,
-  }],
-  [`location_sendLiveLocationIcon`, {
-    red: 255,
-    green: 255,
-    blue: 255,
-    alpha: 255,
-  }],
-  [`chat_attachFileIcon`, {
-    red: 255,
-    green: 255,
-    blue: 255,
-    alpha: 255,
-  }],
-  [`chat_attachLocationBackground`, {
-    red: 63,
-    green: 200,
-    blue: 122,
-    alpha: 255,
-  }],
-  [`chat_attachAudioIcon`, {
-    red: 255,
-    green: 255,
-    blue: 255,
-    alpha: 255,
-  }],
-  [`switch2TrackChecked`, {
-    red: 160,
-    green: 214,
-    blue: 250,
-    alpha: 255,
-  }],
-  [`chat_attachCameraIcon2`, {
-    red: 235,
-    green: 88,
-    blue: 80,
-    alpha: 255,
-  }],
-  [`chat_inMediaIconSelected`, {
-    red: 226,
-    green: 248,
-    blue: 255,
-    alpha: 255,
-  }],
-  [`chat_attachGalleryBackground`, {
-    red: 164,
-    green: 122,
-    blue: 217,
-    alpha: 255,
-  }],
-  [`switch2Track`, {
-    red: 255,
-    green: 176,
-    blue: 173,
-    alpha: 255,
-  }],
-  [`chat_attachLocationIcon`, {
-    red: 255,
-    green: 255,
-    blue: 255,
-    alpha: 255,
-  }],
   [`chat_outMediaIconSelected`, {
     red: 212,
     green: 245,
     blue: 188,
     alpha: 255,
   }],
-  [`chat_inContactPhoneSelectedText`, {
-    red: 47,
-    green: 52,
-    blue: 56,
-    alpha: 255,
-  }],
-  [`dialogCameraIcon`, {
-    red: 255,
-    green: 255,
-    blue: 255,
-    alpha: 255,
-  }],
-  [`chats_actionUnreadPressedBackground`, {
-    red: 242,
-    green: 242,
-    blue: 242,
-    alpha: 255,
-  }],
-  [`chats_actionUnreadBackground`, {
-    red: 255,
-    green: 255,
-    blue: 255,
-    alpha: 255,
-  }],
-  [`chat_inAudioPerfomerSelectedText`, {
-    red: 47,
-    green: 52,
-    blue: 56,
-    alpha: 255,
-  }],
-  [`chats_actionUnreadIcon`, {
-    red: 115,
-    green: 115,
-    blue: 115,
-    alpha: 255,
-  }],
-  [`chat_outAudioPerfomerSelectedText`, {
-    red: 53,
-    green: 66,
-    blue: 52,
+  [`chat_botSwitchToInlineText`, {
+    red: 67,
+    green: 145,
+    blue: 204,
     alpha: 255,
   }],
 ]);
