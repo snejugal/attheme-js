@@ -116,9 +116,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`switchTrack`, {
-    red: 46,
-    green: 62,
-    blue: 81,
+    red: 88,
+    green: 98,
+    blue: 110,
     alpha: 255,
   }],
   [`chat_inPreviewInstantSelectedText`, {
@@ -302,9 +302,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`chat_outFileIcon`, {
-    red: 55,
-    green: 114,
-    blue: 156,
+    red: 62,
+    green: 97,
+    blue: 137,
     alpha: 255,
   }],
   [`chat_inFileProgress`, {
@@ -1778,9 +1778,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`switchTrackChecked`, {
-    red: 64,
-    green: 109,
-    blue: 146,
+    red: 97,
+    green: 163,
+    blue: 215,
     alpha: 255,
   }],
   [`player_placeholderBackground`, {

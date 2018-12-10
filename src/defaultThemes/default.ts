@@ -127,6 +127,12 @@ export default new Map<string, Color>([
     blue: 255,
     alpha: 255,
   }],
+  [`groupcreate_spanDelete`, {
+    red: 255,
+    green: 255,
+    blue: 255,
+    alpha: 255,
+  }],
   [`chat_inBubble`, {
     red: 255,
     green: 255,
@@ -191,6 +197,12 @@ export default new Map<string, Color>([
     red: 255,
     green: 102,
     blue: 102,
+    alpha: 255,
+  }],
+  [`dialog_inlineProgress`, {
+    red: 107,
+    green: 115,
+    blue: 120,
     alpha: 255,
   }],
   [`player_actionBarTitle`, {
@@ -476,15 +488,21 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`graySection`, {
-    red: 242,
-    green: 242,
-    blue: 242,
+    red: 238,
+    green: 243,
+    blue: 245,
     alpha: 255,
   }],
   [`chat_inMediaIcon`, {
     red: 255,
     green: 255,
     blue: 255,
+    alpha: 255,
+  }],
+  [`sharedMedia_photoPlaceholder`, {
+    red: 245,
+    green: 245,
+    blue: 245,
     alpha: 255,
   }],
   [`chat_inLocationBackground`, {
@@ -506,9 +524,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`chat_emojiPanelTrendingTitle`, {
-    red: 33,
-    green: 33,
-    blue: 33,
+    red: 34,
+    green: 34,
+    blue: 34,
     alpha: 255,
   }],
   [`chat_outPreviewInstantText`, {
@@ -966,6 +984,12 @@ export default new Map<string, Color>([
     green: 180,
     blue: 232,
     alpha: 255,
+  }],
+  [`dialog_inlineProgressBackground`, {
+    red: 240,
+    green: 242,
+    blue: 245,
+    alpha: 246,
   }],
   [`dialogRoundCheckBox`, {
     red: 62,
@@ -1544,15 +1568,15 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`groupcreate_spanText`, {
-    red: 33,
-    green: 33,
-    blue: 33,
+    red: 34,
+    green: 34,
+    blue: 34,
     alpha: 255,
   }],
   [`windowBackgroundWhiteBlackText`, {
-    red: 33,
-    green: 33,
-    blue: 33,
+    red: 34,
+    green: 34,
+    blue: 34,
     alpha: 255,
   }],
   [`chat_attachAudioBackground`, {
@@ -1634,9 +1658,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`sharedMedia_linkPlaceholderText`, {
-    red: 255,
-    green: 255,
-    blue: 255,
+    red: 183,
+    green: 190,
+    blue: 195,
     alpha: 255,
   }],
   [`chat_outTimeText`, {
@@ -1742,9 +1766,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`avatar_backgroundGroupCreateSpanBlue`, {
-    red: 191,
-    green: 214,
-    blue: 234,
+    red: 230,
+    green: 239,
+    blue: 247,
     alpha: 255,
   }],
   [`checkboxSquareDisabled`, {
@@ -1790,9 +1814,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`key_graySectionText`, {
-    red: 138,
-    green: 138,
-    blue: 138,
+    red: 127,
+    green: 137,
+    blue: 145,
     alpha: 255,
   }],
   [`chats_pinnedIcon`, {
@@ -1838,9 +1862,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`fastScrollInactive`, {
-    red: 99,
-    green: 99,
-    blue: 99,
+    red: 201,
+    green: 205,
+    blue: 209,
     alpha: 255,
   }],
   [`chat_emojiPanelShadowLine`, {
@@ -2277,8 +2301,8 @@ export default new Map<string, Color>([
   }],
   [`sharedMedia_linkPlaceholder`, {
     red: 240,
-    green: 240,
-    blue: 240,
+    green: 243,
+    blue: 245,
     alpha: 255,
   }],
   [`chat_emojiPanelEmptyText`, {
@@ -2516,9 +2540,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`dialogTextBlack`, {
-    red: 33,
-    green: 33,
-    blue: 33,
+    red: 34,
+    green: 34,
+    blue: 34,
     alpha: 255,
   }],
   [`chat_inVoiceSeekbarSelected`, {
@@ -2582,9 +2606,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`profile_actionIcon`, {
-    red: 115,
-    green: 115,
-    blue: 115,
+    red: 129,
+    green: 134,
+    blue: 138,
     alpha: 255,
   }],
   [`chat_secretChatStatusText`, {
@@ -2666,9 +2690,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`chats_name`, {
-    red: 33,
-    green: 33,
-    blue: 33,
+    red: 34,
+    green: 34,
+    blue: 34,
     alpha: 255,
   }],
   [`chat_outBubble`, {
@@ -2828,9 +2852,9 @@ export default new Map<string, Color>([
     alpha: 128,
   }],
   [`actionBarDefaultSubmenuItem`, {
-    red: 33,
-    green: 33,
-    blue: 33,
+    red: 34,
+    green: 34,
+    blue: 34,
     alpha: 255,
   }],
   [`chat_inAudioCacheSeekbar`, {
@@ -3197,30 +3221,6 @@ export default new Map<string, Color>([
     red: 67,
     green: 145,
     blue: 204,
-    alpha: 255,
-  }],
-  [`chat_chats_menuTopShadow`, {
-    red: 0,
-    green: 0,
-    blue: 0,
-    alpha: 64,
-  }],
-  [`chat_serviceBackground`, {
-    red: 0,
-    green: 0,
-    blue: 0,
-    alpha: 102,
-  }],
-  [`chat_serviceBackgroundSelected`, {
-    red: 0,
-    green: 0,
-    blue: 0,
-    alpha: 136,
-  }],
-  [`chat_wallpaper`, {
-    red: 0,
-    green: 0,
-    blue: 0,
     alpha: 255,
   }],
 ]);
