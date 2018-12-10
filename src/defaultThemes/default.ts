@@ -1,7 +1,7 @@
 import { Color } from "../types";
 
 export default new Map<string, Color>([
-  [`chat_chats_menuTopShadow`, {
+  [`chats_menuTopShadow`, {
     red: 0,
     green: 0,
     blue: 0,
