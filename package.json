@@ -1,6 +1,6 @@
 {
   "name": "attheme-js",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "A small packagr for working with .attheme files in JavaScript.",
   "author": "SnejUgal <contact@snejugal.ru> (snejugal.ru)",
   "license": "MIT",
