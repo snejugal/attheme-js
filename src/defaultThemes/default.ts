@@ -3247,4 +3247,16 @@ export default new Map<string, Color>([
     blue: 204,
     alpha: 255,
   }],
+  [`chat_attachPollBackground`, {
+    red: 245,
+    green: 195,
+    blue: 77,
+    alpha: 255,
+  }],
+  [`chat_attachPollIcon`, {
+    red: 255,
+    green: 255,
+    blue: 255,
+    alpha: 255,
+  }],
 ]);
