@@ -58,7 +58,8 @@ export default class Attheme {
         // down this loop.
         this._variables.set(variable, value);
       }
-
+      this._variables = new Map([...this._variables.entries()].sort());
+      
       if (typeof wallpaper === `string`) {
         this._wallpaper = wallpaper;
       }
