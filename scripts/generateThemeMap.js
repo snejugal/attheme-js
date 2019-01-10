@@ -17,7 +17,7 @@ process.stdin.on(`end`, () => {
   console.log(``);
   console.log(`export default new Map<string, Color>([`);
 
-  for (const [variable, { red, green, blue, alpha }] of theme) {
+  for (const [variable, { red, green, blue, alpha }] of (new Map([...theme].sort()))) {
     console.log(`  [\`${variable}\`, {`);
     console.log(`    red: ${red},`);
     console.log(`    green: ${green},`);
