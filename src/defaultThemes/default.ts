@@ -3235,4 +3235,28 @@ export default new Map<string, Color>([
     blue: 255,
     alpha: 255,
   }],
+  [`chat_wallpaper`, {
+    red: 0,
+    green: 0,
+    blue: 0,
+    alpha: 255,
+  }],
+  [`chat_serviceBackground`, {
+    red: 0,
+    green: 0,
+    blue: 0,
+    alpha: 102,
+  }],
+  [`chat_serviceBackgroundSelected`, {
+    red: 0,
+    green: 0,
+    blue: 0,
+    alpha: 136,
+  }],
+  [`chats_menuTopShadow`, {
+    red: 0,
+    green: 0,
+    blue: 0,
+    alpha: 64,
+  }],
 ]);
