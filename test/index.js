@@ -231,6 +231,30 @@ test(`getVariablesList works correctly`, (t) => {
   t.deepEqual(theme.getVariablesList(), [`bar`]);
 });
 
+test(`sorts in places correctly`, (t) => {
+  const theme = new Attheme(`
+    divider=-1
+    checbox=0
+  `);
+
+  theme.sort();
+
+  t.deepEqual([...theme], [
+    [`checkbox`, {
+      red: 0,
+      green: 0,
+      blue: 0,
+      alpha: 0,
+    }],
+    [`divider`, {
+      red: 255,
+      green: 255,
+      blue: 255,
+      alpha: 255,
+    }],
+  ])
+});
+
 test(`Iterator works correctly`, (t) => {
   const theme = new Attheme(`
 foo=1

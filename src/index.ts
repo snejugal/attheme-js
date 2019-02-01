@@ -195,6 +195,15 @@ export default class Attheme {
     return [...this._variables.keys()];
   }
 
+  /**
+   * Sorts the theme's variables by their names in place.
+   */
+  sort() {
+    this._variables = new Map([...this._variables].sort(
+      ([a], [b]) => a.localeCompare(b),
+    ));
+  }
+
   *[Symbol.iterator]() {
     for (const [variable, value] of this._variables) {
       const entry: [string, Color] = [variable, { ...value }];
