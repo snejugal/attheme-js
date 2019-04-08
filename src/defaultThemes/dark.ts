@@ -2281,16 +2281,58 @@ export default new Map<string, Color>([
     blue: 97,
     alpha: 255,
   }],
+  [`switchTrackBlueChecked`, {
+    red: 165,
+    green: 216,
+    blue: 254,
+    alpha: 255,
+  }],
+  [`switchTrackBlueSelector`, {
+    red: 185,
+    green: 221,
+    blue: 250,
+    alpha: 25,
+  }],
+  [`switchTrackBlueSelectorChecked`, {
+    red: 140,
+    green: 215,
+    blue: 255,
+    alpha: 50,
+  }],
+  [`switchTrackBlueThumb`, {
+    red: 35,
+    green: 37,
+    blue: 39,
+    alpha: 255,
+  }],
+  [`switchTrackBlueThumbChecked`, {
+    red: 86,
+    green: 130,
+    blue: 173,
+    alpha: 255,
+  }],
   [`switchTrackChecked`, {
     red: 96,
     green: 153,
     blue: 209,
     alpha: 255,
   }],
+  [`windowBackgroundChecked`, {
+    red: 86,
+    green: 130,
+    blue: 173,
+    alpha: 255,
+  }],
   [`windowBackgroundGray`, {
     red: 24,
     green: 25,
     blue: 25,
+    alpha: 255,
+  }],
+  [`windowBackgroundUnchecked`, {
+    red: 35,
+    green: 37,
+    blue: 39,
     alpha: 255,
   }],
   [`windowBackgroundWhite`, {

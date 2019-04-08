@@ -2,9 +2,9 @@ import { Color } from "../types";
 
 export default new Map<string, Color>([
   [`actionBarActionModeDefault`, {
-    red: 33,
-    green: 45,
-    blue: 59,
+    red: 37,
+    green: 55,
+    blue: 76,
     alpha: 255,
   }],
   [`actionBarActionModeDefaultIcon`, {
@@ -1028,9 +1028,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`chat_outFileIcon`, {
-    red: 55,
-    green: 114,
-    blue: 156,
+    red: 62,
+    green: 97,
+    blue: 137,
     alpha: 255,
   }],
   [`chat_outFileInfoSelectedText`, {
@@ -1411,6 +1411,12 @@ export default new Map<string, Color>([
     blue: 174,
     alpha: 150,
   }],
+  [`chat_stickersHintPanel`, {
+    red: 42,
+    green: 51,
+    blue: 66,
+    alpha: 255,
+  }],
   [`chat_textSelectBackground`, {
     red: 98,
     green: 169,
@@ -1580,10 +1586,10 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`chats_pinnedOverlay`, {
-    red: 33,
-    green: 45,
-    blue: 59,
-    alpha: 255,
+    red: 255,
+    green: 255,
+    blue: 255,
+    alpha: 0,
   }],
   [`chats_secretIcon`, {
     red: 113,
@@ -1741,6 +1747,12 @@ export default new Map<string, Color>([
     blue: 121,
     alpha: 255,
   }],
+  [`dialogRedIcon`, {
+    red: 238,
+    green: 104,
+    blue: 111,
+    alpha: 222,
+  }],
   [`dialogRoundCheckBox`, {
     red: 100,
     green: 181,
@@ -1814,9 +1826,15 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`dialogTextRed`, {
-    red: 229,
-    green: 101,
-    blue: 101,
+    red: 238,
+    green: 104,
+    blue: 111,
+    alpha: 255,
+  }],
+  [`dialogTextRed2`, {
+    red: 238,
+    green: 104,
+    blue: 111,
     alpha: 255,
   }],
   [`divider`, {
@@ -1910,9 +1928,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`inappPlayerBackground`, {
-    red: 29,
-    green: 39,
-    blue: 51,
+    red: 33,
+    green: 45,
+    blue: 59,
     alpha: 255,
   }],
   [`inappPlayerClose`, {
@@ -1997,6 +2015,24 @@ export default new Map<string, Color>([
     red: 104,
     green: 163,
     blue: 215,
+    alpha: 255,
+  }],
+  [`passport_authorizeBackground`, {
+    red: 67,
+    green: 131,
+    blue: 186,
+    alpha: 255,
+  }],
+  [`passport_authorizeBackgroundSelected`, {
+    red: 78,
+    green: 147,
+    blue: 215,
+    alpha: 255,
+  }],
+  [`picker_disabledButton`, {
+    red: 87,
+    green: 109,
+    blue: 128,
     alpha: 255,
   }],
   [`player_actionBar`, {
@@ -2150,9 +2186,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`returnToCallBackground`, {
-    red: 29,
-    green: 39,
-    blue: 51,
+    red: 93,
+    green: 165,
+    blue: 231,
     alpha: 255,
   }],
   [`sharedMedia_linkPlaceholder`, {
@@ -2186,21 +2222,75 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`switchTrack`, {
-    red: 46,
-    green: 62,
-    blue: 81,
+    red: 88,
+    green: 98,
+    blue: 110,
+    alpha: 255,
+  }],
+  [`switchTrackBlue`, {
+    red: 88,
+    green: 98,
+    blue: 110,
+    alpha: 255,
+  }],
+  [`switchTrackBlueChecked`, {
+    red: 128,
+    green: 213,
+    blue: 255,
+    alpha: 255,
+  }],
+  [`switchTrackBlueSelector`, {
+    red: 185,
+    green: 221,
+    blue: 250,
+    alpha: 25,
+  }],
+  [`switchTrackBlueSelectorChecked`, {
+    red: 140,
+    green: 215,
+    blue: 255,
+    alpha: 50,
+  }],
+  [`switchTrackBlueThumb`, {
+    red: 29,
+    green: 39,
+    blue: 51,
+    alpha: 255,
+  }],
+  [`switchTrackBlueThumbChecked`, {
+    red: 78,
+    green: 129,
+    blue: 171,
     alpha: 255,
   }],
   [`switchTrackChecked`, {
-    red: 64,
-    green: 109,
-    blue: 146,
+    red: 97,
+    green: 163,
+    blue: 215,
+    alpha: 255,
+  }],
+  [`windowBackgroundChecked`, {
+    red: 78,
+    green: 129,
+    blue: 171,
+    alpha: 255,
+  }],
+  [`windowBackgroundCheckText`, {
+    red: 255,
+    green: 255,
+    blue: 255,
     alpha: 255,
   }],
   [`windowBackgroundGray`, {
     red: 21,
     green: 30,
     blue: 39,
+    alpha: 255,
+  }],
+  [`windowBackgroundUnchecked`, {
+    red: 29,
+    green: 39,
+    blue: 51,
     alpha: 255,
   }],
   [`windowBackgroundWhite`, {
