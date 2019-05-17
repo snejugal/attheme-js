@@ -14,9 +14,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`actionBarActionModeDefaultSelector`, {
-    red: 15,
-    green: 25,
-    blue: 35,
+    red: 62,
+    green: 93,
+    blue: 128,
     alpha: 122,
   }],
   [`actionBarActionModeDefaultTop`, {
@@ -31,6 +31,12 @@ export default new Map<string, Color>([
     blue: 59,
     alpha: 255,
   }],
+  [`actionBarDefaultArchived`, {
+    red: 46,
+    green: 56,
+    blue: 75,
+    alpha: 255,
+  }],
   [`actionBarDefaultSelector`, {
     red: 50,
     green: 65,
@@ -38,9 +44,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`actionBarDefaultSubmenuBackground`, {
-    red: 44,
-    green: 59,
-    blue: 77,
+    red: 41,
+    green: 56,
+    blue: 73,
     alpha: 255,
   }],
   [`actionBarDefaultSubmenuItem`, {
@@ -137,6 +143,12 @@ export default new Map<string, Color>([
     red: 33,
     green: 45,
     blue: 59,
+    alpha: 255,
+  }],
+  [`avatar_backgroundArchived`, {
+    red: 56,
+    green: 75,
+    blue: 90,
     alpha: 255,
   }],
   [`avatar_backgroundGroupCreateSpanBlue`, {
@@ -368,10 +380,10 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`chat_emojiPanelShadowLine`, {
-    red: 255,
-    green: 255,
-    blue: 255,
-    alpha: 14,
+    red: 0,
+    green: 0,
+    blue: 0,
+    alpha: 50,
   }],
   [`chat_emojiPanelStickerPackSelector`, {
     red: 205,
@@ -854,9 +866,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`chat_messagePanelIcons`, {
-    red: 103,
-    green: 118,
-    blue: 135,
+    red: 107,
+    green: 122,
+    blue: 140,
     alpha: 255,
   }],
   [`chat_messagePanelSend`, {
@@ -1412,9 +1424,9 @@ export default new Map<string, Color>([
     alpha: 150,
   }],
   [`chat_stickersHintPanel`, {
-    red: 42,
-    green: 51,
-    blue: 66,
+    red: 50,
+    green: 61,
+    blue: 79,
     alpha: 255,
   }],
   [`chat_textSelectBackground`, {
@@ -1489,6 +1501,18 @@ export default new Map<string, Color>([
     blue: 152,
     alpha: 255,
   }],
+  [`chats_archiveBackground`, {
+    red: 87,
+    green: 150,
+    blue: 204,
+    alpha: 255,
+  }],
+  [`chats_archivePinBackground`, {
+    red: 46,
+    green: 62,
+    blue: 75,
+    alpha: 255,
+  }],
   [`chats_attachMessage`, {
     red: 125,
     green: 142,
@@ -1555,6 +1579,12 @@ export default new Map<string, Color>([
     blue: 153,
     alpha: 255,
   }],
+  [`chats_message_threeLines`, {
+    red: 125,
+    green: 139,
+    blue: 153,
+    alpha: 255,
+  }],
   [`chats_muteIcon`, {
     red: 78,
     green: 95,
@@ -1577,6 +1607,18 @@ export default new Map<string, Color>([
     red: 233,
     green: 238,
     blue: 244,
+    alpha: 255,
+  }],
+  [`chats_nameMessage_threeLines`, {
+    red: 233,
+    green: 238,
+    blue: 244,
+    alpha: 255,
+  }],
+  [`chats_nameMessageArchived`, {
+    red: 125,
+    green: 139,
+    blue: 153,
     alpha: 255,
   }],
   [`chats_pinnedIcon`, {
@@ -1657,10 +1699,16 @@ export default new Map<string, Color>([
     blue: 121,
     alpha: 255,
   }],
+  [`contextProgressInner1`, {
+    red: 80,
+    green: 95,
+    blue: 113,
+    alpha: 255,
+  }],
   [`contextProgressOuter1`, {
-    red: 100,
-    green: 181,
-    blue: 239,
+    red: 104,
+    green: 182,
+    blue: 248,
     alpha: 255,
   }],
   [`dialog_liveLocationProgress`, {
@@ -1718,9 +1766,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`dialogIcon`, {
-    red: 119,
-    green: 133,
-    blue: 146,
+    red: 139,
+    green: 155,
+    blue: 170,
     alpha: 255,
   }],
   [`dialogInputField`, {
@@ -1759,10 +1807,34 @@ export default new Map<string, Color>([
     blue: 239,
     alpha: 255,
   }],
-  [`dialogTextBlack`, {
+  [`dialogSearchBackground`, {
+    red: 42,
+    green: 57,
+    blue: 75,
+    alpha: 255,
+  }],
+  [`dialogSearchHint`, {
+    red: 127,
+    green: 136,
+    blue: 146,
+    alpha: 255,
+  }],
+  [`dialogSearchIcon`, {
+    red: 119,
+    green: 128,
+    blue: 143,
+    alpha: 255,
+  }],
+  [`dialogSearchText`, {
     red: 255,
     green: 255,
     blue: 255,
+    alpha: 255,
+  }],
+  [`dialogTextBlack`, {
+    red: 246,
+    green: 246,
+    blue: 246,
     alpha: 255,
   }],
   [`dialogTextBlue`, {
@@ -1986,6 +2058,18 @@ export default new Map<string, Color>([
     green: 105,
     blue: 130,
     alpha: 255,
+  }],
+  [`key_sheet_other`, {
+    red: 255,
+    green: 255,
+    blue: 255,
+    alpha: 67,
+  }],
+  [`key_sheet_scrollUp`, {
+    red: 255,
+    green: 255,
+    blue: 255,
+    alpha: 37,
   }],
   [`listSelector`, {
     red: 0,
@@ -2268,6 +2352,12 @@ export default new Map<string, Color>([
     green: 163,
     blue: 215,
     alpha: 255,
+  }],
+  [`undo_background`, {
+    red: 37,
+    green: 48,
+    blue: 59,
+    alpha: 245,
   }],
   [`windowBackgroundChecked`, {
     red: 78,
