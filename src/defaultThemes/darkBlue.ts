@@ -61,6 +61,24 @@ export default new Map<string, Color>([
     blue: 162,
     alpha: 255,
   }],
+  [`actionBarTabActiveText`, {
+    red: 106,
+    green: 191,
+    blue: 255,
+    alpha: 255,
+  }],
+  [`actionBarTabLine`, {
+    red: 100,
+    green: 173,
+    blue: 255,
+    alpha: 255,
+  }],
+  [`actionBarTabSelector`, {
+    red: 54,
+    green: 84,
+    blue: 106,
+    alpha: 55,
+  }],
   [`avatar_actionBarSelectorBlue`, {
     red: 61,
     green: 83,
@@ -542,15 +560,15 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`chat_inFileBackground`, {
-    red: 51,
-    green: 66,
-    blue: 81,
+    red: 47,
+    green: 60,
+    blue: 74,
     alpha: 255,
   }],
   [`chat_inFileBackgroundSelected`, {
-    red: 54,
-    green: 75,
-    blue: 95,
+    red: 61,
+    green: 87,
+    blue: 120,
     alpha: 255,
   }],
   [`chat_inFileIcon`, {
@@ -1028,15 +1046,15 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`chat_outFileBackground`, {
-    red: 85,
-    green: 121,
-    blue: 163,
+    red: 71,
+    green: 112,
+    blue: 154,
     alpha: 255,
   }],
   [`chat_outFileBackgroundSelected`, {
-    red: 111,
-    green: 167,
-    blue: 224,
+    red: 82,
+    green: 137,
+    blue: 190,
     alpha: 255,
   }],
   [`chat_outFileIcon`, {
@@ -1423,6 +1441,12 @@ export default new Map<string, Color>([
     blue: 174,
     alpha: 150,
   }],
+  [`chat_status`, {
+    red: 115,
+    green: 187,
+    blue: 247,
+    alpha: 255,
+  }],
   [`chat_stickersHintPanel`, {
     red: 50,
     green: 61,
@@ -1496,9 +1520,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`chats_actionMessage`, {
-    red: 125,
-    green: 142,
-    blue: 152,
+    red: 100,
+    green: 175,
+    blue: 233,
     alpha: 255,
   }],
   [`chats_archiveBackground`, {
@@ -2239,6 +2263,12 @@ export default new Map<string, Color>([
     blue: 239,
     alpha: 255,
   }],
+  [`profile_status`, {
+    red: 115,
+    green: 187,
+    blue: 247,
+    alpha: 255,
+  }],
   [`profile_verifiedBackground`, {
     red: 100,
     green: 181,
@@ -2522,9 +2552,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`windowBackgroundWhiteRedText2`, {
-    red: 243,
-    green: 90,
-    blue: 90,
+    red: 241,
+    green: 109,
+    blue: 102,
     alpha: 255,
   }],
   [`windowBackgroundWhiteRedText4`, {
