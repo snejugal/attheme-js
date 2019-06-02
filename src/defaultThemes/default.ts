@@ -121,6 +121,30 @@ export default new Map<string, Color>([
     blue: 255,
     alpha: 255,
   }],
+  [`actionBarTabActiveText`, {
+    red: 255,
+    green: 255,
+    blue: 255,
+    alpha: 255,
+  }],
+  [`actionBarTabLine`, {
+    red: 255,
+    green: 255,
+    blue: 255,
+    alpha: 255,
+  }],
+  [`actionBarTabSelector`, {
+    red: 64,
+    green: 109,
+    blue: 148,
+    alpha: 255,
+  }],
+  [`actionBarTabUnactiveText`, {
+    red: 213,
+    green: 232,
+    blue: 247,
+    alpha: 255,
+  }],
   [`actionBarWhiteSelector`, {
     red: 0,
     green: 0,
@@ -787,6 +811,12 @@ export default new Map<string, Color>([
     blue: 56,
     alpha: 255,
   }],
+  [`chat_inDownCall`, {
+    red: 0,
+    green: 200,
+    blue: 83,
+    alpha: 255,
+  }],
   [`chat_inFileBackground`, {
     red: 235,
     green: 240,
@@ -1013,6 +1043,12 @@ export default new Map<string, Color>([
     red: 161,
     green: 170,
     blue: 179,
+    alpha: 255,
+  }],
+  [`chat_inUpCall`, {
+    red: 255,
+    green: 72,
+    blue: 72,
     alpha: 255,
   }],
   [`chat_inVenueInfoSelectedText`, {
@@ -1609,6 +1645,12 @@ export default new Map<string, Color>([
     blue: 92,
     alpha: 255,
   }],
+  [`chat_outUpCall`, {
+    red: 0,
+    green: 200,
+    blue: 83,
+    alpha: 255,
+  }],
   [`chat_outVenueInfoSelectedText`, {
     red: 101,
     green: 176,
@@ -1848,6 +1890,12 @@ export default new Map<string, Color>([
     green: 143,
     blue: 166,
     alpha: 153,
+  }],
+  [`chat_status`, {
+    red: 213,
+    green: 232,
+    blue: 247,
+    alpha: 255,
   }],
   [`chat_stickerNameText`, {
     red: 255,
@@ -2261,6 +2309,12 @@ export default new Map<string, Color>([
     red: 255,
     green: 255,
     blue: 255,
+    alpha: 255,
+  }],
+  [`checkboxDisabled`, {
+    red: 176,
+    green: 185,
+    blue: 194,
     alpha: 255,
   }],
   [`checkboxSquareBackground`, {
@@ -2749,18 +2803,6 @@ export default new Map<string, Color>([
     blue: 245,
     alpha: 255,
   }],
-  [`groupcreate_checkbox`, {
-    red: 94,
-    green: 194,
-    blue: 69,
-    alpha: 255,
-  }],
-  [`groupcreate_checkboxCheck`, {
-    red: 255,
-    green: 255,
-    blue: 255,
-    alpha: 255,
-  }],
   [`groupcreate_cursor`, {
     red: 82,
     green: 163,
@@ -3113,6 +3155,12 @@ export default new Map<string, Color>([
     red: 58,
     green: 149,
     blue: 213,
+    alpha: 255,
+  }],
+  [`profile_status`, {
+    red: 215,
+    green: 234,
+    blue: 250,
     alpha: 255,
   }],
   [`profile_title`, {
