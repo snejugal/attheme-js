@@ -308,9 +308,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`changephoneinfo_image`, {
-    red: 168,
-    green: 168,
-    blue: 168,
+    red: 184,
+    green: 191,
+    blue: 197,
     alpha: 255,
   }],
   [`changephoneinfo_image2`, {
@@ -1952,9 +1952,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`chat_topPanelClose`, {
-    red: 168,
-    green: 168,
-    blue: 168,
+    red: 140,
+    green: 149,
+    blue: 154,
     alpha: 255,
   }],
   [`chat_topPanelLine`, {
