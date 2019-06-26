@@ -308,9 +308,15 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`changephoneinfo_image`, {
-    red: 168,
-    green: 168,
-    blue: 168,
+    red: 184,
+    green: 191,
+    blue: 197,
+    alpha: 255,
+  }],
+  [`changephoneinfo_image2`, {
+    red: 80,
+    green: 167,
+    blue: 234,
     alpha: 255,
   }],
   [`chat_addContact`, {
@@ -1946,9 +1952,9 @@ export default new Map<string, Color>([
     alpha: 255,
   }],
   [`chat_topPanelClose`, {
-    red: 168,
-    green: 168,
-    blue: 168,
+    red: 140,
+    green: 149,
+    blue: 154,
     alpha: 255,
   }],
   [`chat_topPanelLine`, {
@@ -2135,6 +2141,12 @@ export default new Map<string, Color>([
     red: 194,
     green: 229,
     blue: 255,
+    alpha: 255,
+  }],
+  [`chats_menuTopBackgroundCats`, {
+    red: 89,
+    green: 143,
+    blue: 186,
     alpha: 255,
   }],
   [`chats_menuTopShadow`, {
@@ -2875,12 +2887,6 @@ export default new Map<string, Color>([
     blue: 56,
     alpha: 255,
   }],
-  [`key_changephoneinfo_changeText`, {
-    red: 77,
-    green: 131,
-    blue: 179,
-    alpha: 255,
-  }],
   [`key_chat_messagePanelVoiceLock`, {
     red: 164,
     green: 164,
@@ -2933,12 +2939,6 @@ export default new Map<string, Color>([
     red: 53,
     green: 159,
     blue: 229,
-    alpha: 255,
-  }],
-  [`location_markerX`, {
-    red: 128,
-    green: 128,
-    blue: 128,
     alpha: 255,
   }],
   [`location_placeLocationBackground`, {
