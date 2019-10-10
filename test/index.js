@@ -1,16 +1,6 @@
 import test from "ava";
 import Attheme from "../lib";
 
-test(`Checks types of arguments`, t => {
-  t.notThrows(() => new Attheme());
-  t.notThrows(() => new Attheme(``));
-  t.notThrows(() => new Attheme(null));
-  t.notThrows(() => new Attheme(undefined));
-
-  t.throws(() => new Attheme(1), TypeError);
-  t.throws(() => new Attheme(Object(``)), TypeError);
-});
-
 test(`Fallbacks to other themes`, t => {
   const COLOR_A = {
     red: 0,
@@ -164,105 +154,6 @@ test(`toString respects the colorSignature parameter`, t => {
 
   t.is(theme.toString(`hex`), expectedHexOutput);
   t.is(theme.toString(`int`), expectedIntOutput);
-});
-
-test(`Methods check argument types`, t => {
-  const theme = new Attheme();
-
-  t.notThrows(() => theme.setWallpaper(``));
-  t.throws(() => theme.setWallpaper(1));
-  t.throws(() => theme.setWallpaper(Object(``)));
-  t.throws(() => theme.setWallpaper());
-
-  t.notThrows(() =>
-    theme.set(`foo`, {
-      red: 0,
-      green: 0,
-      blue: 0,
-      alpha: 0,
-    }),
-  );
-  t.throws(() => theme.set());
-  t.throws(() => theme.set(`foo`));
-  t.throws(() =>
-    theme.set(Object(`foo`), {
-      red: 0,
-      geeen: 0,
-      blue: 0,
-      alpha: 0,
-    }),
-  );
-  t.throws(() =>
-    theme.set(1, {
-      red: 0,
-      geeen: 0,
-      blue: 0,
-      alpha: 0,
-    }),
-  );
-  t.throws(() =>
-    theme.set(`foo`, {
-      red: -10,
-      green: 0,
-      blue: 10,
-      alpha: 0,
-    }),
-  );
-  t.throws(() =>
-    theme.set(`foo`, {
-      red: 300,
-      green: 0,
-      blue: 10,
-      alpha: 0,
-    }),
-  );
-  t.throws(() =>
-    theme.set(`foo`, {
-      red: 1.5,
-      green: 0,
-      blue: 10,
-      alpha: 0,
-    }),
-  );
-  t.throws(() =>
-    theme.set(`foo`, {
-      red: 1.5,
-      green: 0,
-      blue: 10,
-      alpha: 0,
-    }),
-  );
-  t.throws(() =>
-    theme.set(`foo`, {
-      green: 0,
-      blue: 10,
-      alpha: 0,
-    }),
-  );
-  t.throws(() =>
-    theme.set(`foo`, {
-      red: 100,
-      green: 0,
-      blue: 10,
-      alpha: 0,
-      wtf: `??`,
-    }),
-  );
-
-  t.notThrows(() => theme.get(`foo`));
-  t.throws(() => theme.get());
-  t.throws(() => theme.get(Object(`foo`)));
-  t.throws(() => theme.get(0));
-
-  t.notThrows(() => theme.delete(`foo`));
-  t.throws(() => theme.delete());
-  t.throws(() => theme.delete(Object(`foo`)));
-  t.throws(() => theme.delete(0));
-
-  t.notThrows(() => theme.has(`foo`));
-  t.throws(() => theme.has());
-  t.throws(() => theme.has(Object(`foo`)));
-  t.throws(() => theme.has(0));
 });
 
 test(`Copies color values`, t => {

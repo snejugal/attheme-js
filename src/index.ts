@@ -1,7 +1,5 @@
-import checkType from "./checkType";
 import { Theme, Color, ColorSignature } from "./types";
 import parseContents from "./parseContents";
-import checkColor from "./checkColor";
 import serializeTheme from "./serializeTheme";
 
 export default class Attheme {
@@ -14,13 +12,6 @@ export default class Attheme {
    * @throws {TypeError} If any of the provided arguments is of a wrong type.
    */
   constructor(contents: string | null = ``) {
-    checkType({
-      variable: contents,
-      types: [`string`],
-      functionName: `new Attheme()`,
-      argumentName: `content`,
-    });
-
     if (typeof contents === `string`) {
       const { variables, wallpaper } = parseContents(contents);
 
@@ -42,14 +33,6 @@ export default class Attheme {
    * @param newWallpaper The new wallpaper.
    */
   setWallpaper(newWallpaper: string) {
-    checkType({
-      variable: newWallpaper,
-      types: [`string`],
-      functionName: `attheme.setWallpaper`,
-      argumentName: `newWallpaper`,
-      nullOrUndefined: false,
-    });
-
     this._wallpaper = newWallpaper;
   }
 
@@ -74,14 +57,6 @@ export default class Attheme {
    * @returns Whehter the theme has the variable.
    */
   has(variable: string) {
-    checkType({
-      variable: variable,
-      types: [`string`],
-      functionName: `attheme.hasVariable`,
-      argumentName: `variable`,
-      nullOrUndefined: false,
-    });
-
     return this._variables.has(variable);
   }
 
@@ -90,14 +65,6 @@ export default class Attheme {
    * @param variable The variable to delete.
    */
   delete(variable: string) {
-    checkType({
-      variable: variable,
-      types: [`string`],
-      functionName: `attheme.deleteVariable`,
-      argumentName: `variable`,
-      nullOrUndefined: false,
-    });
-
     this._variables.delete(variable);
   }
 
@@ -107,14 +74,6 @@ export default class Attheme {
    * @returns The value of the variable.
    */
   get(variable: string) {
-    checkType({
-      variable: variable,
-      types: [`string`],
-      functionName: `attheme.getVariable`,
-      argumentName: `variable`,
-      nullOrUndefined: false,
-    });
-
     const value = this._variables.get(variable);
 
     return value === undefined ? null : { ...value };
@@ -126,20 +85,6 @@ export default class Attheme {
    * @param value The value of the variable.
    */
   set(variable: string, value: Color) {
-    checkType({
-      variable: variable,
-      types: [`string`],
-      functionName: `attheme.setVariable`,
-      argumentName: `variable`,
-      nullOrUndefined: false,
-    });
-
-    checkColor({
-      color: value,
-      functionName: `attheme.setVariable`,
-      argumentName: `value`,
-    });
-
     this._variables.set(variable, { ...value });
   }
 
