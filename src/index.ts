@@ -1,22 +1,37 @@
-import { Theme, Color, ColorSignature } from "./types";
+import { Theme, Color, VariableIterator, ColorSignature } from "./types";
 import parseContents from "./parseContents";
 import serializeTheme from "./serializeTheme";
 
 export default class Attheme {
   private _variables: Theme = new Map();
-  private _wallpaper?: string;
+  private _wallpaper?: string | null;
 
   /**
    * Constructs a new theme.
    * @param contents The .attheme contents to parse.
    * @throws {TypeError} If any of the provided arguments is of a wrong type.
    */
-  constructor(contents: string | null = ``) {
+  constructor(contents: string | VariableIterator | null = ``) {
     if (typeof contents === `string`) {
       const { variables, wallpaper } = parseContents(contents);
 
       this._variables = variables;
       this._wallpaper = wallpaper;
+    } else if (contents) {
+      this._variables = new Map();
+
+      const iterator = contents[Symbol.iterator]();
+
+      while (true) {
+        const result = iterator.next();
+
+        if (result.done) {
+          break;
+        } else {
+          const [variable, color] = result.value;
+          this._variables.set(variable, { ...color });
+        }
+      }
     }
   }
 
@@ -41,7 +56,7 @@ export default class Attheme {
    * @returns Whether the theme has a wallpaper.
    */
   hasWallpaper() {
-    return this._wallpaper !== undefined;
+    return typeof this._wallpaper === `string`;
   }
 
   /**

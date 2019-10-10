@@ -22,18 +22,13 @@ test(`Fallbacks to other themes`, t => {
   };
   const WALLPAPER = `wallpaper`;
 
-  const fallbackTo = new Attheme();
-  fallbackTo.set(`foo`, COLOR_A);
-  fallbackTo.set(`bar`, COLOR_B);
+  const fallbackTo = new Attheme([[`foo`, COLOR_A], [`bar`, COLOR_B]]);
   fallbackTo.setWallpaper(WALLPAPER);
 
-  const fallbacking = new Attheme();
-  fallbacking.set(`foo`, COLOR_C);
+  const fallbacking = new Attheme([[`foo`, COLOR_C]]);
   fallbacking.fallbackToOther(fallbackTo);
 
-  const expected = new Attheme();
-  expected.set(`foo`, COLOR_C);
-  expected.set(`bar`, COLOR_B);
+  const expected = new Attheme([[`foo`, COLOR_C], [`bar`, COLOR_B]]);
   expected.setWallpaper(WALLPAPER);
 
   t.deepEqual(fallbacking, expected);
@@ -120,26 +115,26 @@ test(`getVariablesList works correctly`, t => {
 });
 
 test(`sorts in places correctly`, t => {
-  const theme = new Attheme(`
-    divider=-1
-    checkbox=0
-  `);
+  const theme = new Attheme([
+    [`divider`, { red: 0, green: 0, blue: 0, alpha: 0 }],
+    [`checkbox`, { red: 0, green: 0, blue: 0, alpha: 0 }],
+  ]);
 
   theme.sort();
 
-  const expected = new Attheme(`
-    checkbox=0
-    divider=-1
-  `);
+  const expected = new Attheme([
+    [`checkbox`, { red: 0, green: 0, blue: 0, alpha: 0 }],
+    [`divider`, { red: 0, green: 0, blue: 0, alpha: 0 }],
+  ]);
 
   t.deepEqual(theme, expected);
 });
 
 test(`Iterator works correctly`, t => {
-  const theme = new Attheme(`
-foo=1
-bar=2
-`);
+  const theme = new Attheme([
+    [`foo`, { red: 0, green: 0, blue: 0, alpha: 0 }],
+    [`bar`, { red: 0, green: 0, blue: 0, alpha: 1 }],
+  ]);
 
   const variables = new Map(theme);
 
@@ -147,7 +142,9 @@ bar=2
 });
 
 test(`toString respects the colorSignature parameter`, t => {
-  const theme = new Attheme(`foo=#ffffff`);
+  const theme = new Attheme([
+    [`foo`, { red: 255, green: 255, blue: 255, alpha: 255 }],
+  ]);
 
   const expectedHexOutput = `foo=#ffffffff\n`;
   const expectedIntOutput = `foo=-1\n`;
