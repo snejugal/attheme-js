@@ -146,6 +146,18 @@ export default class Attheme {
     }
   }
 
+  /**
+   * Fallbacks variables to other existing variabled according to the map.
+   * @param fallbackMap Defines variable mapping.
+   */
+  fallbackToSelf(fallbackMap: Map<string, string>) {
+    for (const [variable, fallback] of fallbackMap) {
+      if (!this._variables.has(variable) && this._variables.has(fallback)) {
+        this._variables.set(variable, { ...this._variables.get(fallback)! });
+      }
+    }
+  }
+
   *[Symbol.iterator]() {
     for (const [variable, value] of this._variables) {
       const entry: [string, Color] = [variable, { ...value }];
