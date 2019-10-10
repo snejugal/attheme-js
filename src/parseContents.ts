@@ -54,10 +54,10 @@ const parseContents = (contents: string): ParseThemeResult => {
         // Cutting off the last \n
         result.wallpaper = (result.wallpaper as string).slice(0, -1);
         break;
-      } else {
-        result.wallpaper += `${rawLine}\n`;
-        continue;
       }
+
+      result.wallpaper += `${rawLine}\n`;
+      continue;
     }
 
     if (rawLine.startsWith(`WPS`)) {
@@ -70,6 +70,13 @@ const parseContents = (contents: string): ParseThemeResult => {
 
     if (assignOperatorIndex !== -1) {
       const variable = noCommentsLine.slice(0, assignOperatorIndex);
+
+      if (variable === `wallpaperFileOffset`) {
+        // wallpaperFileOffset is just a leaked internal integer value.
+        // Skipping it.
+        continue;
+      }
+
       const rawValue = noCommentsLine.slice(assignOperatorIndex + 1);
 
       try {
