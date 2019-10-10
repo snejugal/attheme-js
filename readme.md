@@ -3,10 +3,6 @@
 A package for working with .attheme files in JavaScript. It fully supports the
 .attheme format.
 
-> **Important note:** attheme-js@2.0.0 is completely rewritten and is
-> incompatible with old versions. Please see
-> [the Wiki for migration][migration].
-
 ## Installing
 
 ```bash
@@ -52,4 +48,3 @@ WPE
 For the API documentation and tools `attheme-js` provides out of the box, please see [the documentation section on our Wiki][documentation].
 
 [documentation]: https://github.com/SnejUgal/attheme-js/wiki/Documentation
-[migration]: https://github.com/SnejUgal/attheme-js/wiki/Migration
