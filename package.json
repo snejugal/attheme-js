@@ -19,7 +19,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "npx tsc -p .",
-    "test": "npm run build && npx ava test/**/*",
+    "test": "npm run build && npx ava",
     "format": "npx prettier --write \"{src,test}/**/*.{js,ts}\"",
     "prepublishOnly": "npm run test"
   },
