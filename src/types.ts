@@ -1,10 +1,5 @@
-export interface Color {
-  red: number;
-  green: number;
-  blue: number;
-  alpha: number;
-}
+import { RgbColor } from "@snejugal/color";
 
-export type Theme = Map<string, Color>;
+export type Color = RgbColor;
 export type ColorSignature = "hex" | "int";
-export type VariableIterator = Iterable<[string, Color]>;
+export type VariableIterator = Iterable<[string, RgbColor]>;

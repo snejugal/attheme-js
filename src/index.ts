@@ -1,9 +1,9 @@
-import { Theme, Color, VariableIterator, ColorSignature } from "./types";
+import { Color, VariableIterator, ColorSignature } from "./types";
 import parseContents from "./parseContents";
 import serializeTheme from "./serializeTheme";
 
 export default class Attheme {
-  private _variables: Theme = new Map();
+  private _variables: Map<string, Color> = new Map();
   private _wallpaper?: string | null;
 
   /**

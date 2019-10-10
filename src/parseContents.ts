@@ -1,7 +1,7 @@
-import { Theme, Color } from "./types";
+import { Color } from "./types";
 
 interface ParseThemeResult {
-  variables: Theme;
+  variables: Map<string, Color>;
   wallpaper?: string;
 }
 
