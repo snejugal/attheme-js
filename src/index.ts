@@ -141,7 +141,7 @@ export default class Attheme {
       }
     }
 
-    if (this._wallpaper === undefined) {
+    if (typeof this._wallpaper !== `string`) {
       this._wallpaper = other._wallpaper;
     }
   }
