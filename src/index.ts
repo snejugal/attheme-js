@@ -4,7 +4,7 @@ import serializeTheme from "./serializeTheme";
 
 export default class Attheme {
   private _variables: Map<string, Color> = new Map();
-  private _wallpaper?: string | null;
+  private _wallpaper?: string | null = null;
 
   /**
    * Constructs a new theme.
@@ -17,8 +17,6 @@ export default class Attheme {
       this._variables = variables;
       this._wallpaper = wallpaper;
     } else if (contents) {
-      this._variables = new Map();
-
       const iterator = contents[Symbol.iterator]();
 
       while (true) {
