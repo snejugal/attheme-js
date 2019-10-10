@@ -20,7 +20,7 @@
   "scripts": {
     "build": "npx tsc -p .",
     "test": "npm run build && npx ava test/**/*",
-    "format": "npx prettier --write \"{src,test}/**/*.ts\"",
+    "format": "npx prettier --write \"{src,test}/**/*.{js,ts}\"",
     "prepublishOnly": "npm run test"
   },
   "devDependencies": {

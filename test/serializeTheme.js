@@ -2,7 +2,7 @@ import test from "ava";
 import serializeTheme from "../lib/serializeTheme";
 import Attheme from "../lib";
 
-test(`Serializes the theme correctly`, async (t) => {
+test(`Serializes the theme correctly`, async t => {
   const theme = new Attheme();
 
   theme.set(`divider`, {

@@ -3,7 +3,7 @@ import fromFile from "../../../lib/tools/node/fromFile";
 import jimp from "jimp";
 import path from "path";
 
-test(`Reads the file in Node.js properly`, async (t) => {
+test(`Reads the file in Node.js properly`, async t => {
   const themePath = path.join(__dirname, `../../exampleTheme.attheme`);
   const theme = await fromFile(themePath);
 
@@ -13,12 +13,15 @@ test(`Reads the file in Node.js properly`, async (t) => {
   t.notThrows(() => jimp.read(wallpaperBuffer));
 
   const expectedTheme = new Map([
-    [`divider`, {
-      red: 217,
-      green: 217,
-      blue: 217,
-      alpha: 255,
-    }],
+    [
+      `divider`,
+      {
+        red: 217,
+        green: 217,
+        blue: 217,
+        alpha: 255,
+      },
+    ],
   ]);
 
   t.deepEqual(theme._variables, expectedTheme);

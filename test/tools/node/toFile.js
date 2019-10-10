@@ -4,7 +4,7 @@ import toFile from "../../../lib/tools/node/toFile";
 import path from "path";
 import { promises as fs } from "fs";
 
-test(`Writes the file in Node.js properly`, async (t) => {
+test(`Writes the file in Node.js properly`, async t => {
   const outPath = path.join(__dirname, `../../exampleTheme.attheme`);
   const theme = await fromFile(outPath);
 
@@ -17,4 +17,4 @@ test(`Writes the file in Node.js properly`, async (t) => {
 
 test.after(`Writes the file in Node.js properly`, async () => {
   await fs.unlink(path.join(__dirname, `./__temp__.attheme`));
-})
+});

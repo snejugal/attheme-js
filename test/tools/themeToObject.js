@@ -2,7 +2,7 @@ import test from "ava";
 import Attheme from "../../lib/";
 import themeToObject from "../../lib/tools/themeToObject";
 
-test(`Converts the new theme type to the old one correctly`, (t) => {
+test(`Converts the new theme type to the old one correctly`, t => {
   const contents = `
 foo=-1
 

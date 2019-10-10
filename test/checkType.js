@@ -1,40 +1,64 @@
 import test from "ava";
 import checkType from "../lib/checkType";
 
-test(`Checks the type correctly`, (t) => {
-  t.throws(() => checkType({
-    variable: 42,
-    types: [`string`],
-  }), TypeError);
+test(`Checks the type correctly`, t => {
+  t.throws(
+    () =>
+      checkType({
+        variable: 42,
+        types: [`string`],
+      }),
+    TypeError,
+  );
 
-  t.notThrows(() => checkType({
-    variable: 42,
-    types: [`number`],
-  }), TypeError);
+  t.notThrows(
+    () =>
+      checkType({
+        variable: 42,
+        types: [`number`],
+      }),
+    TypeError,
+  );
 });
 
-test(`Checks the instance correctly`, (t) => {
-  t.throws(() => checkType({
-    variable: new Set(),
-    types: [Map],
-  }), TypeError);
+test(`Checks the instance correctly`, t => {
+  t.throws(
+    () =>
+      checkType({
+        variable: new Set(),
+        types: [Map],
+      }),
+    TypeError,
+  );
 
-  t.notThrows(() => checkType({
-    variable: new Map(),
-    types: [Map],
-  }), TypeError);
+  t.notThrows(
+    () =>
+      checkType({
+        variable: new Map(),
+        types: [Map],
+      }),
+    TypeError,
+  );
 });
 
-test(`Works with null and undefined properly`, (t) => {
-  t.throws(() => checkType({
-    variable: null,
-    types: [`object`],
-    nullOrUndefined: false,
-  }), TypeError);
+test(`Works with null and undefined properly`, t => {
+  t.throws(
+    () =>
+      checkType({
+        variable: null,
+        types: [`object`],
+        nullOrUndefined: false,
+      }),
+    TypeError,
+  );
 
-  t.notThrows(() => checkType({
-    variable: null,
-    types: [`object`],
-    nullOrUndefined: true,
-  }), TypeError);
+  t.notThrows(
+    () =>
+      checkType({
+        variable: null,
+        types: [`object`],
+        nullOrUndefined: true,
+      }),
+    TypeError,
+  );
 });
