@@ -24,12 +24,12 @@
     "prepublishOnly": "rm -rf lib && npm run test"
   },
   "devDependencies": {
-    "@types/node": "^12.7.2",
-    "ava": "^2.3.0",
-    "jimp": "^0.6.4",
+    "@types/node": "^12.7.12",
+    "ava": "^2.4.0",
+    "jimp": "^0.8.4",
     "jsdom": "^15.1.1",
     "prettier": "^1.18.2",
-    "typescript": "^3.5.3"
+    "typescript": "^3.6.4"
   },
   "dependencies": {
     "@snejugal/color": "^2.1.1"
