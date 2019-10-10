@@ -11,7 +11,7 @@ export default class Attheme {
    * @param contents The .attheme contents to parse.
    * @throws {TypeError} If any of the provided arguments is of a wrong type.
    */
-  constructor(contents: string | VariableIterator | null = ``) {
+  constructor(contents?: string | VariableIterator | null) {
     if (typeof contents === `string`) {
       const { variables, wallpaper } = parseContents(contents);
 
