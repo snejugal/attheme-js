@@ -11,15 +11,15 @@ printf "\
 const VARIABLES = [
 " > $2
 
-sed -r "s/(\w+)=.+/    \`\1\`,/" $1 > /tmp/variable_list
+sed -r "s/(\w+)=.+/  \`\1\`,/" $1 > /tmp/variable_list
 printf "\
-    \`chat_serviceBackground\`,
-    \`chat_serviceBackgroundSelected\`,
-    \`chats_menuTopBackground\`,
-    \`chats_menuTopShadow\`,
-    \`chats_menuTopShadowCats\`,
-    \`chat_wallpaper\`,
-    \`chat_wallpaper_gradient_to\`," >> /tmp/variable_list
+  \`chat_serviceBackground\`,
+  \`chat_serviceBackgroundSelected\`,
+  \`chats_menuTopBackground\`,
+  \`chats_menuTopShadow\`,
+  \`chats_menuTopShadowCats\`,
+  \`chat_wallpaper\`,
+  \`chat_wallpaper_gradient_to\`," >> /tmp/variable_list
 LC_COLLATE=C sort /tmp/variable_list >> $2
 
 printf "];
