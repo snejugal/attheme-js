@@ -31,7 +31,9 @@ const checkColor = ({
 
   for (const property of Object.keys(color)) {
     if (!CHANNELS.includes(property)) {
-      throw new TypeError(`The ${argumentName} argument to ${functionName} must be a color, but it has property ${property} which can't be on a color.`);
+      throw new TypeError(
+        `The ${argumentName} argument to ${functionName} must be a color, but it has property ${property} which can't be on a color.`,
+      );
     }
   }
 
@@ -47,15 +49,21 @@ const checkColor = ({
     });
 
     if (value < 0) {
-      throw new TypeError(`The ${argumentName} argument to ${functionName} must be a valid color, but its ${channel} channel is less than 0.`);
+      throw new TypeError(
+        `The ${argumentName} argument to ${functionName} must be a valid color, but its ${channel} channel is less than 0.`,
+      );
     }
 
     if (value > 255) {
-      throw new TypeError(`The ${argumentName} argument to ${functionName} must be a valid color, but its ${channel} channel is greater than 255.`);
+      throw new TypeError(
+        `The ${argumentName} argument to ${functionName} must be a valid color, but its ${channel} channel is greater than 255.`,
+      );
     }
 
     if (value % 1 !== 0) {
-      throw new TypeError(`The ${argumentName} argument to ${functionName} must be a valid color, but its ${channel} channel is a fraction (${value}).`);
+      throw new TypeError(
+        `The ${argumentName} argument to ${functionName} must be a valid color, but its ${channel} channel is a fraction (${value}).`,
+      );
     }
   }
 };

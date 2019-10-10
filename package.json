@@ -20,6 +20,7 @@
   "scripts": {
     "build": "npx tsc -p .",
     "test": "npm run build && npx ava test/**/*",
+    "format": "npx prettier --write \"{src,test}/**/*.ts\"",
     "prepublishOnly": "npm run test"
   },
   "devDependencies": {
@@ -27,6 +28,7 @@
     "ava": "^2.3.0",
     "jimp": "^0.6.4",
     "jsdom": "^15.1.1",
+    "prettier": "^1.18.2",
     "typescript": "^3.5.3"
   },
   "dependencies": {}

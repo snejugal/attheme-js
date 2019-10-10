@@ -15,14 +15,15 @@ const toFile = (
   theme: Attheme,
   path: string,
   colorSignature?: ColorSignature,
-): Promise<void> => new Promise((resolve, reject) => {
-  fs.writeFile(path, theme.toString(colorSignature), `binary`, (error) => {
-    if (error) {
-      reject(error);
-    } else {
-      resolve();
-    }
+): Promise<void> =>
+  new Promise((resolve, reject) => {
+    fs.writeFile(path, theme.toString(colorSignature), `binary`, error => {
+      if (error) {
+        reject(error);
+      } else {
+        resolve();
+      }
+    });
   });
-});
 
 export default toFile;

@@ -4,7 +4,7 @@ interface CheckTypeArguments {
   functionName: string;
   argumentName: string;
   nullOrUndefined?: boolean;
-};
+}
 
 /**
  * Checks the type of a variable and throws if invalid.
@@ -28,7 +28,11 @@ const checkType = ({
    * @throws Always.
    */
   const throwError = (variableType: string) => {
-    throw new TypeError(`The ${argumentName} argument to ${functionName} is of ${variableType} type, but it must be one of these types: ${types.join(`, `)}${nullOrUndefined ? `, null or undefined` : ``}.`);
+    throw new TypeError(
+      `The ${argumentName} argument to ${functionName} is of ${variableType} type, but it must be one of these types: ${types.join(
+        `, `,
+      )}${nullOrUndefined ? `, null or undefined` : ``}.`,
+    );
   };
 
   if (variable === undefined || variable === null) {

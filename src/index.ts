@@ -16,7 +16,10 @@ export default class Attheme {
    * if not present in the parsed theme.
    * @throws {TypeError} If any of the provided arguments is of a wrong type.
    */
-  constructor(contents: string | null = ``, options: AtthemeOptions | null = {}) {
+  constructor(
+    contents: string | null = ``,
+    options: AtthemeOptions | null = {},
+  ) {
     checkType({
       variable: contents,
       types: [`string`],
@@ -40,8 +43,8 @@ export default class Attheme {
       });
 
       if (
-        options.defaultValues !== null
-        && options.defaultValues !== undefined
+        options.defaultValues !== null &&
+        options.defaultValues !== undefined
       ) {
         for (const [variable, value] of options.defaultValues) {
           this.set(variable, { ...value });
@@ -199,9 +202,9 @@ export default class Attheme {
    * Sorts the theme's variables by their names in place.
    */
   sort() {
-    this._variables = new Map([...this._variables].sort(
-      ([a], [b]) => a.localeCompare(b),
-    ));
+    this._variables = new Map(
+      [...this._variables].sort(([a], [b]) => a.localeCompare(b)),
+    );
   }
 
   *[Symbol.iterator]() {

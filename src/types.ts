@@ -11,4 +11,4 @@ export type ColorSignature = "hex" | "int";
 
 export interface AtthemeOptions {
   defaultValues?: Theme;
-};
+}
