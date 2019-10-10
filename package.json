@@ -21,7 +21,7 @@
     "build": "npx tsc -p .",
     "test": "npm run build && npx ava",
     "format": "npx prettier --write \"{src,test}/**/*.{js,ts}\"",
-    "prepublishOnly": "npm run test"
+    "prepublishOnly": "rm -rf lib && npm run test"
   },
   "devDependencies": {
     "@types/node": "^12.7.2",
