@@ -6,223 +6,47 @@ test(`Checks types of arguments`, t => {
   t.notThrows(() => new Attheme(``));
   t.notThrows(() => new Attheme(null));
   t.notThrows(() => new Attheme(undefined));
-  t.notThrows(() => new Attheme(null, {}));
-  t.notThrows(() => new Attheme(null, null));
-  t.notThrows(() => new Attheme(null, undefined));
-
-  t.notThrows(
-    () =>
-      new Attheme(null, {
-        defaultValues: undefined,
-      }),
-  );
-
-  t.notThrows(
-    () =>
-      new Attheme(null, {
-        defaultValues: undefined,
-      }),
-  );
-
-  t.notThrows(
-    () =>
-      new Attheme(null, {
-        defaultValues: null,
-      }),
-  );
-
-  t.notThrows(
-    () =>
-      new Attheme(null, {
-        defaultValues: new Map([
-          [
-            `variable`,
-            {
-              red: 0,
-              green: 0,
-              blue: 0,
-              alpha: 0,
-            },
-          ],
-        ]),
-      }),
-  );
 
   t.throws(() => new Attheme(1), TypeError);
   t.throws(() => new Attheme(Object(``)), TypeError);
-  t.throws(() => new Attheme(null, 1), TypeError);
-
-  t.throws(
-    () =>
-      new Attheme(null, {
-        defaultValues: 1,
-      }),
-    TypeError,
-  );
-
-  t.throws(
-    () =>
-      new Attheme(null, {
-        defaultValues: new Map([
-          [
-            1,
-            {
-              red: 0,
-              green: 0,
-              blue: 0,
-              alpha: 0,
-            },
-          ],
-        ]),
-      }),
-    TypeError,
-  );
-
-  t.throws(
-    () =>
-      new Attheme(null, {
-        defaultValues: new Map([[`divider`, 1]]),
-      }),
-    TypeError,
-  );
-
-  t.throws(
-    () =>
-      new Attheme(null, {
-        defaultValues: new Map([[`divider`, 1]]),
-      }),
-    TypeError,
-  );
-
-  t.throws(
-    () =>
-      new Attheme(null, {
-        defaultValues: new Map([
-          [
-            `divider`,
-            {
-              red: -100,
-              green: 0,
-              blue: 0,
-              alpha: 0,
-            },
-          ],
-        ]),
-      }),
-    TypeError,
-  );
-
-  t.throws(
-    () =>
-      new Attheme(null, {
-        defaultValues: new Map([
-          [
-            `divider`,
-            {
-              red: 1000,
-              green: 0,
-              blue: 0,
-              alpha: 0,
-            },
-          ],
-        ]),
-      }),
-    TypeError,
-  );
-
-  t.throws(
-    () =>
-      new Attheme(null, {
-        defaultValues: new Map([
-          [
-            `divider`,
-            {
-              red: 100.5,
-              green: 0,
-              blue: 0,
-              alpha: 0,
-            },
-          ],
-        ]),
-      }),
-    TypeError,
-  );
-
-  t.throws(
-    () =>
-      new Attheme(null, {
-        defaultValues: new Map([
-          [
-            `divider`,
-            {
-              red: 100,
-              green: 0,
-              blue: 0,
-            },
-          ],
-        ]),
-      }),
-    TypeError,
-  );
-
-  t.throws(
-    () =>
-      new Attheme(null, {
-        defaultValues: new Map([
-          [
-            `divider`,
-            {
-              red: 100,
-              green: 0,
-              blue: 0,
-              alpha: 0,
-              wtf: `??`,
-            },
-          ],
-        ]),
-      }),
-    TypeError,
-  );
 });
 
-test(`Fallbacks to defaultValues`, t => {
-  const defaultValues = new Map([
-    [
-      `foo`,
-      {
-        red: 0x00,
-        green: 0x10,
-        blue: 0x30,
-        alpha: 0x40,
-      },
-    ],
-    [
-      `bar`,
-      {
-        red: 0x50,
-        green: 0x60,
-        blue: 0x70,
-        alpha: 0x80,
-      },
-    ],
-  ]);
+test(`Fallbacks to other themes`, t => {
+  const COLOR_A = {
+    red: 0,
+    green: 0,
+    blue: 0,
+    alpha: 0,
+  };
+  const COLOR_B = {
+    red: 100,
+    green: 100,
+    blue: 100,
+    alpha: 100,
+  };
+  const COLOR_C = {
+    red: 200,
+    green: 200,
+    blue: 200,
+    alpha: 200,
+  };
+  const WALLPAPER = `wallpaper`;
 
-  const theme = new Attheme(`bar=-1`, { defaultValues });
+  const fallbackTo = new Attheme();
+  fallbackTo.set(`foo`, COLOR_A);
+  fallbackTo.set(`bar`, COLOR_B);
+  fallbackTo.setWallpaper(WALLPAPER);
 
-  const expected = new Map([
-    [`foo`, defaultValues.get(`foo`)],
-    [
-      `bar`,
-      {
-        red: 0xff,
-        green: 0xff,
-        blue: 0xff,
-        alpha: 0xff,
-      },
-    ],
-  ]);
+  const fallbacking = new Attheme();
+  fallbacking.set(`foo`, COLOR_C);
+  fallbacking.fallbackToOther(fallbackTo);
 
-  t.deepEqual(theme._variables, expected);
+  const expected = new Attheme();
+  expected.set(`foo`, COLOR_C);
+  expected.set(`bar`, COLOR_B);
+  expected.setWallpaper(WALLPAPER);
+
+  t.deepEqual(fallbacking, expected);
 });
 
 test(`Wallpaper-related methods work correctly`, t => {
@@ -308,34 +132,17 @@ test(`getVariablesList works correctly`, t => {
 test(`sorts in places correctly`, t => {
   const theme = new Attheme(`
     divider=-1
-    checbox=0
+    checkbox=0
   `);
 
   theme.sort();
 
-  t.deepEqual(
-    [...theme],
-    [
-      [
-        `checkbox`,
-        {
-          red: 0,
-          green: 0,
-          blue: 0,
-          alpha: 0,
-        },
-      ],
-      [
-        `divider`,
-        {
-          red: 255,
-          green: 255,
-          blue: 255,
-          alpha: 255,
-        },
-      ],
-    ],
-  );
+  const expected = new Attheme(`
+    checkbox=0
+    divider=-1
+  `);
+
+  t.deepEqual(theme, expected);
 });
 
 test(`Iterator works correctly`, t => {
@@ -459,26 +266,9 @@ test(`Methods check argument types`, t => {
 });
 
 test(`Copies color values`, t => {
-  const defaultValues = new Map([
-    [
-      `foo`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
-        alpha: 0,
-      },
-    ],
-  ]);
-  const theme = new Attheme(null, {
-    defaultValues,
-  });
+  const color = { red: 0, green: 0, blue: 0, alpha: 0 };
 
-  t.not(theme._variables.get(`foo`), defaultValues.get(`foo`));
-  t.not(theme.get(`foo`), theme._variables.get(`foo`));
-
-  const anotherColor = { ...theme._variables.get(`foo`) };
-
-  theme.set(`foo`, anotherColor);
-  t.not(theme._variables.get(`foo`), anotherColor);
+  const theme = new Attheme();
+  theme.set(`foo`, color);
+  t.not(theme._variables.get(`foo`), color);
 });

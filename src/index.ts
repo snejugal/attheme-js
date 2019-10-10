@@ -1,25 +1,19 @@
 import checkType from "./checkType";
-import { Theme, Color, ColorSignature, AtthemeOptions } from "./types";
+import { Theme, Color, ColorSignature } from "./types";
 import parseContents from "./parseContents";
 import checkColor from "./checkColor";
 import serializeTheme from "./serializeTheme";
 
 export default class Attheme {
   private _variables: Theme = new Map();
-  private _wallpaper: string;
+  private _wallpaper?: string;
 
   /**
    * Constructs a new theme.
    * @param contents The .attheme contents to parse.
-   * @param options Additional options for constructing the theme.
-   * @param options.defaultValues Values that the constructor fill fallback to
-   * if not present in the parsed theme.
    * @throws {TypeError} If any of the provided arguments is of a wrong type.
    */
-  constructor(
-    contents: string | null = ``,
-    options: AtthemeOptions | null = {},
-  ) {
+  constructor(contents: string | null = ``) {
     checkType({
       variable: contents,
       types: [`string`],
@@ -27,44 +21,11 @@ export default class Attheme {
       argumentName: `content`,
     });
 
-    checkType({
-      variable: options,
-      types: [`object`],
-      functionName: `new Attheme()`,
-      argumentName: `options`,
-    });
-
-    if (options !== null) {
-      checkType({
-        variable: options.defaultValues,
-        types: [Map],
-        functionName: `new Attheme()`,
-        argumentName: `options.defaultValues`,
-      });
-
-      if (
-        options.defaultValues !== null &&
-        options.defaultValues !== undefined
-      ) {
-        for (const [variable, value] of options.defaultValues) {
-          this.set(variable, { ...value });
-        }
-      }
-    }
-
     if (typeof contents === `string`) {
       const { variables, wallpaper } = parseContents(contents);
 
-      for (const [variable, value] of variables) {
-        // this.setVariable dynamically checks types, but here they are
-        // guarantred to be valid, and all that type checking will only slow
-        // down this loop.
-        this._variables.set(variable, value);
-      }
-
-      if (typeof wallpaper === `string`) {
-        this._wallpaper = wallpaper;
-      }
+      this._variables = variables;
+      this._wallpaper = wallpaper;
     }
   }
 
@@ -207,6 +168,27 @@ export default class Attheme {
     );
   }
 
+  /**
+   * Fallbacks this theme to another theme:
+   *
+   * - Every variable which is present in `other` but not in `this`, is copied
+   *   to `this`.
+   * - If `this` doesn't have a wallpaper, the wallpaper is copied from `other`.
+   *
+   * @param other The other theme to fallback to.
+   */
+  fallbackToOther(other: Attheme) {
+    for (const [variable, color] of other._variables) {
+      if (!this._variables.has(variable)) {
+        this._variables.set(variable, { ...color });
+      }
+    }
+
+    if (this._wallpaper === undefined) {
+      this._wallpaper = other._wallpaper;
+    }
+  }
+
   *[Symbol.iterator]() {
     for (const [variable, value] of this._variables) {
       const entry: [string, Color] = [variable, { ...value }];
@@ -216,7 +198,7 @@ export default class Attheme {
 
   /**
    * Serializes the theme.
-   * @param colorSignature The way the colors should be serialized. hex" for
+   * @param colorSignature The way the colors should be serialized. "hex" for
    * #aarrggbb and "int" for Java int color.
    * @returns The serialized theme.
    */

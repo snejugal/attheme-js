@@ -1,9 +1,8 @@
 /// <reference lib="DOM" />
 
 import Attheme from "../..";
-import { AtthemeOptions } from "../../types";
 
-const fromFile = (file: File, options?: AtthemeOptions): Promise<Attheme> =>
+const fromFile = (file: File): Promise<Attheme> =>
   new Promise((resolve, reject) => {
     const reader = new FileReader();
 
@@ -16,7 +15,7 @@ const fromFile = (file: File, options?: AtthemeOptions): Promise<Attheme> =>
         contents += String.fromCharCode(char);
       }
 
-      resolve(new Attheme(contents, options));
+      resolve(new Attheme(contents));
     };
 
     reader.onerror = () => reject(reader.error);
