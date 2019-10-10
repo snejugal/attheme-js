@@ -31,17 +31,15 @@ test(`Checks the types properly`, t => {
     TypeError,
   );
 
-  t.notThrows(
-    () =>
-      checkColor({
-        color: {
-          red: 42,
-          green: 69,
-          blue: 13,
-          alpha: 146,
-        },
-      }),
-    TypeError,
+  t.notThrows(() =>
+    checkColor({
+      color: {
+        red: 42,
+        green: 69,
+        blue: 13,
+        alpha: 146,
+      },
+    }),
   );
 });
 
@@ -71,32 +69,28 @@ test(`Checks for unspecified and excessive properties`, t => {
     TypeError,
   );
 
-  t.notThrows(
-    () =>
-      checkColor({
-        color: {
-          red: 0,
-          green: 0,
-          blue: 0,
-          alpha: 0,
-        },
-      }),
-    TypeError,
+  t.notThrows(() =>
+    checkColor({
+      color: {
+        red: 0,
+        green: 0,
+        blue: 0,
+        alpha: 0,
+      },
+    }),
   );
 });
 
 test(`Checks for valid channel value`, t => {
-  t.notThrows(
-    () =>
-      checkColor({
-        color: {
-          red: 0,
-          green: 100,
-          blue: 200,
-          alpha: 255,
-        },
-      }),
-    TypeError,
+  t.notThrows(() =>
+    checkColor({
+      color: {
+        red: 0,
+        green: 100,
+        blue: 200,
+        alpha: 255,
+      },
+    }),
   );
 
   t.throws(

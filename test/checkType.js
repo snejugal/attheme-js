@@ -11,13 +11,11 @@ test(`Checks the type correctly`, t => {
     TypeError,
   );
 
-  t.notThrows(
-    () =>
-      checkType({
-        variable: 42,
-        types: [`number`],
-      }),
-    TypeError,
+  t.notThrows(() =>
+    checkType({
+      variable: 42,
+      types: [`number`],
+    }),
   );
 });
 
@@ -31,13 +29,11 @@ test(`Checks the instance correctly`, t => {
     TypeError,
   );
 
-  t.notThrows(
-    () =>
-      checkType({
-        variable: new Map(),
-        types: [Map],
-      }),
-    TypeError,
+  t.notThrows(() =>
+    checkType({
+      variable: new Map(),
+      types: [Map],
+    }),
   );
 });
 
@@ -52,13 +48,11 @@ test(`Works with null and undefined properly`, t => {
     TypeError,
   );
 
-  t.notThrows(
-    () =>
-      checkType({
-        variable: null,
-        types: [`object`],
-        nullOrUndefined: true,
-      }),
-    TypeError,
+  t.notThrows(() =>
+    checkType({
+      variable: null,
+      types: [`object`],
+      nullOrUndefined: true,
+    }),
   );
 });
