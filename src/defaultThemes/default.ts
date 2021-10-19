@@ -11,51 +11,6 @@ import { Color } from "../types";
 const defaultTheme = () =>
   new Attheme([
     [
-      `actionBarActionModeDefault`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `actionBarActionModeDefaultIcon`,
-      {
-        red: 103,
-        green: 106,
-        blue: 111,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `actionBarActionModeDefaultSelector`,
-      {
-        red: 240,
-        green: 240,
-        blue: 240,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `actionBarActionModeDefaultTop`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
-        alpha: 16,
-      } as Color,
-    ] as [string, Color],
-    [
-      `actionBarBrowser`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
       `actionBarDefault`,
       {
         red: 82,
@@ -67,153 +22,36 @@ const defaultTheme = () =>
     [
       `actionBarDefaultArchived`,
       {
-        red: 111,
-        green: 122,
-        blue: 135,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `actionBarDefaultArchivedIcon`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `actionBarDefaultArchivedSearch`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
+        red: 118,
+        green: 127,
+        blue: 138,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `actionBarDefaultArchivedSelector`,
       {
-        red: 94,
-        green: 103,
-        blue: 114,
+        red: 90,
+        green: 104,
+        blue: 112,
         alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `actionBarDefaultArchivedTitle`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `actionBarDefaultIcon`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `actionBarDefaultSearch`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `actionBarDefaultSearchArchivedPlaceholder`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 136,
-      } as Color,
-    ] as [string, Color],
-    [
-      `actionBarDefaultSearchPlaceholder`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 136,
       } as Color,
     ] as [string, Color],
     [
       `actionBarDefaultSelector`,
       {
-        red: 64,
-        green: 109,
-        blue: 148,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `actionBarDefaultSubmenuBackground`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `actionBarDefaultSubmenuItem`,
-      {
-        red: 34,
-        green: 34,
-        blue: 34,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `actionBarDefaultSubmenuItemIcon`,
-      {
-        red: 103,
+        red: 61,
         green: 107,
-        blue: 112,
+        blue: 150,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `actionBarDefaultSubtitle`,
       {
-        red: 213,
-        green: 232,
-        blue: 247,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `actionBarDefaultTitle`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `actionBarTabActiveText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `actionBarTabLine`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
+        red: 211,
+        green: 225,
+        blue: 238,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -221,17 +59,8 @@ const defaultTheme = () =>
       `actionBarTabSelector`,
       {
         red: 64,
-        green: 109,
-        blue: 148,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `actionBarTabUnactiveText`,
-      {
-        red: 213,
-        green: 232,
-        blue: 247,
+        green: 111,
+        blue: 156,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -241,41 +70,23 @@ const defaultTheme = () =>
         red: 0,
         green: 0,
         blue: 0,
-        alpha: 47,
-      } as Color,
-    ] as [string, Color],
-    [
-      `avatar_actionBarIconBlue`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
+        alpha: 16,
       } as Color,
     ] as [string, Color],
     [
       `avatar_actionBarSelectorBlue`,
       {
-        red: 73,
-        green: 129,
-        blue: 173,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `avatar_backgroundActionBarBlue`,
-      {
-        red: 89,
-        green: 143,
-        blue: 186,
+        red: 71,
+        green: 126,
+        blue: 169,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `avatar_backgroundArchived`,
       {
-        red: 169,
-        green: 182,
+        red: 179,
+        green: 187,
         blue: 193,
         alpha: 255,
       } as Color,
@@ -283,977 +94,194 @@ const defaultTheme = () =>
     [
       `avatar_backgroundArchivedHidden`,
       {
-        red: 102,
-        green: 191,
-        blue: 250,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `avatar_backgroundBlue`,
-      {
-        red: 84,
-        green: 156,
-        blue: 221,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `avatar_backgroundCyan`,
-      {
-        red: 95,
-        green: 190,
-        blue: 213,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `avatar_backgroundGreen`,
-      {
-        red: 118,
-        green: 200,
-        blue: 77,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `avatar_backgroundGroupCreateSpanBlue`,
-      {
-        red: 230,
-        green: 239,
-        blue: 247,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `avatar_backgroundInProfileBlue`,
-      {
-        red: 80,
-        green: 133,
-        blue: 177,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `avatar_backgroundOrange`,
-      {
-        red: 242,
-        green: 140,
-        blue: 72,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `avatar_backgroundPink`,
-      {
-        red: 242,
-        green: 116,
-        blue: 154,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `avatar_backgroundRed`,
-      {
-        red: 229,
-        green: 101,
-        blue: 85,
+        red: 90,
+        green: 181,
+        blue: 244,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `avatar_backgroundSaved`,
       {
-        red: 102,
-        green: 191,
-        blue: 250,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `avatar_backgroundViolet`,
-      {
-        red: 142,
-        green: 133,
-        blue: 238,
+        red: 96,
+        green: 184,
+        blue: 247,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `avatar_nameInMessageBlue`,
       {
-        red: 78,
-        green: 146,
-        blue: 204,
+        red: 32,
+        green: 141,
+        blue: 214,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `avatar_nameInMessageCyan`,
       {
-        red: 55,
-        green: 158,
-        blue: 184,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `avatar_nameInMessageGreen`,
-      {
-        red: 80,
-        green: 178,
-        blue: 50,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `avatar_nameInMessageOrange`,
-      {
-        red: 216,
-        green: 123,
-        blue: 41,
+        red: 47,
+        green: 163,
+        blue: 201,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `avatar_nameInMessagePink`,
       {
-        red: 78,
-        green: 146,
-        blue: 204,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `avatar_nameInMessageRed`,
-      {
-        red: 202,
-        green: 86,
-        blue: 80,
+        red: 210,
+        green: 104,
+        blue: 149,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `avatar_nameInMessageViolet`,
       {
-        red: 78,
-        green: 146,
-        blue: 204,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `avatar_subtitleInProfileBlue`,
-      {
-        red: 215,
-        green: 234,
-        blue: 250,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `avatar_text`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
+        red: 128,
+        green: 109,
+        blue: 207,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `calls_callReceivedGreenIcon`,
       {
-        red: 0,
-        green: 200,
-        blue: 83,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `calls_callReceivedRedIcon`,
-      {
-        red: 255,
-        green: 72,
-        blue: 72,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `changephoneinfo_image`,
-      {
-        red: 184,
-        green: 191,
-        blue: 197,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `changephoneinfo_image2`,
-      {
-        red: 80,
-        green: 167,
-        blue: 234,
+        red: 65,
+        green: 162,
+        blue: 239,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_addContact`,
       {
-        red: 74,
-        green: 130,
-        blue: 181,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_adminSelectedText`,
-      {
-        red: 137,
-        green: 180,
-        blue: 193,
+        red: 45,
+        green: 150,
+        blue: 223,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_adminText`,
       {
-        red: 192,
-        green: 198,
-        blue: 203,
+        red: 161,
+        green: 170,
+        blue: 179,
+        alpha: 230,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_attachAudioText`,
+      {
+        red: 222,
+        green: 71,
+        blue: 71,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
-      `chat_attachActiveTab`,
+      `chat_attachContactText`,
       {
-        red: 51,
-        green: 167,
-        blue: 245,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_attachAudioBackground`,
-      {
-        red: 235,
-        green: 96,
-        blue: 96,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_attachAudioIcon`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_attachCheckBoxBackground`,
-      {
-        red: 57,
-        green: 178,
-        blue: 247,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_attachCheckBoxCheck`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_attachContactBackground`,
-      {
-        red: 242,
-        green: 192,
-        blue: 75,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_attachContactIcon`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_attachEmptyImage`,
-      {
-        red: 204,
-        green: 204,
-        blue: 204,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_attachFileBackground`,
-      {
-        red: 52,
-        green: 185,
-        blue: 241,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_attachFileIcon`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_attachGalleryBackground`,
-      {
-        red: 69,
-        green: 157,
-        blue: 245,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_attachGalleryIcon`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_attachLocationBackground`,
-      {
-        red: 54,
-        green: 199,
-        blue: 102,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_attachLocationIcon`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_attachMediaBanBackground`,
-      {
-        red: 70,
-        green: 70,
-        blue: 70,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_attachMediaBanText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_attachPermissionImage`,
-      {
-        red: 51,
-        green: 51,
-        blue: 51,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_attachPermissionMark`,
-      {
-        red: 226,
-        green: 80,
-        blue: 80,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_attachPermissionText`,
-      {
-        red: 111,
-        green: 119,
-        blue: 122,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_attachPhotoBackground`,
-      {
-        red: 0,
-        green: 0,
+        red: 223,
+        green: 160,
         blue: 0,
-        alpha: 8,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_attachPollBackground`,
-      {
-        red: 242,
-        green: 192,
-        blue: 75,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
-      `chat_attachPollIcon`,
+      `chat_attachFileText`,
       {
-        red: 255,
-        green: 255,
-        blue: 255,
+        red: 20,
+        green: 168,
+        blue: 228,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
-      `chat_attachUnactiveTab`,
+      `chat_attachGalleryText`,
       {
-        red: 146,
-        green: 153,
-        blue: 158,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_botButtonText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_botKeyboardButtonBackground`,
-      {
-        red: 228,
-        green: 231,
+        red: 46,
+        green: 141,
         blue: 233,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
-      `chat_botKeyboardButtonBackgroundPressed`,
+      `chat_attachHideBackground`,
       {
-        red: 204,
-        green: 209,
-        blue: 212,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_botKeyboardButtonText`,
-      {
-        red: 54,
-        green: 71,
-        blue: 79,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_botProgress`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_botSwitchToInlineText`,
-      {
-        red: 67,
-        green: 145,
+        red: 181,
+        green: 190,
         blue: 204,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
-      `chat_emojiBottomPanelIcon`,
+      `chat_attachLocationText`,
       {
-        red: 140,
-        green: 145,
-        blue: 151,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_emojiPanelBackground`,
-      {
-        red: 240,
-        green: 242,
-        blue: 245,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_emojiPanelBackspace`,
-      {
-        red: 140,
-        green: 145,
-        blue: 151,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_emojiPanelBadgeBackground`,
-      {
-        red: 77,
-        green: 166,
-        blue: 234,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_emojiPanelBadgeText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_emojiPanelEmptyText`,
-      {
-        red: 148,
-        green: 155,
-        blue: 161,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_emojiPanelIcon`,
-      {
-        red: 157,
-        green: 164,
-        blue: 171,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_emojiPanelIconSelected`,
-      {
-        red: 43,
-        green: 151,
-        blue: 226,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_emojiPanelMasksIcon`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_emojiPanelMasksIconSelected`,
-      {
-        red: 98,
-        green: 191,
-        blue: 232,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_emojiPanelNewTrending`,
-      {
-        red: 77,
-        green: 166,
-        blue: 234,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_emojiPanelShadowLine`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
-        alpha: 18,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_emojiPanelStickerPackSelector`,
-      {
-        red: 226,
-        green: 229,
-        blue: 231,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_emojiPanelStickerPackSelectorLine`,
-      {
-        red: 86,
+        red: 60,
         green: 171,
-        blue: 240,
+        blue: 47,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
-      `chat_emojiPanelStickerSetName`,
+      `chat_attachPollText`,
       {
-        red: 130,
-        green: 139,
-        blue: 148,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_emojiPanelStickerSetNameHighlight`,
-      {
-        red: 39,
-        green: 141,
-        blue: 219,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_emojiPanelStickerSetNameIcon`,
-      {
-        red: 177,
-        green: 182,
-        blue: 188,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_emojiPanelTrendingDescription`,
-      {
-        red: 138,
-        green: 138,
-        blue: 138,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_emojiPanelTrendingTitle`,
-      {
-        red: 34,
-        green: 34,
-        blue: 34,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_emojiSearchBackground`,
-      {
-        red: 229,
-        green: 233,
-        blue: 238,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_emojiSearchIcon`,
-      {
-        red: 148,
-        green: 161,
-        blue: 175,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_fieldOverlayText`,
-      {
-        red: 58,
-        green: 140,
-        blue: 207,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_gifSaveHintBackground`,
-      {
-        red: 17,
-        green: 17,
-        blue: 17,
-        alpha: 204,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_gifSaveHintText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_goDownButton`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_goDownButtonCounter`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_goDownButtonCounterBackground`,
-      {
-        red: 77,
-        green: 162,
-        blue: 232,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_goDownButtonIcon`,
-      {
-        red: 142,
-        green: 149,
-        blue: 155,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_goDownButtonShadow`,
-      {
-        red: 0,
-        green: 0,
+        red: 223,
+        green: 160,
         blue: 0,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inAudioCacheSeekbar`,
-      {
-        red: 228,
-        green: 234,
-        blue: 240,
-        alpha: 63,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inAudioDurationSelectedText`,
-      {
-        red: 137,
-        green: 180,
-        blue: 193,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inAudioDurationText`,
-      {
-        red: 161,
-        green: 170,
-        blue: 179,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inAudioPerfomerSelectedText`,
-      {
-        red: 47,
-        green: 52,
-        blue: 56,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inAudioPerfomerText`,
-      {
-        red: 47,
-        green: 52,
-        blue: 56,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inAudioProgress`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inAudioSeekbar`,
-      {
-        red: 228,
-        green: 234,
-        blue: 240,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_inAudioSeekbarFill`,
       {
-        red: 114,
-        green: 181,
+        red: 94,
+        green: 171,
         blue: 232,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inAudioSeekbarSelected`,
-      {
-        red: 188,
-        green: 222,
-        blue: 232,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inAudioSelectedProgress`,
-      {
-        red: 239,
-        green: 248,
-        blue: 254,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_inAudioTitleText`,
       {
-        red: 78,
-        green: 154,
-        blue: 212,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inBubble`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
+        red: 26,
+        green: 46,
+        blue: 59,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_inBubbleSelected`,
       {
-        red: 236,
-        green: 247,
-        blue: 253,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inBubbleShadow`,
-      {
-        red: 29,
-        green: 55,
-        blue: 83,
+        red: 232,
+        green: 245,
+        blue: 252,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_inContactBackground`,
       {
-        red: 114,
-        green: 181,
-        blue: 232,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inContactIcon`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
+        red: 68,
+        green: 169,
+        blue: 242,
+        alpha: 230,
       } as Color,
     ] as [string, Color],
     [
       `chat_inContactNameText`,
       {
-        red: 78,
-        green: 154,
-        blue: 212,
+        red: 17,
+        green: 35,
+        blue: 53,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_inContactPhoneSelectedText`,
-      {
-        red: 47,
-        green: 52,
-        blue: 56,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inContactPhoneText`,
-      {
-        red: 47,
-        green: 52,
-        blue: 56,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inDownCall`,
-      {
-        red: 0,
-        green: 200,
-        blue: 83,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inFileBackground`,
-      {
-        red: 235,
-        green: 240,
-        blue: 245,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inFileBackgroundSelected`,
-      {
-        red: 203,
-        green: 234,
-        blue: 246,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inFileIcon`,
-      {
-        red: 162,
-        green: 181,
-        blue: 199,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inFileInfoSelectedText`,
       {
         red: 137,
         green: 180,
@@ -1262,7 +290,7 @@ const defaultTheme = () =>
       } as Color,
     ] as [string, Color],
     [
-      `chat_inFileInfoText`,
+      `chat_inContactPhoneText`,
       {
         red: 161,
         green: 170,
@@ -1273,1971 +301,909 @@ const defaultTheme = () =>
     [
       `chat_inFileNameText`,
       {
-        red: 78,
-        green: 154,
-        blue: 212,
+        red: 17,
+        green: 35,
+        blue: 53,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_inFileProgress`,
       {
-        red: 235,
-        green: 240,
-        blue: 245,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inFileProgressSelected`,
-      {
-        red: 203,
-        green: 234,
-        blue: 246,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inFileSelectedIcon`,
-      {
-        red: 135,
-        green: 182,
-        blue: 197,
+        red: 255,
+        green: 255,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_inForwardedNameText`,
       {
-        red: 56,
-        green: 134,
-        blue: 199,
+        red: 8,
+        green: 126,
+        blue: 202,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_inInstant`,
       {
-        red: 58,
-        green: 140,
-        blue: 207,
+        red: 31,
+        green: 149,
+        blue: 226,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_inInstantSelected`,
       {
-        red: 48,
-        green: 121,
-        blue: 181,
+        red: 31,
+        green: 149,
+        blue: 226,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_inLoader`,
       {
-        red: 114,
-        green: 181,
-        blue: 232,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inLoaderPhoto`,
-      {
-        red: 162,
-        green: 184,
-        blue: 200,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inLoaderPhotoIcon`,
-      {
-        red: 252,
-        green: 252,
-        blue: 252,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inLoaderPhotoIconSelected`,
-      {
-        red: 235,
-        green: 240,
-        blue: 245,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inLoaderPhotoSelected`,
-      {
-        red: 162,
-        green: 181,
-        blue: 199,
-        alpha: 255,
+        red: 68,
+        green: 169,
+        blue: 242,
+        alpha: 230,
       } as Color,
     ] as [string, Color],
     [
       `chat_inLoaderSelected`,
       {
-        red: 101,
-        green: 171,
-        blue: 224,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inLocationBackground`,
-      {
-        red: 235,
-        green: 240,
-        blue: 245,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inLocationIcon`,
-      {
-        red: 162,
-        green: 181,
-        blue: 199,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inMediaIcon`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inMediaIconSelected`,
-      {
-        red: 239,
-        green: 248,
-        blue: 254,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inMenu`,
-      {
-        red: 182,
-        green: 189,
-        blue: 197,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inMenuSelected`,
-      {
-        red: 152,
-        green: 193,
-        blue: 206,
+        red: 68,
+        green: 169,
+        blue: 242,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_inPreviewInstantSelectedText`,
       {
-        red: 48,
-        green: 121,
-        blue: 181,
+        red: 58,
+        green: 140,
+        blue: 207,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_inPreviewInstantText`,
       {
-        red: 58,
-        green: 140,
-        blue: 207,
+        red: 35,
+        green: 145,
+        blue: 223,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_inPreviewLine`,
       {
-        red: 112,
-        green: 180,
-        blue: 232,
-        alpha: 255,
+        red: 55,
+        green: 163,
+        blue: 239,
+        alpha: 235,
       } as Color,
     ] as [string, Color],
     [
       `chat_inReplyLine`,
       {
-        red: 89,
-        green: 159,
-        blue: 216,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inReplyMediaMessageSelectedText`,
-      {
-        red: 137,
-        green: 180,
-        blue: 193,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inReplyMediaMessageText`,
-      {
-        red: 161,
-        green: 170,
-        blue: 179,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inReplyMessageText`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
-        alpha: 255,
+        red: 53,
+        green: 157,
+        blue: 230,
+        alpha: 235,
       } as Color,
     ] as [string, Color],
     [
       `chat_inReplyNameText`,
       {
-        red: 58,
-        green: 140,
-        blue: 207,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inSentClock`,
-      {
-        red: 161,
-        green: 170,
-        blue: 179,
+        red: 32,
+        green: 141,
+        blue: 214,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_inSentClockSelected`,
       {
-        red: 147,
-        green: 189,
-        blue: 202,
+        red: 137,
+        green: 180,
+        blue: 193,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_inSiteNameText`,
       {
-        red: 58,
-        green: 140,
-        blue: 207,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inTimeSelectedText`,
-      {
-        red: 137,
-        green: 180,
-        blue: 193,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inTimeText`,
-      {
-        red: 161,
-        green: 170,
-        blue: 179,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inUpCall`,
-      {
-        red: 255,
-        green: 72,
-        blue: 72,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inVenueInfoSelectedText`,
-      {
-        red: 137,
-        green: 180,
-        blue: 193,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inVenueInfoText`,
-      {
-        red: 161,
-        green: 170,
-        blue: 179,
+        red: 21,
+        green: 133,
+        blue: 208,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_inViaBotNameText`,
       {
-        red: 58,
-        green: 140,
+        red: 50,
+        green: 138,
         blue: 207,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inViews`,
-      {
-        red: 161,
-        green: 170,
-        blue: 179,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_inViewsSelected`,
       {
-        red: 147,
-        green: 189,
-        blue: 202,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inVoiceSeekbar`,
-      {
-        red: 222,
-        green: 229,
-        blue: 235,
+        red: 137,
+        green: 180,
+        blue: 193,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_inVoiceSeekbarFill`,
       {
-        red: 114,
-        green: 181,
+        red: 80,
+        green: 175,
         blue: 232,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inVoiceSeekbarSelected`,
-      {
-        red: 188,
-        green: 222,
-        blue: 232,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_inlineResultIcon`,
-      {
-        red: 87,
-        green: 149,
-        blue: 204,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_linkSelectBackground`,
-      {
-        red: 98,
-        green: 169,
-        blue: 227,
-        alpha: 51,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_lockIcon`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_mediaBroadcast`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_mediaInfoText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_mediaLoaderPhoto`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
-        alpha: 102,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_mediaLoaderPhotoIcon`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_mediaLoaderPhotoIconSelected`,
-      {
-        red: 217,
-        green: 217,
-        blue: 217,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_mediaLoaderPhotoSelected`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
-        alpha: 127,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_mediaMenu`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_mediaProgress`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_mediaSentCheck`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_mediaSentClock`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_mediaTimeBackground`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
-        alpha: 102,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_mediaTimeText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_mediaViews`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_messageLinkIn`,
       {
-        red: 38,
-        green: 120,
-        blue: 182,
+        red: 10,
+        green: 121,
+        blue: 189,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_messageLinkOut`,
       {
-        red: 38,
-        green: 120,
-        blue: 182,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_messagePanelBackground`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_messagePanelCancelInlineBot`,
-      {
-        red: 173,
-        green: 173,
-        blue: 173,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_messagePanelCursor`,
-      {
-        red: 84,
-        green: 161,
-        blue: 219,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_messagePanelHint`,
-      {
-        red: 164,
-        green: 172,
-        blue: 179,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_messagePanelIcons`,
-      {
-        red: 142,
-        green: 149,
-        blue: 155,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_messagePanelPressedSend`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_messagePanelSend`,
-      {
-        red: 98,
-        green: 176,
-        blue: 235,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_messagePanelShadow`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_messagePanelText`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_messagePanelVideoFrame`,
-      {
-        red: 75,
-        green: 173,
-        blue: 247,
+        red: 9,
+        green: 123,
+        blue: 195,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_messagePanelVoiceBackground`,
       {
-        red: 87,
-        green: 149,
-        blue: 204,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_messagePanelVoiceDelete`,
-      {
-        red: 115,
-        green: 115,
-        blue: 115,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_messagePanelVoiceDuration`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_messagePanelVoicePressed`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_messagePanelVoiceShadow`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
-        alpha: 13,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_messageTextIn`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_messageTextOut`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_muteIcon`,
-      {
-        red: 177,
-        green: 204,
-        blue: 227,
+        red: 97,
+        green: 176,
+        blue: 234,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outAudioCacheSeekbar`,
       {
-        red: 187,
-        green: 227,
-        blue: 172,
-        alpha: 63,
+        red: 167,
+        green: 204,
+        blue: 231,
+        alpha: 194,
       } as Color,
     ] as [string, Color],
     [
       `chat_outAudioDurationSelectedText`,
       {
-        red: 101,
-        green: 176,
-        blue: 91,
+        red: 123,
+        green: 163,
+        blue: 202,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outAudioDurationText`,
       {
-        red: 101,
-        green: 176,
-        blue: 91,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_outAudioPerfomerSelectedText`,
-      {
-        red: 53,
-        green: 66,
-        blue: 52,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_outAudioPerfomerText`,
-      {
-        red: 53,
-        green: 66,
-        blue: 52,
+        red: 140,
+        green: 170,
+        blue: 189,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outAudioProgress`,
       {
-        red: 239,
-        green: 255,
-        blue: 222,
+        red: 160,
+        green: 202,
+        blue: 239,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outAudioSeekbar`,
       {
-        red: 187,
-        green: 227,
-        blue: 172,
-        alpha: 255,
+        red: 167,
+        green: 204,
+        blue: 231,
+        alpha: 137,
       } as Color,
     ] as [string, Color],
     [
       `chat_outAudioSeekbarFill`,
       {
-        red: 120,
-        green: 194,
-        blue: 114,
+        red: 69,
+        green: 169,
+        blue: 242,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outAudioSeekbarSelected`,
       {
-        red: 169,
-        green: 221,
-        blue: 150,
-        alpha: 255,
+        red: 83,
+        green: 171,
+        blue: 221,
+        alpha: 71,
       } as Color,
     ] as [string, Color],
     [
       `chat_outAudioSelectedProgress`,
       {
-        red: 225,
-        green: 248,
-        blue: 207,
+        red: 141,
+        green: 201,
+        blue: 245,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outAudioTitleText`,
       {
-        red: 85,
-        green: 171,
-        blue: 79,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_outBroadcast`,
-      {
-        red: 70,
-        green: 170,
-        blue: 54,
+        red: 24,
+        green: 44,
+        blue: 56,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outBubble`,
       {
-        red: 239,
-        green: 255,
-        blue: 222,
+        red: 230,
+        green: 242,
+        blue: 252,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outBubbleSelected`,
       {
-        red: 217,
-        green: 247,
-        blue: 197,
+        red: 214,
+        green: 242,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outBubbleShadow`,
       {
-        red: 30,
-        green: 117,
-        blue: 12,
+        red: 1,
+        green: 48,
+        blue: 74,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outContactBackground`,
       {
-        red: 120,
-        green: 194,
-        blue: 114,
+        red: 68,
+        green: 169,
+        blue: 242,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outContactIcon`,
       {
-        red: 239,
+        red: 255,
         green: 255,
-        blue: 222,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outContactNameText`,
       {
-        red: 85,
-        green: 171,
-        blue: 79,
+        red: 30,
+        green: 47,
+        blue: 62,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outContactPhoneSelectedText`,
       {
-        red: 53,
-        green: 66,
-        blue: 52,
+        red: 107,
+        green: 152,
+        blue: 188,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outContactPhoneText`,
       {
-        red: 53,
-        green: 66,
-        blue: 52,
+        red: 124,
+        green: 150,
+        blue: 167,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outFileBackground`,
       {
-        red: 218,
-        green: 245,
-        blue: 195,
-        alpha: 255,
+        red: 199,
+        green: 226,
+        blue: 247,
+        alpha: 178,
       } as Color,
     ] as [string, Color],
     [
       `chat_outFileBackgroundSelected`,
       {
-        red: 197,
-        green: 236,
-        blue: 167,
+        red: 187,
+        green: 229,
+        blue: 252,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outFileIcon`,
       {
-        red: 133,
-        green: 191,
-        blue: 120,
-        alpha: 255,
+        red: 68,
+        green: 169,
+        blue: 242,
+        alpha: 240,
       } as Color,
     ] as [string, Color],
     [
       `chat_outFileInfoSelectedText`,
       {
-        red: 101,
-        green: 176,
-        blue: 91,
+        red: 123,
+        green: 163,
+        blue: 202,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outFileInfoText`,
       {
-        red: 101,
-        green: 176,
-        blue: 91,
+        red: 134,
+        green: 162,
+        blue: 180,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outFileNameText`,
       {
-        red: 85,
-        green: 171,
-        blue: 79,
+        red: 30,
+        green: 47,
+        blue: 62,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outFileProgress`,
       {
-        red: 218,
-        green: 245,
-        blue: 195,
+        red: 255,
+        green: 255,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outFileProgressSelected`,
       {
-        red: 197,
-        green: 236,
-        blue: 167,
+        red: 209,
+        green: 241,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outFileSelectedIcon`,
       {
-        red: 133,
-        green: 191,
-        blue: 120,
+        red: 68,
+        green: 169,
+        blue: 242,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outForwardedNameText`,
       {
-        red: 85,
-        green: 171,
-        blue: 79,
+        red: 34,
+        green: 132,
+        blue: 202,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outInstant`,
       {
-        red: 85,
-        green: 171,
-        blue: 79,
+        red: 8,
+        green: 146,
+        blue: 214,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outInstantSelected`,
       {
-        red: 72,
-        green: 153,
-        blue: 67,
+        red: 30,
+        green: 156,
+        blue: 223,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outLoader`,
       {
-        red: 120,
-        green: 194,
-        blue: 114,
-        alpha: 255,
+        red: 68,
+        green: 169,
+        blue: 242,
+        alpha: 240,
       } as Color,
     ] as [string, Color],
     [
       `chat_outLoaderPhoto`,
       {
-        red: 133,
-        green: 191,
-        blue: 120,
-        alpha: 255,
+        red: 69,
+        green: 169,
+        blue: 242,
+        alpha: 240,
       } as Color,
     ] as [string, Color],
     [
       `chat_outLoaderPhotoIcon`,
       {
-        red: 218,
-        green: 245,
-        blue: 195,
-        alpha: 255,
+        red: 68,
+        green: 169,
+        blue: 242,
+        alpha: 240,
       } as Color,
     ] as [string, Color],
     [
       `chat_outLoaderPhotoIconSelected`,
       {
-        red: 192,
-        green: 232,
-        blue: 164,
-        alpha: 255,
+        red: 68,
+        green: 169,
+        blue: 242,
+        alpha: 240,
       } as Color,
     ] as [string, Color],
     [
       `chat_outLoaderPhotoSelected`,
       {
-        red: 125,
-        green: 184,
-        blue: 112,
-        alpha: 255,
+        red: 68,
+        green: 169,
+        blue: 242,
+        alpha: 240,
       } as Color,
     ] as [string, Color],
     [
       `chat_outLoaderSelected`,
       {
-        red: 106,
-        green: 181,
-        blue: 100,
+        red: 68,
+        green: 169,
+        blue: 242,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outLocationBackground`,
       {
-        red: 218,
-        green: 245,
-        blue: 195,
-        alpha: 255,
+        red: 199,
+        green: 226,
+        blue: 246,
+        alpha: 196,
       } as Color,
     ] as [string, Color],
     [
       `chat_outLocationIcon`,
       {
-        red: 135,
-        green: 191,
-        blue: 120,
-        alpha: 255,
+        red: 124,
+        green: 160,
+        blue: 193,
+        alpha: 130,
       } as Color,
     ] as [string, Color],
     [
       `chat_outMediaIcon`,
       {
-        red: 239,
+        red: 255,
         green: 255,
-        blue: 222,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_outMediaIconSelected`,
-      {
-        red: 225,
-        green: 248,
-        blue: 207,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outMenu`,
       {
-        red: 145,
-        green: 206,
-        blue: 126,
+        red: 168,
+        green: 196,
+        blue: 214,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outMenuSelected`,
       {
-        red: 145,
-        green: 206,
-        blue: 126,
+        red: 148,
+        green: 198,
+        blue: 241,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outPreviewInstantSelectedText`,
       {
-        red: 72,
-        green: 153,
-        blue: 67,
+        red: 34,
+        green: 132,
+        blue: 202,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outPreviewInstantText`,
       {
-        red: 85,
-        green: 171,
-        blue: 79,
+        red: 34,
+        green: 132,
+        blue: 202,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outPreviewLine`,
       {
-        red: 136,
-        green: 201,
-        blue: 123,
+        red: 67,
+        green: 166,
+        blue: 231,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outReplyLine`,
       {
-        red: 110,
-        green: 185,
-        blue: 105,
+        red: 55,
+        green: 154,
+        blue: 227,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outReplyMediaMessageSelectedText`,
       {
-        red: 101,
-        green: 176,
-        blue: 91,
+        red: 123,
+        green: 163,
+        blue: 203,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outReplyMediaMessageText`,
       {
-        red: 101,
-        green: 176,
-        blue: 91,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_outReplyMessageText`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
+        red: 140,
+        green: 170,
+        blue: 189,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outReplyNameText`,
       {
-        red: 85,
-        green: 171,
-        blue: 79,
+        red: 36,
+        green: 137,
+        blue: 206,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outSentCheck`,
       {
-        red: 93,
-        green: 176,
-        blue: 80,
+        red: 27,
+        green: 155,
+        blue: 230,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outSentCheckRead`,
       {
-        red: 93,
-        green: 176,
-        blue: 80,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_outSentCheckReadSelected`,
-      {
-        red: 93,
-        green: 176,
-        blue: 80,
+        red: 27,
+        green: 155,
+        blue: 230,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outSentCheckSelected`,
       {
-        red: 93,
-        green: 176,
-        blue: 80,
+        red: 27,
+        green: 153,
+        blue: 226,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outSentClock`,
       {
-        red: 117,
-        green: 189,
-        blue: 94,
-        alpha: 255,
+        red: 140,
+        green: 170,
+        blue: 189,
+        alpha: 220,
       } as Color,
     ] as [string, Color],
     [
       `chat_outSentClockSelected`,
       {
-        red: 117,
-        green: 189,
-        blue: 94,
-        alpha: 255,
+        red: 123,
+        green: 163,
+        blue: 202,
+        alpha: 240,
       } as Color,
     ] as [string, Color],
     [
       `chat_outSiteNameText`,
       {
-        red: 85,
-        green: 171,
-        blue: 79,
+        red: 34,
+        green: 130,
+        blue: 201,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outTimeSelectedText`,
       {
-        red: 112,
-        green: 177,
-        blue: 92,
+        red: 123,
+        green: 163,
+        blue: 202,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outTimeText`,
       {
-        red: 112,
-        green: 177,
-        blue: 92,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_outUpCall`,
-      {
-        red: 0,
-        green: 200,
-        blue: 83,
-        alpha: 255,
+        red: 140,
+        green: 170,
+        blue: 189,
+        alpha: 247,
       } as Color,
     ] as [string, Color],
     [
       `chat_outVenueInfoSelectedText`,
       {
-        red: 101,
-        green: 176,
-        blue: 91,
+        red: 123,
+        green: 163,
+        blue: 202,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outVenueInfoText`,
       {
-        red: 101,
-        green: 176,
-        blue: 91,
+        red: 130,
+        green: 158,
+        blue: 175,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outViaBotNameText`,
       {
-        red: 85,
-        green: 171,
-        blue: 79,
+        red: 34,
+        green: 132,
+        blue: 202,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outViews`,
       {
-        red: 110,
-        green: 178,
-        blue: 87,
-        alpha: 255,
+        red: 140,
+        green: 170,
+        blue: 189,
+        alpha: 240,
       } as Color,
     ] as [string, Color],
     [
       `chat_outViewsSelected`,
       {
-        red: 110,
-        green: 178,
-        blue: 87,
-        alpha: 255,
+        red: 123,
+        green: 163,
+        blue: 202,
+        alpha: 240,
       } as Color,
     ] as [string, Color],
     [
       `chat_outVoiceSeekbar`,
       {
-        red: 187,
-        green: 227,
-        blue: 172,
-        alpha: 255,
+        red: 164,
+        green: 196,
+        blue: 223,
+        alpha: 189,
       } as Color,
     ] as [string, Color],
     [
       `chat_outVoiceSeekbarFill`,
       {
-        red: 120,
-        green: 194,
-        blue: 114,
+        red: 69,
+        green: 169,
+        blue: 242,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_outVoiceSeekbarSelected`,
       {
-        red: 169,
-        green: 221,
-        blue: 150,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_previewDurationText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_previewGameText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_recordTime`,
-      {
-        red: 77,
-        green: 76,
-        blue: 75,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_recordVoiceCancel`,
-      {
-        red: 153,
-        green: 153,
-        blue: 153,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_recordedVoiceBackground`,
-      {
-        red: 85,
-        green: 158,
-        blue: 227,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_recordedVoiceDot`,
-      {
-        red: 218,
-        green: 86,
-        blue: 77,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_recordedVoicePlayPause`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_recordedVoicePlayPausePressed`,
-      {
-        red: 217,
-        green: 234,
-        blue: 251,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_recordedVoiceProgress`,
-      {
-        red: 162,
-        green: 206,
-        blue: 248,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_recordedVoiceProgressInner`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_replyPanelClose`,
-      {
-        red: 142,
-        green: 149,
-        blue: 155,
-        alpha: 255,
+        red: 106,
+        green: 171,
+        blue: 211,
+        alpha: 121,
       } as Color,
     ] as [string, Color],
     [
       `chat_replyPanelIcons`,
       {
-        red: 87,
-        green: 168,
-        blue: 230,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_replyPanelLine`,
-      {
-        red: 232,
-        green: 232,
-        blue: 232,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_replyPanelMessage`,
-      {
-        red: 34,
-        green: 34,
-        blue: 34,
+        red: 73,
+        green: 161,
+        blue: 237,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_replyPanelName`,
       {
-        red: 58,
-        green: 140,
-        blue: 207,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_reportSpam`,
-      {
-        red: 207,
-        green: 89,
-        blue: 87,
+        red: 51,
+        green: 145,
+        blue: 222,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_searchPanelIcons`,
       {
-        red: 103,
-        green: 106,
-        blue: 111,
+        red: 58,
+        green: 151,
+        blue: 228,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_searchPanelText`,
       {
-        red: 103,
-        green: 106,
-        blue: 111,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_secretChatStatusText`,
-      {
-        red: 127,
-        green: 127,
-        blue: 127,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_secretTimeText`,
-      {
-        red: 228,
-        green: 226,
+        red: 63,
+        green: 153,
         blue: 224,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_secretTimerBackground`,
-      {
-        red: 62,
-        green: 100,
-        blue: 142,
-        alpha: 204,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_secretTimerText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_selectedBackground`,
       {
-        red: 10,
-        green: 144,
-        blue: 240,
-        alpha: 40,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_sentError`,
-      {
-        red: 219,
-        green: 53,
-        blue: 53,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_sentErrorIcon`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_serviceIcon`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_serviceLink`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_serviceText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_shareBackground`,
-      {
-        red: 114,
-        green: 143,
-        blue: 166,
-        alpha: 102,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_shareBackgroundSelected`,
-      {
-        red: 114,
-        green: 143,
-        blue: 166,
-        alpha: 153,
+        red: 7,
+        green: 122,
+        blue: 196,
+        alpha: 50,
       } as Color,
     ] as [string, Color],
     [
       `chat_status`,
       {
-        red: 213,
-        green: 232,
-        blue: 247,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_stickerNameText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_stickerReplyLine`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_stickerReplyMessageText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_stickerReplyNameText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_stickerViaBotNameText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_stickersHintPanel`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_textSelectBackground`,
-      {
-        red: 98,
-        green: 169,
-        blue: 227,
-        alpha: 102,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_topPanelBackground`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_topPanelClose`,
-      {
-        red: 140,
-        green: 149,
-        blue: 154,
+        red: 215,
+        green: 231,
+        blue: 243,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_topPanelLine`,
       {
-        red: 108,
-        green: 159,
-        blue: 210,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_topPanelMessage`,
-      {
-        red: 153,
-        green: 153,
-        blue: 153,
+        red: 73,
+        green: 168,
+        blue: 228,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_topPanelTitle`,
       {
-        red: 58,
-        green: 140,
-        blue: 207,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_unreadMessagesStartArrowIcon`,
-      {
-        red: 162,
-        green: 181,
-        blue: 199,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_unreadMessagesStartBackground`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
+        red: 54,
+        green: 150,
+        blue: 224,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_unreadMessagesStartText`,
       {
-        red: 86,
-        green: 149,
-        blue: 204,
+        red: 67,
+        green: 147,
+        blue: 221,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_wallpaper`,
+      {
+        red: 83,
+        green: 144,
+        blue: 209,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_wallpaper_gradient_to`,
+      {
+        red: 171,
+        green: 200,
+        blue: 224,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chats_actionBackground`,
       {
-        red: 101,
-        green: 169,
-        blue: 224,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_actionIcon`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
+        red: 97,
+        green: 170,
+        blue: 223,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chats_actionMessage`,
       {
-        red: 60,
-        green: 126,
-        blue: 176,
+        red: 29,
+        green: 127,
+        blue: 191,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chats_actionPressedBackground`,
       {
-        red: 86,
-        green: 157,
-        blue: 214,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_actionUnreadBackground`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_actionUnreadIcon`,
-      {
-        red: 115,
-        green: 115,
-        blue: 115,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_actionUnreadPressedBackground`,
-      {
-        red: 242,
-        green: 242,
-        blue: 242,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_archiveBackground`,
-      {
-        red: 102,
-        green: 169,
-        blue: 224,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_archiveIcon`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_archivePinBackground`,
-      {
-        red: 159,
-        green: 170,
-        blue: 179,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_archivePullDownBackground`,
-      {
-        red: 198,
-        green: 201,
-        blue: 204,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_archivePullDownBackgroundActive`,
-      {
-        red: 102,
-        green: 169,
-        blue: 224,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_archiveText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
+        red: 85,
+        green: 155,
+        blue: 212,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chats_attachMessage`,
       {
-        red: 60,
-        green: 126,
-        blue: 176,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_date`,
-      {
-        red: 149,
-        green: 153,
-        blue: 156,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_draft`,
-      {
-        red: 221,
-        green: 75,
-        blue: 57,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_mentionIcon`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_menuBackground`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_menuCloud`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_menuCloudBackgroundCats`,
-      {
-        red: 66,
-        green: 123,
-        blue: 169,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_menuItemCheck`,
-      {
-        red: 89,
-        green: 143,
-        blue: 186,
+        red: 29,
+        green: 128,
+        blue: 194,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chats_menuItemIcon`,
       {
-        red: 136,
-        green: 145,
-        blue: 152,
+        red: 142,
+        green: 148,
+        blue: 153,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chats_menuItemText`,
       {
-        red: 68,
-        green: 68,
-        blue: 68,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_menuName`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_menuPhone`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
+        red: 63,
+        green: 63,
+        blue: 63,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chats_menuPhoneCats`,
       {
-        red: 194,
-        green: 229,
-        blue: 255,
+        red: 215,
+        green: 236,
+        blue: 249,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -3245,22 +1211,31 @@ const defaultTheme = () =>
       `chats_menuTopBackgroundCats`,
       {
         red: 89,
-        green: 143,
-        blue: 186,
+        green: 148,
+        blue: 194,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
-      `chats_message`,
+      `chats_menuTopShadow`,
       {
-        red: 139,
-        green: 141,
-        blue: 143,
+        red: 25,
+        green: 73,
+        blue: 113,
+        alpha: 77,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chats_nameMessage`,
+      {
+        red: 29,
+        green: 128,
+        blue: 194,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
-      `chats_messageArchived`,
+      `chats_nameMessageArchived`,
       {
         red: 145,
         green: 145,
@@ -3269,721 +1244,145 @@ const defaultTheme = () =>
       } as Color,
     ] as [string, Color],
     [
-      `chats_message_threeLines`,
-      {
-        red: 142,
-        green: 144,
-        blue: 145,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_muteIcon`,
-      {
-        red: 189,
-        green: 193,
-        blue: 196,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_name`,
-      {
-        red: 34,
-        green: 34,
-        blue: 34,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_nameArchived`,
-      {
-        red: 82,
-        green: 82,
-        blue: 82,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_nameIcon`,
-      {
-        red: 36,
-        green: 36,
-        blue: 36,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_nameMessage`,
-      {
-        red: 60,
-        green: 126,
-        blue: 176,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_nameMessageArchived`,
-      {
-        red: 139,
-        green: 141,
-        blue: 143,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_nameMessageArchived_threeLines`,
-      {
-        red: 94,
-        green: 94,
-        blue: 94,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
       `chats_nameMessage_threeLines`,
       {
-        red: 66,
-        green: 68,
-        blue: 73,
+        red: 29,
+        green: 128,
+        blue: 193,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chats_onlineCircle`,
       {
-        red: 75,
-        green: 203,
-        blue: 28,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_pinnedIcon`,
-      {
-        red: 168,
-        green: 168,
-        blue: 168,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_pinnedOverlay`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
-        alpha: 8,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_secretIcon`,
-      {
-        red: 25,
-        green: 177,
-        blue: 38,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_secretName`,
-      {
-        red: 0,
-        green: 166,
-        blue: 14,
+        red: 54,
+        green: 176,
+        blue: 244,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chats_sentCheck`,
       {
-        red: 70,
-        green: 170,
-        blue: 54,
+        red: 15,
+        green: 157,
+        blue: 230,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chats_sentClock`,
       {
-        red: 117,
-        green: 189,
-        blue: 94,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_sentError`,
-      {
-        red: 213,
-        green: 82,
-        blue: 82,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_sentErrorIcon`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
+        red: 184,
+        green: 188,
+        blue: 191,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chats_sentReadCheck`,
       {
-        red: 70,
-        green: 170,
-        blue: 54,
+        red: 15,
+        green: 156,
+        blue: 230,
         alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_tabletSelectedOverlay`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
-        alpha: 15,
       } as Color,
     ] as [string, Color],
     [
       `chats_unreadCounter`,
       {
-        red: 78,
-        green: 204,
-        blue: 94,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_unreadCounterMuted`,
-      {
-        red: 198,
-        green: 201,
-        blue: 204,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_unreadCounterText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
+        red: 41,
+        green: 174,
+        blue: 241,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chats_verifiedBackground`,
       {
-        red: 51,
-        green: 168,
-        blue: 230,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chats_verifiedCheck`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `checkbox`,
-      {
-        red: 94,
-        green: 194,
-        blue: 69,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `checkboxCheck`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `checkboxDisabled`,
-      {
-        red: 176,
-        green: 185,
-        blue: 194,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `checkboxSquareBackground`,
-      {
-        red: 67,
-        green: 160,
-        blue: 223,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `checkboxSquareCheck`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `checkboxSquareDisabled`,
-      {
-        red: 176,
-        green: 176,
-        blue: 176,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `checkboxSquareUnchecked`,
-      {
-        red: 115,
-        green: 115,
-        blue: 115,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `contacts_inviteBackground`,
-      {
-        red: 85,
-        green: 190,
-        blue: 97,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `contacts_inviteText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `contextProgressInner1`,
-      {
-        red: 191,
-        green: 223,
-        blue: 246,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `contextProgressInner2`,
-      {
-        red: 191,
-        green: 223,
-        blue: 246,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `contextProgressInner3`,
-      {
-        red: 179,
-        green: 179,
-        blue: 179,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `contextProgressInner4`,
-      {
-        red: 202,
-        green: 205,
-        blue: 208,
+        red: 50,
+        green: 161,
+        blue: 229,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `contextProgressOuter1`,
       {
-        red: 43,
-        green: 150,
-        blue: 226,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `contextProgressOuter2`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `contextProgressOuter3`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `contextProgressOuter4`,
-      {
-        red: 47,
-        green: 52,
-        blue: 56,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogBackground`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogBackgroundGray`,
-      {
-        red: 240,
-        green: 240,
-        blue: 240,
+        red: 61,
+        green: 159,
+        blue: 231,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `dialogBadgeBackground`,
       {
-        red: 62,
-        green: 193,
-        blue: 249,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogBadgeText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
+        red: 55,
+        green: 176,
+        blue: 241,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `dialogButton`,
       {
-        red: 73,
+        red: 54,
         green: 145,
-        blue: 204,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogButtonSelector`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
-        alpha: 15,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogCameraIcon`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogCheckboxSquareBackground`,
-      {
-        red: 67,
-        green: 160,
-        blue: 223,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogCheckboxSquareCheck`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogCheckboxSquareDisabled`,
-      {
-        red: 176,
-        green: 176,
-        blue: 176,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogCheckboxSquareUnchecked`,
-      {
-        red: 115,
-        green: 115,
-        blue: 115,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogFloatingButton`,
-      {
-        red: 76,
-        green: 180,
-        blue: 245,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogFloatingButtonPressed`,
-      {
-        red: 76,
-        green: 180,
-        blue: 245,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogFloatingIcon`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogGrayLine`,
-      {
-        red: 210,
-        green: 210,
-        blue: 210,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogIcon`,
-      {
-        red: 103,
-        green: 107,
-        blue: 112,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogInputField`,
-      {
-        red: 219,
-        green: 219,
-        blue: 219,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogInputFieldActivated`,
-      {
-        red: 55,
-        green: 169,
-        blue: 240,
+        blue: 217,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `dialogLineProgress`,
       {
-        red: 82,
-        green: 125,
-        blue: 163,
+        red: 71,
+        green: 157,
+        blue: 223,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `dialogLineProgressBackground`,
       {
-        red: 219,
-        green: 219,
-        blue: 219,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogLinkSelection`,
-      {
-        red: 98,
-        green: 169,
-        blue: 227,
-        alpha: 51,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogProgressCircle`,
-      {
-        red: 82,
-        green: 125,
-        blue: 163,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogRadioBackground`,
-      {
-        red: 179,
-        green: 179,
-        blue: 179,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogRadioBackgroundChecked`,
-      {
-        red: 55,
-        green: 169,
-        blue: 240,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogRedIcon`,
-      {
-        red: 225,
-        green: 77,
-        blue: 77,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogRoundCheckBox`,
-      {
-        red: 76,
-        green: 180,
+        red: 224,
+        green: 239,
         blue: 245,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogRoundCheckBoxCheck`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogScrollGlow`,
-      {
-        red: 245,
-        green: 246,
-        blue: 247,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogSearchBackground`,
-      {
-        red: 242,
-        green: 244,
-        blue: 245,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogSearchHint`,
-      {
-        red: 152,
-        green: 160,
-        blue: 167,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogSearchIcon`,
-      {
-        red: 161,
-        green: 168,
-        blue: 175,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogSearchText`,
-      {
-        red: 34,
-        green: 34,
-        blue: 34,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogShadowLine`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
-        alpha: 18,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogTextBlack`,
-      {
-        red: 34,
-        green: 34,
-        blue: 34,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `dialogTextBlue`,
       {
-        red: 47,
-        green: 140,
-        blue: 201,
+        red: 34,
+        green: 148,
+        blue: 217,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `dialogTextBlue2`,
       {
-        red: 58,
-        green: 149,
-        blue: 213,
+        red: 34,
+        green: 148,
+        blue: 217,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `dialogTextBlue3`,
       {
-        red: 62,
-        green: 193,
-        blue: 249,
+        red: 22,
+        green: 159,
+        blue: 232,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `dialogTextBlue4`,
       {
-        red: 25,
-        green: 167,
+        red: 22,
+        green: 159,
         blue: 232,
         alpha: 255,
       } as Color,
@@ -3991,432 +1390,90 @@ const defaultTheme = () =>
     [
       `dialogTextGray`,
       {
-        red: 52,
-        green: 139,
-        blue: 193,
+        red: 140,
+        green: 143,
+        blue: 145,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `dialogTextGray2`,
       {
-        red: 117,
-        green: 117,
-        blue: 117,
+        red: 140,
+        green: 143,
+        blue: 145,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `dialogTextGray3`,
       {
-        red: 153,
-        green: 153,
-        blue: 153,
+        red: 140,
+        green: 143,
+        blue: 145,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `dialogTextGray4`,
       {
-        red: 179,
-        green: 179,
-        blue: 179,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogTextHint`,
-      {
-        red: 151,
-        green: 151,
-        blue: 151,
+        red: 140,
+        green: 143,
+        blue: 145,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `dialogTextLink`,
       {
-        red: 38,
-        green: 120,
-        blue: 182,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogTextRed`,
-      {
-        red: 205,
-        green: 90,
-        blue: 90,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogTextRed2`,
-      {
-        red: 222,
-        green: 58,
-        blue: 58,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialogTopBackground`,
-      {
-        red: 111,
-        green: 178,
-        blue: 229,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialog_inlineProgress`,
-      {
-        red: 107,
-        green: 115,
-        blue: 120,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialog_inlineProgressBackground`,
-      {
-        red: 240,
-        green: 242,
-        blue: 245,
-        alpha: 246,
-      } as Color,
-    ] as [string, Color],
-    [
-      `dialog_liveLocationProgress`,
-      {
-        red: 53,
-        green: 159,
-        blue: 229,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `divider`,
-      {
-        red: 217,
-        green: 217,
-        blue: 217,
+        red: 41,
+        green: 129,
+        blue: 196,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `emptyListPlaceholder`,
       {
-        red: 149,
-        green: 149,
-        blue: 149,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `fastScrollActive`,
-      {
-        red: 82,
-        green: 163,
-        blue: 219,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `fastScrollInactive`,
-      {
-        red: 201,
-        green: 205,
-        blue: 209,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `fastScrollText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `featuredStickers_addButton`,
-      {
-        red: 80,
-        green: 168,
-        blue: 235,
+        red: 140,
+        green: 143,
+        blue: 145,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `featuredStickers_addButtonPressed`,
       {
-        red: 67,
-        green: 155,
-        blue: 222,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `featuredStickers_addedIcon`,
-      {
-        red: 80,
-        green: 168,
-        blue: 235,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `featuredStickers_buttonProgress`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `featuredStickers_buttonText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `featuredStickers_delButton`,
-      {
-        red: 217,
-        green: 87,
-        blue: 87,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `featuredStickers_delButtonPressed`,
-      {
-        red: 198,
-        green: 73,
-        blue: 73,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `featuredStickers_unread`,
-      {
-        red: 77,
-        green: 166,
-        blue: 234,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `files_folderIcon`,
-      {
-        red: 153,
+        red: 66,
         green: 153,
-        blue: 153,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `files_folderIconBackground`,
-      {
-        red: 240,
-        green: 240,
-        blue: 240,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `files_iconText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
+        blue: 219,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `graySection`,
       {
-        red: 238,
-        green: 243,
-        blue: 245,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `groupcreate_cursor`,
-      {
-        red: 82,
-        green: 163,
-        blue: 219,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `groupcreate_hintText`,
-      {
-        red: 161,
-        green: 170,
-        blue: 179,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `groupcreate_sectionShadow`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `groupcreate_sectionText`,
-      {
-        red: 124,
-        green: 130,
-        blue: 136,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `groupcreate_spanBackground`,
-      {
-        red: 242,
-        green: 242,
-        blue: 242,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `groupcreate_spanDelete`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `groupcreate_spanText`,
-      {
-        red: 34,
-        green: 34,
-        blue: 34,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `inappPlayerBackground`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `inappPlayerClose`,
-      {
-        red: 168,
-        green: 168,
-        blue: 168,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `inappPlayerPerformer`,
-      {
-        red: 47,
-        green: 52,
-        blue: 56,
+        red: 246,
+        green: 246,
+        blue: 246,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `inappPlayerPlayPause`,
       {
-        red: 98,
-        green: 176,
+        red: 67,
+        green: 170,
         blue: 235,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `inappPlayerTitle`,
-      {
-        red: 47,
-        green: 52,
-        blue: 56,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `key_chat_messagePanelVoiceLock`,
-      {
-        red: 164,
-        green: 164,
-        blue: 164,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `key_chat_messagePanelVoiceLockBackground`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `key_chat_messagePanelVoiceLockShadow`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `key_graySectionText`,
       {
-        red: 127,
-        green: 137,
-        blue: 145,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `key_player_progressCachedBackground`,
-      {
-        red: 233,
-        green: 239,
-        blue: 245,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `key_sheet_other`,
-      {
-        red: 201,
-        green: 205,
-        blue: 211,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `key_sheet_scrollUp`,
-      {
-        red: 225,
-        green: 228,
-        blue: 232,
+        red: 137,
+        green: 140,
+        blue: 142,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -4426,1158 +1483,195 @@ const defaultTheme = () =>
         red: 0,
         green: 0,
         blue: 0,
-        alpha: 15,
-      } as Color,
-    ] as [string, Color],
-    [
-      `location_liveLocationProgress`,
-      {
-        red: 53,
-        green: 159,
-        blue: 229,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `location_placeLocationBackground`,
-      {
-        red: 76,
-        green: 168,
-        blue: 234,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `location_sendLiveLocationBackground`,
-      {
-        red: 255,
-        green: 100,
-        blue: 100,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `location_sendLiveLocationIcon`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `location_sendLocationBackground`,
-      {
-        red: 109,
-        green: 160,
-        blue: 212,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `location_sendLocationIcon`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `login_progressInner`,
-      {
-        red: 225,
-        green: 234,
-        blue: 242,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `login_progressOuter`,
-      {
-        red: 98,
-        green: 160,
-        blue: 208,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `musicPicker_buttonBackground`,
-      {
-        red: 92,
-        green: 175,
-        blue: 234,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `musicPicker_buttonIcon`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `musicPicker_checkbox`,
-      {
-        red: 41,
-        green: 182,
-        blue: 247,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `musicPicker_checkboxCheck`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `passport_authorizeBackground`,
-      {
-        red: 69,
-        green: 171,
-        blue: 239,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `passport_authorizeBackgroundSelected`,
-      {
-        red: 64,
-        green: 157,
-        blue: 219,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `passport_authorizeText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `picker_badge`,
-      {
-        red: 41,
-        green: 182,
-        blue: 247,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `picker_badgeText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `picker_disabledButton`,
-      {
-        red: 153,
-        green: 153,
-        blue: 153,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `picker_enabledButton`,
-      {
-        red: 25,
-        green: 167,
-        blue: 232,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `player_actionBar`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `player_actionBarItems`,
-      {
-        red: 138,
-        green: 138,
-        blue: 138,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `player_actionBarSelector`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
-        alpha: 15,
-      } as Color,
-    ] as [string, Color],
-    [
-      `player_actionBarSubtitle`,
-      {
-        red: 138,
-        green: 138,
-        blue: 138,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `player_actionBarTitle`,
-      {
-        red: 47,
-        green: 52,
-        blue: 56,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `player_actionBarTop`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
-        alpha: 153,
-      } as Color,
-    ] as [string, Color],
-    [
-      `player_background`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `player_button`,
-      {
-        red: 51,
-        green: 51,
-        blue: 51,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `player_buttonActive`,
-      {
-        red: 76,
-        green: 168,
-        blue: 234,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `player_placeholder`,
-      {
-        red: 168,
-        green: 168,
-        blue: 168,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `player_placeholderBackground`,
-      {
-        red: 240,
-        green: 240,
-        blue: 240,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `player_progress`,
-      {
-        red: 75,
-        green: 159,
-        blue: 227,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `player_progressBackground`,
-      {
-        red: 233,
-        green: 239,
-        blue: 245,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `player_time`,
-      {
-        red: 140,
-        green: 146,
-        blue: 150,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `profile_actionBackground`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `profile_actionIcon`,
-      {
-        red: 129,
-        green: 134,
-        blue: 138,
-        alpha: 255,
+        alpha: 13,
       } as Color,
     ] as [string, Color],
     [
       `profile_actionPressedBackground`,
       {
-        red: 242,
-        green: 242,
-        blue: 242,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `profile_creatorIcon`,
-      {
-        red: 58,
-        green: 149,
-        blue: 213,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `profile_status`,
-      {
-        red: 215,
-        green: 234,
-        blue: 250,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `profile_title`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `profile_verifiedBackground`,
-      {
-        red: 178,
-        green: 214,
-        blue: 248,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `profile_verifiedCheck`,
-      {
-        red: 73,
-        green: 131,
-        blue: 184,
+        red: 229,
+        green: 229,
+        blue: 229,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `progressCircle`,
       {
-        red: 82,
-        green: 125,
-        blue: 163,
+        red: 36,
+        green: 166,
+        blue: 236,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
-      `radioBackground`,
-      {
-        red: 179,
-        green: 179,
-        blue: 179,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `radioBackgroundChecked`,
-      {
-        red: 55,
-        green: 169,
-        blue: 240,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `returnToCallBackground`,
-      {
-        red: 68,
-        green: 161,
-        blue: 227,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `returnToCallText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `sessions_devicesImage`,
-      {
-        red: 150,
-        green: 150,
-        blue: 150,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `sharedMedia_actionMode`,
-      {
-        red: 70,
-        green: 135,
-        blue: 179,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `sharedMedia_linkPlaceholder`,
-      {
-        red: 240,
-        green: 243,
-        blue: 245,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `sharedMedia_linkPlaceholderText`,
-      {
-        red: 183,
-        green: 190,
-        blue: 195,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `sharedMedia_photoPlaceholder`,
-      {
-        red: 237,
-        green: 243,
-        blue: 247,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `sharedMedia_startStopLoadIcon`,
-      {
-        red: 54,
-        green: 162,
-        blue: 238,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `stickers_menu`,
-      {
-        red: 182,
-        green: 189,
-        blue: 197,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `stickers_menuSelector`,
+      `statisticChartActiveLine`,
       {
         red: 0,
         green: 0,
         blue: 0,
-        alpha: 15,
+        alpha: 20,
       } as Color,
     ] as [string, Color],
     [
-      `switch2Track`,
+      `statisticChartLine_blue`,
       {
-        red: 245,
-        green: 126,
-        blue: 126,
+        red: 50,
+        green: 127,
+        blue: 229,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
-      `switch2TrackChecked`,
+      `statisticChartLine_golden`,
       {
-        red: 82,
-        green: 173,
-        blue: 233,
+        red: 227,
+        green: 183,
+        blue: 39,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
-      `switchTrack`,
+      `statisticChartLine_green`,
       {
-        red: 176,
-        green: 181,
-        blue: 186,
+        red: 97,
+        green: 199,
+        blue: 82,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
-      `switchTrackBlue`,
+      `statisticChartLine_indigo`,
       {
-        red: 130,
-        green: 142,
-        blue: 153,
+        red: 127,
+        green: 121,
+        blue: 243,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
-      `switchTrackBlueChecked`,
+      `statisticChartLine_lightblue`,
       {
-        red: 60,
-        green: 136,
-        blue: 199,
+        red: 88,
+        green: 168,
+        blue: 237,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
-      `switchTrackBlueSelector`,
+      `statisticChartLine_lightgreen`,
       {
-        red: 64,
-        green: 74,
-        blue: 83,
-        alpha: 23,
-      } as Color,
-    ] as [string, Color],
-    [
-      `switchTrackBlueSelectorChecked`,
-      {
-        red: 2,
-        green: 71,
-        blue: 129,
-        alpha: 33,
-      } as Color,
-    ] as [string, Color],
-    [
-      `switchTrackBlueThumb`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
+        red: 143,
+        green: 207,
+        blue: 57,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
-      `switchTrackBlueThumbChecked`,
+      `statisticChartLine_orange`,
       {
-        red: 255,
-        green: 255,
-        blue: 255,
+        red: 227,
+        green: 183,
+        blue: 39,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `statisticChartLine_red`,
+      {
+        red: 224,
+        green: 83,
+        blue: 86,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `switchTrackChecked`,
       {
-        red: 82,
-        green: 173,
-        blue: 233,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `undo_background`,
-      {
-        red: 39,
-        green: 47,
-        blue: 56,
-        alpha: 234,
-      } as Color,
-    ] as [string, Color],
-    [
-      `undo_cancelColor`,
-      {
-        red: 133,
-        green: 202,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `undo_infoColor`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `wallet_addressConfirmBackground`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
-        alpha: 13,
-      } as Color,
-    ] as [string, Color],
-    [
-      `wallet_blackBackground`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `wallet_blackBackgroundSelector`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 64,
-      } as Color,
-    ] as [string, Color],
-    [
-      `wallet_blackText`,
-      {
-        red: 34,
-        green: 34,
-        blue: 34,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `wallet_buttonBackground`,
-      {
-        red: 71,
-        green: 161,
-        blue: 230,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `wallet_buttonPressedBackground`,
-      {
-        red: 43,
-        green: 140,
-        blue: 214,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `wallet_buttonText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `wallet_commentText`,
-      {
-        red: 153,
-        green: 153,
-        blue: 153,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `wallet_dateText`,
-      {
-        red: 153,
-        green: 153,
-        blue: 153,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `wallet_grayBackground`,
-      {
-        red: 41,
-        green: 41,
-        blue: 41,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `wallet_graySettingsBackground`,
-      {
-        red: 240,
-        green: 240,
-        blue: 240,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `wallet_grayText`,
-      {
-        red: 119,
-        green: 119,
-        blue: 119,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `wallet_grayText2`,
-      {
-        red: 102,
-        green: 102,
-        blue: 102,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `wallet_greenText`,
-      {
-        red: 55,
-        green: 168,
-        blue: 24,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `wallet_pullBackground`,
-      {
-        red: 33,
-        green: 33,
-        blue: 33,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `wallet_redText`,
-      {
-        red: 219,
-        green: 64,
-        blue: 64,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `wallet_releaseBackground`,
-      {
-        red: 48,
-        green: 124,
-        blue: 187,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `wallet_statusText`,
-      {
-        red: 128,
-        green: 128,
-        blue: 128,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `wallet_whiteBackground`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `wallet_whiteText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundCheckText`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundChecked`,
-      {
-        red: 87,
-        green: 158,
-        blue: 217,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundGray`,
-      {
-        red: 240,
-        green: 240,
-        blue: 240,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundGrayShadow`,
-      {
-        red: 0,
-        green: 0,
-        blue: 0,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundUnchecked`,
-      {
-        red: 157,
-        green: 167,
-        blue: 177,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhite`,
-      {
-        red: 255,
-        green: 255,
-        blue: 255,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteBlackText`,
-      {
-        red: 34,
-        green: 34,
-        blue: 34,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteBlueButton`,
-      {
-        red: 30,
-        green: 136,
-        blue: 211,
+        red: 81,
+        green: 171,
+        blue: 231,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `windowBackgroundWhiteBlueHeader`,
       {
-        red: 58,
-        green: 149,
-        blue: 213,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteBlueIcon`,
-      {
-        red: 55,
-        green: 157,
-        blue: 229,
+        red: 36,
+        green: 146,
+        blue: 214,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `windowBackgroundWhiteBlueText`,
       {
-        red: 64,
-        green: 146,
-        blue: 205,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteBlueText2`,
-      {
-        red: 58,
-        green: 149,
-        blue: 213,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteBlueText3`,
-      {
-        red: 38,
-        green: 120,
-        blue: 182,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteBlueText4`,
-      {
-        red: 77,
-        green: 131,
-        blue: 179,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteBlueText5`,
-      {
-        red: 76,
-        green: 142,
-        blue: 202,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteBlueText6`,
-      {
-        red: 58,
-        green: 140,
-        blue: 207,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteBlueText7`,
-      {
-        red: 55,
-        green: 122,
-        blue: 174,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteGrayIcon`,
-      {
-        red: 129,
-        green: 134,
-        blue: 139,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteGrayLine`,
-      {
-        red: 219,
-        green: 219,
-        blue: 219,
+        red: 7,
+        green: 127,
+        blue: 200,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `windowBackgroundWhiteGrayText`,
       {
-        red: 131,
-        green: 140,
-        blue: 150,
+        red: 140,
+        green: 143,
+        blue: 145,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `windowBackgroundWhiteGrayText2`,
       {
-        red: 138,
-        green: 138,
-        blue: 138,
+        red: 140,
+        green: 143,
+        blue: 145,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `windowBackgroundWhiteGrayText3`,
       {
-        red: 153,
-        green: 153,
-        blue: 153,
+        red: 140,
+        green: 143,
+        blue: 145,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `windowBackgroundWhiteGrayText4`,
       {
-        red: 128,
-        green: 128,
-        blue: 128,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteGrayText5`,
-      {
-        red: 163,
-        green: 163,
-        blue: 163,
+        red: 140,
+        green: 143,
+        blue: 145,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `windowBackgroundWhiteGrayText6`,
       {
-        red: 117,
-        green: 117,
-        blue: 117,
+        red: 123,
+        green: 126,
+        blue: 128,
         alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteGrayText7`,
-      {
-        red: 198,
-        green: 198,
-        blue: 198,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteGrayText8`,
-      {
-        red: 109,
-        green: 109,
-        blue: 114,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteGreenText`,
-      {
-        red: 38,
-        green: 151,
-        blue: 44,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteGreenText2`,
-      {
-        red: 55,
-        green: 168,
-        blue: 24,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteHintText`,
-      {
-        red: 168,
-        green: 168,
-        blue: 168,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteInputField`,
-      {
-        red: 219,
-        green: 219,
-        blue: 219,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteInputFieldActivated`,
-      {
-        red: 55,
-        green: 169,
-        blue: 240,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteLinkSelection`,
-      {
-        red: 98,
-        green: 169,
-        blue: 227,
-        alpha: 51,
       } as Color,
     ] as [string, Color],
     [
       `windowBackgroundWhiteLinkText`,
       {
-        red: 38,
-        green: 120,
-        blue: 182,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteRedText`,
-      {
-        red: 205,
-        green: 90,
-        blue: 90,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteRedText2`,
-      {
-        red: 219,
-        green: 81,
-        blue: 81,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteRedText3`,
-      {
-        red: 210,
-        green: 73,
-        blue: 73,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteRedText4`,
-      {
-        red: 207,
-        green: 48,
-        blue: 48,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteRedText5`,
-      {
-        red: 237,
-        green: 57,
-        blue: 57,
-        alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `windowBackgroundWhiteRedText6`,
-      {
-        red: 255,
-        green: 102,
-        blue: 102,
+        red: 42,
+        green: 132,
+        blue: 200,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `windowBackgroundWhiteValueText`,
       {
-        red: 58,
-        green: 149,
-        blue: 213,
+        red: 57,
+        green: 148,
+        blue: 211,
         alpha: 255,
       } as Color,
     ] as [string, Color],
