@@ -4,11 +4,12 @@
 
 import Attheme from "..";
 import { Color } from "../types";
+import { PartialHsbColor, hsbToRgb } from "@snejugal/color";
 
 /**
- * Generates the Graphite theme.
+ * Generates the Night theme.
  */
-const graphite = () =>
+const night = (accent: PartialHsbColor) =>
   new Attheme([
     [
       `actionBarActionModeDefault`,
@@ -47,47 +48,185 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `actionBarBrowser`,
+      {
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.22096885785727888),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.45658905149872886 + 0.010694269353119684,
+            ),
+          ),
+        }),
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `actionBarDefault`,
       {
-        red: 32,
-        green: 32,
-        blue: 34,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.22096885785727888),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.45658905149872886 + 0.010694269353119684,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `actionBarDefaultArchived`,
       {
-        red: 40,
-        green: 40,
-        blue: 41,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.0980476852947716),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.2808369153852794 + 0.01891273767641053,
+            ),
+          ),
+        }),
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `actionBarDefaultArchivedIcon`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `actionBarDefaultArchivedSearch`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `actionBarDefaultArchivedSelector`,
       {
-        red: 62,
-        green: 62,
-        blue: 63,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.07029985398780413),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.45138097028145496 + 0.04446501948774829,
+            ),
+          ),
+        }),
         alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `actionBarDefaultArchivedTitle`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `actionBarDefaultIcon`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `actionBarDefaultSearch`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `actionBarDefaultSearchArchivedPlaceholder`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 136,
+      } as Color,
+    ] as [string, Color],
+    [
+      `actionBarDefaultSearchPlaceholder`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 136,
       } as Color,
     ] as [string, Color],
     [
       `actionBarDefaultSelector`,
       {
-        red: 51,
-        green: 51,
-        blue: 52,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.08188722118098507),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.36323613288324585 + 0.03012181977549989,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `actionBarDefaultSubmenuBackground`,
       {
-        red: 40,
-        green: 40,
-        blue: 41,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.0980476852947716),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.2808369153852794 + 0.01891273767641053,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -103,9 +242,20 @@ const graphite = () =>
     [
       `actionBarDefaultSubmenuItemIcon`,
       {
-        red: 127,
-        green: 127,
-        blue: 128,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.03828560687479081),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 1.0675390657750596 + 0.20346397474316452,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -115,6 +265,15 @@ const graphite = () =>
         red: 135,
         green: 135,
         blue: 135,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `actionBarDefaultTitle`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -148,9 +307,20 @@ const graphite = () =>
     [
       `actionBarTabUnactiveText`,
       {
-        red: 142,
-        green: 142,
-        blue: 143,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.03464468379380115),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 1.2292336849203291 + 0.26040314912788975,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -161,6 +331,15 @@ const graphite = () =>
         green: 255,
         blue: 255,
         alpha: 16,
+      } as Color,
+    ] as [string, Color],
+    [
+      `avatar_actionBarIconBlue`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
       } as Color,
     ] as [string, Color],
     [
@@ -229,9 +408,20 @@ const graphite = () =>
     [
       `avatar_backgroundActionBarBlue`,
       {
-        red: 31,
-        green: 31,
-        blue: 32,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.11692673645718614),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.21815826321017848 + 0.011910536355708852,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -308,6 +498,33 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `avatar_backgroundBlue`,
+      {
+        red: 84,
+        green: 156,
+        blue: 221,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `avatar_backgroundCyan`,
+      {
+        red: 95,
+        green: 190,
+        blue: 213,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `avatar_backgroundGreen`,
+      {
+        red: 118,
+        green: 200,
+        blue: 77,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `avatar_backgroundGroupCreateSpanBlue`,
       {
         red: 60,
@@ -335,6 +552,15 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `avatar_backgroundPink`,
+      {
+        red: 242,
+        green: 116,
+        blue: 154,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `avatar_backgroundRed`,
       {
         red: 220,
@@ -349,6 +575,15 @@ const graphite = () =>
         red: 79,
         green: 161,
         blue: 232,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `avatar_backgroundViolet`,
+      {
+        red: 142,
+        green: 133,
+        blue: 238,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -418,9 +653,20 @@ const graphite = () =>
     [
       `avatar_subtitleInProfileBlue`,
       {
-        red: 140,
-        green: 140,
-        blue: 141,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.035089616136743884),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 1.207300885883746 + 0.2523361309102584,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -479,6 +725,15 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `avatar_text`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `calls_callReceivedGreenIcon`,
       {
         red: 72,
@@ -488,11 +743,29 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `calls_callReceivedRedIcon`,
+      {
+        red: 255,
+        green: 72,
+        blue: 72,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `changephoneinfo_image`,
       {
         red: 85,
         green: 85,
         blue: 85,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `changephoneinfo_image2`,
+      {
+        red: 80,
+        green: 167,
+        blue: 234,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -551,11 +824,38 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chat_attachAudioIcon`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chat_attachCameraIcon1`,
       {
         red: 255,
         green: 130,
         blue: 85,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_attachCheckBoxBackground`,
+      {
+        red: 57,
+        green: 178,
+        blue: 247,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_attachCheckBoxCheck`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -569,11 +869,38 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chat_attachContactIcon`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_attachEmptyImage`,
+      {
+        red: 125,
+        green: 125,
+        blue: 125,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chat_attachFileBackground`,
       {
         red: 90,
         green: 188,
         blue: 244,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_attachFileIcon`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -587,6 +914,15 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chat_attachGalleryIcon`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chat_attachHideBackground`,
       {
         red: 41,
@@ -596,11 +932,92 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chat_attachLocationBackground`,
+      {
+        red: 54,
+        green: 199,
+        blue: 102,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_attachLocationIcon`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_attachMediaBanBackground`,
+      {
+        red: 70,
+        green: 70,
+        blue: 70,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_attachMediaBanText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_attachPermissionImage`,
+      {
+        red: 246,
+        green: 246,
+        blue: 246,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_attachPermissionMark`,
+      {
+        red: 246,
+        green: 87,
+        blue: 78,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_attachPermissionText`,
+      {
+        red: 246,
+        green: 246,
+        blue: 246,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_attachPhotoBackground`,
+      {
+        red: 0,
+        green: 0,
+        blue: 0,
+        alpha: 8,
+      } as Color,
+    ] as [string, Color],
+    [
       `chat_attachPollBackground`,
       {
         red: 222,
         green: 176,
         blue: 69,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_attachPollIcon`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -614,25 +1031,65 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chat_botButtonText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chat_botKeyboardButtonBackground`,
       {
-        red: 44,
-        green: 44,
-        blue: 46,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.17784388422515401),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.6276374741979198 + 0.020032611404693472,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_botKeyboardButtonBackgroundPressed`,
       {
-        red: 73,
-        green: 73,
-        blue: 75,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.12083674895956617),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 1.098248239964581 + 0.05760696786590497,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_botKeyboardButtonText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_botProgress`,
       {
         red: 255,
         green: 255,
@@ -652,27 +1109,60 @@ const graphite = () =>
     [
       `chat_emojiBottomPanelIcon`,
       {
-        red: 110,
-        green: 110,
-        blue: 111,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.043462176196047274),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.8924351468747369 + 0.14859765932835023,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_emojiPanelBackground`,
       {
-        red: 30,
-        green: 30,
-        blue: 31,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.11948291105846502),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.21147909961169845 + 0.011246335892207164,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_emojiPanelBackspace`,
       {
-        red: 110,
-        green: 110,
-        blue: 111,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.043462176196047274),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.8924351468747369 + 0.14859765932835023,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -686,20 +1176,51 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chat_emojiPanelBadgeText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chat_emojiPanelEmptyText`,
       {
-        red: 125,
-        green: 125,
-        blue: 126,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.03882970443190465),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 1.0464782489440125 + 0.19648490814324882,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_emojiPanelIcon`,
       {
-        red: 110,
-        green: 110,
-        blue: 111,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.043462176196047274),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.8924351468747369 + 0.14859765932835023,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -718,6 +1239,33 @@ const graphite = () =>
         red: 100,
         green: 181,
         blue: 239,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_emojiPanelMasksIcon`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_emojiPanelMasksIconSelected`,
+      {
+        red: 98,
+        green: 191,
+        blue: 232,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_emojiPanelNewTrending`,
+      {
+        red: 77,
+        green: 166,
+        blue: 234,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -749,11 +1297,49 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chat_emojiPanelStickerSetName`,
+      {
+        red: 130,
+        green: 139,
+        blue: 148,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_emojiPanelStickerSetNameHighlight`,
+      {
+        red: 100,
+        green: 181,
+        blue: 239,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_emojiPanelStickerSetNameIcon`,
+      {
+        red: 177,
+        green: 182,
+        blue: 188,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chat_emojiPanelTrendingDescription`,
       {
-        red: 125,
-        green: 125,
-        blue: 126,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.03882970443190465),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 1.0464782489440125 + 0.19648490814324882,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -767,11 +1353,31 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chat_emojiSearchBackground`,
+      {
+        red: 205,
+        green: 234,
+        blue: 255,
+        alpha: 10,
+      } as Color,
+    ] as [string, Color],
+    [
       `chat_emojiSearchIcon`,
       {
-        red: 115,
-        green: 115,
-        blue: 116,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.0417999046643413),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.9430017248618581 + 0.16369703642156777,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -785,11 +1391,40 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chat_gifSaveHintBackground`,
+      {
+        red: 17,
+        green: 17,
+        blue: 17,
+        alpha: 204,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_gifSaveHintText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chat_goDownButton`,
       {
-        red: 33,
-        green: 33,
-        blue: 34,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.11212898260471138),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.2316926752007293 + 0.013305821214727996,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -821,6 +1456,15 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chat_goDownButtonShadow`,
+      {
+        red: 0,
+        green: 0,
+        blue: 0,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chat_inAudioCacheSeekbar`,
       {
         red: 96,
@@ -841,9 +1485,20 @@ const graphite = () =>
     [
       `chat_inAudioDurationText`,
       {
-        red: 118,
-        green: 118,
-        blue: 119,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.04086220408837083),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.9737205972399686 + 0.17316791218872385,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -880,6 +1535,15 @@ const graphite = () =>
         red: 86,
         green: 86,
         blue: 86,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_inAudioSeekbarFill`,
+      {
+        red: 114,
+        green: 181,
+        blue: 232,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -983,6 +1647,15 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chat_inDownCall`,
+      {
+        red: 0,
+        green: 200,
+        blue: 83,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chat_inFileBackground`,
       {
         red: 44,
@@ -1021,9 +1694,20 @@ const graphite = () =>
     [
       `chat_inFileInfoText`,
       {
-        red: 118,
-        green: 118,
-        blue: 119,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.04086220408837083),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.9737205972399686 + 0.17316791218872385,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -1069,6 +1753,15 @@ const graphite = () =>
         red: 119,
         green: 188,
         blue: 252,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_inGreenCall`,
+      {
+        red: 72,
+        green: 221,
+        blue: 118,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -1325,6 +2018,15 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chat_inUpCall`,
+      {
+        red: 255,
+        green: 72,
+        blue: 72,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chat_inVenueInfoSelectedText`,
       {
         red: 141,
@@ -1336,9 +2038,20 @@ const graphite = () =>
     [
       `chat_inVenueInfoText`,
       {
-        red: 118,
-        green: 118,
-        blue: 119,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.04086220408837083),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.9737205972399686 + 0.17316791218872385,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -1415,7 +2128,88 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chat_lockIcon`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_mediaBroadcast`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_mediaInfoText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_mediaLoaderPhoto`,
+      {
+        red: 0,
+        green: 0,
+        blue: 0,
+        alpha: 102,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_mediaLoaderPhotoIcon`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_mediaLoaderPhotoIconSelected`,
+      {
+        red: 217,
+        green: 217,
+        blue: 217,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_mediaLoaderPhotoSelected`,
+      {
+        red: 0,
+        green: 0,
+        blue: 0,
+        alpha: 127,
+      } as Color,
+    ] as [string, Color],
+    [
       `chat_mediaMenu`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_mediaProgress`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_mediaSentCheck`,
       {
         red: 255,
         green: 255,
@@ -1430,6 +2224,33 @@ const graphite = () =>
         green: 255,
         blue: 255,
         alpha: 178,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_mediaTimeBackground`,
+      {
+        red: 0,
+        green: 0,
+        blue: 0,
+        alpha: 102,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_mediaTimeText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_mediaViews`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
       } as Color,
     ] as [string, Color],
     [
@@ -1453,36 +2274,98 @@ const graphite = () =>
     [
       `chat_messagePanelBackground`,
       {
-        red: 30,
-        green: 30,
-        blue: 31,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.11948291105846502),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.21147909961169845 + 0.011246335892207164,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_messagePanelCancelInlineBot`,
       {
-        red: 125,
-        green: 125,
-        blue: 126,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.03882970443190465),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 1.0464782489440125 + 0.19648490814324882,
+            ),
+          ),
+        }),
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_messagePanelCursor`,
+      {
+        red: 84,
+        green: 161,
+        blue: 219,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_messagePanelHint`,
       {
-        red: 112,
-        green: 112,
-        blue: 113,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.04278165139301894),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.9125661579112074 + 0.15453525253326578,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_messagePanelIcons`,
       {
-        red: 119,
-        green: 119,
-        blue: 121,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.0801018347790752),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 1.97837782831612 + 0.16822827434021534,
+            ),
+          ),
+        }),
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_messagePanelPressedSend`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -1514,6 +2397,15 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chat_messagePanelVideoFrame`,
+      {
+        red: 75,
+        green: 173,
+        blue: 247,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chat_messagePanelVoiceBackground`,
       {
         red: 68,
@@ -1529,6 +2421,33 @@ const graphite = () =>
         green: 255,
         blue: 255,
         alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_messagePanelVoiceDuration`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_messagePanelVoicePressed`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_messagePanelVoiceShadow`,
+      {
+        red: 0,
+        green: 0,
+        blue: 0,
+        alpha: 13,
       } as Color,
     ] as [string, Color],
     [
@@ -1654,6 +2573,15 @@ const graphite = () =>
         red: 255,
         green: 255,
         blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_outBroadcast`,
+      {
+        red: 70,
+        green: 170,
+        blue: 54,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -1834,6 +2762,15 @@ const graphite = () =>
         red: 172,
         green: 221,
         blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_outGreenCall`,
+      {
+        red: 72,
+        green: 221,
+        blue: 118,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -2054,6 +2991,15 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chat_outSentCheckReadSelected`,
+      {
+        red: 166,
+        green: 219,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chat_outSentCheckSelected`,
       {
         red: 166,
@@ -2207,6 +3153,24 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chat_previewDurationText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_previewGameText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chat_recordTime`,
       {
         red: 255,
@@ -2218,9 +3182,20 @@ const graphite = () =>
     [
       `chat_recordVoiceCancel`,
       {
-        red: 125,
-        green: 125,
-        blue: 126,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.03882970443190465),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 1.0464782489440125 + 0.19648490814324882,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -2239,6 +3214,42 @@ const graphite = () =>
         red: 237,
         green: 93,
         blue: 84,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_recordedVoicePlayPause`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_recordedVoicePlayPausePressed`,
+      {
+        red: 217,
+        green: 234,
+        blue: 251,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_recordedVoiceProgress`,
+      {
+        red: 162,
+        green: 206,
+        blue: 248,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_recordedVoiceProgressInner`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -2272,9 +3283,20 @@ const graphite = () =>
     [
       `chat_replyPanelMessage`,
       {
-        red: 125,
-        green: 125,
-        blue: 126,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.03882970443190465),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 1.0464782489440125 + 0.19648490814324882,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -2299,9 +3321,20 @@ const graphite = () =>
     [
       `chat_searchPanelIcons`,
       {
-        red: 216,
-        green: 216,
-        blue: 217,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.023581313934508002),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 2.1135974456333293 + 0.6693281495420152,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -2317,18 +3350,40 @@ const graphite = () =>
     [
       `chat_secretChatStatusText`,
       {
-        red: 125,
-        green: 125,
-        blue: 126,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.03882970443190465),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 1.0464782489440125 + 0.19648490814324882,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_secretTimeText`,
       {
-        red: 205,
-        green: 205,
-        blue: 206,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.024756488004529214),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 1.9737613126072249 + 0.5942867621313629,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -2339,6 +3394,15 @@ const graphite = () =>
         green: 30,
         blue: 30,
         alpha: 182,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_secretTimerText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
       } as Color,
     ] as [string, Color],
     [
@@ -2356,6 +3420,15 @@ const graphite = () =>
         red: 246,
         green: 87,
         blue: 78,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_sentErrorIcon`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -2378,6 +3451,51 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chat_serviceIcon`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_serviceLink`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_serviceText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_shareBackground`,
+      {
+        red: 114,
+        green: 143,
+        blue: 166,
+        alpha: 102,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_shareBackgroundSelected`,
+      {
+        red: 114,
+        green: 143,
+        blue: 166,
+        alpha: 153,
+      } as Color,
+    ] as [string, Color],
+    [
       `chat_status`,
       {
         red: 116,
@@ -2387,11 +3505,67 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chat_stickerNameText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_stickerReplyLine`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_stickerReplyMessageText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_stickerReplyNameText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_stickerViaBotNameText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chat_stickersHintPanel`,
       {
-        red: 33,
-        green: 33,
-        blue: 34,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.11212898260471138),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.2316926752007293 + 0.013305821214727996,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -2407,9 +3581,20 @@ const graphite = () =>
     [
       `chat_topPanelBackground`,
       {
-        red: 26,
-        green: 26,
-        blue: 27,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.1309320307366872),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.1853682052594437 + 0.008807552958486497,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -2452,18 +3637,40 @@ const graphite = () =>
     [
       `chat_unreadMessagesStartArrowIcon`,
       {
-        red: 109,
-        green: 109,
-        blue: 111,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.08643650632369579),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 1.774853055410099 + 0.13835080622344076,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chat_unreadMessagesStartBackground`,
       {
-        red: 33,
-        green: 33,
-        blue: 34,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.11212898260471138),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.2316926752007293 + 0.013305821214727996,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -2488,9 +3695,20 @@ const graphite = () =>
     [
       `chat_wallpaper_gradient_to`,
       {
-        red: 15,
-        green: 15,
-        blue: 16,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.1777715956816417),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.11898558090633884 + 0.0037998269639997265,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -2500,6 +3718,15 @@ const graphite = () =>
         red: 94,
         green: 160,
         blue: 219,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chats_actionIcon`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -2522,11 +3749,47 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chats_actionUnreadBackground`,
+      {
+        red: 79,
+        green: 154,
+        blue: 219,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chats_actionUnreadIcon`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chats_actionUnreadPressedBackground`,
+      {
+        red: 118,
+        green: 192,
+        blue: 237,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chats_archiveBackground`,
       {
         red: 69,
         green: 138,
         blue: 210,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chats_archiveIcon`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -2545,6 +3808,24 @@ const graphite = () =>
         red: 40,
         green: 40,
         blue: 40,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chats_archivePullDownBackgroundActive`,
+      {
+        red: 102,
+        green: 169,
+        blue: 224,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chats_archiveText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -2576,11 +3857,40 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chats_mentionIcon`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chats_menuBackground`,
       {
-        red: 25,
-        green: 25,
-        blue: 26,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.13414547109980104),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.1789962606590574 + 0.008251274564596617,
+            ),
+          ),
+        }),
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chats_menuCloud`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -2590,6 +3900,15 @@ const graphite = () =>
         red: 84,
         green: 156,
         blue: 221,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chats_menuItemCheck`,
+      {
+        red: 89,
+        green: 143,
+        blue: 186,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -2609,6 +3928,15 @@ const graphite = () =>
         green: 255,
         blue: 255,
         alpha: 244,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chats_menuName`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
       } as Color,
     ] as [string, Color],
     [
@@ -2729,6 +4057,15 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chats_nameMessageArchived_threeLines`,
+      {
+        red: 235,
+        green: 235,
+        blue: 235,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chats_nameMessage_threeLines`,
       {
         red: 235,
@@ -2801,6 +4138,24 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chats_sentError`,
+      {
+        red: 213,
+        green: 82,
+        blue: 82,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chats_sentErrorIcon`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chats_sentReadCheck`,
       {
         red: 70,
@@ -2837,6 +4192,15 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chats_unreadCounterText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chats_verifiedBackground`,
       {
         red: 70,
@@ -2846,11 +4210,56 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `chats_verifiedCheck`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `checkbox`,
+      {
+        red: 94,
+        green: 194,
+        blue: 69,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `checkboxCheck`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `checkboxDisabled`,
+      {
+        red: 69,
+        green: 69,
+        blue: 69,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `checkboxSquareBackground`,
       {
         red: 100,
         green: 181,
         blue: 229,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `checkboxSquareCheck`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -2873,6 +4282,24 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `contacts_inviteBackground`,
+      {
+        red: 85,
+        green: 190,
+        blue: 97,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `contacts_inviteText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `contextProgressInner1`,
       {
         red: 85,
@@ -2882,7 +4309,61 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `contextProgressInner2`,
+      {
+        red: 191,
+        green: 223,
+        blue: 246,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `contextProgressInner3`,
+      {
+        red: 179,
+        green: 179,
+        blue: 179,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `contextProgressInner4`,
+      {
+        red: 85,
+        green: 85,
+        blue: 85,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `contextProgressOuter1`,
+      {
+        red: 79,
+        green: 172,
+        blue: 248,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `contextProgressOuter2`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `contextProgressOuter3`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `contextProgressOuter4`,
       {
         red: 79,
         green: 172,
@@ -2918,6 +4399,15 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `dialogBadgeText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `dialogButton`,
       {
         red: 100,
@@ -2936,6 +4426,33 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `dialogCameraIcon`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `dialogCheckboxSquareBackground`,
+      {
+        red: 67,
+        green: 160,
+        blue: 223,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `dialogCheckboxSquareCheck`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `dialogCheckboxSquareDisabled`,
       {
         red: 72,
@@ -2950,6 +4467,33 @@ const graphite = () =>
         red: 90,
         green: 90,
         blue: 90,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `dialogFloatingButton`,
+      {
+        red: 100,
+        green: 181,
+        blue: 239,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `dialogFloatingButtonPressed`,
+      {
+        red: 100,
+        green: 181,
+        blue: 239,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `dialogFloatingIcon`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -2981,6 +4525,15 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `dialogInputFieldActivated`,
+      {
+        red: 55,
+        green: 169,
+        blue: 240,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `dialogLineProgress`,
       {
         red: 87,
@@ -2996,6 +4549,15 @@ const graphite = () =>
         green: 68,
         blue: 68,
         alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `dialogLinkSelection`,
+      {
+        red: 98,
+        green: 169,
+        blue: 227,
+        alpha: 51,
       } as Color,
     ] as [string, Color],
     [
@@ -3017,6 +4579,15 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `dialogRadioBackgroundChecked`,
+      {
+        red: 55,
+        green: 169,
+        blue: 240,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `dialogRedIcon`,
       {
         red: 238,
@@ -3031,6 +4602,15 @@ const graphite = () =>
         red: 100,
         green: 181,
         blue: 239,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `dialogRoundCheckBoxCheck`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -3206,6 +4786,33 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `dialogTopBackground`,
+      {
+        red: 111,
+        green: 178,
+        blue: 229,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `dialog_inlineProgress`,
+      {
+        red: 130,
+        green: 130,
+        blue: 130,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `dialog_inlineProgressBackground`,
+      {
+        red: 10,
+        green: 10,
+        blue: 10,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `dialog_liveLocationProgress`,
       {
         red: 104,
@@ -3251,11 +4858,83 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `fastScrollText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `featuredStickers_addButton`,
+      {
+        red: 80,
+        green: 168,
+        blue: 235,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `featuredStickers_addButtonPressed`,
+      {
+        red: 67,
+        green: 155,
+        blue: 222,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `featuredStickers_addedIcon`,
       {
         red: 76,
         green: 165,
         blue: 239,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `featuredStickers_buttonProgress`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `featuredStickers_buttonText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `featuredStickers_delButton`,
+      {
+        red: 217,
+        green: 87,
+        blue: 87,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `featuredStickers_delButtonPressed`,
+      {
+        red: 198,
+        green: 73,
+        blue: 73,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `featuredStickers_unread`,
+      {
+        red: 77,
+        green: 166,
+        blue: 234,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -3278,11 +4957,31 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `files_iconText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `graySection`,
       {
-        red: 11,
-        green: 11,
-        blue: 12,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.20434967377799),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.09704752104554529 + 0.002549567715580209,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -3332,6 +5031,15 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `groupcreate_sectionShadow`,
+      {
+        red: 0,
+        green: 0,
+        blue: 0,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `groupcreate_sectionText`,
       {
         red: 125,
@@ -3350,6 +5058,15 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `groupcreate_spanDelete`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `groupcreate_spanText`,
       {
         red: 245,
@@ -3361,9 +5078,20 @@ const graphite = () =>
     [
       `inappPlayerBackground`,
       {
-        red: 26,
-        green: 26,
-        blue: 27,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.1309320307366872),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.1853682052594437 + 0.008807552958486497,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -3415,9 +5143,20 @@ const graphite = () =>
     [
       `key_chat_messagePanelVoiceLockBackground`,
       {
-        red: 33,
-        green: 33,
-        blue: 34,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.11212898260471138),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.2316926752007293 + 0.013305821214727996,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -3442,9 +5181,20 @@ const graphite = () =>
     [
       `key_graySectionText`,
       {
-        red: 131,
-        green: 131,
-        blue: 132,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.037241908574384336),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 1.1100178723296228 + 0.21785024883695994,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -3512,11 +5262,92 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `location_sendLiveLocationBackground`,
+      {
+        red: 255,
+        green: 100,
+        blue: 100,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `location_sendLiveLocationIcon`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `location_sendLocationBackground`,
       {
         red: 104,
         green: 163,
         blue: 215,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `location_sendLocationIcon`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `login_progressInner`,
+      {
+        red: 225,
+        green: 234,
+        blue: 242,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `login_progressOuter`,
+      {
+        red: 98,
+        green: 160,
+        blue: 208,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `musicPicker_buttonBackground`,
+      {
+        red: 92,
+        green: 175,
+        blue: 234,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `musicPicker_buttonIcon`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `musicPicker_checkbox`,
+      {
+        red: 41,
+        green: 182,
+        blue: 247,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `musicPicker_checkboxCheck`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -3539,11 +5370,29 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `passport_authorizeText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `picker_badge`,
       {
         red: 86,
         green: 171,
         blue: 247,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `picker_badgeText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -3755,6 +5604,15 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `profile_title`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `profile_verifiedBackground`,
       {
         red: 93,
@@ -3809,20 +5667,89 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `returnToCallText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `sessions_devicesImage`,
+      {
+        red: 150,
+        green: 150,
+        blue: 150,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `sharedMedia_actionMode`,
+      {
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.22096885785727888),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.45658905149872886 + 0.010694269353119684,
+            ),
+          ),
+        }),
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `sharedMedia_linkPlaceholder`,
       {
-        red: 35,
-        green: 35,
-        blue: 36,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.10770937148289347),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.2454569035006679 + 0.014791648743873587,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `sharedMedia_linkPlaceholderText`,
       {
-        red: 111,
-        green: 111,
-        blue: 112,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.043119228951747586),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.9024846147683949 + 0.15154950302147369,
+            ),
+          ),
+        }),
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `sharedMedia_photoPlaceholder`,
+      {
+        red: 10,
+        green: 10,
+        blue: 10,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -3832,6 +5759,15 @@ const graphite = () =>
         red: 100,
         green: 181,
         blue: 239,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `sheet_other`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -3928,18 +5864,34 @@ const graphite = () =>
     [
       `statisticChartLine_indigo`,
       {
-        red: 135,
-        green: 92,
-        blue: 229,
+        ...hsbToRgb({
+          hue: (accent.hue + -5.7811184984243 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 1.9658490019781405),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(1, accent.brightness * 67.47513330953238 + 0),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `statisticChartLine_lightblue`,
       {
-        red: 60,
-        green: 120,
-        blue: 236,
+        ...hsbToRgb({
+          hue: (accent.hue + -28.5608241783335 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 2.1541881462907804),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(1, accent.brightness * 72.23400804556903 + 0),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -4016,6 +5968,24 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `switch2Track`,
+      {
+        red: 245,
+        green: 126,
+        blue: 126,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `switch2TrackChecked`,
+      {
+        red: 82,
+        green: 173,
+        blue: 233,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `switchThumb`,
       {
         red: 72,
@@ -4045,9 +6015,20 @@ const graphite = () =>
     [
       `switchTrackBlue`,
       {
-        red: 104,
-        green: 104,
-        blue: 106,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.08999498805767475),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 1.6754951104892075 + 0.12467221083759501,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -4081,9 +6062,20 @@ const graphite = () =>
     [
       `switchTrackBlueThumb`,
       {
-        red: 30,
-        green: 30,
-        blue: 32,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.23027362775819085),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.4296373628218769 + 0.00945478920062633,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -4124,6 +6116,195 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `undo_infoColor`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `wallet_addressConfirmBackground`,
+      {
+        red: 0,
+        green: 0,
+        blue: 0,
+        alpha: 13,
+      } as Color,
+    ] as [string, Color],
+    [
+      `wallet_blackBackground`,
+      {
+        red: 0,
+        green: 0,
+        blue: 0,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `wallet_blackBackgroundSelector`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 64,
+      } as Color,
+    ] as [string, Color],
+    [
+      `wallet_blackText`,
+      {
+        red: 34,
+        green: 34,
+        blue: 34,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `wallet_buttonBackground`,
+      {
+        red: 71,
+        green: 161,
+        blue: 230,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `wallet_buttonPressedBackground`,
+      {
+        red: 43,
+        green: 140,
+        blue: 214,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `wallet_buttonText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `wallet_commentText`,
+      {
+        red: 153,
+        green: 153,
+        blue: 153,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `wallet_dateText`,
+      {
+        red: 153,
+        green: 153,
+        blue: 153,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `wallet_grayBackground`,
+      {
+        red: 41,
+        green: 41,
+        blue: 41,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `wallet_graySettingsBackground`,
+      {
+        red: 240,
+        green: 240,
+        blue: 240,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `wallet_grayText`,
+      {
+        red: 119,
+        green: 119,
+        blue: 119,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `wallet_grayText2`,
+      {
+        red: 102,
+        green: 102,
+        blue: 102,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `wallet_greenText`,
+      {
+        red: 55,
+        green: 168,
+        blue: 24,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `wallet_pullBackground`,
+      {
+        red: 33,
+        green: 33,
+        blue: 33,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `wallet_redText`,
+      {
+        red: 219,
+        green: 64,
+        blue: 64,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `wallet_releaseBackground`,
+      {
+        red: 48,
+        green: 124,
+        blue: 187,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `wallet_statusText`,
+      {
+        red: 128,
+        green: 128,
+        blue: 128,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `wallet_whiteBackground`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `wallet_whiteText`,
+      {
+        red: 255,
+        green: 255,
+        blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `windowBackgroundCheckText`,
       {
         red: 255,
@@ -4151,20 +6332,51 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `windowBackgroundGrayShadow`,
+      {
+        red: 0,
+        green: 0,
+        blue: 0,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `windowBackgroundUnchecked`,
       {
-        red: 30,
-        green: 30,
-        blue: 32,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.23027362775819085),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.4296373628218769 + 0.00945478920062633,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `windowBackgroundWhite`,
       {
-        red: 24,
-        green: 24,
-        blue: 25,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.1375205693366775),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.17268848355742752 + 0.00771591630945083,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -4178,12 +6390,30 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `windowBackgroundWhiteBlueButton`,
+      {
+        red: 105,
+        green: 182,
+        blue: 253,
+        alpha: 224,
+      } as Color,
+    ] as [string, Color],
+    [
       `windowBackgroundWhiteBlueHeader`,
       {
         red: 108,
         green: 182,
         blue: 248,
         alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `windowBackgroundWhiteBlueIcon`,
+      {
+        red: 105,
+        green: 182,
+        blue: 253,
+        alpha: 224,
       } as Color,
     ] as [string, Color],
     [
@@ -4232,6 +6462,15 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `windowBackgroundWhiteBlueText6`,
+      {
+        red: 58,
+        green: 140,
+        blue: 207,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `windowBackgroundWhiteBlueText7`,
       {
         red: 121,
@@ -4250,6 +6489,15 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `windowBackgroundWhiteGrayLine`,
+      {
+        red: 219,
+        green: 219,
+        blue: 219,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `windowBackgroundWhiteGrayText`,
       {
         red: 125,
@@ -4261,9 +6509,20 @@ const graphite = () =>
     [
       `windowBackgroundWhiteGrayText2`,
       {
-        red: 118,
-        green: 118,
-        blue: 119,
+        ...hsbToRgb({
+          hue: (accent.hue + -17.7771347071135 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.04086220408837083),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.9737205972399686 + 0.17316791218872385,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -4300,6 +6559,15 @@ const graphite = () =>
         red: 125,
         green: 125,
         blue: 125,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `windowBackgroundWhiteGrayText7`,
+      {
+        red: 198,
+        green: 198,
+        blue: 198,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -4376,11 +6644,29 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `windowBackgroundWhiteRedText`,
+      {
+        red: 205,
+        green: 90,
+        blue: 90,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `windowBackgroundWhiteRedText2`,
       {
         red: 241,
         green: 109,
         blue: 102,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `windowBackgroundWhiteRedText3`,
+      {
+        red: 210,
+        green: 73,
+        blue: 73,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -4403,6 +6689,15 @@ const graphite = () =>
       } as Color,
     ] as [string, Color],
     [
+      `windowBackgroundWhiteRedText6`,
+      {
+        red: 255,
+        green: 102,
+        blue: 102,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `windowBackgroundWhiteValueText`,
       {
         red: 105,
@@ -4413,4 +6708,4 @@ const graphite = () =>
     ] as [string, Color],
   ]);
 
-export default graphite;
+export default night;
