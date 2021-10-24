@@ -7,9 +7,9 @@ import { Color } from "../types";
 import { PartialHsbColor, hsbToRgb } from "@snejugal/color";
 
 /**
- * Generates the Mono theme.
+ * Generates the Blue theme.
  */
-const mono = (accent: PartialHsbColor) =>
+const blue = (accent: PartialHsbColor) =>
   new Attheme([
     [
       `actionBarActionModeDefault`,
@@ -24,16 +24,16 @@ const mono = (accent: PartialHsbColor) =>
       `actionBarActionModeDefaultIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 0.6733972657652 + 360) % 360,
+          hue: (accent.hue + 1.7599710946529 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.15465581971974382),
+            Math.min(1, accent.saturation * 0.17783162490452936),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.059100429877472604 + 0.12208450768636724,
+              accent.brightness * 0.07594362897579536 + 0.11655843966829456,
             ),
           ),
         }),
@@ -61,9 +61,17 @@ const mono = (accent: PartialHsbColor) =>
     [
       `actionBarBrowser`,
       {
-        red: 255,
-        green: 255,
-        blue: 255,
+        ...hsbToRgb({
+          hue: (accent.hue + -2.0825733855558 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.9326287819215505),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(1, accent.brightness * 0.6559665078837437 + 0),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -71,14 +79,14 @@ const mono = (accent: PartialHsbColor) =>
       `actionBarDefault`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.1691472144436 + 360) % 360,
+          hue: (accent.hue + -2.0825733855558 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8110844673422871),
+            Math.min(1, accent.saturation * 0.9326287819215505),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.5869805206955564 + 0),
+            Math.min(1, accent.brightness * 0.6559665078837437 + 0),
           ),
         }),
         alpha: 255,
@@ -88,16 +96,16 @@ const mono = (accent: PartialHsbColor) =>
       `actionBarDefaultArchived`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.1535529090453 + 360) % 360,
+          hue: (accent.hue + -1.9282935785792 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.3624259502999575),
+            Math.min(1, accent.saturation * 0.34800678559765674),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.21109264439106848 + 0.11056767339157622,
+              accent.brightness * 0.23761487179599985 + 0.12148211422935157,
             ),
           ),
         }),
@@ -126,16 +134,16 @@ const mono = (accent: PartialHsbColor) =>
       `actionBarDefaultArchivedSelector`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.7184299513391 + 360) % 360,
+          hue: (accent.hue + -12.7083460402821 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.35283890117767913),
+            Math.min(1, accent.saturation * 0.44714512938923306),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.14273019022578104 + 0.0792114147925543,
+              accent.brightness * 0.19464106702668754 + 0.05335340643660061,
             ),
           ),
         }),
@@ -191,14 +199,14 @@ const mono = (accent: PartialHsbColor) =>
       `actionBarDefaultSelector`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.3853509503887 + 360) % 360,
+          hue: (accent.hue + 0.2991495284734 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8714190361663026),
+            Math.min(1, accent.saturation * 1.0263862743306824),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.4746106880331171 + 0),
+            Math.min(1, accent.brightness * 0.546239032196226 + 0),
           ),
         }),
         alpha: 255,
@@ -226,16 +234,16 @@ const mono = (accent: PartialHsbColor) =>
       `actionBarDefaultSubmenuItemIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.3756864759279 + 360) % 360,
+          hue: (accent.hue + -2.2891126470401 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.1716853435276423),
+            Math.min(1, accent.saturation * 0.19741309229189818),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.06687460307413938 + 0.12030227211185575,
+              accent.brightness * 0.08593338583653654 + 0.11404929550854731,
             ),
           ),
         }),
@@ -246,16 +254,16 @@ const mono = (accent: PartialHsbColor) =>
       `actionBarDefaultSubtitle`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.5624111434588 + 360) % 360,
+          hue: (accent.hue + -6.3142087520854 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.29994800953157924),
+            Math.min(1, accent.saturation * 0.2885482560765729),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.6706793516118651 + 0.5116335074552983,
+              accent.brightness * 0.6627855443008781 + 0.48493266907532123,
             ),
           ),
         }),
@@ -293,14 +301,14 @@ const mono = (accent: PartialHsbColor) =>
       `actionBarTabSelector`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.3853509503887 + 360) % 360,
+          hue: (accent.hue + 0.6303673941952 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8714190361663026),
+            Math.min(1, accent.saturation * 1.0249203717476831),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.4746106880331171 + 0),
+            Math.min(1, accent.brightness * 0.5954280623759756 + 0),
           ),
         }),
         alpha: 255,
@@ -310,16 +318,16 @@ const mono = (accent: PartialHsbColor) =>
       `actionBarTabUnactiveText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.5624111434588 + 360) % 360,
+          hue: (accent.hue + -6.3142087520854 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.29994800953157924),
+            Math.min(1, accent.saturation * 0.2885482560765729),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.6706793516118651 + 0.5116335074552983,
+              accent.brightness * 0.6627855443008781 + 0.48493266907532123,
             ),
           ),
         }),
@@ -332,7 +340,7 @@ const mono = (accent: PartialHsbColor) =>
         red: 0,
         green: 0,
         blue: 0,
-        alpha: 47,
+        alpha: 16,
       } as Color,
     ] as [string, Color],
     [
@@ -348,14 +356,14 @@ const mono = (accent: PartialHsbColor) =>
       `avatar_actionBarSelectorBlue`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.5940114934036 + 360) % 360,
+          hue: (accent.hue + -2.5704064495408 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.885847312737568),
+            Math.min(1, accent.saturation * 1.0193497431542005),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.6697301245777614 + 0),
+            Math.min(1, accent.brightness * 0.7105974027519577 + 0),
           ),
         }),
         alpha: 255,
@@ -365,14 +373,14 @@ const mono = (accent: PartialHsbColor) =>
       `avatar_backgroundActionBarBlue`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.2883653126515 + 360) % 360,
+          hue: (accent.hue + -3.2017914837638 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8394610504944328),
+            Math.min(1, accent.saturation * 0.9652577117628525),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.7869423386469249 + 0),
+            Math.min(1, accent.brightness * 0.8794292137265425 + 0),
           ),
         }),
         alpha: 255,
@@ -382,16 +390,16 @@ const mono = (accent: PartialHsbColor) =>
       `avatar_backgroundArchived`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -8.6930017168419 + 360) % 360,
+          hue: (accent.hue + -9.9553473328236 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.2697961501723702),
+            Math.min(1, accent.saturation * 0.18744896196524094),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.34587753333241006 + 0.3174625228408055,
+              accent.brightness * 0.2685515240205108 + 0.38333324145201675,
             ),
           ),
         }),
@@ -402,14 +410,14 @@ const mono = (accent: PartialHsbColor) =>
       `avatar_backgroundArchivedHidden`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -5.7689186956253 + 360) % 360,
+          hue: (accent.hue + -3.2961949428007 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9073974901061521),
+            Math.min(1, accent.saturation * 1.0748461966103922),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.5321058291583096 + 0),
+            Math.min(1, accent.brightness * 1.6202681933573417 + 0),
           ),
         }),
         alpha: 255,
@@ -446,16 +454,16 @@ const mono = (accent: PartialHsbColor) =>
       `avatar_backgroundGroupCreateSpanBlue`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -8.5366920701112 + 360) % 360,
+          hue: (accent.hue + -7.4501182412235 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.1572835392873794),
+            Math.min(1, accent.saturation * 0.18085311896374323),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.3516836878271499 + 0.7106741667730601,
+              accent.brightness * 0.45191101926933525 + 0.6777906837965639,
             ),
           ),
         }),
@@ -466,14 +474,14 @@ const mono = (accent: PartialHsbColor) =>
       `avatar_backgroundInProfileBlue`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.2385537998984 + 360) % 360,
+          hue: (accent.hue + -2.1519799710106 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8615830532666536),
+            Math.min(1, accent.saturation * 0.9906947868516234),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.7046235301260402 + 0),
+            Math.min(1, accent.brightness * 0.7874357327595615 + 0),
           ),
         }),
         alpha: 255,
@@ -510,14 +518,14 @@ const mono = (accent: PartialHsbColor) =>
       `avatar_backgroundSaved`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -5.7689186956253 + 360) % 360,
+          hue: (accent.hue + -3.126973847317 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9073974901061521),
+            Math.min(1, accent.saturation * 1.0594038487290196),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.5321058291583096 + 0),
+            Math.min(1, accent.brightness * 1.665849140852372 + 0),
           ),
         }),
         alpha: 255,
@@ -535,18 +543,18 @@ const mono = (accent: PartialHsbColor) =>
     [
       `avatar_nameInMessageBlue`,
       {
-        red: 47,
-        green: 131,
-        blue: 196,
+        red: 32,
+        green: 141,
+        blue: 214,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `avatar_nameInMessageCyan`,
       {
-        red: 97,
-        green: 192,
-        blue: 217,
+        red: 47,
+        green: 163,
+        blue: 201,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -599,16 +607,16 @@ const mono = (accent: PartialHsbColor) =>
       `avatar_subtitleInProfileBlue`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -8.5678020840994 + 360) % 360,
+          hue: (accent.hue + -7.4812282552116 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.30473959011583546),
+            Math.min(1, accent.saturation * 0.35040606025200177),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.7003399535876782 + 0.5189889615030139,
+              accent.brightness * 0.8999318228726032 + 0.4535050686223199,
             ),
           ),
         }),
@@ -628,14 +636,14 @@ const mono = (accent: PartialHsbColor) =>
       `calls_callReceivedGreenIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -0.3159958905219 + 360) % 360,
+          hue: (accent.hue + 0.7705779383658 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9893323229342083),
+            Math.min(1, accent.saturation * 1.1375878054688071),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.3833525732889576 + 0),
+            Math.min(1, accent.brightness * 1.5459336803835737 + 0),
           ),
         }),
         alpha: 255,
@@ -654,16 +662,16 @@ const mono = (accent: PartialHsbColor) =>
       `changephoneinfo_image`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.1205975842101 + 360) % 360,
+          hue: (accent.hue + -8.0340237553223 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.14915136050327843),
+            Math.min(1, accent.saturation * 0.171502300030376),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.20019835357092935 + 0.43342454652744544,
+              accent.brightness * 0.257253450045564 + 0.41470539810106805,
             ),
           ),
         }),
@@ -674,14 +682,14 @@ const mono = (accent: PartialHsbColor) =>
       `changephoneinfo_image2`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.2185105585112 + 360) % 360,
+          hue: (accent.hue + -1.1319367296235 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9511222949227787),
+            Math.min(1, accent.saturation * 1.093651848960779),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.318650615285761 + 0),
+            Math.min(1, accent.brightness * 1.4736275033501274 + 0),
           ),
         }),
         alpha: 255,
@@ -691,14 +699,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_addContact`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -0.9772547344621 + 360) % 360,
+          hue: (accent.hue + 0.1093190944257 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0163952580433873),
+            Math.min(1, accent.saturation * 1.168706231751583),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.1826237989109307 + 0),
+            Math.min(1, accent.brightness * 1.321613880120848 + 0),
           ),
         }),
         alpha: 255,
@@ -708,16 +716,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_adminSelectedText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -21.1867483476213 + 360) % 360,
+          hue: (accent.hue + -20.1001745187335 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5595042643425289),
+            Math.min(1, accent.saturation * 0.6433482596991665),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.7172821210240417 + 0.08572077083481491,
+              accent.brightness * 0.9217023866485433 + 0.018652734322323,
             ),
           ),
         }),
@@ -728,16 +736,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_adminText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.4497404756067 + 360) % 360,
+          hue: (accent.hue + -5.363166646719 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.22066010091532734),
+            Math.min(1, accent.saturation * 0.25372691676574877),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.23912680434387873 + 0.30158012833980763,
+              accent.brightness * 0.30727623039136753 + 0.2792210526361582,
             ),
           ),
         }),
@@ -748,14 +756,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_attachActiveTab`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.5669820770772 + 360) % 360,
+          hue: (accent.hue + -0.4804082481894 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0156639944935313),
+            Math.min(1, accent.saturation * 1.1678653853770982),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4633920100955866 + 0),
+            Math.min(1, accent.brightness * 1.6353799021982454 + 0),
           ),
         }),
         alpha: 255,
@@ -780,17 +788,26 @@ const mono = (accent: PartialHsbColor) =>
       } as Color,
     ] as [string, Color],
     [
+      `chat_attachAudioText`,
+      {
+        red: 222,
+        green: 71,
+        blue: 71,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chat_attachCheckBoxBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.7563864885022 + 360) % 360,
+          hue: (accent.hue + -3.6698126596145 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0075131531464832),
+            Math.min(1, accent.saturation * 1.1584931072196305),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4906568923044297 + 0),
+            Math.min(1, accent.brightness * 1.665849140852372 + 0),
           ),
         }),
         alpha: 255,
@@ -824,11 +841,31 @@ const mono = (accent: PartialHsbColor) =>
       } as Color,
     ] as [string, Color],
     [
+      `chat_attachContactText`,
+      {
+        red: 223,
+        green: 160,
+        blue: 0,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chat_attachEmptyImage`,
       {
-        red: 204,
-        green: 204,
-        blue: 204,
+        ...hsbToRgb({
+          hue: (accent.hue + -12.0678015757214 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.0894381170159261),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.06803454662149194 + 0.24516230516075752,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -851,6 +888,23 @@ const mono = (accent: PartialHsbColor) =>
       } as Color,
     ] as [string, Color],
     [
+      `chat_attachFileText`,
+      {
+        ...hsbToRgb({
+          hue: (accent.hue + -6.4026950937438 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 1.2008731618867208),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(1, accent.brightness * 1.3895147704174038 + 0),
+          ),
+        }),
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chat_attachGalleryBackground`,
       {
         red: 69,
@@ -869,19 +923,36 @@ const mono = (accent: PartialHsbColor) =>
       } as Color,
     ] as [string, Color],
     [
+      `chat_attachGalleryText`,
+      {
+        ...hsbToRgb({
+          hue: (accent.hue + 5.3985026286234 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 1.171169396261046),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(1, accent.brightness * 1.4594082522846927 + 0),
+          ),
+        }),
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chat_attachHideBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 0.1571377059758 + 360) % 360,
+          hue: (accent.hue + 1.2437115348635 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.24739985378166635),
+            Math.min(1, accent.saturation * 0.284473730628839),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.3591256688773338 + 0.3797471458420629,
+              accent.brightness * 0.46147391160178985 + 0.34616781524554474,
             ),
           ),
         }),
@@ -903,6 +974,15 @@ const mono = (accent: PartialHsbColor) =>
         red: 255,
         green: 255,
         blue: 255,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `chat_attachLocationText`,
+      {
+        red: 60,
+        green: 171,
+        blue: 47,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -946,16 +1026,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_attachPermissionText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -20.4091538562399 + 360) % 360,
+          hue: (accent.hue + -19.3225800273522 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.19308574935943776),
+            Math.min(1, accent.saturation * 0.2220204361964529),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.09033729575840163 + 0.13825093599729632,
+              accent.brightness * 0.11608277784063614 + 0.12980412703220687,
             ),
           ),
         }),
@@ -990,19 +1070,28 @@ const mono = (accent: PartialHsbColor) =>
       } as Color,
     ] as [string, Color],
     [
+      `chat_attachPollText`,
+      {
+        red: 223,
+        green: 160,
+        blue: 0,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
       `chat_attachUnactiveTab`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -11.738173000478 + 360) % 360,
+          hue: (accent.hue + -10.6515991715902 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.16790230405435708),
+            Math.min(1, accent.saturation * 0.19306314892842577),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.13800928832389647 + 0.25580209531128395,
+              accent.brightness * 0.1773409467479794 + 0.24289781160328416,
             ),
           ),
         }),
@@ -1022,16 +1111,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_botKeyboardButtonBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -13.2703288329572 + 360) % 360,
+          hue: (accent.hue + -12.1837550040695 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.05047170575749991),
+            Math.min(1, accent.saturation * 0.05803509666059895),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.09886852670244883 + 0.7531565275705036,
+              accent.brightness * 0.1270453484829269 + 0.7439120228429225,
             ),
           ),
         }),
@@ -1042,16 +1131,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_botKeyboardButtonBackgroundPressed`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -14.6216068663545 + 360) % 360,
+          hue: (accent.hue + -13.5350330374667 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.08731514355786246),
+            Math.min(1, accent.saturation * 0.10039967384224247),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.138196492403893 + 0.5721456797509937,
+              accent.brightness * 0.17758150264957753 + 0.5592238918982445,
             ),
           ),
         }),
@@ -1062,16 +1151,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_botKeyboardButtonText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -15.425915812533 + 360) % 360,
+          hue: (accent.hue + -14.3393419836452 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5566470739964712),
+            Math.min(1, accent.saturation * 0.6400629077297307),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.10462875565148638 + 0.012903222448409045,
+              accent.brightness * 0.13444720141408617 + 0.003120118982408562,
             ),
           ),
         }),
@@ -1091,14 +1180,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_botSwitchToInlineText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.3463954087222 + 360) % 360,
+          hue: (accent.hue + -1.2598215798345 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9559103412010516),
+            Math.min(1, accent.saturation * 1.0991574034968212),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.9677334441603106 + 0),
+            Math.min(1, accent.brightness * 1.081468133177443 + 0),
           ),
         }),
         alpha: 255,
@@ -1108,16 +1197,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_emojiBottomPanelIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.0315798898449 + 360) % 360,
+          hue: (accent.hue + -2.9450060609571 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.16079816510564876),
+            Math.min(1, accent.saturation * 0.18489442579155518),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.11962786967780076 + 0.23482587039809302,
+              accent.brightness * 0.15372095547884723 + 0.22364030464049703,
             ),
           ),
         }),
@@ -1128,16 +1217,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_emojiPanelBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.2800775730916 + 360) % 360,
+          hue: (accent.hue + -0.1935037442038 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.04816535183158958),
+            Math.min(1, accent.saturation * 0.05538312619487186),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.10572718655068652 + 0.847129075062549,
+              accent.brightness * 0.13585867725000392 + 0.8372432650024558,
             ),
           ),
         }),
@@ -1148,16 +1237,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_emojiPanelBackspace`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.0315798898449 + 360) % 360,
+          hue: (accent.hue + -2.9450060609571 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.16079816510564876),
+            Math.min(1, accent.saturation * 0.18489442579155518),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.11962786967780076 + 0.23482587039809302,
+              accent.brightness * 0.15372095547884723 + 0.22364030464049703,
             ),
           ),
         }),
@@ -1168,14 +1257,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_emojiPanelBadgeBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.0923543948173 + 360) % 360,
+          hue: (accent.hue + -1.0057805659295 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9588154570535157),
+            Math.min(1, accent.saturation * 1.1024978628052116),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.318650615285761 + 0),
+            Math.min(1, accent.brightness * 1.4736275033501274 + 0),
           ),
         }),
         alpha: 255,
@@ -1194,16 +1283,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_emojiPanelEmptyText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -8.9788300281272 + 360) % 360,
+          hue: (accent.hue + -7.8922561992394 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.1781939116354752),
+            Math.min(1, accent.saturation * 0.20489699586898394),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.15267395969394598 + 0.26113764045672416,
+              accent.brightness * 0.1961849443955078 + 0.24686216585177853,
             ),
           ),
         }),
@@ -1214,16 +1303,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_emojiPanelIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.6509144185818 + 360) % 360,
+          hue: (accent.hue + -5.564340589694 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.18134703203034286),
+            Math.min(1, accent.saturation * 0.20852262421168083),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.17753964371086017 + 0.29646250627405496,
+              accent.brightness * 0.22813717021053012 + 0.27986201539633,
             ),
           ),
         }),
@@ -1234,14 +1323,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_emojiPanelIconSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -0.7239809267167 + 360) % 360,
+          hue: (accent.hue + 0.362592902171 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.020396908824059),
+            Math.min(1, accent.saturation * 1.1733075462182283),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.2188666377261512 + 0),
+            Math.min(1, accent.brightness * 1.3621162265790265 + 0),
           ),
         }),
         alpha: 255,
@@ -1260,14 +1349,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_emojiPanelMasksIconSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -12.4223737958632 + 360) % 360,
+          hue: (accent.hue + -11.3357999669755 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8943604112656987),
+            Math.min(1, accent.saturation * 1.0283839655945266),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.293274811086835 + 0),
+            Math.min(1, accent.brightness * 1.445269360143967 + 0),
           ),
         }),
         alpha: 255,
@@ -1277,14 +1366,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_emojiPanelNewTrending`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.0923543948173 + 360) % 360,
+          hue: (accent.hue + -1.0057805659295 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9588154570535157),
+            Math.min(1, accent.saturation * 1.1024978628052116),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.318650615285761 + 0),
+            Math.min(1, accent.brightness * 1.4736275033501274 + 0),
           ),
         }),
         alpha: 255,
@@ -1303,16 +1392,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_emojiPanelStickerPackSelector`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -13.2686282304831 + 360) % 360,
+          hue: (accent.hue + -12.1820544015953 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.05087774108673243),
+            Math.min(1, accent.saturation * 0.05850197803950155),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.09773827653687292 + 0.738117924704815,
+              accent.brightness * 0.1255929851176809 + 0.7289791017684722,
             ),
           ),
         }),
@@ -1323,14 +1412,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_emojiPanelStickerPackSelectorLine`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.696819466138 + 360) % 360,
+          hue: (accent.hue + -0.6102456372502 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9413226696190824),
+            Math.min(1, accent.saturation * 1.0823837098479423),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.3965103087065127 + 0),
+            Math.min(1, accent.brightness * 1.5606378033471169 + 0),
           ),
         }),
         alpha: 255,
@@ -1340,16 +1429,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_emojiPanelStickerSetName`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.2418882998387 + 360) % 360,
+          hue: (accent.hue + -5.1553144709509 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.2594672407303405),
+            Math.min(1, accent.saturation * 0.29834946471581486),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.184718888467622 + 0.18088100080027902,
+              accent.brightness * 0.2373624482882749 + 0.16360922893650193,
             ),
           ),
         }),
@@ -1360,14 +1449,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_emojiPanelStickerSetNameHighlight`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 1.0668885278455 + 360) % 360,
+          hue: (accent.hue + 2.1534623567333 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0236886541993198),
+            Math.min(1, accent.saturation * 1.1770925730598651),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.1352896583547398 + 0),
+            Math.min(1, accent.brightness * 1.2687167058713005 + 0),
           ),
         }),
         alpha: 255,
@@ -1377,16 +1466,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_emojiPanelStickerSetNameIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.1666188929869 + 360) % 360,
+          hue: (accent.hue + -3.0800450640992 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.13250626984141334),
+            Math.min(1, accent.saturation * 0.15236287466347664),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.16019191986393644 + 0.4029330449710845,
+              accent.brightness * 0.20584546935257225 + 0.3879546184698047,
             ),
           ),
         }),
@@ -1415,16 +1504,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_emojiSearchBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.7662125491524 + 360) % 360,
+          hue: (accent.hue + -2.6796387202647 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.08807593309105276),
+            Math.min(1, accent.saturation * 0.10127447078905479),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.18103137495074123 + 0.7420362005044917,
+              accent.brightness * 0.23262401983775755 + 0.7251092222497306,
             ),
           ),
         }),
@@ -1435,16 +1524,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_emojiSearchIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.7541402636128 + 360) % 360,
+          hue: (accent.hue + -3.667566434725 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.325860164812542),
+            Math.min(1, accent.saturation * 0.3746916391848799),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.33582217175314516 + 0.2191507627936395,
+              accent.brightness * 0.43152908475185064 + 0.18775037929503932,
             ),
           ),
         }),
@@ -1455,12 +1544,15 @@ const mono = (accent: PartialHsbColor) =>
       `chat_fieldOverlayText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -0.1643292350215 + 360) % 360,
+          hue: (accent.hue + 0.9222445938662 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.982408369298922),
+            Math.min(1, accent.saturation * 1.1296262691492696),
           ),
-          brightness: Math.max(0, Math.min(1, accent.brightness * 1 + 0)),
+          brightness: Math.max(
+            0,
+            Math.min(1, accent.brightness * 1.1175268765417303 + 0),
+          ),
         }),
         alpha: 255,
       } as Color,
@@ -1505,14 +1597,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_goDownButtonCounterBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -0.9850035686691 + 360) % 360,
+          hue: (accent.hue + 0.1015702602187 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9569503075456632),
+            Math.min(1, accent.saturation * 1.100353213038573),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.293274811086835 + 0),
+            Math.min(1, accent.brightness * 1.445269360143967 + 0),
           ),
         }),
         alpha: 255,
@@ -1522,16 +1614,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_goDownButtonIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -8.9490966842094 + 360) % 360,
+          hue: (accent.hue + -7.8625228553217 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.18416771951710725),
+            Math.min(1, accent.saturation * 0.21176600321952008),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.14512013654745765 + 0.23722888081645,
+              accent.brightness * 0.18647833577057882 + 0.22365971140404733,
             ),
           ),
         }),
@@ -1551,16 +1643,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inAudioCacheSeekbar`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.9685168500581 + 360) % 360,
+          hue: (accent.hue + -5.8819430211703 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.1155565188828069),
+            Math.min(1, accent.saturation * 0.13287313441213525),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.24206380478711795 + 0.7203288927534679,
+              accent.brightness * 0.3110502549192014 + 0.697695198671372,
             ),
           ),
         }),
@@ -1571,16 +1663,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inAudioDurationSelectedText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -21.1867483476213 + 360) % 360,
+          hue: (accent.hue + -20.1001745187335 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5595042643425289),
+            Math.min(1, accent.saturation * 0.6433482596991665),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.7172821210240417 + 0.08572077083481491,
+              accent.brightness * 0.9217023866485433 + 0.018652734322323,
             ),
           ),
         }),
@@ -1591,16 +1683,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inAudioDurationText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.4497404756067 + 360) % 360,
+          hue: (accent.hue + -5.363166646719 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.22066010091532734),
+            Math.min(1, accent.saturation * 0.25372691676574877),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.23912680434387873 + 0.30158012833980763,
+              accent.brightness * 0.30727623039136753 + 0.2792210526361582,
             ),
           ),
         }),
@@ -1611,16 +1703,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inAudioPerfomerSelectedText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.3847510939415 + 360) % 360,
+          hue: (accent.hue + -8.2981772650538 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.29634349007970534),
+            Math.min(1, accent.saturation * 0.3407517703908658),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.028173108913112505 + 0.02196733120460258,
+              accent.brightness * 0.03620224311105445 + 0.019333060752472202,
             ),
           ),
         }),
@@ -1631,16 +1723,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inAudioPerfomerText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.3847510939415 + 360) % 360,
+          hue: (accent.hue + -8.2981772650538 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.29634349007970534),
+            Math.min(1, accent.saturation * 0.3407517703908658),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.028173108913112505 + 0.02196733120460258,
+              accent.brightness * 0.03620224311105445 + 0.019333060752472202,
             ),
           ),
         }),
@@ -1660,16 +1752,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inAudioSeekbar`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.9685168500581 + 360) % 360,
+          hue: (accent.hue + -5.8819430211703 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.1155565188828069),
+            Math.min(1, accent.saturation * 0.13287313441213525),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.24206380478711795 + 0.7203288927534679,
+              accent.brightness * 0.3110502549192014 + 0.697695198671372,
             ),
           ),
         }),
@@ -1680,14 +1772,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inAudioSeekbarFill`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -5.0777632905738 + 360) % 360,
+          hue: (accent.hue + -1.8833924358833 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8341142153721661),
+            Math.min(1, accent.saturation * 1.0437108263295283),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.293274811086835 + 0),
+            Math.min(1, accent.brightness * 1.445269360143967 + 0),
           ),
         }),
         alpha: 255,
@@ -1697,16 +1789,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inAudioSeekbarSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -22.3827533968464 + 360) % 360,
+          hue: (accent.hue + -21.2961795679586 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.39710726993103707),
+            Math.min(1, accent.saturation * 0.4566154135111576),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.7703532442519061 + 0.32628234565766673,
+              accent.brightness * 0.9898983997757155 + 0.2542519994401403,
             ),
           ),
         }),
@@ -1717,16 +1809,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inAudioSelectedProgress`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -12.8957392691504 + 360) % 360,
+          hue: (accent.hue + -11.8091654402627 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.13604814753130898),
+            Math.min(1, accent.saturation * 0.1564355171669959),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.3241494319008345 + 0.7888456906237318,
+              accent.brightness * 0.4165296976693421 + 0.7585367434228856,
             ),
           ),
         }),
@@ -1737,14 +1829,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inAudioTitleText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -7.9946171896966 + 360) % 360,
+          hue: (accent.hue + -6.9080433608088 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8049572936953923),
+            Math.min(1, accent.saturation * 0.9255834263204874),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.070092637033519 + 0),
+            Math.min(1, accent.brightness * 0.07833040573264172 + 0),
           ),
         }),
         alpha: 255,
@@ -1763,16 +1855,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inBubbleSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -15.6685636360184 + 360) % 360,
+          hue: (accent.hue + -14.6424761671365 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.15391148692001422),
+            Math.min(1, accent.saturation * 0.20725993113281055),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.3634356717513368 + 0.7554810862384587,
+              accent.brightness * 0.5420247422410843 + 0.6708109846241119,
             ),
           ),
         }),
@@ -1783,14 +1875,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inBubbleShadow`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 1.5695926067866 + 360) % 360,
+          hue: (accent.hue + 2.6561664356743 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9041809707200148),
+            Math.min(1, accent.saturation * 1.039676175925811),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.13863133492228846 + 0),
+            Math.min(1, accent.brightness * 0.15492424270651553 + 0),
           ),
         }),
         alpha: 255,
@@ -1800,14 +1892,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inContactBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.975417920913 + 360) % 360,
+          hue: (accent.hue + -0.8888440920252 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9852635319181208),
+            Math.min(1, accent.saturation * 1.1329092895287087),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4230440421037933 + 0),
+            Math.min(1, accent.brightness * 1.5902899635535706 + 0),
           ),
         }),
         alpha: 230,
@@ -1826,14 +1918,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inContactNameText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 0.1164903544891 + 360) % 360,
+          hue: (accent.hue + 1.2030641833769 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8879413882124029),
+            Math.min(1, accent.saturation * 1.021003025763515),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.05705701090969173 + 0),
+            Math.min(1, accent.brightness * 0.06376274318671522 + 0),
           ),
         }),
         alpha: 255,
@@ -1843,16 +1935,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inContactPhoneSelectedText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -21.1867483476213 + 360) % 360,
+          hue: (accent.hue + -20.1001745187335 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5595042643425289),
+            Math.min(1, accent.saturation * 0.6433482596991665),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.7172821210240417 + 0.08572077083481491,
+              accent.brightness * 0.9217023866485433 + 0.018652734322323,
             ),
           ),
         }),
@@ -1863,16 +1955,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inContactPhoneText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.4497404756067 + 360) % 360,
+          hue: (accent.hue + -5.363166646719 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.22066010091532734),
+            Math.min(1, accent.saturation * 0.25372691676574877),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.23912680434387873 + 0.30158012833980763,
+              accent.brightness * 0.30727623039136753 + 0.2792210526361582,
             ),
           ),
         }),
@@ -1892,16 +1984,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inFileBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -7.0631694681893 + 360) % 360,
+          hue: (accent.hue + -5.9765956393015 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.09502153810554277),
+            Math.min(1, accent.saturation * 0.10926090303525189),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.20858063947596692 + 0.782952594290157,
+              accent.brightness * 0.2680246273798233 + 0.7634496769105892,
             ),
           ),
         }),
@@ -1912,16 +2004,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inFileBackgroundSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -19.2023585013542 + 360) % 360,
+          hue: (accent.hue + -18.1157846724664 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.37094399802811895),
+            Math.min(1, accent.saturation * 0.4265314686344232),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.821819612683911 + 0.4087989688607822,
+              accent.brightness * 1.0560323144872494 + 0.33195636234010606,
             ),
           ),
         }),
@@ -1932,16 +2024,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inFileIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.2929553010597 + 360) % 360,
+          hue: (accent.hue + -5.2063814721719 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.38716840421955734),
+            Math.min(1, accent.saturation * 0.4451871682476869),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.5315757821753601 + 0.2394425962137505,
+              accent.brightness * 0.6830710716950567 + 0.18973866114675816,
             ),
           ),
         }),
@@ -1952,16 +2044,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inFileInfoSelectedText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -21.1867483476213 + 360) % 360,
+          hue: (accent.hue + -20.1001745187335 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5595042643425289),
+            Math.min(1, accent.saturation * 0.6433482596991665),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.7172821210240417 + 0.08572077083481491,
+              accent.brightness * 0.9217023866485433 + 0.018652734322323,
             ),
           ),
         }),
@@ -1972,16 +2064,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inFileInfoText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.4497404756067 + 360) % 360,
+          hue: (accent.hue + -5.363166646719 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.22066010091532734),
+            Math.min(1, accent.saturation * 0.25372691676574877),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.23912680434387873 + 0.30158012833980763,
+              accent.brightness * 0.30727623039136753 + 0.2792210526361582,
             ),
           ),
         }),
@@ -1992,14 +2084,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inFileNameText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 0.1164903544891 + 360) % 360,
+          hue: (accent.hue + 1.2030641833769 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8879413882124029),
+            Math.min(1, accent.saturation * 1.021003025763515),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.05705701090969173 + 0),
+            Math.min(1, accent.brightness * 0.06376274318671522 + 0),
           ),
         }),
         alpha: 255,
@@ -2018,16 +2110,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inFileProgressSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -19.2023585013542 + 360) % 360,
+          hue: (accent.hue + -18.1157846724664 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.37094399802811895),
+            Math.min(1, accent.saturation * 0.4265314686344232),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.821819612683911 + 0.4087989688607822,
+              accent.brightness * 1.0560323144872494 + 0.33195636234010606,
             ),
           ),
         }),
@@ -2038,18 +2130,12 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inFileSelectedIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -20.2854308119482 + 360) % 360,
+          hue: (accent.hue + -19.1988569830604 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5965647492699596),
+            Math.min(1, accent.saturation * 0.685962409404866),
           ),
-          brightness: Math.max(
-            0,
-            Math.min(
-              1,
-              accent.brightness * 0.8007387944656061 + 0.05871109781008005,
-            ),
-          ),
+          brightness: Math.max(0, Math.min(1, accent.brightness * 1 + 0)),
         }),
         alpha: 255,
       } as Color,
@@ -2058,9 +2144,15 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inForwardedNameText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 0.0 + 360) % 360,
-          saturation: Math.max(0, Math.min(1, accent.saturation * 1)),
-          brightness: Math.max(0, Math.min(1, accent.brightness * 1 + 0)),
+          hue: (accent.hue + 2.5751972958782 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 1.2068175988761365),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(1, accent.brightness * 1.0578114209258844 + 0),
+          ),
         }),
         alpha: 255,
       } as Color,
@@ -2069,14 +2161,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inGreenCall`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -0.3159958905219 + 360) % 360,
+          hue: (accent.hue + 0.7705779383658 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9893323229342083),
+            Math.min(1, accent.saturation * 1.1375878054688071),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.3833525732889576 + 0),
+            Math.min(1, accent.brightness * 1.5459336803835737 + 0),
           ),
         }),
         alpha: 255,
@@ -2086,14 +2178,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inInstant`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -0.5214696497091 + 360) % 360,
+          hue: (accent.hue + 0.5651041791787 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.034885352956254),
+            Math.min(1, accent.saturation * 1.1899671427793903),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.2188666377261512 + 0),
+            Math.min(1, accent.brightness * 1.3621162265790265 + 0),
           ),
         }),
         alpha: 255,
@@ -2103,14 +2195,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inInstantSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -0.5214696497091 + 360) % 360,
+          hue: (accent.hue + 0.5651041791787 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.034885352956254),
+            Math.min(1, accent.saturation * 1.1899671427793903),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.2188666377261512 + 0),
+            Math.min(1, accent.brightness * 1.3621162265790265 + 0),
           ),
         }),
         alpha: 255,
@@ -2120,14 +2212,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inLoader`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.975417920913 + 360) % 360,
+          hue: (accent.hue + -0.8888440920252 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9852635319181208),
+            Math.min(1, accent.saturation * 1.1329092895287087),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4230440421037933 + 0),
+            Math.min(1, accent.brightness * 1.5902899635535706 + 0),
           ),
         }),
         alpha: 230,
@@ -2137,16 +2229,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inLoaderPhoto`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -10.2165174981622 + 360) % 360,
+          hue: (accent.hue + -9.1299436692744 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.3946201502800875),
+            Math.min(1, accent.saturation * 0.45375558883943284),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.5479311264998014 + 0.2356931201278689,
+              accent.brightness * 0.7040875719763888 + 0.184459911155708,
             ),
           ),
         }),
@@ -2166,16 +2258,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inLoaderPhotoIconSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -7.0631694681893 + 360) % 360,
+          hue: (accent.hue + -5.9765956393015 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.09502153810554277),
+            Math.min(1, accent.saturation * 0.10926090303525189),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.20858063947596692 + 0.782952594290157,
+              accent.brightness * 0.2680246273798233 + 0.7634496769105892,
             ),
           ),
         }),
@@ -2186,16 +2278,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inLoaderPhotoSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.2929553010597 + 360) % 360,
+          hue: (accent.hue + -5.2063814721719 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.38716840421955734),
+            Math.min(1, accent.saturation * 0.4451871682476869),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.5315757821753601 + 0.2394425962137505,
+              accent.brightness * 0.6830710716950567 + 0.18973866114675816,
             ),
           ),
         }),
@@ -2206,14 +2298,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inLoaderSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.975417920913 + 360) % 360,
+          hue: (accent.hue + -0.8888440920252 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9852635319181208),
+            Math.min(1, accent.saturation * 1.1329092895287087),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4230440421037933 + 0),
+            Math.min(1, accent.brightness * 1.5902899635535706 + 0),
           ),
         }),
         alpha: 255,
@@ -2223,16 +2315,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inLocationBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -7.0631694681893 + 360) % 360,
+          hue: (accent.hue + -5.9765956393015 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.09502153810554277),
+            Math.min(1, accent.saturation * 0.10926090303525189),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.20858063947596692 + 0.782952594290157,
+              accent.brightness * 0.2680246273798233 + 0.7634496769105892,
             ),
           ),
         }),
@@ -2243,16 +2335,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inLocationIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.2929553010597 + 360) % 360,
+          hue: (accent.hue + -5.2063814721719 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.38716840421955734),
+            Math.min(1, accent.saturation * 0.4451871682476869),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.5315757821753601 + 0.2394425962137505,
+              accent.brightness * 0.6830710716950567 + 0.18973866114675816,
             ),
           ),
         }),
@@ -2272,16 +2364,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inMediaIconSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -12.8957392691504 + 360) % 360,
+          hue: (accent.hue + -14.6424761671365 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.13604814753130898),
+            Math.min(1, accent.saturation * 0.20725993113281055),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.3241494319008345 + 0.7888456906237318,
+              accent.brightness * 0.5420247422410843 + 0.6708109846241119,
             ),
           ),
         }),
@@ -2292,16 +2384,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inMenu`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.7064461398155 + 360) % 360,
+          hue: (accent.hue + -3.6198723109277 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.17092639615727845),
+            Math.min(1, accent.saturation * 0.19654041356352317),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.22942588640850792 + 0.4151877236904138,
+              accent.brightness * 0.2948106203452847 + 0.39373571300236143,
             ),
           ),
         }),
@@ -2312,16 +2404,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inMenuSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -20.8686037528141 + 360) % 360,
+          hue: (accent.hue + -19.7820299239263 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5177407299075953),
+            Math.min(1, accent.saturation * 0.5953262893408642),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.7682049543394257 + 0.13787709822328909,
+              accent.brightness * 0.9871378626293006 + 0.066047623576469,
             ),
           ),
         }),
@@ -2332,12 +2424,15 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inPreviewInstantSelectedText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -0.1643292350215 + 360) % 360,
+          hue: (accent.hue + 0.9222445938662 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.982408369298922),
+            Math.min(1, accent.saturation * 1.1296262691492696),
           ),
-          brightness: Math.max(0, Math.min(1, accent.brightness * 1 + 0)),
+          brightness: Math.max(
+            0,
+            Math.min(1, accent.brightness * 1.1175268765417303 + 0),
+          ),
         }),
         alpha: 255,
       } as Color,
@@ -2346,14 +2441,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inPreviewInstantText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 0.3623405014486 + 360) % 360,
+          hue: (accent.hue + 1.4489143303364 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0298685356007125),
+            Math.min(1, accent.saturation * 1.1841985348873505),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.1826237989109307 + 0),
+            Math.min(1, accent.brightness * 1.321613880120848 + 0),
           ),
         }),
         alpha: 255,
@@ -2363,14 +2458,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inPreviewLine`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.3359129544373 + 360) % 360,
+          hue: (accent.hue + -0.2493391255495 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0072269156244495),
+            Math.min(1, accent.saturation * 1.158163975837804),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.3833525732889576 + 0),
+            Math.min(1, accent.brightness * 1.5459336803835737 + 0),
           ),
         }),
         alpha: 235,
@@ -2380,14 +2475,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inReplyLine`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.3359129544373 + 360) % 360,
+          hue: (accent.hue + -0.3330466344051 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0072269156244495),
+            Math.min(1, accent.saturation * 1.1572795561956333),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.3833525732889576 + 0),
+            Math.min(1, accent.brightness * 1.417232131193227 + 0),
           ),
         }),
         alpha: 235,
@@ -2397,16 +2492,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inReplyMediaMessageSelectedText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -21.1867483476213 + 360) % 360,
+          hue: (accent.hue + -20.1001745187335 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5595042643425289),
+            Math.min(1, accent.saturation * 0.6433482596991665),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.7172821210240417 + 0.08572077083481491,
+              accent.brightness * 0.9217023866485433 + 0.018652734322323,
             ),
           ),
         }),
@@ -2417,16 +2512,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inReplyMediaMessageText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.4497404756067 + 360) % 360,
+          hue: (accent.hue + -5.363166646719 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.22066010091532734),
+            Math.min(1, accent.saturation * 0.25372691676574877),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.23912680434387873 + 0.30158012833980763,
+              accent.brightness * 0.30727623039136753 + 0.2792210526361582,
             ),
           ),
         }),
@@ -2446,12 +2541,15 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inReplyNameText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -0.1643292350215 + 360) % 360,
+          hue: (accent.hue + 0.6393760823502 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.982408369298922),
+            Math.min(1, accent.saturation * 1.1857706475005974),
           ),
-          brightness: Math.max(0, Math.min(1, accent.brightness * 1 + 0)),
+          brightness: Math.max(
+            0,
+            Math.min(1, accent.brightness * 1.2043605826154917 + 0),
+          ),
         }),
         alpha: 255,
       } as Color,
@@ -2460,16 +2558,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inSentClock`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.4497404756067 + 360) % 360,
+          hue: (accent.hue + -5.363166646719 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.22066010091532734),
+            Math.min(1, accent.saturation * 0.25372691676574877),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.23912680434387873 + 0.30158012833980763,
+              accent.brightness * 0.30727623039136753 + 0.2792210526361582,
             ),
           ),
         }),
@@ -2480,16 +2578,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inSentClockSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -21.1867483476213 + 360) % 360,
+          hue: (accent.hue + -20.1001745187335 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5595042643425289),
+            Math.min(1, accent.saturation * 0.6433482596991665),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.7172821210240417 + 0.08572077083481491,
+              accent.brightness * 0.9217023866485433 + 0.018652734322323,
             ),
           ),
         }),
@@ -2500,14 +2598,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inSiteNameText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -0.1952118534554 + 360) % 360,
+          hue: (accent.hue + 1.7522099548886 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9800708354519855),
+            Math.min(1, accent.saturation * 1.1973926699811135),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.9050438348961733 + 0),
+            Math.min(1, accent.brightness * 1.1296999967337387 + 0),
           ),
         }),
         alpha: 255,
@@ -2517,16 +2615,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inTimeSelectedText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -21.1867483476213 + 360) % 360,
+          hue: (accent.hue + -20.1001745187335 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5595042643425289),
+            Math.min(1, accent.saturation * 0.6433482596991665),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.7172821210240417 + 0.08572077083481491,
+              accent.brightness * 0.9217023866485433 + 0.018652734322323,
             ),
           ),
         }),
@@ -2537,16 +2635,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inTimeText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.4497404756067 + 360) % 360,
+          hue: (accent.hue + -5.363166646719 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.22066010091532734),
+            Math.min(1, accent.saturation * 0.25372691676574877),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.23912680434387873 + 0.30158012833980763,
+              accent.brightness * 0.30727623039136753 + 0.2792210526361582,
             ),
           ),
         }),
@@ -2566,16 +2664,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inVenueInfoSelectedText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -21.1867483476213 + 360) % 360,
+          hue: (accent.hue + -20.1001745187335 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5595042643425289),
+            Math.min(1, accent.saturation * 0.6433482596991665),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.7172821210240417 + 0.08572077083481491,
+              accent.brightness * 0.9217023866485433 + 0.018652734322323,
             ),
           ),
         }),
@@ -2586,16 +2684,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inVenueInfoText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.4497404756067 + 360) % 360,
+          hue: (accent.hue + -5.363166646719 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.22066010091532734),
+            Math.min(1, accent.saturation * 0.25372691676574877),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.23912680434387873 + 0.30158012833980763,
+              accent.brightness * 0.30727623039136753 + 0.2792210526361582,
             ),
           ),
         }),
@@ -2606,9 +2704,15 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inViaBotNameText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 0.0 + 360) % 360,
-          saturation: Math.max(0, Math.min(1, accent.saturation * 1)),
-          brightness: Math.max(0, Math.min(1, accent.brightness * 1 + 0)),
+          hue: (accent.hue + 1.0865738288878 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 1.149854077439718),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(1, accent.brightness * 1.1175268765417303 + 0),
+          ),
         }),
         alpha: 255,
       } as Color,
@@ -2617,16 +2721,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inViews`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.4497404756067 + 360) % 360,
+          hue: (accent.hue + -5.363166646719 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.22066010091532734),
+            Math.min(1, accent.saturation * 0.25372691676574877),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.23912680434387873 + 0.30158012833980763,
+              accent.brightness * 0.30727623039136753 + 0.2792210526361582,
             ),
           ),
         }),
@@ -2637,16 +2741,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inViewsSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -21.1867483476213 + 360) % 360,
+          hue: (accent.hue + -20.1001745187335 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5595042643425289),
+            Math.min(1, accent.saturation * 0.6433482596991665),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.7172821210240417 + 0.08572077083481491,
+              accent.brightness * 0.9217023866485433 + 0.018652734322323,
             ),
           ),
         }),
@@ -2657,16 +2761,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inVoiceSeekbar`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.2245823438666 + 360) % 360,
+          hue: (accent.hue + -8.1380085149789 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.12724708897685696),
+            Math.min(1, accent.saturation * 0.14631558410237355),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.25413403600533296 + 0.6722003041307992,
+              accent.brightness * 0.3265604155591258 + 0.6484380071122439,
             ),
           ),
         }),
@@ -2677,14 +2781,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inVoiceSeekbarFill`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -5.0777632905738 + 360) % 360,
+          hue: (accent.hue + -5.1601267736486 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8341142153721661),
+            Math.min(1, accent.saturation * 1.0913336284160402),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.293274811086835 + 0),
+            Math.min(1, accent.brightness * 1.445269360143967 + 0),
           ),
         }),
         alpha: 255,
@@ -2694,16 +2798,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inVoiceSeekbarSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -22.3827533968464 + 360) % 360,
+          hue: (accent.hue + -21.2961795679586 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.39710726993103707),
+            Math.min(1, accent.saturation * 0.4566154135111576),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.7703532442519061 + 0.32628234565766673,
+              accent.brightness * 0.9898983997757155 + 0.2542519994401403,
             ),
           ),
         }),
@@ -2714,14 +2818,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_inlineResultIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.6922259543796 + 360) % 360,
+          hue: (accent.hue + -0.6056521254919 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8875304478464029),
+            Math.min(1, accent.saturation * 1.0205305043080852),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.9677334441603106 + 0),
+            Math.min(1, accent.brightness * 1.081468133177443 + 0),
           ),
         }),
         alpha: 255,
@@ -2731,14 +2835,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_linkSelectBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.9821804816816 + 360) % 360,
+          hue: (accent.hue + -1.8956066527938 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8863030787996047),
+            Math.min(1, accent.saturation * 1.0191192090051011),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.2310895971863507 + 0),
+            Math.min(1, accent.brightness * 1.3757757122866794 + 0),
           ),
         }),
         alpha: 51,
@@ -2874,14 +2978,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_messageLinkIn`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 1.9634476533275 + 360) % 360,
+          hue: (accent.hue + 1.2910639995593 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0340884089573037),
+            Math.min(1, accent.saturation * 1.2045717888124632),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.731474352009956 + 0),
+            Math.min(1, accent.brightness * 0.9114177127473592 + 0),
           ),
         }),
         alpha: 255,
@@ -2891,14 +2995,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_messageLinkOut`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 3.7095911334546 + 360) % 360,
+          hue: (accent.hue + 2.0255253038822 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.043110553897909),
+            Math.min(1, accent.saturation * 1.2057337527188354),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.7497011065980528 + 0),
+            Math.min(1, accent.brightness * 0.977404593150882 + 0),
           ),
         }),
         alpha: 255,
@@ -2926,14 +3030,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_messagePanelCursor`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.3989589500709 + 360) % 360,
+          hue: (accent.hue + -2.3123851211831 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9219769172440159),
+            Math.min(1, accent.saturation * 1.060138917598333),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.1352896583547398 + 0),
+            Math.min(1, accent.brightness * 1.2687167058713005 + 0),
           ),
         }),
         alpha: 255,
@@ -2943,16 +3047,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_messagePanelHint`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -8.6311803194897 + 360) % 360,
+          hue: (accent.hue + -7.5446064906019 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.1859720667092879),
+            Math.min(1, accent.saturation * 0.2138407391955659),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.2015357820691073 + 0.3250354373218405,
+              accent.brightness * 0.25897203608390346 + 0.3061912353067571,
             ),
           ),
         }),
@@ -2963,16 +3067,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_messagePanelIcons`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -8.9490966842094 + 360) % 360,
+          hue: (accent.hue + -7.8625228553217 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.18416771951710725),
+            Math.min(1, accent.saturation * 0.21176600321952008),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.14512013654745765 + 0.23722888081645,
+              accent.brightness * 0.18647833577057882 + 0.22365971140404733,
             ),
           ),
         }),
@@ -2992,14 +3096,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_messagePanelSend`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.8948849816532 + 360) % 360,
+          hue: (accent.hue + -2.8083111527654 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8989335188439035),
+            Math.min(1, accent.saturation * 1.033642371989896),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.331446495416769 + 0),
+            Math.min(1, accent.brightness * 1.487927243305535 + 0),
           ),
         }),
         alpha: 255,
@@ -3027,14 +3131,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_messagePanelVideoFrame`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.7294537312145 + 360) % 360,
+          hue: (accent.hue + -0.6428799023267 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.974150279136575),
+            Math.min(1, accent.saturation * 1.1201306705042302),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4906568923044297 + 0),
+            Math.min(1, accent.brightness * 1.665849140852372 + 0),
           ),
         }),
         alpha: 255,
@@ -3044,14 +3148,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_messagePanelVoiceBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.649226023363 + 360) % 360,
+          hue: (accent.hue + -3.2324171334119 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0030273136454757),
+            Math.min(1, accent.saturation * 1.0357433643300233),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.1826237989109307 + 0),
+            Math.min(1, accent.brightness * 1.4736275033501274 + 0),
           ),
         }),
         alpha: 255,
@@ -3115,16 +3219,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_muteIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -7.462464846266 + 360) % 360,
+          hue: (accent.hue + -6.3758910173782 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.4506805616367723),
+            Math.min(1, accent.saturation * 0.5182168814208646),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.8322422266276982 + 0.2488649615523509,
+              accent.brightness * 1.0694252987336574 + 0.17104780926781335,
             ),
           ),
         }),
@@ -3135,16 +3239,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outAudioCacheSeekbar`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.0847303134199 + 360) % 360,
+          hue: (accent.hue + -7.9981564845321 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5442417578152058),
+            Math.min(1, accent.saturation * 0.6257986043367738),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 1.0455112646918947 + 0.14674511979655022,
+              accent.brightness * 1.3434744847099802 + 0.04898667075774136,
             ),
           ),
         }),
@@ -3155,14 +3259,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outAudioDurationSelectedText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.1827985039437 + 360) % 360,
+          hue: (accent.hue + -2.096224675056 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.7004469671960439),
+            Math.min(1, accent.saturation * 0.8054118012606554),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.9465646358317218 + 0),
+            Math.min(1, accent.brightness * 1.0578114209258844 + 0),
           ),
         }),
         alpha: 255,
@@ -3172,16 +3276,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outAudioDurationText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -11.4691364087589 + 360) % 360,
+          hue: (accent.hue + -10.3825625798711 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5107621015143821),
+            Math.min(1, accent.saturation * 0.5873018850279913),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.6248408464602453 + 0.11900538156301298,
+              accent.brightness * 0.8029160111166366 + 0.06058088236447874,
             ),
           ),
         }),
@@ -3210,17 +3314,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outAudioProgress`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -5.5149725127837 + 360) % 360,
+          hue: (accent.hue + -4.4283986838959 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.6246685334267004),
+            Math.min(1, accent.saturation * 0.7182776602089801),
           ),
           brightness: Math.max(
             0,
-            Math.min(
-              1,
-              accent.brightness * 1.2962052347526978 + 0.054376487486525134,
-            ),
+            Math.min(1, accent.brightness * 1.5459336803835737 + 0),
           ),
         }),
         alpha: 255,
@@ -3230,16 +3331,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outAudioSeekbar`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.0847303134199 + 360) % 360,
+          hue: (accent.hue + -7.9981564845321 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5442417578152058),
+            Math.min(1, accent.saturation * 0.6257986043367738),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 1.0455112646918947 + 0.14674511979655022,
+              accent.brightness * 1.3434744847099802 + 0.04898667075774136,
             ),
           ),
         }),
@@ -3250,14 +3351,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outAudioSeekbarFill`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.9023165757124 + 360) % 360,
+          hue: (accent.hue + -0.8157427468247 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9832389149124802),
+            Math.min(1, accent.saturation * 1.130581275409519),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4230440421037933 + 0),
+            Math.min(1, accent.brightness * 1.5902899635535706 + 0),
           ),
         }),
         alpha: 255,
@@ -3267,14 +3368,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outAudioSeekbarSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -7.7085974790534 + 360) % 360,
+          hue: (accent.hue + -6.6220236501656 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9277957941351085),
+            Math.min(1, accent.saturation * 1.0668297769176756),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.1588157494754832 + 0),
+            Math.min(1, accent.brightness * 1.295007744998701 + 0),
           ),
         }),
         alpha: 71,
@@ -3284,14 +3385,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outAudioSelectedProgress`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.9524512082533 + 360) % 360,
+          hue: (accent.hue + -5.8658773793655 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.74645248966842),
+            Math.min(1, accent.saturation * 0.8583114388602616),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4633920100955866 + 0),
+            Math.min(1, accent.brightness * 1.6353799021982454 + 0),
           ),
         }),
         alpha: 255,
@@ -3301,14 +3402,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outAudioTitleText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.1469707261603 + 360) % 360,
+          hue: (accent.hue + -8.0603968972725 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8104579030389988),
+            Math.min(1, accent.saturation * 0.9319083244026363),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.06337940004583868 + 0),
+            Math.min(1, accent.brightness * 0.0708281829703149 + 0),
           ),
         }),
         alpha: 255,
@@ -3327,16 +3428,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outBubble`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.7092285605282 + 360) % 360,
+          hue: (accent.hue + -8.2186077659822 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.23707132987300863),
+            Math.min(1, accent.saturation * 0.22674730955300698),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.5648480945367246 + 0.6386592588097747,
+              accent.brightness * 0.5929879998636732 + 0.6423561395060842,
             ),
           ),
         }),
@@ -3347,16 +3448,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outBubbleSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -17.5466016341299 + 360) % 360,
+          hue: (accent.hue + -15.8603166432077 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.38192671651586024),
+            Math.min(1, accent.saturation * 0.39693327771054276),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.9181513480940944 + 0.4271099252262097,
+              accent.brightness * 1.066374433266097 + 0.40460008343418585,
             ),
           ),
         }),
@@ -3367,14 +3468,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outBubbleShadow`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.2221164407414 + 360) % 360,
+          hue: (accent.hue + -2.1355426118537 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0492013258901214),
+            Math.min(1, accent.saturation * 1.2064284226299142),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.10974762301909027 + 0),
+            Math.min(1, accent.brightness * 0.12264591836040326 + 0),
           ),
         }),
         alpha: 255,
@@ -3384,14 +3485,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outContactBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.975417920913 + 360) % 360,
+          hue: (accent.hue + -0.8888440920252 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9852635319181208),
+            Math.min(1, accent.saturation * 1.1329092895287087),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4230440421037933 + 0),
+            Math.min(1, accent.brightness * 1.5902899635535706 + 0),
           ),
         }),
         alpha: 255,
@@ -3410,14 +3511,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outContactNameText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.8081884616587 + 360) % 360,
+          hue: (accent.hue + -2.7216146327709 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.7698380412111144),
+            Math.min(1, accent.saturation * 0.8852014106548055),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.07720333673355123 + 0),
+            Math.min(1, accent.brightness * 0.08627680375844494 + 0),
           ),
         }),
         alpha: 255,
@@ -3427,14 +3528,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outContactPhoneSelectedText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.1827985039437 + 360) % 360,
+          hue: (accent.hue + -4.5406267630633 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.7004469671960439),
+            Math.min(1, accent.saturation * 0.8575097771682445),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.9465646358317218 + 0),
+            Math.min(1, accent.brightness * 0.9006807807007775 + 0),
           ),
         }),
         alpha: 255,
@@ -3444,16 +3545,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outContactPhoneText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -11.4691364087589 + 360) % 360,
+          hue: (accent.hue + -9.9581428414049 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5107621015143821),
+            Math.min(1, accent.saturation * 0.5797417092004942),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.6248408464602453 + 0.11900538156301298,
+              accent.brightness * 0.6018620484606976 + 0.050385543143424534,
             ),
           ),
         }),
@@ -3464,36 +3565,36 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outFileBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.1322702180178 + 360) % 360,
+          hue: (accent.hue + -8.04569638913 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.40675316085759766),
+            Math.min(1, accent.saturation * 0.4677067805236021),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.9094941040484855 + 0.3626225609871583,
+              accent.brightness * 1.1686934077591071 + 0.2775821257242035,
             ),
           ),
         }),
-        alpha: 223,
+        alpha: 178,
       } as Color,
     ] as [string, Color],
     [
       `chat_outFileBackgroundSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -13.5643119420225 + 360) % 360,
+          hue: (accent.hue + -12.4777381131347 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5158823468300013),
+            Math.min(1, accent.saturation * 0.5931894199816478),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 1.207247882128841 + 0.2201704290163947,
+              accent.brightness * 1.551304879377101 + 0.1072891196054611,
             ),
           ),
         }),
@@ -3504,14 +3605,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outFileIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.975417920913 + 360) % 360,
+          hue: (accent.hue + -0.8888440920252 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9852635319181208),
+            Math.min(1, accent.saturation * 1.1329092895287087),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4230440421037933 + 0),
+            Math.min(1, accent.brightness * 1.5902899635535706 + 0),
           ),
         }),
         alpha: 240,
@@ -3521,14 +3622,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outFileInfoSelectedText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.1827985039437 + 360) % 360,
+          hue: (accent.hue + -2.096224675056 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.7004469671960439),
+            Math.min(1, accent.saturation * 0.8054118012606554),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.9465646358317218 + 0),
+            Math.min(1, accent.brightness * 1.0578114209258844 + 0),
           ),
         }),
         alpha: 255,
@@ -3538,16 +3639,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outFileInfoText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -11.4691364087589 + 360) % 360,
+          hue: (accent.hue + -10.2160575790617 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5107621015143821),
+            Math.min(1, accent.saturation * 0.5788392804924406),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.6248408464602453 + 0.11900538156301298,
+              accent.brightness * 0.7097515239035905 + 0.06012808078055854,
             ),
           ),
         }),
@@ -3558,14 +3659,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outFileNameText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.8081884616587 + 360) % 360,
+          hue: (accent.hue + -2.7216146327709 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.7698380412111144),
+            Math.min(1, accent.saturation * 0.8852014106548055),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.07720333673355123 + 0),
+            Math.min(1, accent.brightness * 0.08627680375844494 + 0),
           ),
         }),
         alpha: 255,
@@ -3584,16 +3685,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outFileProgressSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -17.5466016341299 + 360) % 360,
+          hue: (accent.hue + -16.4600278052421 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.38192671651586024),
+            Math.min(1, accent.saturation * 0.43915999226892516),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.9181513480940944 + 0.4271099252262097,
+              accent.brightness * 1.1798179043341015 + 0.34126001159661234,
             ),
           ),
         }),
@@ -3604,14 +3705,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outFileSelectedIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.975417920913 + 360) % 360,
+          hue: (accent.hue + -0.8888440920252 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9852635319181208),
+            Math.min(1, accent.saturation * 1.1329092895287087),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4230440421037933 + 0),
+            Math.min(1, accent.brightness * 1.5902899635535706 + 0),
           ),
         }),
         alpha: 255,
@@ -3621,14 +3722,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outForwardedNameText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 0.1007403439659 + 360) % 360,
+          hue: (accent.hue + 1.1873141728537 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0253295414110355),
+            Math.min(1, accent.saturation * 1.178979353910875),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.9465646358317218 + 0),
+            Math.min(1, accent.brightness * 1.0578114209258844 + 0),
           ),
         }),
         alpha: 255,
@@ -3638,14 +3739,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outGreenCall`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -0.3159958905219 + 360) % 360,
+          hue: (accent.hue + 0.7705779383658 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9893323229342083),
+            Math.min(1, accent.saturation * 1.1375878054688071),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.3833525732889576 + 0),
+            Math.min(1, accent.brightness * 1.5459336803835737 + 0),
           ),
         }),
         alpha: 255,
@@ -3655,14 +3756,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outInstant`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.9179178563763 + 360) % 360,
+          hue: (accent.hue + -1.9128718437194 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0353304054967976),
+            Math.min(1, accent.saturation * 1.2074238291703683),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.1826237989109307 + 0),
+            Math.min(1, accent.brightness * 1.2043605826154917 + 0),
           ),
         }),
         alpha: 255,
@@ -3672,14 +3773,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outInstantSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.9179178563763 + 360) % 360,
+          hue: (accent.hue + -2.8313440274885 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0353304054967976),
+            Math.min(1, accent.saturation * 1.190478888257809),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.1826237989109307 + 0),
+            Math.min(1, accent.brightness * 1.321613880120848 + 0),
           ),
         }),
         alpha: 255,
@@ -3689,14 +3790,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outLoader`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.975417920913 + 360) % 360,
+          hue: (accent.hue + -0.8888440920252 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9852635319181208),
+            Math.min(1, accent.saturation * 1.1329092895287087),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4230440421037933 + 0),
+            Math.min(1, accent.brightness * 1.5902899635535706 + 0),
           ),
         }),
         alpha: 240,
@@ -3706,14 +3807,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outLoaderPhoto`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.9023165757124 + 360) % 360,
+          hue: (accent.hue + -0.8157427468247 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9832389149124802),
+            Math.min(1, accent.saturation * 1.130581275409519),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4230440421037933 + 0),
+            Math.min(1, accent.brightness * 1.5902899635535706 + 0),
           ),
         }),
         alpha: 240,
@@ -3723,14 +3824,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outLoaderPhotoIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.975417920913 + 360) % 360,
+          hue: (accent.hue + -0.8888440920252 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9852635319181208),
+            Math.min(1, accent.saturation * 1.1329092895287087),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4230440421037933 + 0),
+            Math.min(1, accent.brightness * 1.5902899635535706 + 0),
           ),
         }),
         alpha: 240,
@@ -3740,14 +3841,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outLoaderPhotoIconSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.975417920913 + 360) % 360,
+          hue: (accent.hue + -0.8888440920252 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9852635319181208),
+            Math.min(1, accent.saturation * 1.1329092895287087),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4230440421037933 + 0),
+            Math.min(1, accent.brightness * 1.5902899635535706 + 0),
           ),
         }),
         alpha: 240,
@@ -3757,14 +3858,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outLoaderPhotoSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.975417920913 + 360) % 360,
+          hue: (accent.hue + -0.8888440920252 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9852635319181208),
+            Math.min(1, accent.saturation * 1.1329092895287087),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4230440421037933 + 0),
+            Math.min(1, accent.brightness * 1.5902899635535706 + 0),
           ),
         }),
         alpha: 240,
@@ -3774,14 +3875,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outLoaderSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.975417920913 + 360) % 360,
+          hue: (accent.hue + -0.8888440920252 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9852635319181208),
+            Math.min(1, accent.saturation * 1.1329092895287087),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4230440421037933 + 0),
+            Math.min(1, accent.brightness * 1.5902899635535706 + 0),
           ),
         }),
         alpha: 255,
@@ -3791,16 +3892,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outLocationBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.9026704101195 + 360) % 360,
+          hue: (accent.hue + -8.8160965812317 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.4007642377629099),
+            Math.min(1, accent.saturation * 0.4608203928837025),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.8878858059617695 + 0.36757628102664835,
+              accent.brightness * 1.1409268995273039 + 0.2845562866510025,
             ),
           ),
         }),
@@ -3811,17 +3912,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outLocationIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.6035212647686 + 360) % 360,
+          hue: (accent.hue + -3.5169474358809 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.6555526685677799),
+            Math.min(1, accent.saturation * 0.7537899089291498),
           ),
           brightness: Math.max(
             0,
-            Math.min(
-              1,
-              accent.brightness * 0.8404157725335962 + 0.008890249410530859,
-            ),
+            Math.min(1, accent.brightness * 0.9551098468083593 + 0),
           ),
         }),
         alpha: 130,
@@ -3840,16 +3938,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outMediaIconSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -17.5466016341299 + 360) % 360,
+          hue: (accent.hue + -15.8603166432077 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.38192671651586024),
+            Math.min(1, accent.saturation * 0.39693327771054276),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.9181513480940944 + 0.4271099252262097,
+              accent.brightness * 1.066374433266097 + 0.40460008343418585,
             ),
           ),
         }),
@@ -3860,16 +3958,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outMenu`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -11.7496909904946 + 360) % 360,
+          hue: (accent.hue + -10.6631171616068 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.44018874099951144),
+            Math.min(1, accent.saturation * 0.5061528186813441),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.7115882128198034 + 0.22844029697527557,
+              accent.brightness * 0.9143857553993054 + 0.16190465801201495,
             ),
           ),
         }),
@@ -3880,14 +3978,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outMenuSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -5.0940328680367 + 360) % 360,
+          hue: (accent.hue + -4.007459039149 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.6990703307427396),
+            Math.min(1, accent.saturation * 0.8038288702216713),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.409740760188974 + 0),
+            Math.min(1, accent.brightness * 1.5754231884675485 + 0),
           ),
         }),
         alpha: 255,
@@ -3897,14 +3995,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outPreviewInstantSelectedText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 0.1007403439659 + 360) % 360,
+          hue: (accent.hue + 1.1873141728537 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0253295414110355),
+            Math.min(1, accent.saturation * 1.178979353910875),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.9465646358317218 + 0),
+            Math.min(1, accent.brightness * 1.0578114209258844 + 0),
           ),
         }),
         alpha: 255,
@@ -3914,14 +4012,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outPreviewInstantText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 0.1007403439659 + 360) % 360,
+          hue: (accent.hue + 1.1873141728537 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0253295414110355),
+            Math.min(1, accent.saturation * 1.178979353910875),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.9465646358317218 + 0),
+            Math.min(1, accent.brightness * 1.0578114209258844 + 0),
           ),
         }),
         alpha: 255,
@@ -3931,14 +4029,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outPreviewLine`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.7383101610753 + 360) % 360,
+          hue: (accent.hue + -2.6517363321876 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9798492090029155),
+            Math.min(1, accent.saturation * 1.1266836082480847),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.2806946541416644 + 0),
+            Math.min(1, accent.brightness * 1.4312106966466258 + 0),
           ),
         }),
         alpha: 255,
@@ -3948,14 +4046,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outReplyLine`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.7383101610753 + 360) % 360,
+          hue: (accent.hue + 0.1887392343049 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9798492090029155),
+            Math.min(1, accent.saturation * 1.1515302328346813),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.2806946541416644 + 0),
+            Math.min(1, accent.brightness * 1.3757757122866794 + 0),
           ),
         }),
         alpha: 255,
@@ -3965,14 +4063,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outReplyMediaMessageSelectedText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.7588208810826 + 360) % 360,
+          hue: (accent.hue + -1.6722470521948 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.7043427730422467),
+            Math.min(1, accent.saturation * 0.8098914094978251),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.9571149007720234 + 0),
+            Math.min(1, accent.brightness * 1.0696016255513074 + 0),
           ),
         }),
         alpha: 255,
@@ -3982,16 +4080,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outReplyMediaMessageText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -11.4691364087589 + 360) % 360,
+          hue: (accent.hue + -10.3825625798711 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5107621015143821),
+            Math.min(1, accent.saturation * 0.5873018850279913),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.6248408464602453 + 0.11900538156301298,
+              accent.brightness * 0.8029160111166366 + 0.06058088236447874,
             ),
           ),
         }),
@@ -4011,14 +4109,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outReplyNameText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 0.2171911514692 + 360) % 360,
+          hue: (accent.hue + 0.3415594621005 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0263886507444584),
+            Math.min(1, accent.saturation * 1.1771621439347204),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.03288556544498 + 0),
+            Math.min(1, accent.brightness * 1.10543061880933 + 0),
           ),
         }),
         alpha: 255,
@@ -4028,14 +4126,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outSentCheck`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.7216868041431 + 360) % 360,
+          hue: (accent.hue + -0.7499871010855 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.02253548701205),
+            Math.min(1, accent.saturation * 1.195015309129008),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.5321058291583096 + 0),
+            Math.min(1, accent.brightness * 1.417232131193227 + 0),
           ),
         }),
         alpha: 255,
@@ -4045,14 +4143,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outSentCheckRead`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.7216868041431 + 360) % 360,
+          hue: (accent.hue + -0.7499871010855 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.02253548701205),
+            Math.min(1, accent.saturation * 1.195015309129008),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.5321058291583096 + 0),
+            Math.min(1, accent.brightness * 1.417232131193227 + 0),
           ),
         }),
         alpha: 255,
@@ -4062,14 +4160,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outSentCheckReadSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.656982741954 + 360) % 360,
+          hue: (accent.hue + -1.0111570256824 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0341097324405357),
+            Math.min(1, accent.saturation * 1.19433615577354),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.436420268549664 + 0),
+            Math.min(1, accent.brightness * 1.3621162265790265 + 0),
           ),
         }),
         alpha: 255,
@@ -4079,14 +4177,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outSentCheckSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.656982741954 + 360) % 360,
+          hue: (accent.hue + -1.0111570256824 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0341097324405357),
+            Math.min(1, accent.saturation * 1.19433615577354),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.436420268549664 + 0),
+            Math.min(1, accent.brightness * 1.3621162265790265 + 0),
           ),
         }),
         alpha: 255,
@@ -4096,16 +4194,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outSentClock`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -11.4691364087589 + 360) % 360,
+          hue: (accent.hue + -10.3825625798711 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5107621015143821),
+            Math.min(1, accent.saturation * 0.5873018850279913),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.6248408464602453 + 0.11900538156301298,
+              accent.brightness * 0.8029160111166366 + 0.06058088236447874,
             ),
           ),
         }),
@@ -4116,14 +4214,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outSentClockSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.1827985039437 + 360) % 360,
+          hue: (accent.hue + -2.096224675056 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.7004469671960439),
+            Math.min(1, accent.saturation * 0.8054118012606554),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.9465646358317218 + 0),
+            Math.min(1, accent.brightness * 1.0578114209258844 + 0),
           ),
         }),
         alpha: 240,
@@ -4133,14 +4231,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outSiteNameText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 0.6359994246127 + 360) % 360,
+          hue: (accent.hue + 1.7225732535004 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0250099207485786),
+            Math.min(1, accent.saturation * 1.1786118367889151),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.9360825233203579 + 0),
+            Math.min(1, accent.brightness * 1.046097378471501 + 0),
           ),
         }),
         alpha: 255,
@@ -4150,14 +4248,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outTimeSelectedText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.1827985039437 + 360) % 360,
+          hue: (accent.hue + -2.096224675056 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.7004469671960439),
+            Math.min(1, accent.saturation * 0.8054118012606554),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.9465646358317218 + 0),
+            Math.min(1, accent.brightness * 1.0578114209258844 + 0),
           ),
         }),
         alpha: 255,
@@ -4167,16 +4265,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outTimeText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -11.4691364087589 + 360) % 360,
+          hue: (accent.hue + -10.3825625798711 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5107621015143821),
+            Math.min(1, accent.saturation * 0.5873018850279913),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.6248408464602453 + 0.11900538156301298,
+              accent.brightness * 0.8029160111166366 + 0.06058088236447874,
             ),
           ),
         }),
@@ -4196,14 +4294,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outVenueInfoSelectedText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.1827985039437 + 360) % 360,
+          hue: (accent.hue + -2.096224675056 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.7004469671960439),
+            Math.min(1, accent.saturation * 0.8054118012606554),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.9465646358317218 + 0),
+            Math.min(1, accent.brightness * 1.0578114209258844 + 0),
           ),
         }),
         alpha: 255,
@@ -4213,16 +4311,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outVenueInfoText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -11.4691364087589 + 360) % 360,
+          hue: (accent.hue + -11.0492239342277 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5107621015143821),
+            Math.min(1, accent.saturation * 0.5807906669739648),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.6248408464602453 + 0.11900538156301298,
+              accent.brightness * 0.6688915330401255 + 0.055221337433220136,
             ),
           ),
         }),
@@ -4233,14 +4331,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outViaBotNameText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 0.1007403439659 + 360) % 360,
+          hue: (accent.hue + 1.1873141728537 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0253295414110355),
+            Math.min(1, accent.saturation * 1.178979353910875),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.9465646358317218 + 0),
+            Math.min(1, accent.brightness * 1.0578114209258844 + 0),
           ),
         }),
         alpha: 255,
@@ -4250,16 +4348,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outViews`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -11.4691364087589 + 360) % 360,
+          hue: (accent.hue + -10.3825625798711 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5107621015143821),
+            Math.min(1, accent.saturation * 0.5873018850279913),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.6248408464602453 + 0.11900538156301298,
+              accent.brightness * 0.8029160111166366 + 0.06058088236447874,
             ),
           ),
         }),
@@ -4270,14 +4368,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outViewsSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.1827985039437 + 360) % 360,
+          hue: (accent.hue + -2.096224675056 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.7004469671960439),
+            Math.min(1, accent.saturation * 0.8054118012606554),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.9465646358317218 + 0),
+            Math.min(1, accent.brightness * 1.0578114209258844 + 0),
           ),
         }),
         alpha: 240,
@@ -4287,34 +4385,34 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outVoiceSeekbar`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -7.0571617946567 + 360) % 360,
+          hue: (accent.hue + -5.9705879657689 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.523676490662031),
+            Math.min(1, accent.saturation * 0.6021515480470586),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.9289684211806134 + 0.1582709088390982,
+              accent.brightness * 1.1937177657528726 + 0.07140956632892426,
             ),
           ),
         }),
-        alpha: 226,
+        alpha: 189,
       } as Color,
     ] as [string, Color],
     [
       `chat_outVoiceSeekbarFill`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.9023165757124 + 360) % 360,
+          hue: (accent.hue + -0.8157427468247 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9832389149124802),
+            Math.min(1, accent.saturation * 1.130581275409519),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4230440421037933 + 0),
+            Math.min(1, accent.brightness * 1.5902899635535706 + 0),
           ),
         }),
         alpha: 255,
@@ -4324,14 +4422,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_outVoiceSeekbarSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -8.596967682528 + 360) % 360,
+          hue: (accent.hue + -7.5103938536402 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8206952232927105),
+            Math.min(1, accent.saturation * 0.9436797488384229),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.0439855575945596 + 0),
+            Math.min(1, accent.brightness * 1.1666819193333249 + 0),
           ),
         }),
         alpha: 121,
@@ -4377,14 +4475,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_recordedVoiceBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 0.2820256821521 + 360) % 360,
+          hue: (accent.hue + 1.3685995110399 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.929241391803055),
+            Math.min(1, accent.saturation * 1.0684920032905012),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.2310895971863507 + 0),
+            Math.min(1, accent.brightness * 1.3757757122866794 + 0),
           ),
         }),
         alpha: 255,
@@ -4412,16 +4510,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_recordedVoicePlayPausePressed`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.0378916938435 + 360) % 360,
+          hue: (accent.hue + -4.9513178649558 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.29585159076993933),
+            Math.min(1, accent.saturation * 0.34018615796384155),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.6861107648209922 + 0.5365803063442728,
+              accent.brightness * 0.8816474172504428 + 0.4724268854268069,
             ),
           ),
         }),
@@ -4432,17 +4530,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_recordedVoiceProgress`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.0690610049971 + 360) % 360,
+          hue: (accent.hue + -2.9824871761093 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.6482295643951667),
+            Math.min(1, accent.saturation * 0.7453694077367545),
           ),
           brightness: Math.max(
             0,
-            Math.min(
-              1,
-              accent.brightness * 1.4627943912321624 + 0.025959967164563405,
-            ),
+            Math.min(1, accent.brightness * 1.681206923025503 + 0),
           ),
         }),
         alpha: 255,
@@ -4461,16 +4556,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_replyPanelClose`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -8.9490966842094 + 360) % 360,
+          hue: (accent.hue + -7.8625228553217 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.18416771951710725),
+            Math.min(1, accent.saturation * 0.21176600321952008),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.14512013654745765 + 0.23722888081645,
+              accent.brightness * 0.18647833577057882 + 0.22365971140404733,
             ),
           ),
         }),
@@ -4481,14 +4576,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_replyPanelIcons`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 0.2402447694043 + 360) % 360,
+          hue: (accent.hue + 1.3268185982921 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9709614084656927),
+            Math.min(1, accent.saturation * 1.116463934560888),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.357254791824771 + 0),
+            Math.min(1, accent.brightness * 1.516768708179233 + 0),
           ),
         }),
         alpha: 255,
@@ -4516,14 +4611,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_replyPanelName`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 1.009902161505 + 360) % 360,
+          hue: (accent.hue + 2.0964759903928 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0061106599534853),
+            Math.min(1, accent.saturation * 1.1568804447030805),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.1706844694570566 + 0),
+            Math.min(1, accent.brightness * 1.308271358568257 + 0),
           ),
         }),
         alpha: 255,
@@ -4542,14 +4637,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_searchPanelIcons`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 0.6704502988515 + 360) % 360,
+          hue: (accent.hue + 1.7570241277393 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9963969931720562),
+            Math.min(1, accent.saturation * 1.1457111453475635),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.2433837606817657 + 0),
+            Math.min(1, accent.brightness * 1.3895147704174038 + 0),
           ),
         }),
         alpha: 255,
@@ -4559,14 +4654,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_searchPanelText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -0.6624492651042 + 360) % 360,
+          hue: (accent.hue + 0.4241245637836 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.983596093804912),
+            Math.min(1, accent.saturation * 1.1309919790153573),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.194633857349959 + 0),
+            Math.min(1, accent.brightness * 1.3350354432152987 + 0),
           ),
         }),
         alpha: 255,
@@ -4594,14 +4689,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_secretTimerBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 1.1317091319722 + 360) % 360,
+          hue: (accent.hue + 2.21828296086 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8661928025201036),
+            Math.min(1, accent.saturation * 0.9959953258266774),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.4335175671758441 + 0),
+            Math.min(1, accent.brightness * 0.48446753277199084 + 0),
           ),
         }),
         alpha: 204,
@@ -4620,17 +4715,17 @@ const mono = (accent: PartialHsbColor) =>
       `chat_selectedBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 1.5199254765545 + 360) % 360,
+          hue: (accent.hue + 2.6064993054423 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.049816227725033),
+            Math.min(1, accent.saturation * 1.2071354700120125),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.8846898118485972 + 0),
+            Math.min(1, accent.brightness * 0.988664642143454 + 0),
           ),
         }),
-        alpha: 66,
+        alpha: 50,
       } as Color,
     ] as [string, Color],
     [
@@ -4649,23 +4744,6 @@ const mono = (accent: PartialHsbColor) =>
         green: 255,
         blue: 255,
         alpha: 255,
-      } as Color,
-    ] as [string, Color],
-    [
-      `chat_serviceBackground`,
-      {
-        ...hsbToRgb({
-          hue: (accent.hue + -1.323274576956 + 360) % 360,
-          saturation: Math.max(
-            0,
-            Math.min(1, accent.saturation * 0.8101780859011489),
-          ),
-          brightness: Math.max(
-            0,
-            Math.min(1, accent.brightness * 0.4746106880331171 + 0),
-          ),
-        }),
-        alpha: 59,
       } as Color,
     ] as [string, Color],
     [
@@ -4699,17 +4777,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_shareBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -7.4425917410002 + 360) % 360,
+          hue: (accent.hue + -6.3560179121124 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5888256067581547),
+            Math.min(1, accent.saturation * 0.67706352483178),
           ),
           brightness: Math.max(
             0,
-            Math.min(
-              1,
-              accent.brightness * 0.539780704953829 + 0.04452423135089029,
-            ),
+            Math.min(1, accent.brightness * 0.6829633293810461 + 0),
           ),
         }),
         alpha: 102,
@@ -4719,17 +4794,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_shareBackgroundSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -7.4425917410002 + 360) % 360,
+          hue: (accent.hue + -6.3560179121124 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5888256067581547),
+            Math.min(1, accent.saturation * 0.67706352483178),
           ),
           brightness: Math.max(
             0,
-            Math.min(
-              1,
-              accent.brightness * 0.539780704953829 + 0.04452423135089029,
-            ),
+            Math.min(1, accent.brightness * 0.6829633293810461 + 0),
           ),
         }),
         alpha: 153,
@@ -4739,16 +4811,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_status`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.5624111434588 + 360) % 360,
+          hue: (accent.hue + -9.4897207713518 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.29994800953157924),
+            Math.min(1, accent.saturation * 0.29302526909154863),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.6706793516118651 + 0.5116335074552983,
+              accent.brightness * 0.7055630579305774 + 0.5023250006977623,
             ),
           ),
         }),
@@ -4813,14 +4885,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_textSelectBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.9821804816816 + 360) % 360,
+          hue: (accent.hue + -1.8956066527938 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8863030787996047),
+            Math.min(1, accent.saturation * 1.0191192090051011),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.2310895971863507 + 0),
+            Math.min(1, accent.brightness * 1.3757757122866794 + 0),
           ),
         }),
         alpha: 102,
@@ -4839,16 +4911,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_topPanelClose`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -15.2083397408444 + 360) % 360,
+          hue: (accent.hue + -14.1217659119566 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.19858993932368826),
+            Math.min(1, accent.saturation * 0.2283494514698491),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.15427178827407173 + 0.22688372367704654,
+              accent.brightness * 0.19823814267355014 + 0.21245884729222717,
             ),
           ),
         }),
@@ -4859,14 +4931,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_topPanelLine`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.9678876401974 + 360) % 360,
+          hue: (accent.hue + -3.8813138113096 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9633682738154102),
+            Math.min(1, accent.saturation * 1.107732937722712),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.2433837606817657 + 0),
+            Math.min(1, accent.brightness * 1.3895147704174038 + 0),
           ),
         }),
         alpha: 255,
@@ -4885,14 +4957,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_topPanelTitle`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 2.7263572511476 + 360) % 360,
+          hue: (accent.hue + 0.9064263661072 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9783773044918782),
+            Math.min(1, accent.saturation * 1.1518286960184734),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.1470175191491547 + 0),
+            Math.min(1, accent.brightness * 1.3350354432152987 + 0),
           ),
         }),
         alpha: 255,
@@ -4902,16 +4974,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_unreadMessagesStartArrowIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.2929553010597 + 360) % 360,
+          hue: (accent.hue + -5.2063814721719 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.38716840421955734),
+            Math.min(1, accent.saturation * 0.4451871682476869),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.5315757821753601 + 0.2394425962137505,
+              accent.brightness * 0.6830710716950567 + 0.18973866114675816,
             ),
           ),
         }),
@@ -4931,14 +5003,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_unreadMessagesStartText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 1.3239760903655 + 360) % 360,
+          hue: (accent.hue + 2.4105499192532 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9720637719459656),
+            Math.min(1, accent.saturation * 1.1177314917035006),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.1588157494754832 + 0),
+            Math.min(1, accent.brightness * 1.295007744998701 + 0),
           ),
         }),
         alpha: 255,
@@ -4948,14 +5020,14 @@ const mono = (accent: PartialHsbColor) =>
       `chat_wallpaper`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 1.576845501114 + 360) % 360,
+          hue: (accent.hue + 2.6634193300018 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9108974962654555),
+            Math.min(1, accent.saturation * 1.0473992002104642),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.0218547242756038 + 0),
+            Math.min(1, accent.brightness * 1.1419501182991265 + 0),
           ),
         }),
         alpha: 255,
@@ -4965,16 +5037,16 @@ const mono = (accent: PartialHsbColor) =>
       `chat_wallpaper_gradient_to`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -7.6997425295084 + 360) % 360,
+          hue: (accent.hue + -6.6131687006207 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.4781053813012262),
+            Math.min(1, accent.saturation * 0.549751422135086),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.8567413138254852 + 0.21083156380161833,
+              accent.brightness * 1.100906450262533 + 0.13072367314992597,
             ),
           ),
         }),
@@ -4985,14 +5057,14 @@ const mono = (accent: PartialHsbColor) =>
       `chats_actionBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.4767633185955 + 360) % 360,
+          hue: (accent.hue + -3.794723687283 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8698821165786329),
+            Math.min(1, accent.saturation * 1.015493154415989),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.194633857349959 + 0),
+            Math.min(1, accent.brightness * 1.321613880120848 + 0),
           ),
         }),
         alpha: 255,
@@ -5011,14 +5083,14 @@ const mono = (accent: PartialHsbColor) =>
       `chats_actionMessage`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.6895069719467 + 360) % 360,
+          hue: (accent.hue + 0.0275298933698 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9441867481153985),
+            Math.min(1, accent.saturation * 1.183222157995972),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.695803198355629 + 0),
+            Math.min(1, accent.brightness * 0.9331146069257577 + 0),
           ),
         }),
         alpha: 255,
@@ -5028,14 +5100,14 @@ const mono = (accent: PartialHsbColor) =>
       `chats_actionPressedBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.7555414915165 + 360) % 360,
+          hue: (accent.hue + -1.4390044574266 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.908027849969702),
+            Math.min(1, accent.saturation * 1.044597117829948),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.0777016713391938 + 0),
+            Math.min(1, accent.brightness * 1.179163874765905 + 0),
           ),
         }),
         alpha: 255,
@@ -5062,9 +5134,9 @@ const mono = (accent: PartialHsbColor) =>
     [
       `chats_actionUnreadPressedBackground`,
       {
-        red: 242,
-        green: 242,
-        blue: 242,
+        red: 229,
+        green: 229,
+        blue: 229,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -5072,14 +5144,14 @@ const mono = (accent: PartialHsbColor) =>
       `chats_archiveBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.3251281276306 + 360) % 360,
+          hue: (accent.hue + -3.794723687283 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8660197606234817),
+            Math.min(1, accent.saturation * 1.015493154415989),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.194633857349959 + 0),
+            Math.min(1, accent.brightness * 1.321613880120848 + 0),
           ),
         }),
         alpha: 255,
@@ -5098,16 +5170,16 @@ const mono = (accent: PartialHsbColor) =>
       `chats_archivePinBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.3401436239793 + 360) % 360,
+          hue: (accent.hue + -8.2535697950915 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.24332816504108226),
+            Math.min(1, accent.saturation * 0.27979188272841304),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.2636919237858112 + 0.2862524667912744,
+              accent.brightness * 0.3388422328808912 + 0.2615964785069613,
             ),
           ),
         }),
@@ -5118,16 +5190,16 @@ const mono = (accent: PartialHsbColor) =>
       `chats_archivePullDownBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -7.1835137386356 + 360) % 360,
+          hue: (accent.hue + -6.0969399097478 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.06826968779412695),
+            Math.min(1, accent.saturation * 0.07850017887561342),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.0991002901511394 + 0.5419926829975191,
+              accent.brightness * 0.12734316285405747 + 0.5327265076901433,
             ),
           ),
         }),
@@ -5138,14 +5210,14 @@ const mono = (accent: PartialHsbColor) =>
       `chats_archivePullDownBackgroundActive`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.3251281276306 + 360) % 360,
+          hue: (accent.hue + -2.2385542987429 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8660197606234817),
+            Math.min(1, accent.saturation * 0.9957963528962789),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.194633857349959 + 0),
+            Math.min(1, accent.brightness * 1.3350354432152987 + 0),
           ),
         }),
         alpha: 255,
@@ -5164,14 +5236,14 @@ const mono = (accent: PartialHsbColor) =>
       `chats_attachMessage`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.6895069719467 + 360) % 360,
+          hue: (accent.hue + 0.4412555304021 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9441867481153985),
+            Math.min(1, accent.saturation * 1.1842012953474643),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.695803198355629 + 0),
+            Math.min(1, accent.brightness * 0.9662197093881829 + 0),
           ),
         }),
         alpha: 255,
@@ -5181,16 +5253,16 @@ const mono = (accent: PartialHsbColor) =>
       `chats_date`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -11.3296918691622 + 360) % 360,
+          hue: (accent.hue + -10.2431180402744 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.10114765779562751),
+            Math.min(1, accent.saturation * 0.11630504673977957),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.08083853081210854 + 0.28201149499821837,
+              accent.brightness * 0.10387693293722132 + 0.2744528491359985,
             ),
           ),
         }),
@@ -5237,14 +5309,14 @@ const mono = (accent: PartialHsbColor) =>
       `chats_menuCloudBackgroundCats`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.647320325596 + 360) % 360,
+          hue: (accent.hue + -1.5607464967083 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9091605109813002),
+            Math.min(1, accent.saturation * 1.0454019205990255),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.6358660517865611 + 0),
+            Math.min(1, accent.brightness * 0.7105974027519577 + 0),
           ),
         }),
         alpha: 255,
@@ -5254,14 +5326,14 @@ const mono = (accent: PartialHsbColor) =>
       `chats_menuItemCheck`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.2883653126515 + 360) % 360,
+          hue: (accent.hue + -3.2017914837638 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8394610504944328),
+            Math.min(1, accent.saturation * 0.9652577117628525),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.7869423386469249 + 0),
+            Math.min(1, accent.brightness * 0.8794292137265425 + 0),
           ),
         }),
         alpha: 255,
@@ -5271,16 +5343,16 @@ const mono = (accent: PartialHsbColor) =>
       `chats_menuItemIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -10.17940672784 + 360) % 360,
+          hue: (accent.hue + -8.4078459984271 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.2275217702731027),
+            Math.min(1, accent.saturation * 0.18278554744286388),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.1717399105764522 + 0.2068298115061919,
+              accent.brightness * 0.15642540367864646 + 0.23120815728645872,
             ),
           ),
         }),
@@ -5290,9 +5362,9 @@ const mono = (accent: PartialHsbColor) =>
     [
       `chats_menuItemText`,
       {
-        red: 68,
-        green: 68,
-        blue: 68,
+        red: 63,
+        green: 63,
+        blue: 63,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -5318,16 +5390,16 @@ const mono = (accent: PartialHsbColor) =>
       `chats_menuPhoneCats`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.2742075337829 + 360) % 360,
+          hue: (accent.hue + -12.0757882910674 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.4853299379291665),
+            Math.min(1, accent.saturation * 0.3425252527578726),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 1.1667325628464715 + 0.2720050931062502,
+              accent.brightness * 0.8717166542785864 + 0.46059192033261354,
             ),
           ),
         }),
@@ -5338,14 +5410,14 @@ const mono = (accent: PartialHsbColor) =>
       `chats_menuTopBackgroundCats`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.2883653126515 + 360) % 360,
+          hue: (accent.hue + -3.1753818801259 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8394610504944328),
+            Math.min(1, accent.saturation * 0.9874032956825886),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.7869423386469249 + 0),
+            Math.min(1, accent.brightness * 0.9662197093881829 + 0),
           ),
         }),
         alpha: 255,
@@ -5355,14 +5427,14 @@ const mono = (accent: PartialHsbColor) =>
       `chats_menuTopShadow`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 0.5541205420604 + 360) % 360,
+          hue: (accent.hue + 1.6406943709482 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.991831832647308),
+            Math.min(1, accent.saturation * 1.1404618769040151),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.264651725822461 + 0),
+            Math.min(1, accent.brightness * 0.29575541652975323 + 0),
           ),
         }),
         alpha: 77,
@@ -5372,16 +5444,16 @@ const mono = (accent: PartialHsbColor) =>
       `chats_message`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -7.2055775283325 + 360) % 360,
+          hue: (accent.hue + -6.1190036994447 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.06328538035226144),
+            Math.min(1, accent.saturation * 0.07276895264037123),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.04178885006116795 + 0.24860272480856727,
+              accent.brightness * 0.05369837293823418 + 0.24469534159132475,
             ),
           ),
         }),
@@ -5401,16 +5473,16 @@ const mono = (accent: PartialHsbColor) =>
       `chats_message_threeLines`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -17.2986735355652 + 360) % 360,
+          hue: (accent.hue + -16.2120997066775 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.04708651943927443),
+            Math.min(1, accent.saturation * 0.05414262636969424),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.032051286063216285 + 0.2631500074242978,
+              accent.brightness * 0.04118567296428049 + 0.2601531157397662,
             ),
           ),
         }),
@@ -5421,16 +5493,16 @@ const mono = (accent: PartialHsbColor) =>
       `chats_muteIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -11.4134835265284 + 360) % 360,
+          hue: (accent.hue + -10.3269096976406 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.08234179429532475),
+            Math.min(1, accent.saturation * 0.09468104791418167),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.10927041975361013 + 0.48383098760403753,
+              accent.brightness * 0.14041170653076243 + 0.4736138745784017,
             ),
           ),
         }),
@@ -5468,14 +5540,14 @@ const mono = (accent: PartialHsbColor) =>
       `chats_nameMessage`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.6895069719467 + 360) % 360,
+          hue: (accent.hue + 0.4412555304021 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9441867481153985),
+            Math.min(1, accent.saturation * 1.1842012953474643),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.695803198355629 + 0),
+            Math.min(1, accent.brightness * 0.9662197093881829 + 0),
           ),
         }),
         alpha: 255,
@@ -5484,29 +5556,26 @@ const mono = (accent: PartialHsbColor) =>
     [
       `chats_nameMessageArchived`,
       {
-        ...hsbToRgb({
-          hue: (accent.hue + -7.2055775283325 + 360) % 360,
-          saturation: Math.max(
-            0,
-            Math.min(1, accent.saturation * 0.06328538035226144),
-          ),
-          brightness: Math.max(
-            0,
-            Math.min(
-              1,
-              accent.brightness * 0.04178885006116795 + 0.24860272480856727,
-            ),
-          ),
-        }),
+        red: 145,
+        green: 145,
+        blue: 145,
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `chats_nameMessageArchived_threeLines`,
       {
-        red: 94,
-        green: 94,
-        blue: 94,
+        ...hsbToRgb({
+          hue: (accent.hue + 0.4412555304021 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 1.1842012953474643),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(1, accent.brightness * 0.9662197093881829 + 0),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -5514,17 +5583,14 @@ const mono = (accent: PartialHsbColor) =>
       `chats_nameMessage_threeLines`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 6.0971266459833 + 360) % 360,
+          hue: (accent.hue + 0.1653995744265 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.19211707318072532),
+            Math.min(1, accent.saturation * 1.1838802702147526),
           ),
           brightness: Math.max(
             0,
-            Math.min(
-              1,
-              accent.brightness * 0.03077113668016065 + 0.047425968148532546,
-            ),
+            Math.min(1, accent.brightness * 0.9551098468083593 + 0),
           ),
         }),
         alpha: 255,
@@ -5533,9 +5599,17 @@ const mono = (accent: PartialHsbColor) =>
     [
       `chats_onlineCircle`,
       {
-        red: 75,
-        green: 203,
-        blue: 28,
+        ...hsbToRgb({
+          hue: (accent.hue + -3.8578044363536 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 1.1623860154012504),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(1, accent.brightness * 1.6202681933573417 + 0),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -5579,14 +5653,14 @@ const mono = (accent: PartialHsbColor) =>
       `chats_sentCheck`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.6162537609829 + 360) % 360,
+          hue: (accent.hue + -1.7461432905986 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9825248300556875),
+            Math.min(1, accent.saturation * 1.204484217527605),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4498695533581991 + 0),
+            Math.min(1, accent.brightness * 1.417232131193227 + 0),
           ),
         }),
         alpha: 255,
@@ -5596,14 +5670,17 @@ const mono = (accent: PartialHsbColor) =>
       `chats_sentClock`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.2540658725879 + 360) % 360,
+          hue: (accent.hue + -10.3182552151967 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9498659449327004),
+            Math.min(1, accent.saturation * 0.09693407584495607),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.1120445633243332 + 0),
+            Math.min(
+              1,
+              accent.brightness * 0.13567590311966665 + 0.4452422365925384,
+            ),
           ),
         }),
         alpha: 255,
@@ -5631,14 +5708,14 @@ const mono = (accent: PartialHsbColor) =>
       `chats_sentReadCheck`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.6162537609829 + 360) % 360,
+          hue: (accent.hue + -1.3866808899058 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9825248300556875),
+            Math.min(1, accent.saturation * 1.204484217527605),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4498695533581991 + 0),
+            Math.min(1, accent.brightness * 1.417232131193227 + 0),
           ),
         }),
         alpha: 255,
@@ -5657,14 +5734,14 @@ const mono = (accent: PartialHsbColor) =>
       `chats_unreadCounter`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -10.4724649503169 + 360) % 360,
+          hue: (accent.hue + -4.4564791346892 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0357252377608563),
+            Math.min(1, accent.saturation * 1.18125213340319),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.3443145156840979 + 0),
+            Math.min(1, accent.brightness * 1.5754231884675485 + 0),
           ),
         }),
         alpha: 255,
@@ -5674,16 +5751,16 @@ const mono = (accent: PartialHsbColor) =>
       `chats_unreadCounterMuted`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -7.1835137386356 + 360) % 360,
+          hue: (accent.hue + -6.0969399097478 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.06826968779412695),
+            Math.min(1, accent.saturation * 0.07850017887561342),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.0991002901511394 + 0.5419926829975191,
+              accent.brightness * 0.12734316285405747 + 0.5327265076901433,
             ),
           ),
         }),
@@ -5703,14 +5780,14 @@ const mono = (accent: PartialHsbColor) =>
       `chats_verifiedBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -5.8440199577753 + 360) % 360,
+          hue: (accent.hue + -2.2935481910297 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.009782729848568),
+            Math.min(1, accent.saturation * 1.162470084426295),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.268186171574644 + 0),
+            Math.min(1, accent.brightness * 1.4033335328641325 + 0),
           ),
         }),
         alpha: 255,
@@ -5747,16 +5824,16 @@ const mono = (accent: PartialHsbColor) =>
       `checkboxDisabled`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.5270870861723 + 360) % 360,
+          hue: (accent.hue + -5.4405132572846 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.20575393554916396),
+            Math.min(1, accent.saturation * 0.23658700174047512),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.26684392830040965 + 0.37297944699366764,
+              accent.brightness * 0.3428925361000551 + 0.34802873680332014,
             ),
           ),
         }),
@@ -5767,14 +5844,14 @@ const mono = (accent: PartialHsbColor) =>
       `checkboxSquareBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.4734407642309 + 360) % 360,
+          hue: (accent.hue + -2.3868669353432 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9737107099577446),
+            Math.min(1, accent.saturation * 1.1196252300916352),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.1826237989109307 + 0),
+            Math.min(1, accent.brightness * 1.321613880120848 + 0),
           ),
         }),
         alpha: 255,
@@ -5829,16 +5906,16 @@ const mono = (accent: PartialHsbColor) =>
       `contextProgressInner1`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.9661015338924 + 360) % 360,
+          hue: (accent.hue + -8.8795277050046 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.45808942070358855),
+            Math.min(1, accent.saturation * 0.5267359882280196),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 1.0148886955941063 + 0.288331508267789,
+              accent.brightness * 1.304124702810432 + 0.19343636157844427,
             ),
           ),
         }),
@@ -5849,16 +5926,16 @@ const mono = (accent: PartialHsbColor) =>
       `contextProgressInner2`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.9661015338924 + 360) % 360,
+          hue: (accent.hue + -8.8795277050046 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.45808942070358855),
+            Math.min(1, accent.saturation * 0.5267359882280196),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 1.0148886955941063 + 0.288331508267789,
+              accent.brightness * 1.304124702810432 + 0.19343636157844427,
             ),
           ),
         }),
@@ -5878,16 +5955,16 @@ const mono = (accent: PartialHsbColor) =>
       `contextProgressInner4`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -7.1888641807988 + 360) % 360,
+          hue: (accent.hue + -6.102290351911 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.06706329016732164),
+            Math.min(1, accent.saturation * 0.07711299764541774),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.10169070687242837 + 0.5673061630563111,
+              accent.brightness * 0.13067182978223582 + 0.5577977759913105,
             ),
           ),
         }),
@@ -5898,14 +5975,14 @@ const mono = (accent: PartialHsbColor) =>
       `contextProgressOuter1`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -0.3588144112213 + 360) % 360,
+          hue: (accent.hue + -0.3152779914516 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.020396908824059),
+            Math.min(1, accent.saturation * 1.1410343907557723),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.2188666377261512 + 0),
+            Math.min(1, accent.brightness * 1.4312106966466258 + 0),
           ),
         }),
         alpha: 255,
@@ -5933,17 +6010,14 @@ const mono = (accent: PartialHsbColor) =>
       `contextProgressOuter4`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.3847510939415 + 360) % 360,
+          hue: (accent.hue + -0.3152779914516 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.29634349007970534),
+            Math.min(1, accent.saturation * 1.1410343907557723),
           ),
           brightness: Math.max(
             0,
-            Math.min(
-              1,
-              accent.brightness * 0.028173108913112505 + 0.02196733120460258,
-            ),
+            Math.min(1, accent.brightness * 1.4312106966466258 + 0),
           ),
         }),
         alpha: 255,
@@ -5971,14 +6045,14 @@ const mono = (accent: PartialHsbColor) =>
       `dialogBadgeBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.8479246612639 + 360) % 360,
+          hue: (accent.hue + -4.6243497085609 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.000281725386234),
+            Math.min(1, accent.saturation * 1.1591679540417354),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.5182158184593622 + 0),
+            Math.min(1, accent.brightness * 1.5754231884675485 + 0),
           ),
         }),
         alpha: 255,
@@ -5997,14 +6071,14 @@ const mono = (accent: PartialHsbColor) =>
       `dialogButton`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.6599183634768 + 360) % 360,
+          hue: (accent.hue + 1.1200389639499 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9375889229813917),
+            Math.min(1, accent.saturation * 1.1473747726549683),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.9677334441603106 + 0),
+            Math.min(1, accent.brightness * 1.2427396874270544 + 0),
           ),
         }),
         alpha: 255,
@@ -6032,14 +6106,14 @@ const mono = (accent: PartialHsbColor) =>
       `dialogCheckboxSquareBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.4734407642309 + 360) % 360,
+          hue: (accent.hue + -2.3868669353432 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9737107099577446),
+            Math.min(1, accent.saturation * 1.1196252300916352),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.1826237989109307 + 0),
+            Math.min(1, accent.brightness * 1.321613880120848 + 0),
           ),
         }),
         alpha: 255,
@@ -6076,14 +6150,14 @@ const mono = (accent: PartialHsbColor) =>
       `dialogFloatingButton`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.8880279685511 + 360) % 360,
+          hue: (accent.hue + -3.8014541396634 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.970458456399114),
+            Math.min(1, accent.saturation * 1.115885613076376),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4633920100955866 + 0),
+            Math.min(1, accent.brightness * 1.6353799021982454 + 0),
           ),
         }),
         alpha: 255,
@@ -6093,14 +6167,14 @@ const mono = (accent: PartialHsbColor) =>
       `dialogFloatingButtonPressed`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.8880279685511 + 360) % 360,
+          hue: (accent.hue + -3.8014541396634 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.970458456399114),
+            Math.min(1, accent.saturation * 1.115885613076376),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4633920100955866 + 0),
+            Math.min(1, accent.brightness * 1.6353799021982454 + 0),
           ),
         }),
         alpha: 255,
@@ -6128,16 +6202,16 @@ const mono = (accent: PartialHsbColor) =>
       `dialogIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.3756864759279 + 360) % 360,
+          hue: (accent.hue + -2.2891126470401 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.1716853435276423),
+            Math.min(1, accent.saturation * 0.19741309229189818),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.06687460307413938 + 0.12030227211185575,
+              accent.brightness * 0.08593338583653654 + 0.11404929550854731,
             ),
           ),
         }),
@@ -6157,14 +6231,14 @@ const mono = (accent: PartialHsbColor) =>
       `dialogInputFieldActivated`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.2974439419724 + 360) % 360,
+          hue: (accent.hue + -2.2108701130847 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.007666404881463),
+            Math.min(1, accent.saturation * 1.1586693243519717),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.3965103087065127 + 0),
+            Math.min(1, accent.brightness * 1.5606378033471169 + 0),
           ),
         }),
         alpha: 255,
@@ -6174,14 +6248,14 @@ const mono = (accent: PartialHsbColor) =>
       `dialogLineProgress`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.1691472144436 + 360) % 360,
+          hue: (accent.hue + -0.7627279543289 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8110844673422871),
+            Math.min(1, accent.saturation * 1.1083243555525213),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.5869805206955564 + 0),
+            Math.min(1, accent.brightness * 1.321613880120848 + 0),
           ),
         }),
         alpha: 255,
@@ -6190,9 +6264,20 @@ const mono = (accent: PartialHsbColor) =>
     [
       `dialogLineProgressBackground`,
       {
-        red: 219,
-        green: 219,
-        blue: 219,
+        ...hsbToRgb({
+          hue: (accent.hue + -18.5211950829591 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.22255215373219214),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.5459359791068419 + 0.6082805445035395,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -6200,14 +6285,14 @@ const mono = (accent: PartialHsbColor) =>
       `dialogLinkSelection`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.9821804816816 + 360) % 360,
+          hue: (accent.hue + -1.8956066527938 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8863030787996047),
+            Math.min(1, accent.saturation * 1.0191192090051011),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.2310895971863507 + 0),
+            Math.min(1, accent.brightness * 1.3757757122866794 + 0),
           ),
         }),
         alpha: 51,
@@ -6217,14 +6302,14 @@ const mono = (accent: PartialHsbColor) =>
       `dialogProgressCircle`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.1691472144436 + 360) % 360,
+          hue: (accent.hue + -2.0825733855558 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8110844673422871),
+            Math.min(1, accent.saturation * 0.9326287819215505),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.5869805206955564 + 0),
+            Math.min(1, accent.brightness * 0.6559665078837437 + 0),
           ),
         }),
         alpha: 255,
@@ -6243,14 +6328,14 @@ const mono = (accent: PartialHsbColor) =>
       `dialogRadioBackgroundChecked`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.2974439419724 + 360) % 360,
+          hue: (accent.hue + -2.2108701130847 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.007666404881463),
+            Math.min(1, accent.saturation * 1.1586693243519717),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.3965103087065127 + 0),
+            Math.min(1, accent.brightness * 1.5606378033471169 + 0),
           ),
         }),
         alpha: 255,
@@ -6269,14 +6354,14 @@ const mono = (accent: PartialHsbColor) =>
       `dialogRoundCheckBox`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.8880279685511 + 360) % 360,
+          hue: (accent.hue + -3.8014541396634 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.970458456399114),
+            Math.min(1, accent.saturation * 1.115885613076376),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4633920100955866 + 0),
+            Math.min(1, accent.brightness * 1.6353799021982454 + 0),
           ),
         }),
         alpha: 255,
@@ -6295,16 +6380,16 @@ const mono = (accent: PartialHsbColor) =>
       `dialogScrollGlow`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -7.3957351325143 + 360) % 360,
+          hue: (accent.hue + -6.3091613036265 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.019275872159685032),
+            Math.min(1, accent.saturation * 0.022164440199020575),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.04310056753502035 + 0.9032178113748545,
+              accent.brightness * 0.055383920494518304 + 0.8991877786270411,
             ),
           ),
         }),
@@ -6315,16 +6400,16 @@ const mono = (accent: PartialHsbColor) =>
       `dialogSearchBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -17.3677414339224 + 360) % 360,
+          hue: (accent.hue + -16.2811676050347 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.02905688751410749),
+            Math.min(1, accent.saturation * 0.033411180585803724),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.06378242553958667 + 0.8733009445717523,
+              accent.brightness * 0.08195995985810942 + 0.8673370958718334,
             ),
           ),
         }),
@@ -6335,16 +6420,16 @@ const mono = (accent: PartialHsbColor) =>
       `dialogSearchHint`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -8.5727245878441 + 360) % 360,
+          hue: (accent.hue + -7.4861507589563 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.19756074994404899),
+            Math.min(1, accent.saturation * 0.22716603386521322),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.1835291705002462 + 0.2719145006779136,
+              accent.brightness * 0.23583366922376484 + 0.2547539710237731,
             ),
           ),
         }),
@@ -6355,16 +6440,16 @@ const mono = (accent: PartialHsbColor) =>
       `dialogSearchIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.6690504364728 + 360) % 360,
+          hue: (accent.hue + -5.582476607585 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.1777152063997814),
+            Math.min(1, accent.saturation * 0.2043465547018297),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.18314821205919918 + 0.31441326648285883,
+              accent.brightness * 0.23534414035634288 + 0.2972883575892043,
             ),
           ),
         }),
@@ -6402,14 +6487,14 @@ const mono = (accent: PartialHsbColor) =>
       `dialogTextBlue`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.7251548452565 + 360) % 360,
+          hue: (accent.hue + -1.1858024687477 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0025825065513643),
+            Math.min(1, accent.saturation * 1.1838632456417797),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.9360825233203579 + 0),
+            Math.min(1, accent.brightness * 1.2427396874270544 + 0),
           ),
         }),
         alpha: 255,
@@ -6419,14 +6504,14 @@ const mono = (accent: PartialHsbColor) =>
       `dialogTextBlue2`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.343359928809 + 360) % 360,
+          hue: (accent.hue + -1.1858024687477 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9868577194572306),
+            Math.min(1, accent.saturation * 1.1838632456417797),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.0663934877276133 + 0),
+            Math.min(1, accent.brightness * 1.2427396874270544 + 0),
           ),
         }),
         alpha: 255,
@@ -6436,14 +6521,14 @@ const mono = (accent: PartialHsbColor) =>
       `dialogTextBlue3`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.8479246612639 + 360) % 360,
+          hue: (accent.hue + -1.8250365884767 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.000281725386234),
+            Math.min(1, accent.saturation * 1.1997512567102129),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.5182158184593622 + 0),
+            Math.min(1, accent.brightness * 1.445269360143967 + 0),
           ),
         }),
         alpha: 255,
@@ -6453,14 +6538,14 @@ const mono = (accent: PartialHsbColor) =>
       `dialogTextBlue4`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -5.8277420161385 + 360) % 360,
+          hue: (accent.hue + -1.8250365884767 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0411767529118847),
+            Math.min(1, accent.saturation * 1.1997512567102129),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.293274811086835 + 0),
+            Math.min(1, accent.brightness * 1.445269360143967 + 0),
           ),
         }),
         alpha: 255,
@@ -6470,14 +6555,17 @@ const mono = (accent: PartialHsbColor) =>
       `dialogTextGray`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.3949122332418 + 360) % 360,
+          hue: (accent.hue + -12.0678015757214 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9860094948368314),
+            Math.min(1, accent.saturation * 0.0894381170159261),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.8546638714981222 + 0),
+            Math.min(
+              1,
+              accent.brightness * 0.06803454662149194 + 0.24516230516075752,
+            ),
           ),
         }),
         alpha: 255,
@@ -6486,27 +6574,60 @@ const mono = (accent: PartialHsbColor) =>
     [
       `dialogTextGray2`,
       {
-        red: 117,
-        green: 117,
-        blue: 117,
+        ...hsbToRgb({
+          hue: (accent.hue + -12.0678015757214 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.0894381170159261),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.06803454662149194 + 0.24516230516075752,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `dialogTextGray3`,
       {
-        red: 153,
-        green: 153,
-        blue: 153,
+        ...hsbToRgb({
+          hue: (accent.hue + -12.0678015757214 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.0894381170159261),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.06803454662149194 + 0.24516230516075752,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `dialogTextGray4`,
       {
-        red: 179,
-        green: 179,
-        blue: 179,
+        ...hsbToRgb({
+          hue: (accent.hue + -12.0678015757214 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.0894381170159261),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.06803454662149194 + 0.24516230516075752,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -6523,14 +6644,14 @@ const mono = (accent: PartialHsbColor) =>
       `dialogTextLink`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -0.015016387341 + 360) % 360,
+          hue: (accent.hue + 1.2614543971672 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0102059544845179),
+            Math.min(1, accent.saturation * 1.1631225943220431),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.7497011065980528 + 0),
+            Math.min(1, accent.brightness * 0.988664642143454 + 0),
           ),
         }),
         alpha: 255,
@@ -6558,14 +6679,14 @@ const mono = (accent: PartialHsbColor) =>
       `dialogTopBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.9741833199294 + 360) % 360,
+          hue: (accent.hue + -3.8876094910416 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8400673638293039),
+            Math.min(1, accent.saturation * 0.9659548836231602),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.2557492462345534 + 0),
+            Math.min(1, accent.brightness * 1.4033335328641325 + 0),
           ),
         }),
         alpha: 255,
@@ -6575,16 +6696,16 @@ const mono = (accent: PartialHsbColor) =>
       `dialog_inlineProgress`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -13.3849094628432 + 360) % 360,
+          hue: (accent.hue + -8.4078459984271 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.22889458168741245),
+            Math.min(1, accent.saturation * 0.18278554744286388),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.1033506878358662 + 0.12333403663872226,
+              accent.brightness * 0.15642540367864646 + 0.23120815728645872,
             ),
           ),
         }),
@@ -6595,16 +6716,16 @@ const mono = (accent: PartialHsbColor) =>
       `dialog_inlineProgressBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.2800775730916 + 360) % 360,
+          hue: (accent.hue + -0.1935037442038 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.04816535183158958),
+            Math.min(1, accent.saturation * 0.05538312619487186),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.10572718655068652 + 0.847129075062549,
+              accent.brightness * 0.13585867725000392 + 0.8372432650024558,
             ),
           ),
         }),
@@ -6615,14 +6736,14 @@ const mono = (accent: PartialHsbColor) =>
       `dialog_liveLocationProgress`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.433381266797 + 360) % 360,
+          hue: (accent.hue + -1.3468074379093 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0059881616638275),
+            Math.min(1, accent.saturation * 1.1567395895452381),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.2557492462345534 + 0),
+            Math.min(1, accent.brightness * 1.4033335328641325 + 0),
           ),
         }),
         alpha: 255,
@@ -6640,9 +6761,20 @@ const mono = (accent: PartialHsbColor) =>
     [
       `emptyListPlaceholder`,
       {
-        red: 149,
-        green: 149,
-        blue: 149,
+        ...hsbToRgb({
+          hue: (accent.hue + -12.0678015757214 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.0894381170159261),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.06803454662149194 + 0.24516230516075752,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -6650,14 +6782,14 @@ const mono = (accent: PartialHsbColor) =>
       `fastScrollActive`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.5800136780611 + 360) % 360,
+          hue: (accent.hue + -3.4934398491733 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9283434755274522),
+            Math.min(1, accent.saturation * 1.0674595305997998),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.1352896583547398 + 0),
+            Math.min(1, accent.brightness * 1.2687167058713005 + 0),
           ),
         }),
         alpha: 255,
@@ -6667,16 +6799,16 @@ const mono = (accent: PartialHsbColor) =>
       `fastScrollInactive`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -7.0929930959103 + 360) % 360,
+          hue: (accent.hue + -6.0064192670226 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.08845970797548341),
+            Math.min(1, accent.saturation * 0.10171575590473633),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.13558945575418205 + 0.5529944240746428,
+              accent.brightness * 0.17423147923244808 + 0.5403164019928327,
             ),
           ),
         }),
@@ -6696,14 +6828,14 @@ const mono = (accent: PartialHsbColor) =>
       `featuredStickers_addButton`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.3664545475548 + 360) % 360,
+          hue: (accent.hue + -1.279880718667 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9521097775624814),
+            Math.min(1, accent.saturation * 1.0947873099004422),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.331446495416769 + 0),
+            Math.min(1, accent.brightness * 1.487927243305535 + 0),
           ),
         }),
         alpha: 255,
@@ -6713,14 +6845,14 @@ const mono = (accent: PartialHsbColor) =>
       `featuredStickers_addButtonPressed`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.6470392169871 + 360) % 360,
+          hue: (accent.hue + -0.620078701835 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9728931720371653),
+            Math.min(1, accent.saturation * 1.1186017147763374),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.1706844694570566 + 0),
+            Math.min(1, accent.brightness * 1.2687167058713005 + 0),
           ),
         }),
         alpha: 255,
@@ -6730,14 +6862,14 @@ const mono = (accent: PartialHsbColor) =>
       `featuredStickers_addedIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.3664545475548 + 360) % 360,
+          hue: (accent.hue + -1.279880718667 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9521097775624814),
+            Math.min(1, accent.saturation * 1.0947873099004422),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.331446495416769 + 0),
+            Math.min(1, accent.brightness * 1.487927243305535 + 0),
           ),
         }),
         alpha: 255,
@@ -6783,14 +6915,14 @@ const mono = (accent: PartialHsbColor) =>
       `featuredStickers_unread`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.0923543948173 + 360) % 360,
+          hue: (accent.hue + -1.0057805659295 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9588154570535157),
+            Math.min(1, accent.saturation * 1.1024978628052116),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.318650615285761 + 0),
+            Math.min(1, accent.brightness * 1.4736275033501274 + 0),
           ),
         }),
         alpha: 255,
@@ -6826,20 +6958,9 @@ const mono = (accent: PartialHsbColor) =>
     [
       `graySection`,
       {
-        ...hsbToRgb({
-          hue: (accent.hue + -20.0986500046573 + 360) % 360,
-          saturation: Math.max(
-            0,
-            Math.min(1, accent.saturation * 0.0670643482963933),
-          ),
-          brightness: Math.max(
-            0,
-            Math.min(
-              1,
-              accent.brightness * 0.1472121471888143 + 0.8212441027741577,
-            ),
-          ),
-        }),
+        red: 246,
+        green: 246,
+        blue: 246,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -6847,14 +6968,14 @@ const mono = (accent: PartialHsbColor) =>
       `groupcreate_cursor`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.5800136780611 + 360) % 360,
+          hue: (accent.hue + -3.4934398491733 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9283434755274522),
+            Math.min(1, accent.saturation * 1.0674595305997998),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.1352896583547398 + 0),
+            Math.min(1, accent.brightness * 1.2687167058713005 + 0),
           ),
         }),
         alpha: 255,
@@ -6864,16 +6985,16 @@ const mono = (accent: PartialHsbColor) =>
       `groupcreate_hintText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.4497404756067 + 360) % 360,
+          hue: (accent.hue + -5.363166646719 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.22066010091532734),
+            Math.min(1, accent.saturation * 0.25372691676574877),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.23912680434387873 + 0.30158012833980763,
+              accent.brightness * 0.30727623039136753 + 0.2792210526361582,
             ),
           ),
         }),
@@ -6893,16 +7014,16 @@ const mono = (accent: PartialHsbColor) =>
       `groupcreate_sectionText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.6018204117009 + 360) % 360,
+          hue: (accent.hue + -5.5152465828131 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.19110464876576067),
+            Math.min(1, accent.saturation * 0.21974245960099506),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.11310866529489504 + 0.17562599960858769,
+              accent.brightness * 0.14534382455274064 + 0.16504999907612358,
             ),
           ),
         }),
@@ -6958,16 +7079,16 @@ const mono = (accent: PartialHsbColor) =>
       `inappPlayerPerformer`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.3847510939415 + 360) % 360,
+          hue: (accent.hue + -8.2981772650538 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.29634349007970534),
+            Math.min(1, accent.saturation * 0.3407517703908658),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.028173108913112505 + 0.02196733120460258,
+              accent.brightness * 0.03620224311105445 + 0.019333060752472202,
             ),
           ),
         }),
@@ -6978,14 +7099,14 @@ const mono = (accent: PartialHsbColor) =>
       `inappPlayerPlayPause`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.8948849816532 + 360) % 360,
+          hue: (accent.hue + -3.177746964295 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8989335188439035),
+            Math.min(1, accent.saturation * 1.1299280475842015),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.331446495416769 + 0),
+            Math.min(1, accent.brightness * 1.487927243305535 + 0),
           ),
         }),
         alpha: 255,
@@ -6995,16 +7116,16 @@ const mono = (accent: PartialHsbColor) =>
       `inappPlayerTitle`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.3847510939415 + 360) % 360,
+          hue: (accent.hue + -8.2981772650538 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.29634349007970534),
+            Math.min(1, accent.saturation * 0.3407517703908658),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.028173108913112505 + 0.02196733120460258,
+              accent.brightness * 0.03620224311105445 + 0.019333060752472202,
             ),
           ),
         }),
@@ -7042,16 +7163,16 @@ const mono = (accent: PartialHsbColor) =>
       `key_graySectionText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.5649956296915 + 360) % 360,
+          hue: (accent.hue + -12.0615047203737 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.26395497095311016),
+            Math.min(1, accent.saturation * 0.09111870052986473),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.17967130258452677 + 0.17104096409657968,
+              accent.brightness * 0.06621607805264018 + 0.23352668019310158,
             ),
           ),
         }),
@@ -7062,16 +7183,16 @@ const mono = (accent: PartialHsbColor) =>
       `key_player_progressCachedBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.978553688554 + 360) % 360,
+          hue: (accent.hue + -5.8919798596662 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.11339976480127444),
+            Math.min(1, accent.saturation * 0.1303931819374504),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.24892246463535564 + 0.7577808932628175,
+              accent.brightness * 0.3198635836862785 + 0.7345058938482092,
             ),
           ),
         }),
@@ -7082,16 +7203,16 @@ const mono = (accent: PartialHsbColor) =>
       `key_sheet_other`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.0186713226935 + 360) % 360,
+          hue: (accent.hue + 0.0679025061943 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.10892492528149916),
+            Math.min(1, accent.saturation * 0.12524776946974842),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.17057407328392749 + 0.5449741718439717,
+              accent.brightness * 0.2191864621157759 + 0.5290249827595452,
             ),
           ),
         }),
@@ -7102,16 +7223,16 @@ const mono = (accent: PartialHsbColor) =>
       `key_sheet_scrollUp`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.893994205 + 360) % 360,
+          hue: (accent.hue + -1.8074203761122 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.0705366401403218),
+            Math.min(1, accent.saturation * 0.08110684327424708),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.1368348899282621 + 0.7215727061547973,
+              accent.brightness * 0.17583185322340217 + 0.7087782322303818,
             ),
           ),
         }),
@@ -7124,21 +7245,21 @@ const mono = (accent: PartialHsbColor) =>
         red: 0,
         green: 0,
         blue: 0,
-        alpha: 15,
+        alpha: 13,
       } as Color,
     ] as [string, Color],
     [
       `location_liveLocationProgress`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.433381266797 + 360) % 360,
+          hue: (accent.hue + -1.3468074379093 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0059881616638275),
+            Math.min(1, accent.saturation * 1.1567395895452381),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.2557492462345534 + 0),
+            Math.min(1, accent.brightness * 1.4033335328641325 + 0),
           ),
         }),
         alpha: 255,
@@ -7148,14 +7269,14 @@ const mono = (accent: PartialHsbColor) =>
       `location_placeLocationBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.0030557029802 + 360) % 360,
+          hue: (accent.hue + -1.9164818740925 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.961302523734184),
+            Math.min(1, accent.saturation * 1.1053576265688427),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.318650615285761 + 0),
+            Math.min(1, accent.brightness * 1.4736275033501274 + 0),
           ),
         }),
         alpha: 255,
@@ -7183,14 +7304,14 @@ const mono = (accent: PartialHsbColor) =>
       `location_sendLocationBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.0523562256683 + 360) % 360,
+          hue: (accent.hue + 0.0342176032195 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8090808969610167),
+            Math.min(1, accent.saturation * 0.9303249683492093),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.0551548240297495 + 0),
+            Math.min(1, accent.brightness * 1.179163874765905 + 0),
           ),
         }),
         alpha: 255,
@@ -7209,16 +7330,16 @@ const mono = (accent: PartialHsbColor) =>
       `login_progressInner`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -8.5224609127559 + 360) % 360,
+          hue: (accent.hue + -7.4358870838681 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.16020831905776567),
+            Math.min(1, accent.saturation * 0.1842161889083351),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.3419752408959255 + 0.6745441126293661,
+              accent.brightness * 0.4394357345175208 + 0.642568398652233,
             ),
           ),
         }),
@@ -7229,14 +7350,14 @@ const mono = (accent: PartialHsbColor) =>
       `login_progressOuter`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.5373157471107 + 360) % 360,
+          hue: (accent.hue + -3.4507419182229 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8498024286899134),
+            Math.min(1, accent.saturation * 0.977148787647272),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.0108929104503321 + 0),
+            Math.min(1, accent.brightness * 1.1296999967337387 + 0),
           ),
         }),
         alpha: 255,
@@ -7246,14 +7367,14 @@ const mono = (accent: PartialHsbColor) =>
       `musicPicker_buttonBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.4408031077556 + 360) % 360,
+          hue: (accent.hue + -3.3542292788678 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9167910678241654),
+            Math.min(1, accent.saturation * 1.0541759474979295),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.318650615285761 + 0),
+            Math.min(1, accent.brightness * 1.4736275033501274 + 0),
           ),
         }),
         alpha: 255,
@@ -7272,14 +7393,14 @@ const mono = (accent: PartialHsbColor) =>
       `musicPicker_checkbox`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.9241293455845 + 360) % 360,
+          hue: (accent.hue + -5.8375555166967 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0287482077916612),
+            Math.min(1, accent.saturation * 1.1829103213880436),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4906568923044297 + 0),
+            Math.min(1, accent.brightness * 1.665849140852372 + 0),
           ),
         }),
         alpha: 255,
@@ -7298,14 +7419,14 @@ const mono = (accent: PartialHsbColor) =>
       `passport_authorizeBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.4378514194207 + 360) % 360,
+          hue: (accent.hue + -2.3512775905329 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9812122776892851),
+            Math.min(1, accent.saturation * 1.1282509383349373),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.3833525732889576 + 0),
+            Math.min(1, accent.brightness * 1.5459336803835737 + 0),
           ),
         }),
         alpha: 255,
@@ -7315,14 +7436,14 @@ const mono = (accent: PartialHsbColor) =>
       `passport_authorizeBackgroundSelected`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.5813273531302 + 360) % 360,
+          hue: (accent.hue + -2.4947535242424 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9775974171331421),
+            Math.min(1, accent.saturation * 1.1240943761850801),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.1352896583547398 + 0),
+            Math.min(1, accent.brightness * 1.2687167058713005 + 0),
           ),
         }),
         alpha: 255,
@@ -7341,14 +7462,14 @@ const mono = (accent: PartialHsbColor) =>
       `picker_badge`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.9241293455845 + 360) % 360,
+          hue: (accent.hue + -5.8375555166967 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0287482077916612),
+            Math.min(1, accent.saturation * 1.1829103213880436),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.4906568923044297 + 0),
+            Math.min(1, accent.brightness * 1.665849140852372 + 0),
           ),
         }),
         alpha: 255,
@@ -7376,14 +7497,14 @@ const mono = (accent: PartialHsbColor) =>
       `picker_enabledButton`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -5.8277420161385 + 360) % 360,
+          hue: (accent.hue + -4.7411681872508 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0411767529118847),
+            Math.min(1, accent.saturation * 1.1972013346711763),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.293274811086835 + 0),
+            Math.min(1, accent.brightness * 1.445269360143967 + 0),
           ),
         }),
         alpha: 255,
@@ -7429,16 +7550,16 @@ const mono = (accent: PartialHsbColor) =>
       `player_actionBarTitle`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -9.3847510939415 + 360) % 360,
+          hue: (accent.hue + -8.2981772650538 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.29634349007970534),
+            Math.min(1, accent.saturation * 0.3407517703908658),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.028173108913112505 + 0.02196733120460258,
+              accent.brightness * 0.03620224311105445 + 0.019333060752472202,
             ),
           ),
         }),
@@ -7476,14 +7597,14 @@ const mono = (accent: PartialHsbColor) =>
       `player_buttonActive`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.0030557029802 + 360) % 360,
+          hue: (accent.hue + -1.9164818740925 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.961302523734184),
+            Math.min(1, accent.saturation * 1.1053576265688427),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.318650615285761 + 0),
+            Math.min(1, accent.brightness * 1.4736275033501274 + 0),
           ),
         }),
         alpha: 255,
@@ -7511,14 +7632,14 @@ const mono = (accent: PartialHsbColor) =>
       `player_progress`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.2381047585281 + 360) % 360,
+          hue: (accent.hue + -0.1515309296403 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9573413471084745),
+            Math.min(1, accent.saturation * 1.1008028514743116),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.2310895971863507 + 0),
+            Math.min(1, accent.brightness * 1.3757757122866794 + 0),
           ),
         }),
         alpha: 255,
@@ -7528,16 +7649,16 @@ const mono = (accent: PartialHsbColor) =>
       `player_progressBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.978553688554 + 360) % 360,
+          hue: (accent.hue + -5.8919798596662 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.11339976480127444),
+            Math.min(1, accent.saturation * 0.1303931819374504),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.24892246463535564 + 0.7577808932628175,
+              accent.brightness * 0.3198635836862785 + 0.7345058938482092,
             ),
           ),
         }),
@@ -7548,16 +7669,16 @@ const mono = (accent: PartialHsbColor) =>
       `player_time`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -12.8421739437752 + 360) % 360,
+          hue: (accent.hue + -11.7556001148875 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.14767496320693535),
+            Math.min(1, accent.saturation * 0.16980465857925495),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.10827367646592452 + 0.23742882849410754,
+              accent.brightness * 0.13913089854711422 + 0.22730491396492475,
             ),
           ),
         }),
@@ -7577,16 +7698,16 @@ const mono = (accent: PartialHsbColor) =>
       `profile_actionIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -10.1769496350578 + 360) % 360,
+          hue: (accent.hue + -9.09037580617 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.14358048431501896),
+            Math.min(1, accent.saturation * 0.165096605330394),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.08772499331824364 + 0.199415173140282,
+              accent.brightness * 0.11272598792050824 + 0.1912126223133824,
             ),
           ),
         }),
@@ -7596,9 +7717,9 @@ const mono = (accent: PartialHsbColor) =>
     [
       `profile_actionPressedBackground`,
       {
-        red: 242,
-        green: 242,
-        blue: 242,
+        red: 229,
+        green: 229,
+        blue: 229,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -7606,14 +7727,14 @@ const mono = (accent: PartialHsbColor) =>
       `profile_creatorIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.343359928809 + 360) % 360,
+          hue: (accent.hue + -1.2567860999212 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9868577194572306),
+            Math.min(1, accent.saturation * 1.1347423725707577),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.0663934877276133 + 0),
+            Math.min(1, accent.brightness * 1.1917233835046817 + 0),
           ),
         }),
         alpha: 255,
@@ -7623,16 +7744,16 @@ const mono = (accent: PartialHsbColor) =>
       `profile_status`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -8.5678020840994 + 360) % 360,
+          hue: (accent.hue + -7.4812282552116 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.30473959011583546),
+            Math.min(1, accent.saturation * 0.35040606025200177),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.7003399535876782 + 0.5189889615030139,
+              accent.brightness * 0.8999318228726032 + 0.4535050686223199,
             ),
           ),
         }),
@@ -7652,16 +7773,16 @@ const mono = (accent: PartialHsbColor) =>
       `profile_verifiedBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -5.1055644649495 + 360) % 360,
+          hue: (accent.hue + -4.0189906360617 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5540404013814533),
+            Math.min(1, accent.saturation * 0.6370656145948019),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 1.2502471904579004 + 0.15858100180911291,
+              accent.brightness * 1.6065586825174167 + 0.041679127690797436,
             ),
           ),
         }),
@@ -7672,14 +7793,14 @@ const mono = (accent: PartialHsbColor) =>
       `profile_verifiedCheck`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -0.7876916660801 + 360) % 360,
+          hue: (accent.hue + 0.2988821628077 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.907383336816967),
+            Math.min(1, accent.saturation * 1.0433584296398464),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.7681900798447318 + 0),
+            Math.min(1, accent.brightness * 0.8584730605192255 + 0),
           ),
         }),
         alpha: 255,
@@ -7689,14 +7810,14 @@ const mono = (accent: PartialHsbColor) =>
       `progressCircle`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.1691472144436 + 360) % 360,
+          hue: (accent.hue + -2.9634547293718 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8110844673422871),
+            Math.min(1, accent.saturation * 1.186312627466179),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.5869805206955564 + 0),
+            Math.min(1, accent.brightness * 1.5023076018021588 + 0),
           ),
         }),
         alpha: 255,
@@ -7715,14 +7836,14 @@ const mono = (accent: PartialHsbColor) =>
       `radioBackgroundChecked`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.2974439419724 + 360) % 360,
+          hue: (accent.hue + -2.2108701130847 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.007666404881463),
+            Math.min(1, accent.saturation * 1.1586693243519717),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.3965103087065127 + 0),
+            Math.min(1, accent.brightness * 1.5606378033471169 + 0),
           ),
         }),
         alpha: 255,
@@ -7732,14 +7853,14 @@ const mono = (accent: PartialHsbColor) =>
       `returnToCallBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.6975717882599 + 360) % 360,
+          hue: (accent.hue + -1.6109979593722 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9745658448443589),
+            Math.min(1, accent.saturation * 1.1206085104277694),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.2310895971863507 + 0),
+            Math.min(1, accent.brightness * 1.3757757122866794 + 0),
           ),
         }),
         alpha: 255,
@@ -7767,14 +7888,14 @@ const mono = (accent: PartialHsbColor) =>
       `sharedMedia_actionMode`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -5.3609541860954 + 360) % 360,
+          hue: (accent.hue + -2.0825733855558 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.910688077294257),
+            Math.min(1, accent.saturation * 0.9326287819215505),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.722458971519089 + 0),
+            Math.min(1, accent.brightness * 0.6559665078837437 + 0),
           ),
         }),
         alpha: 255,
@@ -7784,16 +7905,16 @@ const mono = (accent: PartialHsbColor) =>
       `sharedMedia_linkPlaceholder`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -13.2799754537301 + 360) % 360,
+          hue: (accent.hue + -12.1934016248424 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.04816535183158958),
+            Math.min(1, accent.saturation * 0.05538312619487186),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.10572718655068652 + 0.847129075062549,
+              accent.brightness * 0.13585867725000392 + 0.8372432650024558,
             ),
           ),
         }),
@@ -7804,16 +7925,16 @@ const mono = (accent: PartialHsbColor) =>
       `sharedMedia_linkPlaceholderText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -11.8727862680288 + 360) % 360,
+          hue: (accent.hue + -10.786212439141 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.13941501934621664),
+            Math.min(1, accent.saturation * 0.16030692845158434),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.18290148065820078 + 0.4316011818607443,
+              accent.brightness * 0.23502709227373253 + 0.4144993430954617,
             ),
           ),
         }),
@@ -7824,16 +7945,16 @@ const mono = (accent: PartialHsbColor) =>
       `sharedMedia_photoPlaceholder`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -13.0825970141372 + 360) % 360,
+          hue: (accent.hue + -11.9960231852495 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.09431333005522172),
+            Math.min(1, accent.saturation * 0.10844656712091459),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.21088322322449818 + 0.7985280798145633,
+              accent.brightness * 0.270983431000147 + 0.778809863926371,
             ),
           ),
         }),
@@ -7844,16 +7965,121 @@ const mono = (accent: PartialHsbColor) =>
       `sharedMedia_startStopLoadIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.2693880790345 + 360) % 360,
+          hue: (accent.hue + -0.1828142501467 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0084022660996916),
+            Math.min(1, accent.saturation * 1.1595154573741817),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.370267439298401 + 0),
+            Math.min(1, accent.brightness * 1.531310691465977 + 0),
           ),
         }),
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `statisticChartActiveLine`,
+      {
+        red: 0,
+        green: 0,
+        blue: 0,
+        alpha: 20,
+      } as Color,
+    ] as [string, Color],
+    [
+      `statisticChartLine_blue`,
+      {
+        ...hsbToRgb({
+          hue: (accent.hue + 9.2148108199367 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 1.162470084426295),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(1, accent.brightness * 1.4033335328641325 + 0),
+          ),
+        }),
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `statisticChartLine_golden`,
+      {
+        red: 227,
+        green: 183,
+        blue: 39,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `statisticChartLine_green`,
+      {
+        red: 97,
+        green: 199,
+        blue: 82,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `statisticChartLine_indigo`,
+      {
+        ...hsbToRgb({
+          hue: (accent.hue + 25.3996140775842 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.9532857223281166),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(1, accent.brightness * 1.6052382561135394 + 0),
+          ),
+        }),
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `statisticChartLine_lightblue`,
+      {
+        ...hsbToRgb({
+          hue: (accent.hue + 0.068852041872 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 1.0721609343872536),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(1, accent.brightness * 1.516768708179233 + 0),
+          ),
+        }),
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `statisticChartLine_lightgreen`,
+      {
+        red: 143,
+        green: 207,
+        blue: 57,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `statisticChartLine_orange`,
+      {
+        red: 227,
+        green: 183,
+        blue: 39,
+        alpha: 255,
+      } as Color,
+    ] as [string, Color],
+    [
+      `statisticChartLine_red`,
+      {
+        red: 224,
+        green: 83,
+        blue: 86,
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -7861,16 +8087,16 @@ const mono = (accent: PartialHsbColor) =>
       `stickers_menu`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.7064461398155 + 360) % 360,
+          hue: (accent.hue + -3.6198723109277 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.17092639615727845),
+            Math.min(1, accent.saturation * 0.19654041356352317),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.22942588640850792 + 0.4151877236904138,
+              accent.brightness * 0.2948106203452847 + 0.39373571300236143,
             ),
           ),
         }),
@@ -7899,14 +8125,14 @@ const mono = (accent: PartialHsbColor) =>
       `switch2TrackChecked`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.8705327376315 + 360) % 360,
+          hue: (accent.hue + -3.7839589087438 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9447455607883597),
+            Math.min(1, accent.saturation * 1.0863195352155681),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.305926759274855 + 0),
+            Math.min(1, accent.brightness * 1.4594082522846927 + 0),
           ),
         }),
         alpha: 255,
@@ -7916,16 +8142,16 @@ const mono = (accent: PartialHsbColor) =>
       `switchTrack`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.9381440544569 + 360) % 360,
+          hue: (accent.hue + -5.8515702255691 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.12205346691546637),
+            Math.min(1, accent.saturation * 0.14034367659840272),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.14407356104163324 + 0.40112465427027516,
+              accent.brightness * 0.1851334937436382 + 0.38765334281665936,
             ),
           ),
         }),
@@ -7936,16 +8162,16 @@ const mono = (accent: PartialHsbColor) =>
       `switchTrackBlue`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -7.2312709940591 + 360) % 360,
+          hue: (accent.hue + -6.1446971651713 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.3153505176396571),
+            Math.min(1, accent.saturation * 0.3626070785306854),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.24149102903274555 + 0.1678659410638028,
+              accent.brightness * 0.3103142421784046 + 0.14528580323813886,
             ),
           ),
         }),
@@ -7956,14 +8182,14 @@ const mono = (accent: PartialHsbColor) =>
       `switchTrackBlueChecked`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -0.4086538743146 + 360) % 360,
+          hue: (accent.hue + -3.5898465282787 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9704923789853885),
+            Math.min(1, accent.saturation * 1.0870220348469084),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.9153222497531271 + 0),
+            Math.min(1, accent.brightness * 1.4312106966466258 + 0),
           ),
         }),
         alpha: 255,
@@ -7973,16 +8199,16 @@ const mono = (accent: PartialHsbColor) =>
       `switchTrackBlueSelector`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.7837139947732 + 360) % 360,
+          hue: (accent.hue + -5.6971401658854 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.42923457014332306),
+            Math.min(1, accent.saturation * 0.4935571206573846),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.0892580421806453 + 0.030806979077363857,
+              accent.brightness * 0.11469594472538042 + 0.022461083569110397,
             ),
           ),
         }),
@@ -7993,14 +8219,14 @@ const mono = (accent: PartialHsbColor) =>
       `switchTrackBlueSelectorChecked`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 5.420486767981 + 360) % 360,
+          hue: (accent.hue + 6.5070605968688 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0509583125103708),
+            Math.min(1, accent.saturation * 1.2084487008592149),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.3518271394437906 + 0),
+            Math.min(1, accent.brightness * 0.3931762842252311 + 0),
           ),
         }),
         alpha: 33,
@@ -8028,14 +8254,14 @@ const mono = (accent: PartialHsbColor) =>
       `switchTrackChecked`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.8705327376315 + 360) % 360,
+          hue: (accent.hue + -3.5898465282787 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9447455607883597),
+            Math.min(1, accent.saturation * 1.0870220348469084),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.305926759274855 + 0),
+            Math.min(1, accent.brightness * 1.4312106966466258 + 0),
           ),
         }),
         alpha: 255,
@@ -8045,16 +8271,16 @@ const mono = (accent: PartialHsbColor) =>
       `undo_background`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.8299546211032 + 360) % 360,
+          hue: (accent.hue + -1.7433807922154 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.5132001192568107),
+            Math.min(1, accent.saturation * 0.5901052496699933),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.04878947349292429 + 0.009103536286467056,
+              accent.brightness * 0.06269412389305445 + 0.004541573714505746,
             ),
           ),
         }),
@@ -8065,14 +8291,14 @@ const mono = (accent: PartialHsbColor) =>
       `undo_cancelColor`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -5.3870220015059 + 360) % 360,
+          hue: (accent.hue + -4.3004481726181 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.806686150961651),
+            Math.min(1, accent.saturation * 0.9275713598974062),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.602665831584939 + 0),
+            Math.min(1, accent.brightness * 1.7910221409112714 + 0),
           ),
         }),
         alpha: 255,
@@ -8127,14 +8353,14 @@ const mono = (accent: PartialHsbColor) =>
       `wallet_buttonBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.6474418280612 + 360) % 360,
+          hue: (accent.hue + -0.5608679991734 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9699540857513796),
+            Math.min(1, accent.saturation * 1.1153056604305376),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.268186171574644 + 0),
+            Math.min(1, accent.brightness * 1.417232131193227 + 0),
           ),
         }),
         alpha: 255,
@@ -8144,14 +8370,14 @@ const mono = (accent: PartialHsbColor) =>
       `wallet_buttonPressedBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 0.4875626369021 + 360) % 360,
+          hue: (accent.hue + 1.5741364657899 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0160120296167008),
+            Math.min(1, accent.saturation * 1.1682655749825668),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.0777016713391938 + 0),
+            Math.min(1, accent.brightness * 1.2043605826154917 + 0),
           ),
         }),
         alpha: 255,
@@ -8251,14 +8477,14 @@ const mono = (accent: PartialHsbColor) =>
       `wallet_releaseBackground`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 0.4428626516142 + 360) % 360,
+          hue: (accent.hue + 1.5294364805019 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9911898062245256),
+            Math.min(1, accent.saturation * 1.1397236402039546),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.7964175317712242 + 0),
+            Math.min(1, accent.brightness * 0.8900179967033705 + 0),
           ),
         }),
         alpha: 255,
@@ -8304,14 +8530,14 @@ const mono = (accent: PartialHsbColor) =>
       `windowBackgroundChecked`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.1963429828689 + 360) % 360,
+          hue: (accent.hue + -1.1097691539811 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9091168299872434),
+            Math.min(1, accent.saturation * 1.0453516938299026),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.1120445633243332 + 0),
+            Math.min(1, accent.brightness * 1.2427396874270544 + 0),
           ),
         }),
         alpha: 255,
@@ -8339,16 +8565,16 @@ const mono = (accent: PartialHsbColor) =>
       `windowBackgroundUnchecked`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.3168368617756 + 360) % 360,
+          hue: (accent.hue + -5.2302630328878 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.2456804014894497),
+            Math.min(1, accent.saturation * 0.2824966113996707),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.25966828767041833 + 0.27763444736048826,
+              accent.brightness * 0.33367188929938907 + 0.25335468115949555,
             ),
           ),
         }),
@@ -8377,14 +8603,14 @@ const mono = (accent: PartialHsbColor) =>
       `windowBackgroundWhiteBlueButton`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 0.6052670111401 + 360) % 360,
+          hue: (accent.hue + -1.473664191549 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0328680590544979),
+            Math.min(1, accent.saturation * 1.1356857819489328),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.0439855575945596 + 0),
+            Math.min(1, accent.brightness * 1.1666819193333249 + 0),
           ),
         }),
         alpha: 255,
@@ -8394,14 +8620,14 @@ const mono = (accent: PartialHsbColor) =>
       `windowBackgroundWhiteBlueHeader`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.343359928809 + 360) % 360,
+          hue: (accent.hue + -1.1118274395157 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9868577194572306),
+            Math.min(1, accent.saturation * 1.1800073800525546),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.0663934877276133 + 0),
+            Math.min(1, accent.brightness * 1.2043605826154917 + 0),
           ),
         }),
         alpha: 255,
@@ -8411,14 +8637,14 @@ const mono = (accent: PartialHsbColor) =>
       `windowBackgroundWhiteBlueIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.5429801695612 + 360) % 360,
+          hue: (accent.hue + -1.473664191549 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0024870030406885),
+            Math.min(1, accent.saturation * 1.1356857819489328),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.2557492462345534 + 0),
+            Math.min(1, accent.brightness * 1.1666819193333249 + 0),
           ),
         }),
         alpha: 255,
@@ -8428,14 +8654,14 @@ const mono = (accent: PartialHsbColor) =>
       `windowBackgroundWhiteBlueText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.8155899812875 + 360) % 360,
+          hue: (accent.hue + 1.703329405584 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.965368288853696),
+            Math.min(1, accent.saturation * 1.2073419509945862),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.9784203916677084 + 0),
+            Math.min(1, accent.brightness * 1.034459356966788 + 0),
           ),
         }),
         alpha: 255,
@@ -8445,14 +8671,14 @@ const mono = (accent: PartialHsbColor) =>
       `windowBackgroundWhiteBlueText2`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.343359928809 + 360) % 360,
+          hue: (accent.hue + -1.2567860999212 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9868577194572306),
+            Math.min(1, accent.saturation * 1.1347423725707577),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.0663934877276133 + 0),
+            Math.min(1, accent.brightness * 1.1917233835046817 + 0),
           ),
         }),
         alpha: 255,
@@ -8462,14 +8688,14 @@ const mono = (accent: PartialHsbColor) =>
       `windowBackgroundWhiteBlueText3`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -0.015016387341 + 360) % 360,
+          hue: (accent.hue + 1.0715574415467 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0102059544845179),
+            Math.min(1, accent.saturation * 1.1615894358179049),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.7497011065980528 + 0),
+            Math.min(1, accent.brightness * 0.8378111359964007 + 0),
           ),
         }),
         alpha: 255,
@@ -8479,14 +8705,14 @@ const mono = (accent: PartialHsbColor) =>
       `windowBackgroundWhiteBlueText4`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.8148250907645 + 360) % 360,
+          hue: (accent.hue + -0.7282512618768 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8803718870318283),
+            Math.min(1, accent.saturation * 1.0122992039668466),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.722458971519089 + 0),
+            Math.min(1, accent.brightness * 0.8073673178712785 + 0),
           ),
         }),
         alpha: 255,
@@ -8496,14 +8722,14 @@ const mono = (accent: PartialHsbColor) =>
       `windowBackgroundWhiteBlueText5`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -0.4216599221108 + 360) % 360,
+          hue: (accent.hue + 0.664913906777 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9249140745590532),
+            Math.min(1, accent.saturation * 1.0635162199131105),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.9465646358317218 + 0),
+            Math.min(1, accent.brightness * 1.0578114209258844 + 0),
           ),
         }),
         alpha: 255,
@@ -8513,12 +8739,15 @@ const mono = (accent: PartialHsbColor) =>
       `windowBackgroundWhiteBlueText6`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -0.1643292350215 + 360) % 360,
+          hue: (accent.hue + 0.9222445938662 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.982408369298922),
+            Math.min(1, accent.saturation * 1.1296262691492696),
           ),
-          brightness: Math.max(0, Math.min(1, accent.brightness * 1 + 0)),
+          brightness: Math.max(
+            0,
+            Math.min(1, accent.brightness * 1.1175268765417303 + 0),
+          ),
         }),
         alpha: 255,
       } as Color,
@@ -8527,14 +8756,14 @@ const mono = (accent: PartialHsbColor) =>
       `windowBackgroundWhiteBlueText7`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -1.848612865053 + 360) % 360,
+          hue: (accent.hue + -0.7620390361653 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9587494617957756),
+            Math.min(1, accent.saturation * 1.1024219778890076),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.678356632301247 + 0),
+            Math.min(1, accent.brightness * 0.7580817684769796 + 0),
           ),
         }),
         alpha: 255,
@@ -8544,16 +8773,16 @@ const mono = (accent: PartialHsbColor) =>
       `windowBackgroundWhiteGrayIcon`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -6.7672485444845 + 360) % 360,
+          hue: (accent.hue + -5.6806747155967 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.15779199229625496),
+            Math.min(1, accent.saturation * 0.18143776572918532),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.09793695389028223 + 0.19707407281275147,
+              accent.brightness * 0.12584828409341578 + 0.187916672946074,
             ),
           ),
         }),
@@ -8573,16 +8802,16 @@ const mono = (accent: PartialHsbColor) =>
       `windowBackgroundWhiteGrayText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -4.6111792622188 + 360) % 360,
+          hue: (accent.hue + -12.0678015757214 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.2696002517928263),
+            Math.min(1, accent.saturation * 0.0894381170159261),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.19766797163066682 + 0.18165032906959755,
+              accent.brightness * 0.06803454662149194 + 0.24516230516075752,
             ),
           ),
         }),
@@ -8592,27 +8821,60 @@ const mono = (accent: PartialHsbColor) =>
     [
       `windowBackgroundWhiteGrayText2`,
       {
-        red: 138,
-        green: 138,
-        blue: 138,
+        ...hsbToRgb({
+          hue: (accent.hue + -12.0678015757214 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.0894381170159261),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.06803454662149194 + 0.24516230516075752,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `windowBackgroundWhiteGrayText3`,
       {
-        red: 153,
-        green: 153,
-        blue: 153,
+        ...hsbToRgb({
+          hue: (accent.hue + -12.0678015757214 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.0894381170159261),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.06803454662149194 + 0.24516230516075752,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
     [
       `windowBackgroundWhiteGrayText4`,
       {
-        red: 128,
-        green: 128,
-        blue: 128,
+        ...hsbToRgb({
+          hue: (accent.hue + -12.0678015757214 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.0894381170159261),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.06803454662149194 + 0.24516230516075752,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -8628,9 +8890,20 @@ const mono = (accent: PartialHsbColor) =>
     [
       `windowBackgroundWhiteGrayText6`,
       {
-        red: 117,
-        green: 117,
-        blue: 117,
+        ...hsbToRgb({
+          hue: (accent.hue + -12.028537687496 + 360) % 360,
+          saturation: Math.max(
+            0,
+            Math.min(1, accent.saturation * 0.09987629463374528),
+          ),
+          brightness: Math.max(
+            0,
+            Math.min(
+              1,
+              accent.brightness * 0.05791990148684799 + 0.18352147975015412,
+            ),
+          ),
+        }),
         alpha: 255,
       } as Color,
     ] as [string, Color],
@@ -8647,16 +8920,16 @@ const mono = (accent: PartialHsbColor) =>
       `windowBackgroundWhiteGrayText8`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + 22.5235035376142 + 360) % 360,
+          hue: (accent.hue + 23.610077366502 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.0960948841766721),
+            Math.min(1, accent.saturation * 0.11049509439164384),
           ),
           brightness: Math.max(
             0,
             Math.min(
               1,
-              accent.brightness * 0.03887224751148972 + 0.14401465740713112,
+              accent.brightness * 0.04995055955748836 + 0.140379985303913,
             ),
           ),
         }),
@@ -8703,14 +8976,14 @@ const mono = (accent: PartialHsbColor) =>
       `windowBackgroundWhiteInputFieldActivated`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -3.2974439419724 + 360) % 360,
+          hue: (accent.hue + -2.2108701130847 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.007666404881463),
+            Math.min(1, accent.saturation * 1.1586693243519717),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.3965103087065127 + 0),
+            Math.min(1, accent.brightness * 1.5606378033471169 + 0),
           ),
         }),
         alpha: 255,
@@ -8720,14 +8993,14 @@ const mono = (accent: PartialHsbColor) =>
       `windowBackgroundWhiteLinkSelection`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.9821804816816 + 360) % 360,
+          hue: (accent.hue + -1.8956066527938 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.8863030787996047),
+            Math.min(1, accent.saturation * 1.0191192090051011),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.2310895971863507 + 0),
+            Math.min(1, accent.brightness * 1.3757757122866794 + 0),
           ),
         }),
         alpha: 51,
@@ -8737,14 +9010,14 @@ const mono = (accent: PartialHsbColor) =>
       `windowBackgroundWhiteLinkText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -0.015016387341 + 360) % 360,
+          hue: (accent.hue + 1.1450832866431 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 1.0102059544845179),
+            Math.min(1, accent.saturation * 1.1632224783819063),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 0.7497011065980528 + 0),
+            Math.min(1, accent.brightness * 1.034459356966788 + 0),
           ),
         }),
         alpha: 255,
@@ -8808,14 +9081,14 @@ const mono = (accent: PartialHsbColor) =>
       `windowBackgroundWhiteValueText`,
       {
         ...hsbToRgb({
-          hue: (accent.hue + -2.343359928809 + 360) % 360,
+          hue: (accent.hue + -1.473664191549 + 360) % 360,
           saturation: Math.max(
             0,
-            Math.min(1, accent.saturation * 0.9868577194572306),
+            Math.min(1, accent.saturation * 1.1356857819489328),
           ),
           brightness: Math.max(
             0,
-            Math.min(1, accent.brightness * 1.0663934877276133 + 0),
+            Math.min(1, accent.brightness * 1.1666819193333249 + 0),
           ),
         }),
         alpha: 255,
@@ -8823,4 +9096,4 @@ const mono = (accent: PartialHsbColor) =>
     ] as [string, Color],
   ]);
 
-export default mono;
+export default blue;
